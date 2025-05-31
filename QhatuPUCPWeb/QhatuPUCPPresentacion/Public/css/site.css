@@ -1,0 +1,80 @@
+﻿html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #2f5e93;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 196px;
+}
+
+.sidebar-custom {
+    background-color: #f3f0eb
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        width: 100% !important;
+    }
+}
+
+.sidebar svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* Navegación lateral */
+.mynav li a {
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+
+    .mynav li a:hover {
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    .mynav li a i {
+        width: 25px;
+        text-align: center;
+    }
+
+/* Fondo principal azul */
+.bg-principal {
+    background-color: #2f5e93;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Tarjeta de usuario */
+.user-card {
+    background-color: lightgrey;
+    border-radius: 8px;
+    padding: 5px 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .user-card img {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+
+.nav-link svg {
+    flex-shrink: 0;
+}
+
+.cards-box {
+    background-color: #f3f0eb;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
