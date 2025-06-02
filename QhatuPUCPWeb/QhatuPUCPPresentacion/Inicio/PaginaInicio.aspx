@@ -27,12 +27,9 @@
                     <ItemTemplate>
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="card h-100 shadow-sm border-0">
-                                <img src='<%# Eval("ImagenUrl") %>' class="card-img-top" style="height: 180px; object-fit: cover;" />
+                                <img src='<%# Eval("rutaImagen ") %>' class="card-img-top" style="height: 180px; object-fit: cover;" />
                                 <div class="card-body d-flex justify-content-between align-items-center">
-                                    <p class="card-text mb-0"><%# Eval("Titulo") %></p>
-                                    <span class='<%# (bool)Eval("EsFavorito") ? "text-warning" : "text-muted" %>'>
-                                        <i class='<%# (bool)Eval("EsFavorito") ? "fas fa-star" : "far fa-star" %>'></i>
-                                    </span>
+                                    <p class="card-text mb-0"><%# Eval("idPublicacion") %></p>
                                 </div>
                             </div>
                         </div>

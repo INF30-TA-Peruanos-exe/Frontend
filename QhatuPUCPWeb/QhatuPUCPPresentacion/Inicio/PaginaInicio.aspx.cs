@@ -1,7 +1,7 @@
-﻿using System;
+﻿using QhatuPUCPPresentacion.WebService; // Asegúrate que este sea el nombre correcto de tu servicio
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -41,20 +41,31 @@ namespace QhatuPUCPPresentacion.Inicio
 
         private void CargarPublicaciones()
         {
-            List<Publicacion> publicaciones = ObtenerPublicacionesDeEjemplo();
+            try
+            {
+                PublicacionWSClient client = new PublicacionWSClient();
+                publicacion[] publicacionesWS = client.listarPublicacion();
 
-            // Filtros aplicados
-            if (ddlFacultad.SelectedIndex > 0)
-                publicaciones = publicaciones.Where(p => p.Facultad == ddlFacultad.SelectedItem.Text).ToList();
+                List<publicacion> publicaciones = publicacionesWS.ToList();
 
-            if (ddlEspecialidad.SelectedIndex > 0)
-                publicaciones = publicaciones.Where(p => p.Especialidad == ddlEspecialidad.SelectedItem.Text).ToList();
+                //// Aplicar filtros
+                //if (ddlFacultad.SelectedIndex > 0)
+                //    publicaciones = publicaciones.Where(p => p.publicacionesFacultades== ddlFacultad.SelectedItem.Text).ToList();
 
-            if (ddlCurso.SelectedIndex > 0)
-                publicaciones = publicaciones.Where(p => p.Curso == ddlCurso.SelectedItem.Text).ToList();
+                //if (ddlEspecialidad.SelectedIndex > 0)
+                //    publicaciones = publicaciones.Where(p => p.publicacionesEspecialidades == ddlEspecialidad.SelectedItem.Text).ToList();
 
-            rptPublicaciones.DataSource = publicaciones;
-            rptPublicaciones.DataBind();
+                //if (ddlCurso.SelectedIndex > 0)
+                //    publicaciones = publicaciones.Where(p => p.publicacionesCursos == ddlCurso.SelectedItem.Text).ToList();
+
+                rptPublicaciones.DataSource = publicaciones;
+                rptPublicaciones.DataBind();
+            }
+            catch (Exception ex)
+            {
+                // Puedes mostrar un mensaje de error o loguearlo
+                Console.WriteLine("Error al cargar publicaciones: " + ex.Message);
+            }
         }
 
         protected void ddlFacultad_SelectedIndexChanged(object sender, EventArgs e)
@@ -70,97 +81,6 @@ namespace QhatuPUCPPresentacion.Inicio
         protected void ddlCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
             CargarPublicaciones();
-        }
-
-        private List<Publicacion> ObtenerPublicacionesDeEjemplo()
-        {
-            return new List<Publicacion>
-            {
-                new Publicacion {
-                    Titulo = "Se alquila calculadora para ingeniería económica",
-                    ImagenUrl = "/Public/images/calculadora.jpg",
-                    EsFavorito = true,
-                    Facultad = "Ingeniería",
-                    Especialidad = "Informática",
-                    Curso = "Ingeniería Económica"
-                },
-                new Publicacion {
-                    Titulo = "Libro de álgebra disponible",
-                    ImagenUrl = "/Public/images/placeholder.jpg",
-                    EsFavorito = false,
-                    Facultad = "Ingeniería",
-                    Especialidad = "Informática",
-                    Curso = "Programación 3"
-                },
-                new Publicacion {
-                    Titulo = "Material de economía social",
-                    ImagenUrl = "/Public/images/placeholder.jpg",
-                    EsFavorito = false,
-                    Facultad = "Ciencias Sociales",
-                    Especialidad = "Economía",
-                    Curso = "Ingeniería Económica"
-                },
-
-                new Publicacion {
-                    Titulo = "Se alquila calculadora para ingeniería económica",
-                    ImagenUrl = "/Public/images/calculadora.jpg",
-                    EsFavorito = true,
-                    Facultad = "Ingeniería",
-                    Especialidad = "Informática",
-                    Curso = "Ingeniería Económica"
-                },
-                new Publicacion {
-                    Titulo = "Libro de álgebra disponible",
-                    ImagenUrl = "/Public/images/placeholder.jpg",
-                    EsFavorito = false,
-                    Facultad = "Ingeniería",
-                    Especialidad = "Informática",
-                    Curso = "Programación 3"
-                },
-                new Publicacion {
-                    Titulo = "Material de economía social",
-                    ImagenUrl = "/Public/images/placeholder.jpg",
-                    EsFavorito = false,
-                    Facultad = "Ciencias Sociales",
-                    Especialidad = "Economía",
-                    Curso = "Ingeniería Económica"
-                },
-                new Publicacion {
-                    Titulo = "Se alquila calculadora para ingeniería económica",
-                    ImagenUrl = "/Public/images/calculadora.jpg",
-                    EsFavorito = true,
-                    Facultad = "Ingeniería",
-                    Especialidad = "Informática",
-                    Curso = "Ingeniería Económica"
-                },
-                new Publicacion {
-                    Titulo = "Libro de álgebra disponible",
-                    ImagenUrl = "/Public/images/placeholder.jpg",
-                    EsFavorito = false,
-                    Facultad = "Ingeniería",
-                    Especialidad = "Informática",
-                    Curso = "Programación 3"
-                },
-                new Publicacion {
-                    Titulo = "Material de economía social",
-                    ImagenUrl = "/Public/images/placeholder.jpg",
-                    EsFavorito = false,
-                    Facultad = "Ciencias Sociales",
-                    Especialidad = "Economía",
-                    Curso = "Ingeniería Económica"
-                }
-
-            };
-        }
-
-        public class Publicacion
-        {
-            public string Titulo { get; set; }
-            public string ImagenUrl { get; set; }
-            public bool EsFavorito { get; set; }
-            public string Facultad { get; set; }
-            public string Especialidad { get; set; }
-            public string Curso { get; set; }
         }
     }
 }
