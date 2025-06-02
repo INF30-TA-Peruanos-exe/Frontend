@@ -6,7 +6,17 @@ namespace QhatuPUCPPresentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Session["usuario"] != null)
+                {
+                    lblUsuario.Text = Session["usuario"].ToString();
+                }
+                else
+                {
+                    Response.Redirect("~/Inicio/Login.aspx");
+                }
+            }
         }
     }
 }

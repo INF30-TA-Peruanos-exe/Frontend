@@ -91,7 +91,7 @@
 
             <!-- Usuario arriba a la derecha -->
             <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-2 d-flex align-items-center shadow user-card">
-                <span class="me-2 text-dark">Axel Cárdenas</span>
+                <asp:Label ID="lblUsuario" runat="server" CssClass="me-2 text-dark" />
                 <img src="/Public/images/user-avatar.png" class="rounded-circle" width="30" height="30" />
             </div>
 

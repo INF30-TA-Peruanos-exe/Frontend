@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,6 +69,185 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\WebService\AdministradorWS.wsdl" />
+    <None Include="Connected Services\WebService\AdministradorWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebService\ComentarioWS.wsdl" />
+    <None Include="Connected Services\WebService\ComentarioWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebService\CursoWS.wsdl" />
+    <None Include="Connected Services\WebService\DenunciaWS.wsdl" />
+    <None Include="Connected Services\WebService\DenunciaWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebService\EspecialidadWS.wsdl" />
+    <None Include="Connected Services\WebService\EspecialidadWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebService\FacultadWS.wsdl" />
+    <None Include="Connected Services\WebService\FacultadWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebService\NotificacionWS.wsdl" />
+    <None Include="Connected Services\WebService\NotificacionWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebService\PublicacionWS.wsdl" />
+    <None Include="Connected Services\WebService\PublicacionWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.actualizarCursoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.actualizarDenunciaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.actualizarEspecialidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.actualizarFacultadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.cambiarEstadoPublicacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.crearPublicacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.curso.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.denuncia.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.eliminarCursoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.eliminarFacultadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.eliminarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.especialidad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.facultad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.helloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.helloResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarCursoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarDenunciaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarEspecialidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarFacultadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarNotificacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarPorCursoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarPorEspecialidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarPorFacultadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarPublicacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarUsuariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.notificacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.obtenerCursoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.obtenerDenunciaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.obtenerEspecialidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.obtenerFacultadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.obtenerNotificacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.obtenerUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.publicacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.registrarCursoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.registrarDenunciaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.registrarEspecialidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.registrarFacultadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.registrarNotificacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.registrarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WebService\servicios.disco" />
+    <None Include="Connected Services\WebService\configuration91.svcinfo" />
+    <None Include="Connected Services\WebService\configuration.svcinfo" />
+    <None Include="Connected Services\WebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Inicio\Login.aspx" />
+    <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
     <Content Include="PaginaPrueba.aspx" />
     <Content Include="Public\css\bootstrap-reboot.css" />
@@ -100,6 +281,13 @@
     <Content Include="Public\js\bootstrap.esm.min.js" />
     <Content Include="Public\js\bootstrap.js" />
     <Content Include="Public\js\bootstrap.min.js" />
+    <None Include="Connected Services\WebService\CursoWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WebService\UsuarioWS.wsdl" />
+    <None Include="Connected Services\WebService\UsuarioWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Public\js\jquery-3.7.1.intellisense.js" />
     <Content Include="Public\js\jquery-3.7.1.js" />
     <Content Include="Public\js\jquery-3.7.1.min.js" />
@@ -108,6 +296,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\WebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Inicio\PaginaInicio.aspx.cs">
       <DependentUpon>PaginaInicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,6 +366,12 @@
     <Folder Include="Notificaciones\" />
     <Folder Include="Perfil\" />
     <Folder Include="Postear\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WebService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="actualizarFacultad" type="tns:actualizarFacultad" />
+  <xs:element name="actualizarFacultadResponse" type="tns:actualizarFacultadResponse" />
+  <xs:element name="eliminarFacultad" type="tns:eliminarFacultad" />
+  <xs:element name="eliminarFacultadResponse" type="tns:eliminarFacultadResponse" />
+  <xs:element name="listarFacultad" type="tns:listarFacultad" />
+  <xs:element name="listarFacultadResponse" type="tns:listarFacultadResponse" />
+  <xs:element name="obtenerFacultad" type="tns:obtenerFacultad" />
+  <xs:element name="obtenerFacultadResponse" type="tns:obtenerFacultadResponse" />
+  <xs:element name="registrarFacultad" type="tns:registrarFacultad" />
+  <xs:element name="registrarFacultadResponse" type="tns:registrarFacultadResponse" />
+  <xs:complexType name="eliminarFacultad">
+    <xs:sequence>
+      <xs:element name="idFacultad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFacultadResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="obtenerFacultad">
+    <xs:sequence>
+      <xs:element name="idFacultad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerFacultadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:facultad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facultad">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idFacultad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarFacultad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="facultad" type="tns:facultad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarFacultadResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="actualizarFacultad">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="facultad" type="tns:facultad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarFacultadResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarFacultad">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarFacultadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:facultad" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

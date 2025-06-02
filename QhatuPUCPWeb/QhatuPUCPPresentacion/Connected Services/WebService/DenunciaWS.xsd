@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="actualizarDenuncia" type="tns:actualizarDenuncia" />
+  <xs:element name="actualizarDenunciaResponse" type="tns:actualizarDenunciaResponse" />
+  <xs:element name="eliminarDenuncia" type="tns:eliminarDenuncia" />
+  <xs:element name="eliminarDenunciaResponse" type="tns:eliminarDenunciaResponse" />
+  <xs:element name="listarDenuncia" type="tns:listarDenuncia" />
+  <xs:element name="listarDenunciaResponse" type="tns:listarDenunciaResponse" />
+  <xs:element name="obtenerDenuncia" type="tns:obtenerDenuncia" />
+  <xs:element name="obtenerDenunciaResponse" type="tns:obtenerDenunciaResponse" />
+  <xs:element name="registrarDenuncia" type="tns:registrarDenuncia" />
+  <xs:element name="registrarDenunciaResponse" type="tns:registrarDenunciaResponse" />
+  <xs:complexType name="registrarDenuncia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="denuncia" type="tns:denuncia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="denuncia">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="admin" type="tns:administrador" />
+      <xs:element minOccurs="0" name="autor" type="tns:publicacion" />
+      <xs:element minOccurs="0" name="denunciante" type="tns:usuario" />
+      <xs:element minOccurs="0" name="fechaDenuncia" type="tns:date" />
+      <xs:element name="idDenuncia" type="xs:int" />
+      <xs:element minOccurs="0" name="motivo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="administrador">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuario">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="claveMaestra" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="codigoPUCP" type="xs:int" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="publicacion">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoPublicacion" />
+      <xs:element minOccurs="0" name="fechaPublicacion" type="tns:date" />
+      <xs:element name="idPublicacion" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesCursos" nillable="true" type="tns:curso" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesEspecialidades" nillable="true" type="tns:especialidad" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesFacultades" nillable="true" type="tns:facultad" />
+      <xs:element minOccurs="0" name="rutaImagen" type="xs:string" />
+      <xs:element minOccurs="0" name="titulo" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="date">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="curso">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idCurso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="especialidad">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idEspecialidad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facultad">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idFacultad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarDenunciaResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarDenuncia">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarDenunciaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:denuncia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerDenuncia">
+    <xs:sequence>
+      <xs:element name="idDenuncia" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerDenunciaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:denuncia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarDenuncia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="denuncia" type="tns:denuncia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarDenunciaResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="eliminarDenuncia">
+    <xs:sequence>
+      <xs:element name="idDenuncia" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDenunciaResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:simpleType name="estadoUsuario">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HABILITADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoPublicacion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VISIBLE" />
+      <xs:enumeration value="GUARDADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+      <xs:enumeration value="OCULTO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

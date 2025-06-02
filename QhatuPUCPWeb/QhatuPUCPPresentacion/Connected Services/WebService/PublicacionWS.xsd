@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="actualizarPublicacion" type="tns:actualizarPublicacion" />
+  <xs:element name="actualizarPublicacionResponse" type="tns:actualizarPublicacionResponse" />
+  <xs:element name="cambiarEstadoPublicacion" type="tns:cambiarEstadoPublicacion" />
+  <xs:element name="cambiarEstadoPublicacionResponse" type="tns:cambiarEstadoPublicacionResponse" />
+  <xs:element name="crearPublicacion" type="tns:crearPublicacion" />
+  <xs:element name="crearPublicacionResponse" type="tns:crearPublicacionResponse" />
+  <xs:element name="eliminarPublicacion" type="tns:eliminarPublicacion" />
+  <xs:element name="eliminarPublicacionResponse" type="tns:eliminarPublicacionResponse" />
+  <xs:element name="listarPorCurso" type="tns:listarPorCurso" />
+  <xs:element name="listarPorCursoResponse" type="tns:listarPorCursoResponse" />
+  <xs:element name="listarPorEspecialidad" type="tns:listarPorEspecialidad" />
+  <xs:element name="listarPorEspecialidadResponse" type="tns:listarPorEspecialidadResponse" />
+  <xs:element name="listarPorFacultad" type="tns:listarPorFacultad" />
+  <xs:element name="listarPorFacultadResponse" type="tns:listarPorFacultadResponse" />
+  <xs:element name="listarPublicacion" type="tns:listarPublicacion" />
+  <xs:element name="listarPublicacionResponse" type="tns:listarPublicacionResponse" />
+  <xs:element name="obtenerPublicacion" type="tns:obtenerPublicacion" />
+  <xs:element name="obtenerPublicacionResponse" type="tns:obtenerPublicacionResponse" />
+  <xs:complexType name="listarPorFacultad">
+    <xs:sequence>
+      <xs:element name="idFacultad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorFacultadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="publicacion">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoPublicacion" />
+      <xs:element minOccurs="0" name="fechaPublicacion" type="tns:date" />
+      <xs:element name="idPublicacion" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesCursos" nillable="true" type="tns:curso" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesEspecialidades" nillable="true" type="tns:especialidad" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesFacultades" nillable="true" type="tns:facultad" />
+      <xs:element minOccurs="0" name="rutaImagen" type="xs:string" />
+      <xs:element minOccurs="0" name="titulo" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="date">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="curso">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idCurso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="especialidad">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idEspecialidad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facultad">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idFacultad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="codigoPUCP" type="xs:int" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorCurso">
+    <xs:sequence>
+      <xs:element name="idCurso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorCursoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarEstadoPublicacion">
+    <xs:sequence>
+      <xs:element name="idPublicacion" type="xs:int" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarEstadoPublicacionResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPublicacion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPublicacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPublicacion">
+    <xs:sequence>
+      <xs:element name="idPublicacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPublicacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarPublicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="publicacion" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarPublicacionResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="crearPublicacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="publicacion" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearPublicacionResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="eliminarPublicacion">
+    <xs:sequence>
+      <xs:element name="idPublicacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPublicacionResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPorEspecialidad">
+    <xs:sequence>
+      <xs:element name="idEspecialidad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorEspecialidadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="estadoPublicacion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VISIBLE" />
+      <xs:enumeration value="GUARDADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+      <xs:enumeration value="OCULTO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoUsuario">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HABILITADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

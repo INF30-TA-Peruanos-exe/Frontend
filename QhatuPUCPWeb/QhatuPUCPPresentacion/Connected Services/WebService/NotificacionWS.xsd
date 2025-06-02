@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="actualizarNotificacion" type="tns:actualizarNotificacion" />
+  <xs:element name="actualizarNotificacionResponse" type="tns:actualizarNotificacionResponse" />
+  <xs:element name="eliminarDenuncia" type="tns:eliminarDenuncia" />
+  <xs:element name="eliminarDenunciaResponse" type="tns:eliminarDenunciaResponse" />
+  <xs:element name="listarNotificacion" type="tns:listarNotificacion" />
+  <xs:element name="listarNotificacionResponse" type="tns:listarNotificacionResponse" />
+  <xs:element name="obtenerNotificacion" type="tns:obtenerNotificacion" />
+  <xs:element name="obtenerNotificacionResponse" type="tns:obtenerNotificacionResponse" />
+  <xs:element name="registrarNotificacion" type="tns:registrarNotificacion" />
+  <xs:element name="registrarNotificacionResponse" type="tns:registrarNotificacionResponse" />
+  <xs:complexType name="listarNotificacion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarNotificacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:notificacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="notificacion">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="autor" type="tns:publicacion" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="tns:date" />
+      <xs:element name="idNotificacion" type="xs:int" />
+      <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+      <xs:element minOccurs="0" name="notificador" type="tns:usuario" />
+      <xs:element minOccurs="0" name="tipoNotificacion" type="tns:tipoNotificacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="publicacion">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoPublicacion" />
+      <xs:element minOccurs="0" name="fechaPublicacion" type="tns:date" />
+      <xs:element name="idPublicacion" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesCursos" nillable="true" type="tns:curso" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesEspecialidades" nillable="true" type="tns:especialidad" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesFacultades" nillable="true" type="tns:facultad" />
+      <xs:element minOccurs="0" name="rutaImagen" type="xs:string" />
+      <xs:element minOccurs="0" name="titulo" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="date">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="curso">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idCurso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="especialidad">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idEspecialidad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facultad">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idFacultad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="codigoPUCP" type="xs:int" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarNotificacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="denuncia" type="tns:notificacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarNotificacionResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="eliminarDenuncia">
+    <xs:sequence>
+      <xs:element name="idNotificacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDenunciaResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="obtenerNotificacion">
+    <xs:sequence>
+      <xs:element name="idNotificacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerNotificacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:notificacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarNotificacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="denuncia" type="tns:notificacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarNotificacionResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:simpleType name="estadoPublicacion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VISIBLE" />
+      <xs:enumeration value="GUARDADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+      <xs:enumeration value="OCULTO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoUsuario">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HABILITADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tipoNotificacion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GUARDADA" />
+      <xs:enumeration value="COMENTADA" />
+      <xs:enumeration value="REPORTADA" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
