@@ -1,0 +1,28 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build outputs
+bin/
+obj/
+Debug/
+Release/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Configs y archivos temporales
+*.dbmdl
+*.log
+*.tmp
+
+# Publicaciones
+*.Publish.xml
+
+# Archivos del sistema
+Thumbs.db
+.DS_Store
