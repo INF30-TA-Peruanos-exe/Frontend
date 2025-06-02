@@ -20,23 +20,35 @@ namespace QhatuPUCPPresentacion.Inicio
 
         private void CargarFiltros()
         {
-            // Facultades
-            ddlFacultad.Items.Clear();
-            ddlFacultad.Items.Add("Facultad");
-            ddlFacultad.Items.Add("Ingeniería");
-            ddlFacultad.Items.Add("Ciencias Sociales");
-
-            // Especialidades
-            ddlEspecialidad.Items.Clear();
-            ddlEspecialidad.Items.Add("Especialidad");
-            ddlEspecialidad.Items.Add("Informática");
-            ddlEspecialidad.Items.Add("Economía");
-
-            // Cursos
+            // CURSOS
+            CursoWSClient cursoClient = new CursoWSClient();
+            curso[] cursos = cursoClient.listarCurso();
             ddlCurso.Items.Clear();
-            ddlCurso.Items.Add("Curso");
-            ddlCurso.Items.Add("Programación 3");
-            ddlCurso.Items.Add("Ingeniería Económica");
+            ddlCurso.Items.Add(new ListItem("Curso", "0"));
+            foreach (var c in cursos)
+            {
+                ddlCurso.Items.Add(new ListItem(c.nombre, c.idCurso.ToString()));
+            }
+
+            // FACULTADES
+            FacultadWSClient facultadClient = new FacultadWSClient();
+            facultad[] facultades = facultadClient.listarFacultad();
+            ddlFacultad.Items.Clear();
+            ddlFacultad.Items.Add(new ListItem("Facultad", "0"));
+            foreach (var f in facultades)
+            {
+                ddlFacultad.Items.Add(new ListItem(f.nombre, f.idFacultad.ToString()));
+            }
+
+            // ESPECIALIDADES
+            EspecialidadWSClient especialidadClient = new EspecialidadWSClient();
+            especialidad[] especialidades = especialidadClient.listarEspecialidad();
+            ddlEspecialidad.Items.Clear();
+            ddlEspecialidad.Items.Add(new ListItem("Especialidad", "0"));
+            foreach (var e in especialidades)
+            {
+                ddlEspecialidad.Items.Add(new ListItem(e.nombre, e.idEspecialidad.ToString()));
+            }
         }
 
         private void CargarPublicaciones()

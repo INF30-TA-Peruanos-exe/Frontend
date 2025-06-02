@@ -10,7 +10,8 @@ namespace QhatuPUCPPresentacion
             {
                 if (Session["usuario"] != null)
                 {
-                    lblUsuario.Text = Session["usuario"].ToString();
+                    var usuario = (WebService.usuario)Session["usuario"];
+                    lblUsuario.Text = usuario.nombreUsuario;
                 }
                 else
                 {
