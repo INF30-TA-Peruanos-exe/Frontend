@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\hacerpubli\\postear.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\paginainicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\hacerpubli\\estilos_postear.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\hacerpubli\\estilos_postear.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\hacerpubli\\postear.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\hacerpubli\\postear.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\mainlayout.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayout.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\hacerpubli\\estilos_postear.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\hacerpubli\\estilos_postear.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +42,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaginaInicio.aspx",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-03T02:39:57.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Postear.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
               "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAuwF4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAwwJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T00:50:57.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Postear.aspx",
               "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx",
@@ -64,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "estilos_postear.css",
               "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\HacerPubli\\estilos_postear.css",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\HacerPubli\\estilos_postear.css",
@@ -77,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainLayout.Master.designer.cs",
               "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",

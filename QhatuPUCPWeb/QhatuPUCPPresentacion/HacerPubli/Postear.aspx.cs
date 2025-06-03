@@ -22,6 +22,8 @@ namespace QhatuPUCPPresentacion.HacerPubli
                 }
 
                 cargarDatosCheckbox();
+                ProbarLecturaPublicacion(93); // ⚠️ solo para test temporal
+
             }
         }
 
@@ -132,6 +134,21 @@ namespace QhatuPUCPPresentacion.HacerPubli
                 }
                 nueva.publicacionesEspecialidades = especialidades.ToArray();
 
+                //debug
+                System.Diagnostics.Debug.WriteLine($"→ Cursos enviados: {nueva.publicacionesCursos?.Length ?? 0}");
+                foreach (var c in nueva.publicacionesCursos)
+                    System.Diagnostics.Debug.WriteLine($"  - {c.idCurso}: {c.nombre}");
+
+                System.Diagnostics.Debug.WriteLine($"→ Facultades enviadas: {nueva.publicacionesFacultades?.Length ?? 0}");
+                foreach (var f in nueva.publicacionesFacultades)
+                    System.Diagnostics.Debug.WriteLine($"  - {f.idFacultad}: {f.nombre}");
+
+                System.Diagnostics.Debug.WriteLine($"→ Especialidades enviadas: {nueva.publicacionesEspecialidades?.Length ?? 0}");
+                foreach (var es in nueva.publicacionesEspecialidades)
+                    System.Diagnostics.Debug.WriteLine($"  - {es.idEspecialidad}: {es.nombre}");
+
+
+
                 // crear
                 client.crearPublicacion(nueva);
                 Response.Redirect("~/Inicio/PaginaInicio.aspx");
@@ -155,5 +172,45 @@ namespace QhatuPUCPPresentacion.HacerPubli
 
             return soapDate;
         }
+
+
+        //FUNCION PARA PROBAR SI TRAE LAS LISTAS LLENAS EN ESTE CASO DE FACULTAD
+        private void ProbarLecturaPublicacion(int id)
+        {
+            try
+            {
+                PublicacionWSClient client = new PublicacionWSClient();
+                publicacion publi = client.obtenerPublicacion(id);
+
+                if (publi == null)
+                {
+                    System.Diagnostics.Debug.WriteLine($"❌ No se encontró publicación con ID {id}");
+                    return;
+                }
+
+                System.Diagnostics.Debug.WriteLine($"✔ Publicación ID {id}: {publi.titulo}");
+
+                // Facultades
+                if (publi.publicacionesFacultades != null)
+                {
+                    System.Diagnostics.Debug.WriteLine("Facultades asociadas:");
+                    foreach (var f in publi.publicacionesFacultades)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"- ID: {f.idFacultad}, Nombre: {f.nombre}");
+                    }
+                }
+                else
+                {
+                    System.Diagnostics.Debug.WriteLine("❌ La lista publicacionesFacultades está NULL");
+                }
+
+                // Puedes hacer lo mismo para cursos y especialidades si deseas
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("❌ Error al probar obtenerPublicacion: " + ex.Message);
+            }
+        }
+
     }
 }

@@ -275,6 +275,7 @@
     <Content Include="Public\fonts\css\v4-shims.min.css" />
     <Content Include="Public\fonts\css\v5-font-face.css" />
     <Content Include="Public\fonts\css\v5-font-face.min.css" />
+    <Content Include="Public\images\imagen-ataque.jpg" />
     <Content Include="Public\images\QhatuPucp.png" />
     <Content Include="Public\images\user-avatar.png" />
     <Content Include="Public\js\bootstrap.bundle.js" />
