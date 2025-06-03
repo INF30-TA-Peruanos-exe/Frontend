@@ -39,12 +39,14 @@
 
                     <!-- Signup (inactivo por ahora) -->
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="form px-4">
-                            <input type="text" class="form-control" placeholder="Name" />
-                            <input type="text" class="form-control" placeholder="Email" />
-                            <input type="text" class="form-control" placeholder="Phone" />
-                            <input type="text" class="form-control" placeholder="Password" />
-                            <button class="btn btn-dark btn-block">Signup</button>
+                        <div class="form px-4 pt-5">
+                            <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control mb-2" placeholder="Nombre completo"></asp:TextBox>
+                            <asp:TextBox ID="txtCorreoNuevo" runat="server" CssClass="form-control mb-2" placeholder="Correo electrónico"></asp:TextBox>
+                            <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control mb-2" placeholder="Teléfono"></asp:TextBox>
+                            <asp:TextBox ID="txtContrasenaNueva" runat="server" CssClass="form-control mb-2" TextMode="Password" placeholder="Contraseña"></asp:TextBox>
+        
+                            <asp:Button ID="BtnSignup" runat="server" CssClass="btn btn-dark btn-block" Text="Registrarse" OnClick="BtnSignup_Click" />
+                            <asp:Label ID="lblSignupError" runat="server" CssClass="text-danger mt-2"></asp:Label>
                         </div>
                     </div>
                 </div>

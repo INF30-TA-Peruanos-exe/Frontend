@@ -73,9 +73,35 @@ namespace QhatuPUCPPresentacion.Inicio
 
         }
 
-        protected void btnSignup_Click(object sender, EventArgs e)
+        protected void BtnSignup_Click(object sender, EventArgs e)
         {
-            // Lógica para registro (opcional si no se va a implementar)
+            string nombre = txtNombre.Text.Trim();
+            string correo = txtCorreoNuevo.Text.Trim();
+            string telefono = txtTelefono.Text.Trim();
+            string contrasena = txtContrasenaNueva.Text.Trim();
+
+            // Validación simple
+            if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(correo) ||
+                string.IsNullOrEmpty(telefono) || string.IsNullOrEmpty(contrasena))
+            {
+                lblSignupError.Text = "Por favor, complete todos los campos.";
+                return;
+            }
+
+            try
+            {
+                // Aquí deberías insertar los datos en tu base de datos
+                // o llamar a una capa de lógica de negocio para registrar al usuario
+                // Ejemplo (ficticio):
+                // UsuarioBL.RegistrarUsuario(nombre, correo, telefono, contrasena);
+
+                lblSignupError.CssClass = "text-success mt-2";
+                lblSignupError.Text = "Usuario registrado correctamente.";
+            }
+            catch (Exception ex)
+            {
+                lblSignupError.Text = "Error al registrar: " + ex.Message;
+            }
         }
 
     }
