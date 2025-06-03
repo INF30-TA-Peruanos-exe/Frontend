@@ -80,12 +80,6 @@ namespace QhatuPUCPPresentacion.Inicio
             string telefono = txtTelefono.Text.Trim();
             string contrasena = txtContrasenaNueva.Text.Trim();
 
-            // Validación simple
-            // Pseudocódigo detallado:
-            // 1. Validar que los campos no estén vacíos.
-            // 2. Si hay error, mostrar mensaje y ejecutar JS para cambiar a la pestaña "pills-profile".
-            // 3. Si no hay error, continuar con el registro.
-
             // Reemplaza el bloque de validación en BtnSignup_Click:
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(correo) ||
                 string.IsNullOrEmpty(telefono) || string.IsNullOrEmpty(contrasena))
