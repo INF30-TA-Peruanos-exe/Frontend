@@ -2,12 +2,16 @@
 <xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="actualizarNotificacion" type="tns:actualizarNotificacion" />
   <xs:element name="actualizarNotificacionResponse" type="tns:actualizarNotificacionResponse" />
+  <xs:element name="curso" type="tns:curso" />
   <xs:element name="eliminarDenuncia" type="tns:eliminarDenuncia" />
   <xs:element name="eliminarDenunciaResponse" type="tns:eliminarDenunciaResponse" />
+  <xs:element name="especialidad" type="tns:especialidad" />
+  <xs:element name="facultad" type="tns:facultad" />
   <xs:element name="listarNotificacion" type="tns:listarNotificacion" />
   <xs:element name="listarNotificacionResponse" type="tns:listarNotificacionResponse" />
   <xs:element name="obtenerNotificacion" type="tns:obtenerNotificacion" />
   <xs:element name="obtenerNotificacionResponse" type="tns:obtenerNotificacionResponse" />
+  <xs:element name="publicacion" type="tns:publicacion" />
   <xs:element name="registrarNotificacion" type="tns:registrarNotificacion" />
   <xs:element name="registrarNotificacionResponse" type="tns:registrarNotificacionResponse" />
   <xs:complexType name="listarNotificacion">
@@ -32,42 +36,39 @@
   </xs:complexType>
   <xs:complexType name="publicacion">
     <xs:sequence>
-      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="idPublicacion" type="xs:int" />
+      <xs:element minOccurs="0" name="titulo" type="xs:string" />
       <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="rutaImagen" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
       <xs:element minOccurs="0" name="estado" type="tns:estadoPublicacion" />
       <xs:element minOccurs="0" name="fechaPublicacion" type="tns:date" />
-      <xs:element name="idPublicacion" type="xs:int" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesCursos" nillable="true" type="tns:curso" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesEspecialidades" nillable="true" type="tns:especialidad" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="publicacionesFacultades" nillable="true" type="tns:facultad" />
-      <xs:element minOccurs="0" name="rutaImagen" type="xs:string" />
-      <xs:element minOccurs="0" name="titulo" type="xs:string" />
       <xs:element minOccurs="0" name="usuario" type="tns:usuario" />
+      <xs:element minOccurs="0" name="publicacionesCursos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="curso" type="tns:curso" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="publicacionesEspecialidades">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="especialidad" type="tns:especialidad" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="publicacionesFacultades">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="facultad" type="tns:facultad" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="date">
     <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="curso">
-    <xs:sequence>
-      <xs:element name="activo" type="xs:boolean" />
-      <xs:element name="idCurso" type="xs:int" />
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="especialidad">
-    <xs:sequence>
-      <xs:element name="activo" type="xs:boolean" />
-      <xs:element name="idEspecialidad" type="xs:int" />
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="facultad">
-    <xs:sequence>
-      <xs:element name="activo" type="xs:boolean" />
-      <xs:element name="idFacultad" type="xs:int" />
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="usuario">
     <xs:sequence>
@@ -79,6 +80,27 @@
       <xs:element name="idUsuario" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
       <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="curso">
+    <xs:sequence>
+      <xs:element name="idCurso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="especialidad">
+    <xs:sequence>
+      <xs:element name="idEspecialidad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facultad">
+    <xs:sequence>
+      <xs:element name="idFacultad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="actualizarNotificacion">

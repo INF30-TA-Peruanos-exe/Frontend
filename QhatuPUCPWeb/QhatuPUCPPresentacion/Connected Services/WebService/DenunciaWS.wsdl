@@ -5,23 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/DenunciaWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="obtenerDenuncia">
-    <part name="parameters" element="tns:obtenerDenuncia" />
+  <message name="registrarDenuncia">
+    <part name="parameters" element="tns:registrarDenuncia" />
   </message>
-  <message name="obtenerDenunciaResponse">
-    <part name="parameters" element="tns:obtenerDenunciaResponse" />
+  <message name="registrarDenunciaResponse">
+    <part name="parameters" element="tns:registrarDenunciaResponse" />
   </message>
   <message name="eliminarDenuncia">
     <part name="parameters" element="tns:eliminarDenuncia" />
   </message>
   <message name="eliminarDenunciaResponse">
     <part name="parameters" element="tns:eliminarDenunciaResponse" />
-  </message>
-  <message name="registrarDenuncia">
-    <part name="parameters" element="tns:registrarDenuncia" />
-  </message>
-  <message name="registrarDenunciaResponse">
-    <part name="parameters" element="tns:registrarDenunciaResponse" />
   </message>
   <message name="actualizarDenuncia">
     <part name="parameters" element="tns:actualizarDenuncia" />
@@ -35,18 +29,20 @@
   <message name="listarDenunciaResponse">
     <part name="parameters" element="tns:listarDenunciaResponse" />
   </message>
+  <message name="obtenerDenuncia">
+    <part name="parameters" element="tns:obtenerDenuncia" />
+  </message>
+  <message name="obtenerDenunciaResponse">
+    <part name="parameters" element="tns:obtenerDenunciaResponse" />
+  </message>
   <portType name="DenunciaWS">
-    <operation name="obtenerDenuncia">
-      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaRequest" message="tns:obtenerDenuncia" />
-      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaResponse" message="tns:obtenerDenunciaResponse" />
+    <operation name="registrarDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest" message="tns:registrarDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse" message="tns:registrarDenunciaResponse" />
     </operation>
     <operation name="eliminarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
-    </operation>
-    <operation name="registrarDenuncia">
-      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest" message="tns:registrarDenuncia" />
-      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse" message="tns:registrarDenunciaResponse" />
     </operation>
     <operation name="actualizarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest" message="tns:actualizarDenuncia" />
@@ -56,10 +52,14 @@
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaRequest" message="tns:listarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaResponse" message="tns:listarDenunciaResponse" />
     </operation>
+    <operation name="obtenerDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaRequest" message="tns:obtenerDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaResponse" message="tns:obtenerDenunciaResponse" />
+    </operation>
   </portType>
   <binding name="DenunciaWSPortBinding" type="tns:DenunciaWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="obtenerDenuncia">
+    <operation name="registrarDenuncia">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -69,15 +69,6 @@
       </output>
     </operation>
     <operation name="eliminarDenuncia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="registrarDenuncia">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -96,6 +87,15 @@
       </output>
     </operation>
     <operation name="listarDenuncia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerDenuncia">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

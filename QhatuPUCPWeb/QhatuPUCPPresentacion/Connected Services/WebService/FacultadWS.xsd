@@ -4,6 +4,7 @@
   <xs:element name="actualizarFacultadResponse" type="tns:actualizarFacultadResponse" />
   <xs:element name="eliminarFacultad" type="tns:eliminarFacultad" />
   <xs:element name="eliminarFacultadResponse" type="tns:eliminarFacultadResponse" />
+  <xs:element name="facultad" type="tns:facultad" />
   <xs:element name="listarFacultad" type="tns:listarFacultad" />
   <xs:element name="listarFacultadResponse" type="tns:listarFacultadResponse" />
   <xs:element name="obtenerFacultad" type="tns:obtenerFacultad" />
@@ -22,9 +23,9 @@
   </xs:complexType>
   <xs:complexType name="facultad">
     <xs:sequence>
-      <xs:element name="activo" type="xs:boolean" />
       <xs:element name="idFacultad" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="eliminarFacultad">

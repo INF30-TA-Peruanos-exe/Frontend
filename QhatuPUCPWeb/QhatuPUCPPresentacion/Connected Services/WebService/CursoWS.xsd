@@ -2,6 +2,7 @@
 <xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="actualizarCurso" type="tns:actualizarCurso" />
   <xs:element name="actualizarCursoResponse" type="tns:actualizarCursoResponse" />
+  <xs:element name="curso" type="tns:curso" />
   <xs:element name="eliminarCurso" type="tns:eliminarCurso" />
   <xs:element name="eliminarCursoResponse" type="tns:eliminarCursoResponse" />
   <xs:element name="listarCurso" type="tns:listarCurso" />
@@ -30,9 +31,9 @@
   </xs:complexType>
   <xs:complexType name="curso">
     <xs:sequence>
-      <xs:element name="activo" type="xs:boolean" />
       <xs:element name="idCurso" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="actualizarCurso">

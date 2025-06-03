@@ -4,6 +4,7 @@
   <xs:element name="actualizarEspecialidadResponse" type="tns:actualizarEspecialidadResponse" />
   <xs:element name="eliminarEspecialidad" type="tns:eliminarEspecialidad" />
   <xs:element name="eliminarEspecialidadResponse" type="tns:eliminarEspecialidadResponse" />
+  <xs:element name="especialidad" type="tns:especialidad" />
   <xs:element name="listarEspecialidad" type="tns:listarEspecialidad" />
   <xs:element name="listarEspecialidadResponse" type="tns:listarEspecialidadResponse" />
   <xs:element name="obtenerEspecialidad" type="tns:obtenerEspecialidad" />
@@ -17,9 +18,9 @@
   </xs:complexType>
   <xs:complexType name="especialidad">
     <xs:sequence>
-      <xs:element name="activo" type="xs:boolean" />
       <xs:element name="idEspecialidad" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="actualizarEspecialidadResponse">
