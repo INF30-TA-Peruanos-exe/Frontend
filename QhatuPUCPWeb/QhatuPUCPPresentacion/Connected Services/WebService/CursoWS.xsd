@@ -43,14 +43,6 @@
   <xs:complexType name="actualizarCursoResponse">
     <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="registrarCurso">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="curso" type="tns:curso" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="registrarCursoResponse">
-    <xs:sequence />
-  </xs:complexType>
   <xs:complexType name="listarCurso">
     <xs:sequence />
   </xs:complexType>
@@ -58,5 +50,13 @@
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:curso" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarCurso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="curso" type="tns:curso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarCursoResponse">
+    <xs:sequence />
   </xs:complexType>
 </xs:schema>

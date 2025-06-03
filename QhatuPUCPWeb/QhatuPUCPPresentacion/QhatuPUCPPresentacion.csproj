@@ -246,6 +246,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="HacerPubli\estilos_postear.css" />
+    <Content Include="HacerPubli\Postear.aspx" />
     <Content Include="Inicio\Login.aspx" />
     <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
@@ -300,6 +302,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="HacerPubli\Postear.aspx.cs">
+      <DependentUpon>Postear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HacerPubli\Postear.aspx.designer.cs">
+      <DependentUpon>Postear.aspx</DependentUpon>
     </Compile>
     <Compile Include="Inicio\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -365,7 +374,6 @@
     <Folder Include="Favoritos\" />
     <Folder Include="Notificaciones\" />
     <Folder Include="Perfil\" />
-    <Folder Include="Postear\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

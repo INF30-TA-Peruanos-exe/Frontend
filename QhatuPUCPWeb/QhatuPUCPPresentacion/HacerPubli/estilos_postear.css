@@ -1,0 +1,16 @@
+﻿.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    box-shadow: none;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 1rem;
+}

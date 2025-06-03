@@ -5,29 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/FacultadWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="listarFacultad">
-    <part name="parameters" element="tns:listarFacultad" />
-  </message>
-  <message name="listarFacultadResponse">
-    <part name="parameters" element="tns:listarFacultadResponse" />
-  </message>
   <message name="actualizarFacultad">
     <part name="parameters" element="tns:actualizarFacultad" />
   </message>
   <message name="actualizarFacultadResponse">
     <part name="parameters" element="tns:actualizarFacultadResponse" />
   </message>
-  <message name="registrarFacultad">
-    <part name="parameters" element="tns:registrarFacultad" />
+  <message name="listarFacultad">
+    <part name="parameters" element="tns:listarFacultad" />
   </message>
-  <message name="registrarFacultadResponse">
-    <part name="parameters" element="tns:registrarFacultadResponse" />
-  </message>
-  <message name="eliminarFacultad">
-    <part name="parameters" element="tns:eliminarFacultad" />
-  </message>
-  <message name="eliminarFacultadResponse">
-    <part name="parameters" element="tns:eliminarFacultadResponse" />
+  <message name="listarFacultadResponse">
+    <part name="parameters" element="tns:listarFacultadResponse" />
   </message>
   <message name="obtenerFacultad">
     <part name="parameters" element="tns:obtenerFacultad" />
@@ -35,39 +23,42 @@
   <message name="obtenerFacultadResponse">
     <part name="parameters" element="tns:obtenerFacultadResponse" />
   </message>
+  <message name="eliminarFacultad">
+    <part name="parameters" element="tns:eliminarFacultad" />
+  </message>
+  <message name="eliminarFacultadResponse">
+    <part name="parameters" element="tns:eliminarFacultadResponse" />
+  </message>
+  <message name="registrarFacultad">
+    <part name="parameters" element="tns:registrarFacultad" />
+  </message>
+  <message name="registrarFacultadResponse">
+    <part name="parameters" element="tns:registrarFacultadResponse" />
+  </message>
   <portType name="FacultadWS">
-    <operation name="listarFacultad">
-      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest" message="tns:listarFacultad" />
-      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse" message="tns:listarFacultadResponse" />
-    </operation>
     <operation name="actualizarFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest" message="tns:actualizarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse" message="tns:actualizarFacultadResponse" />
     </operation>
-    <operation name="registrarFacultad">
-      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest" message="tns:registrarFacultad" />
-      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse" message="tns:registrarFacultadResponse" />
-    </operation>
-    <operation name="eliminarFacultad">
-      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest" message="tns:eliminarFacultad" />
-      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse" message="tns:eliminarFacultadResponse" />
+    <operation name="listarFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest" message="tns:listarFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse" message="tns:listarFacultadResponse" />
     </operation>
     <operation name="obtenerFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest" message="tns:obtenerFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse" message="tns:obtenerFacultadResponse" />
     </operation>
+    <operation name="eliminarFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest" message="tns:eliminarFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse" message="tns:eliminarFacultadResponse" />
+    </operation>
+    <operation name="registrarFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest" message="tns:registrarFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse" message="tns:registrarFacultadResponse" />
+    </operation>
   </portType>
   <binding name="FacultadWSPortBinding" type="tns:FacultadWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarFacultad">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="actualizarFacultad">
       <soap:operation soapAction="" />
       <input>
@@ -77,7 +68,16 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="registrarFacultad">
+    <operation name="listarFacultad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerFacultad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -95,7 +95,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="obtenerFacultad">
+    <operation name="registrarFacultad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

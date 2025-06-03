@@ -89,6 +89,14 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="listarPublicacion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPublicacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="cambiarEstadoPublicacion">
     <xs:sequence>
       <xs:element name="idPublicacion" type="xs:int" />
@@ -97,14 +105,6 @@
   </xs:complexType>
   <xs:complexType name="cambiarEstadoPublicacionResponse">
     <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarPublicacion">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarPublicacionResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
-    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="obtenerPublicacion">
     <xs:sequence>

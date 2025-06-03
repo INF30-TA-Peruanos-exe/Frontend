@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="c08eff26-035e-4bbd-8da8-67b329d32619" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="d69eb6d5-4249-4586-8cb9-4b67182177e0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,25 +22,25 @@
     <MetadataSource Address="http://localhost:8080/WebService/servicios.disco" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CursoWS.xsd" MetadataType="Schema" ID="27a5d164-9317-4a82-a0f4-1f27d89d1651" SourceId="1" SourceUrl="http://localhost:8080/WebService/CursoWS?xsd=1" />
-    <MetadataFile FileName="servicios.disco" MetadataType="Disco" ID="99c769c0-8e0f-4e1d-9861-886c3c873c80" SourceId="1" SourceUrl="http://localhost:8080/WebService/servicios.disco" />
-    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="4a1546dc-9af3-44c1-a5ca-04da13b0df1f" SourceId="1" SourceUrl="http://localhost:8080/WebService/UsuarioWS?wsdl" />
-    <MetadataFile FileName="PublicacionWS.wsdl" MetadataType="Wsdl" ID="0f802c18-40f2-4b19-8381-8925cdb486fb" SourceId="1" SourceUrl="http://localhost:8080/WebService/PublicacionWS?wsdl" />
-    <MetadataFile FileName="CursoWS.wsdl" MetadataType="Wsdl" ID="cf41909d-f3de-42ce-9261-1b877dfa1b81" SourceId="1" SourceUrl="http://localhost:8080/WebService/CursoWS?wsdl" />
-    <MetadataFile FileName="PublicacionWS.xsd" MetadataType="Schema" ID="df8a9a76-0a76-478c-ab1d-e7514d8dcbb3" SourceId="1" SourceUrl="http://localhost:8080/WebService/PublicacionWS?xsd=1" />
-    <MetadataFile FileName="DenunciaWS.xsd" MetadataType="Schema" ID="51b79679-a71c-4455-9bc0-61108a81dd66" SourceId="1" SourceUrl="http://localhost:8080/WebService/DenunciaWS?xsd=1" />
-    <MetadataFile FileName="AdministradorWS.xsd" MetadataType="Schema" ID="acd3b420-ba31-4e0b-9d8c-aabcbf840624" SourceId="1" SourceUrl="http://localhost:8080/WebService/AdministradorWS?xsd=1" />
-    <MetadataFile FileName="NotificacionWS.xsd" MetadataType="Schema" ID="13811933-e5d0-43cc-8726-3b22d0071058" SourceId="1" SourceUrl="http://localhost:8080/WebService/NotificacionWS?xsd=1" />
-    <MetadataFile FileName="AdministradorWS.wsdl" MetadataType="Wsdl" ID="f0220f77-8524-4b5f-a814-29b68c938fc7" SourceId="1" SourceUrl="http://localhost:8080/WebService/AdministradorWS?wsdl" />
-    <MetadataFile FileName="FacultadWS.xsd" MetadataType="Schema" ID="27977a2b-a082-4377-9ea6-9550e44f18dd" SourceId="1" SourceUrl="http://localhost:8080/WebService/FacultadWS?xsd=1" />
-    <MetadataFile FileName="NotificacionWS.wsdl" MetadataType="Wsdl" ID="6e1ae7a9-d854-47ee-9bc6-3097d18253ab" SourceId="1" SourceUrl="http://localhost:8080/WebService/NotificacionWS?wsdl" />
-    <MetadataFile FileName="FacultadWS.wsdl" MetadataType="Wsdl" ID="90f9c4c6-667e-4b75-aac7-ba5c5958ede2" SourceId="1" SourceUrl="http://localhost:8080/WebService/FacultadWS?wsdl" />
-    <MetadataFile FileName="ComentarioWS.xsd" MetadataType="Schema" ID="055f6484-5838-404e-999c-ed211a69bf56" SourceId="1" SourceUrl="http://localhost:8080/WebService/ComentarioWS?xsd=1" />
-    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="f7b3590b-fb01-4a2a-90b0-5584c07edf01" SourceId="1" SourceUrl="http://localhost:8080/WebService/UsuarioWS?xsd=1" />
-    <MetadataFile FileName="ComentarioWS.wsdl" MetadataType="Wsdl" ID="59b7ff47-c836-448c-9c4d-30104932f048" SourceId="1" SourceUrl="http://localhost:8080/WebService/ComentarioWS?wsdl" />
-    <MetadataFile FileName="EspecialidadWS.wsdl" MetadataType="Wsdl" ID="e7a88ce9-ae82-45aa-b297-75852508ba55" SourceId="1" SourceUrl="http://localhost:8080/WebService/EspecialidadWS?wsdl" />
-    <MetadataFile FileName="DenunciaWS.wsdl" MetadataType="Wsdl" ID="9a8ad785-2b29-4e32-92fc-bb1d39857e57" SourceId="1" SourceUrl="http://localhost:8080/WebService/DenunciaWS?wsdl" />
-    <MetadataFile FileName="EspecialidadWS.xsd" MetadataType="Schema" ID="af621f16-a201-48d5-9f2e-3dc79f114daa" SourceId="1" SourceUrl="http://localhost:8080/WebService/EspecialidadWS?xsd=1" />
+    <MetadataFile FileName="CursoWS.xsd" MetadataType="Schema" ID="f9ca102c-a09f-4912-a4a2-a473053b4810" SourceId="1" SourceUrl="http://localhost:8080/WebService/CursoWS?xsd=1" />
+    <MetadataFile FileName="servicios.disco" MetadataType="Disco" ID="d18322c2-5376-4539-a0a5-d89736b6a87c" SourceId="1" SourceUrl="http://localhost:8080/WebService/servicios.disco" />
+    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="2b6d6375-f38b-46eb-8d2b-ea4d6a683e87" SourceId="1" SourceUrl="http://localhost:8080/WebService/UsuarioWS?wsdl" />
+    <MetadataFile FileName="PublicacionWS.wsdl" MetadataType="Wsdl" ID="fccb3df7-467e-4750-bbe4-b455d1bf5910" SourceId="1" SourceUrl="http://localhost:8080/WebService/PublicacionWS?wsdl" />
+    <MetadataFile FileName="CursoWS.wsdl" MetadataType="Wsdl" ID="dd685cd6-ac2b-4e6b-a358-1a01075d26b5" SourceId="1" SourceUrl="http://localhost:8080/WebService/CursoWS?wsdl" />
+    <MetadataFile FileName="PublicacionWS.xsd" MetadataType="Schema" ID="0d26845d-59bf-4047-92a8-2d599f1fc470" SourceId="1" SourceUrl="http://localhost:8080/WebService/PublicacionWS?xsd=1" />
+    <MetadataFile FileName="DenunciaWS.xsd" MetadataType="Schema" ID="376c1c0e-c0ce-4a35-b3b2-378983edde55" SourceId="1" SourceUrl="http://localhost:8080/WebService/DenunciaWS?xsd=1" />
+    <MetadataFile FileName="AdministradorWS.xsd" MetadataType="Schema" ID="98406284-66bb-4a74-ac77-c60b02c372fb" SourceId="1" SourceUrl="http://localhost:8080/WebService/AdministradorWS?xsd=1" />
+    <MetadataFile FileName="NotificacionWS.xsd" MetadataType="Schema" ID="f4422fd5-d8e5-44b3-ad5d-f063f3c318b1" SourceId="1" SourceUrl="http://localhost:8080/WebService/NotificacionWS?xsd=1" />
+    <MetadataFile FileName="AdministradorWS.wsdl" MetadataType="Wsdl" ID="375a08b6-af38-4591-8860-22bc1f2a184a" SourceId="1" SourceUrl="http://localhost:8080/WebService/AdministradorWS?wsdl" />
+    <MetadataFile FileName="FacultadWS.xsd" MetadataType="Schema" ID="de103c5a-84e3-4a0f-9f3b-dff1aa091674" SourceId="1" SourceUrl="http://localhost:8080/WebService/FacultadWS?xsd=1" />
+    <MetadataFile FileName="NotificacionWS.wsdl" MetadataType="Wsdl" ID="7c315b25-cf1a-4460-bdd8-06971fed9d45" SourceId="1" SourceUrl="http://localhost:8080/WebService/NotificacionWS?wsdl" />
+    <MetadataFile FileName="FacultadWS.wsdl" MetadataType="Wsdl" ID="0a7caa1d-d3c6-4e67-a0ca-f1e569ede929" SourceId="1" SourceUrl="http://localhost:8080/WebService/FacultadWS?wsdl" />
+    <MetadataFile FileName="ComentarioWS.xsd" MetadataType="Schema" ID="318ef5f3-af0e-4d7a-826a-4aed76eb22a8" SourceId="1" SourceUrl="http://localhost:8080/WebService/ComentarioWS?xsd=1" />
+    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="89593a6f-fad0-43f0-a19e-35918d768078" SourceId="1" SourceUrl="http://localhost:8080/WebService/UsuarioWS?xsd=1" />
+    <MetadataFile FileName="ComentarioWS.wsdl" MetadataType="Wsdl" ID="02109d0e-d522-4f6d-a14c-235557b3f91f" SourceId="1" SourceUrl="http://localhost:8080/WebService/ComentarioWS?wsdl" />
+    <MetadataFile FileName="EspecialidadWS.wsdl" MetadataType="Wsdl" ID="c1b7519d-08c1-4d60-87ee-53473a0a6761" SourceId="1" SourceUrl="http://localhost:8080/WebService/EspecialidadWS?wsdl" />
+    <MetadataFile FileName="DenunciaWS.wsdl" MetadataType="Wsdl" ID="17710a8e-4540-4e18-923c-76a2b4fe9b47" SourceId="1" SourceUrl="http://localhost:8080/WebService/DenunciaWS?wsdl" />
+    <MetadataFile FileName="EspecialidadWS.xsd" MetadataType="Schema" ID="1707e1eb-1bad-4451-ba44-0afe6d4f5490" SourceId="1" SourceUrl="http://localhost:8080/WebService/EspecialidadWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
