@@ -256,6 +256,7 @@
     <Content Include="Perfil\Perfil.aspx" />
     <Content Include="Perfil\style.css" />
     <Content Include="Perfil\styleguide.css" />
+    <Content Include="Publicacion\DetallePublicacion.aspx" />
     <Content Include="Public\css\bootstrap-reboot.css" />
     <Content Include="Public\css\bootstrap-reboot.min.css" />
     <Content Include="Public\css\bootstrap.css" />
@@ -352,6 +353,13 @@
     </Compile>
     <Compile Include="MainLayout.Master.designer.cs">
       <DependentUpon>MainLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Publicacion\DetallePublicacion.aspx.cs">
+      <DependentUpon>DetallePublicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publicacion\DetallePublicacion.aspx.designer.cs">
+      <DependentUpon>DetallePublicacion.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
