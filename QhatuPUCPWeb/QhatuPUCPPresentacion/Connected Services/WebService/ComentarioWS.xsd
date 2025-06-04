@@ -1,15 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://publicacion.webservice.pucp.com/" targetNamespace="http://publicacion.webservice.pucp.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="hello" type="tns:hello" />
-  <xs:element name="helloResponse" type="tns:helloResponse" />
-  <xs:complexType name="hello">
+<xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="actualizarComentario" type="tns:actualizarComentario" />
+  <xs:element name="actualizarComentarioResponse" type="tns:actualizarComentarioResponse" />
+  <xs:element name="curso" type="tns:curso" />
+  <xs:element name="eliminarComentario" type="tns:eliminarComentario" />
+  <xs:element name="eliminarComentarioResponse" type="tns:eliminarComentarioResponse" />
+  <xs:element name="especialidad" type="tns:especialidad" />
+  <xs:element name="facultad" type="tns:facultad" />
+  <xs:element name="listarComentario" type="tns:listarComentario" />
+  <xs:element name="listarComentarioResponse" type="tns:listarComentarioResponse" />
+  <xs:element name="obtenerComentario" type="tns:obtenerComentario" />
+  <xs:element name="obtenerComentarioResponse" type="tns:obtenerComentarioResponse" />
+  <xs:element name="publicacion" type="tns:publicacion" />
+  <xs:element name="registrarComentario" type="tns:registrarComentario" />
+  <xs:element name="registrarComentarioResponse" type="tns:registrarComentarioResponse" />
+  <xs:complexType name="registrarComentario">
     <xs:sequence>
-      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="comentario" type="tns:comentario" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="helloResponse">
+  <xs:complexType name="comentario">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="comentador" type="tns:usuario" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="tns:date" />
+      <xs:element name="idComentario" type="xs:int" />
+      <xs:element minOccurs="0" name="publicacion" type="tns:publicacion" />
+      <xs:element name="valoracion" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="codigoPUCP" type="xs:int" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="date">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="publicacion">
+    <xs:sequence>
+      <xs:element name="idPublicacion" type="xs:int" />
+      <xs:element minOccurs="0" name="titulo" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="rutaImagen" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoPublicacion" />
+      <xs:element minOccurs="0" name="fechaPublicacion" type="tns:date" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuario" />
+      <xs:element minOccurs="0" name="publicacionesCursos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="curso" type="tns:curso" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="publicacionesEspecialidades">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="especialidad" type="tns:especialidad" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="publicacionesFacultades">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="facultad" type="tns:facultad" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="curso">
+    <xs:sequence>
+      <xs:element name="idCurso" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="especialidad">
+    <xs:sequence>
+      <xs:element name="idEspecialidad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="facultad">
+    <xs:sequence>
+      <xs:element name="idFacultad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarComentarioResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="eliminarComentario">
+    <xs:sequence>
+      <xs:element name="idComentario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarComentarioResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="obtenerComentario">
+    <xs:sequence>
+      <xs:element name="idComentario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerComentarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:comentario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarComentario">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarComentarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:comentario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarComentario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="comentario" type="tns:comentario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarComentarioResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:simpleType name="estadoUsuario">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HABILITADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="estadoPublicacion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VISIBLE" />
+      <xs:enumeration value="GUARDADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+      <xs:enumeration value="OCULTO" />
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>

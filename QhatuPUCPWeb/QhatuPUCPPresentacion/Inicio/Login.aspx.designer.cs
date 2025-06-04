@@ -78,6 +78,15 @@ namespace QhatuPUCPPresentacion.Inicio
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
 
         /// <summary>
+        /// Control txtCodigoPucp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCodigoPucp;
+
+        /// <summary>
         /// Control txtCorreoNuevo.
         /// </summary>
         /// <remarks>
@@ -87,13 +96,13 @@ namespace QhatuPUCPPresentacion.Inicio
         protected global::System.Web.UI.WebControls.TextBox txtCorreoNuevo;
 
         /// <summary>
-        /// Control txtTelefono.
+        /// Control txtNombreUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelefono;
+        protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
 
         /// <summary>
         /// Control txtContrasenaNueva.

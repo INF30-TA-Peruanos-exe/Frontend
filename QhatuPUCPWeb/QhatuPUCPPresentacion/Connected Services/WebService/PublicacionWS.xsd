@@ -2,15 +2,21 @@
 <xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="actualizarPublicacion" type="tns:actualizarPublicacion" />
   <xs:element name="actualizarPublicacionResponse" type="tns:actualizarPublicacionResponse" />
+  <xs:element name="agregarFavoritos" type="tns:agregarFavoritos" />
+  <xs:element name="agregarFavoritosResponse" type="tns:agregarFavoritosResponse" />
   <xs:element name="cambiarEstadoPublicacion" type="tns:cambiarEstadoPublicacion" />
   <xs:element name="cambiarEstadoPublicacionResponse" type="tns:cambiarEstadoPublicacionResponse" />
   <xs:element name="crearPublicacion" type="tns:crearPublicacion" />
   <xs:element name="crearPublicacionResponse" type="tns:crearPublicacionResponse" />
   <xs:element name="curso" type="tns:curso" />
+  <xs:element name="eliminarFavoritos" type="tns:eliminarFavoritos" />
+  <xs:element name="eliminarFavoritosResponse" type="tns:eliminarFavoritosResponse" />
   <xs:element name="eliminarPublicacion" type="tns:eliminarPublicacion" />
   <xs:element name="eliminarPublicacionResponse" type="tns:eliminarPublicacionResponse" />
   <xs:element name="especialidad" type="tns:especialidad" />
   <xs:element name="facultad" type="tns:facultad" />
+  <xs:element name="listarFavoritos" type="tns:listarFavoritos" />
+  <xs:element name="listarFavoritosResponse" type="tns:listarFavoritosResponse" />
   <xs:element name="listarPorCurso" type="tns:listarPorCurso" />
   <xs:element name="listarPorCursoResponse" type="tns:listarPorCursoResponse" />
   <xs:element name="listarPorEspecialidad" type="tns:listarPorEspecialidad" />
@@ -22,12 +28,12 @@
   <xs:element name="obtenerPublicacion" type="tns:obtenerPublicacion" />
   <xs:element name="obtenerPublicacionResponse" type="tns:obtenerPublicacionResponse" />
   <xs:element name="publicacion" type="tns:publicacion" />
-  <xs:complexType name="listarPorFacultad">
+  <xs:complexType name="listarFavoritos">
     <xs:sequence>
-      <xs:element name="idFacultad" type="xs:int" />
+      <xs:element name="idUsuario" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarPorFacultadResponse">
+  <xs:complexType name="listarFavoritosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
@@ -101,12 +107,30 @@
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="listarPorFacultad">
+    <xs:sequence>
+      <xs:element name="idFacultad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorFacultadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarPorCurso">
     <xs:sequence>
       <xs:element name="idCurso" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarPorCursoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPublicacion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPublicacionResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
@@ -120,14 +144,6 @@
   <xs:complexType name="cambiarEstadoPublicacionResponse">
     <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="listarPublicacion">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarPublicacionResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="obtenerPublicacion">
     <xs:sequence>
       <xs:element name="idPublicacion" type="xs:int" />
@@ -137,6 +153,24 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="tns:publicacion" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarFavoritos">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element name="idPublicacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarFavoritosResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="eliminarFavoritos">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element name="idPublicacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFavoritosResponse">
+    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="actualizarPublicacion">
     <xs:sequence>

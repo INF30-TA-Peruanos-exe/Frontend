@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\inicio\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\inicio\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayout.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,33 +26,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAUwGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T15:41:02.066Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwG8AAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T15:41:02.066Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Login.aspx",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Login.aspx",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -63,9 +63,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainLayout.Master",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayout.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -75,9 +75,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainLayout.Master.designer.cs",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwCQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

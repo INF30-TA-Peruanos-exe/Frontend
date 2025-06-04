@@ -18,7 +18,10 @@ namespace QhatuPUCPPresentacion.Inicio
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                usuarioService = new UsuarioWSClient();
+            }
         }
 
         protected void BtnLogin_Click(object sender, EventArgs e)
@@ -76,13 +79,14 @@ namespace QhatuPUCPPresentacion.Inicio
         protected void BtnSignup_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text.Trim();
+            string codigoPucp = txtCodigoPucp.Text.Trim();
             string correo = txtCorreoNuevo.Text.Trim();
-            string telefono = txtTelefono.Text.Trim();
+            string nombreUsuario = txtNombreUsuario.Text.Trim();
             string contrasena = txtContrasenaNueva.Text.Trim();
 
             // Reemplaza el bloque de validación en BtnSignup_Click:
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(correo) ||
-                string.IsNullOrEmpty(telefono) || string.IsNullOrEmpty(contrasena))
+                string.IsNullOrEmpty(codigoPucp) || string.IsNullOrEmpty(contrasena) || string.IsNullOrEmpty(nombreUsuario))
             {
                 lblSignupError.Text = "Por favor, complete todos los campos.";
                 // Mantener el tab "pills-profile" activo usando JavaScript
@@ -93,10 +97,26 @@ namespace QhatuPUCPPresentacion.Inicio
 
             try
             {
-                // Aquí deberías insertar los datos en tu base de datos
-                // o llamar a una capa de lógica de negocio para registrar al usuario
-                // Ejemplo (ficticio):
-                // UsuarioBL.RegistrarUsuario(nombre, correo, telefono, contrasena);
+                usuario usuario = new usuario
+                {
+                    activo = true,
+                    codigoPUCP = int.Parse(codigoPucp),
+                    correo = correo,
+                    contrasena = contrasena,
+                    nombre = nombre,
+                    estado = (estadoUsuario)0,
+                    nombreUsuario = nombreUsuario
+                };
+
+                // Imprimir el valor de estado para pruebas en la consola del navegador
+                System.Diagnostics.Debug.WriteLine("Valor de estado: " + usuario.estado);
+                System.Diagnostics.Debug.WriteLine("usuario es nulo? " + (usuario == null));
+                System.Diagnostics.Debug.WriteLine("correo: " + usuario.correo);
+                System.Diagnostics.Debug.WriteLine("nombreUsuario: " + usuario.nombreUsuario);
+                System.Diagnostics.Debug.WriteLine("Usuario Service: " + usuarioService);
+
+                // Aquí deberías consumir tu WebService de Usuario para registrar el nuevo usuario
+                usuarioService.registrarUsuario(usuario);
 
                 lblSignupError.CssClass = "text-success mt-2";
                 lblSignupError.Text = "Usuario registrado correctamente.";

@@ -158,9 +158,6 @@
     <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.helloResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.helloResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarCursoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -237,6 +234,33 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.actualizarComentarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.agregarFavoritosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.comentario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.eliminarComentarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarComentarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarFavoritosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.obtenerComentarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.registrarComentarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\WebService\servicios.disco" />
