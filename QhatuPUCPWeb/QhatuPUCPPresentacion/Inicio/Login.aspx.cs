@@ -73,9 +73,58 @@ namespace QhatuPUCPPresentacion.Inicio
 
         }
 
-        protected void btnSignup_Click(object sender, EventArgs e)
+        protected void BtnSignup_Click(object sender, EventArgs e)
         {
-            // Lógica para registro (opcional si no se va a implementar)
+            string nombre = txtNombre.Text.Trim();
+            string codigoPucp = txtCodigoPucp.Text.Trim();
+            string correo = txtCorreoNuevo.Text.Trim();
+            string nombreUsuario = txtNombreUsuario.Text.Trim();
+            string contrasena = txtContrasenaNueva.Text.Trim();
+
+            // Reemplaza el bloque de validación en BtnSignup_Click:
+            if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(correo) ||
+                string.IsNullOrEmpty(codigoPucp) || string.IsNullOrEmpty(contrasena) || string.IsNullOrEmpty(nombreUsuario))
+            {
+                lblSignupError.Text = "Por favor, complete todos los campos.";
+                // Mantener el tab "pills-profile" activo usando JavaScript
+                ScriptManager.RegisterStartupScript(this, GetType(), "activarProfileTab",
+                    "$('#pills-profile-tab').tab('show');", true);
+                return;
+            }
+
+            try
+            {
+                usuario usuario = new usuario
+                {
+                    activo = true,
+                    codigoPUCP = int.Parse(codigoPucp),
+                    correo = correo,
+                    contrasena = contrasena,
+                    nombre = nombre,
+                    nombreUsuario = nombreUsuario
+                };
+
+                usuario.estado = estadoUsuario.HABILITADO; // o RESTRINGIDO si deseas eso
+                usuario.estadoSpecified = true;
+
+
+                // Imprimir el valor de estado para pruebas en la consola del navegador
+                System.Diagnostics.Debug.WriteLine("Valor de estado: " + usuario.estado);
+                System.Diagnostics.Debug.WriteLine("usuario es nulo? " + (usuario == null));
+                System.Diagnostics.Debug.WriteLine("correo: " + usuario.correo);
+                System.Diagnostics.Debug.WriteLine("nombreUsuario: " + usuario.nombreUsuario);
+                System.Diagnostics.Debug.WriteLine("Usuario Service: " + usuarioService);
+
+                // Aquí deberías consumir tu WebService de Usuario para registrar el nuevo usuario
+                usuarioService.registrarUsuario(usuario);
+
+                lblSignupError.CssClass = "text-success mt-2";
+                lblSignupError.Text = "Usuario registrado correctamente.";
+            }
+            catch (Exception ex)
+            {
+                lblSignupError.Text = "Error al registrar: " + ex.Message;
+            }
         }
 
     }
