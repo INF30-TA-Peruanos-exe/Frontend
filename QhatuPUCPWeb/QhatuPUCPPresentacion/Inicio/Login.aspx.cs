@@ -104,9 +104,12 @@ namespace QhatuPUCPPresentacion.Inicio
                     correo = correo,
                     contrasena = contrasena,
                     nombre = nombre,
-                    estado = (estadoUsuario)0,
                     nombreUsuario = nombreUsuario
                 };
+
+                usuario.estado = estadoUsuario.HABILITADO; // o RESTRINGIDO si deseas eso
+                usuario.estadoSpecified = true;
+
 
                 // Imprimir el valor de estado para pruebas en la consola del navegador
                 System.Diagnostics.Debug.WriteLine("Valor de estado: " + usuario.estado);
