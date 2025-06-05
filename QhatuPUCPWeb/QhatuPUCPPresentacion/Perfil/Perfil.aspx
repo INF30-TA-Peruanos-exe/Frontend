@@ -6,6 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container mt-5 mb-5">
+        <!-- CARD DE PERFIL -->
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card shadow" style="background-color: #f8f9fa;">
@@ -22,7 +23,7 @@
             </div>
         </div>
 
-        <!-- Publicaciones del usuario -->
+        <!-- REPETIDOR DE PUBLICACIONES -->
         <div class="row justify-content-center mt-5">
             <div class="col-md-10">
                 <h3 class="mb-4">Mis Publicaciones</h3>
@@ -32,16 +33,14 @@
                             <div class="card-body">
                                 <h5 class="card-title"><%# Eval("titulo") %></h5>
                                 <p class="card-text"><%# Eval("descripcion") %></p>
-                                <small class="text-muted">Publicado el <%# FormatearFechaString(Eval("fechaPublicacion")) %></small>
-
+                                <small class="text-muted">Publicado el <%# Container.Page.GetType().GetMethod("FormatearFechaString").Invoke(Container.Page, new object[] { Eval("idPublicacion") }) %></small>
                             </div>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
         </div>
-</div>
-
+    </div>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">

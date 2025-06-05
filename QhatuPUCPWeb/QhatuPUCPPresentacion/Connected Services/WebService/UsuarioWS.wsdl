@@ -5,17 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/UsuarioWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="eliminarUsuario">
-    <part name="parameters" element="tns:eliminarUsuario" />
-  </message>
-  <message name="eliminarUsuarioResponse">
-    <part name="parameters" element="tns:eliminarUsuarioResponse" />
-  </message>
   <message name="listarUsuarios">
     <part name="parameters" element="tns:listarUsuarios" />
   </message>
   <message name="listarUsuariosResponse">
     <part name="parameters" element="tns:listarUsuariosResponse" />
+  </message>
+  <message name="actualizarUsuario">
+    <part name="parameters" element="tns:actualizarUsuario" />
+  </message>
+  <message name="actualizarUsuarioResponse">
+    <part name="parameters" element="tns:actualizarUsuarioResponse" />
   </message>
   <message name="registrarUsuario">
     <part name="parameters" element="tns:registrarUsuario" />
@@ -23,11 +23,11 @@
   <message name="registrarUsuarioResponse">
     <part name="parameters" element="tns:registrarUsuarioResponse" />
   </message>
-  <message name="actualizarUsuario">
-    <part name="parameters" element="tns:actualizarUsuario" />
+  <message name="eliminarUsuario">
+    <part name="parameters" element="tns:eliminarUsuario" />
   </message>
-  <message name="actualizarUsuarioResponse">
-    <part name="parameters" element="tns:actualizarUsuarioResponse" />
+  <message name="eliminarUsuarioResponse">
+    <part name="parameters" element="tns:eliminarUsuarioResponse" />
   </message>
   <message name="obtenerUsuario">
     <part name="parameters" element="tns:obtenerUsuario" />
@@ -36,21 +36,21 @@
     <part name="parameters" element="tns:obtenerUsuarioResponse" />
   </message>
   <portType name="UsuarioWS">
-    <operation name="eliminarUsuario">
-      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioRequest" message="tns:eliminarUsuario" />
-      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioResponse" message="tns:eliminarUsuarioResponse" />
-    </operation>
     <operation name="listarUsuarios">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosRequest" message="tns:listarUsuarios" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosResponse" message="tns:listarUsuariosResponse" />
+    </operation>
+    <operation name="actualizarUsuario">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest" message="tns:actualizarUsuario" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse" message="tns:actualizarUsuarioResponse" />
     </operation>
     <operation name="registrarUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioRequest" message="tns:registrarUsuario" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioResponse" message="tns:registrarUsuarioResponse" />
     </operation>
-    <operation name="actualizarUsuario">
-      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest" message="tns:actualizarUsuario" />
-      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse" message="tns:actualizarUsuarioResponse" />
+    <operation name="eliminarUsuario">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioRequest" message="tns:eliminarUsuario" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioResponse" message="tns:eliminarUsuarioResponse" />
     </operation>
     <operation name="obtenerUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioRequest" message="tns:obtenerUsuario" />
@@ -59,7 +59,7 @@
   </portType>
   <binding name="UsuarioWSPortBinding" type="tns:UsuarioWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="eliminarUsuario">
+    <operation name="listarUsuarios">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -68,7 +68,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarUsuarios">
+    <operation name="actualizarUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -86,7 +86,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="actualizarUsuario">
+    <operation name="eliminarUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

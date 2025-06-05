@@ -1,8 +1,6 @@
 ﻿using QhatuPUCPPresentacion.WebService;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -20,6 +18,7 @@ namespace QhatuPUCPPresentacion.Perfil
                 }
 
                 usuario usuario = Session["usuario"] as usuario;
+
                 lblNombre.Text = "Nombre: " + usuario.nombre;
                 lblCodigoPUCP.Text = "Código PUCP: " + usuario.codigoPUCP;
                 lblCorreo.Text = "Correo: " + usuario.correo;
@@ -29,39 +28,53 @@ namespace QhatuPUCPPresentacion.Perfil
 
                 PublicacionWSClient publicacionService = new PublicacionWSClient();
                 publicacion[] todas = publicacionService.listarPublicacion();
+
                 List<publicacion> propias = new List<publicacion>();
+                Dictionary<int, string> fechasFormateadas = new Dictionary<int, string>();
 
                 foreach (publicacion p in todas)
                 {
                     if (p.usuario != null && p.usuario.idUsuario == usuario.idUsuario)
                     {
                         propias.Add(p);
-                        System.Diagnostics.Debug.WriteLine(p.fechaPublicacion.ToString()); 
+
+                        try
+                        {
+                            // ✅ LLAMADA AL NUEVO WEB SERVICE
+                            string fecha = publicacionService.obtenerFechaPublicacionFormateada(p.idPublicacion);
+                            fechasFormateadas[p.idPublicacion] = fecha;
+                        }
+                        catch
+                        {
+                            fechasFormateadas[p.idPublicacion] = "Sin fecha";
+                        }
                     }
                 }
 
+                ViewState["fechasFormateadas"] = fechasFormateadas;
                 rptPublicaciones.DataSource = propias;
                 rptPublicaciones.DataBind();
             }
         }
 
-        public string FormatearFechaString(object fechaObj)
+        public string FormatearFechaString(object idPublicacionObj)
         {
-
             try
             {
-                string fechaComoTexto = fechaObj?.ToString(); // El WS normalmente devuelve un string como "2024-06-03T00:00:00"
-                if (DateTime.TryParse(fechaComoTexto, out DateTime fecha))
+                int idPublicacion = Convert.ToInt32(idPublicacionObj);
+                var fechas = ViewState["fechasFormateadas"] as Dictionary<int, string>;
+
+                if (fechas != null && fechas.ContainsKey(idPublicacion))
                 {
-                    return fecha.ToString("dd/MM/yyyy");
+                    return fechas[idPublicacion];
                 }
             }
             catch
             {
                 return "Fecha inválida";
             }
+
             return "Sin fecha";
         }
-
     }
 }
