@@ -252,6 +252,8 @@
     <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
     <Content Include="PaginaPrueba.aspx" />
+    <Content Include="Perfil\estilos_perfil.css" />
+    <Content Include="Perfil\Perfil.aspx" />
     <Content Include="Public\css\bootstrap-reboot.css" />
     <Content Include="Public\css\bootstrap-reboot.min.css" />
     <Content Include="Public\css\bootstrap.css" />
@@ -332,6 +334,13 @@
     <Compile Include="PaginaPrueba.aspx.designer.cs">
       <DependentUpon>PaginaPrueba.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Perfil\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainLayout.Master.cs">
       <DependentUpon>MainLayout.Master</DependentUpon>
@@ -374,7 +383,6 @@
   <ItemGroup>
     <Folder Include="Favoritos\" />
     <Folder Include="Notificaciones\" />
-    <Folder Include="Perfil\" />
     <Folder Include="Publicacion\" />
   </ItemGroup>
   <ItemGroup>

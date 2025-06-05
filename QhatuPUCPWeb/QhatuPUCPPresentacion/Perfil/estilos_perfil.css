@@ -1,0 +1,10 @@
+﻿.perfil-info {
+    font-size: 1.2rem;
+    color: #212529;
+}
+
+.perfil-estado {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.25rem;
+}
