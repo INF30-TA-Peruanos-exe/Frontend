@@ -278,6 +278,7 @@
     </None>
     <Content Include="HacerPubli\estilos_postear.css" />
     <Content Include="HacerPubli\Postear.aspx" />
+    <Content Include="Inicio\DetallePublicacion.aspx" />
     <Content Include="Inicio\Login.aspx" />
     <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
@@ -342,6 +343,13 @@
     </Compile>
     <Compile Include="HacerPubli\Postear.aspx.designer.cs">
       <DependentUpon>Postear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\DetallePublicacion.aspx.cs">
+      <DependentUpon>DetallePublicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\DetallePublicacion.aspx.designer.cs">
+      <DependentUpon>DetallePublicacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Inicio\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

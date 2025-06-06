@@ -26,12 +26,16 @@
                 <asp:Repeater ID="rptPublicaciones" runat="server">
                     <ItemTemplate>
                         <div class="col-12 col-sm-6 col-md-4">
+
+                            <a href='<%# "DetallePublicacion.aspx?id=" + Eval("idPublicacion") %>' style="text-decoration: none; color: inherit;">
                             <div class="card h-100 shadow-sm border-0">
-                                <img src='<%# Eval("rutaImagen ") %>' class="card-img-top" style="height: 180px; object-fit: cover;" />
+                                <img src='<%# Eval("rutaimagen ") %>' class="card-img-top" style="height: 180px; object-fit: cover;" />
                                 <div class="card-body d-flex justify-content-between align-items-center">
                                     <p class="card-text mb-0"><%# Eval("titulo") %></p>
                                 </div>
                             </div>
+                            
+                            </a>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>

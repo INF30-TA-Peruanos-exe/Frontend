@@ -27,14 +27,19 @@
         <div class="row justify-content-center mt-5">
             <div class="col-md-10">
                 <h3 class="mb-4">Mis Publicaciones</h3>
-                <asp:Repeater ID="rptPublicaciones" runat="server">
+                <asp:Repeater ID="rptPublicaciones" runat="server" OnItemCommand="rptPublicacion_ItemCommand">
                     <ItemTemplate>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <h5 class="card-title"><%# Eval("titulo") %></h5>
-                                <p class="card-text"><%# Eval("descripcion") %></p>
-                                <small class="text-muted">Publicado el <%# Container.Page.GetType().GetMethod("FormatearFechaString").Invoke(Container.Page, new object[] { Eval("idPublicacion") }) %></small>
-                            </div>
+                                <a href=' <%# "../Inicio/DetallePublicacion.aspx?id=" + Eval("idPublicacion")%>' style="text-decoration:none; color: inherit">
+                                    <h5 class="card-title"><%# Eval("titulo") %></h5>
+                                    <p class="card-text"><%# Eval("descripcion") %></p>
+                                    <small class="text-muted">Publicado el <%# Container.Page.GetType().GetMethod("FormatearFechaString").Invoke(Container.Page, new object[] { Eval("idPublicacion") }) %></small>
+                                </a>
+                                <asp:LinkButton ID="btnEliminar" runat="server" CssClass="btn btn-outline-danger btn-sm float-end" CommandName="Eliminar" 
+                                     CommandArgument='<%# Eval("idPublicacion") %>' OnClientClick="return confirm('¿Estás seguro de que deseas eliminar esta publicación?');"><i class="fas fa-trash-alt"></i>
+                                </asp:LinkButton>
+                           </div>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>

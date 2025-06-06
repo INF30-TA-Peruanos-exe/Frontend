@@ -40,7 +40,7 @@ namespace QhatuPUCPPresentacion.Perfil
 
                         try
                         {
-                            // ✅ LLAMADA AL NUEVO WEB SERVICE
+                            //llama al webservice para obtener la fecha en string
                             string fecha = publicacionService.obtenerFechaPublicacionFormateada(p.idPublicacion);
                             fechasFormateadas[p.idPublicacion] = fecha;
                         }
@@ -76,5 +76,27 @@ namespace QhatuPUCPPresentacion.Perfil
 
             return "Sin fecha";
         }
+
+        protected void rptPublicacion_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "Eliminar")
+            {
+                int idPublicacion = Convert.ToInt32(e.CommandArgument);
+                try
+                {
+                    PublicacionWSClient ws = new PublicacionWSClient();
+                    ws.eliminarPublicacion(idPublicacion); // Solo se llama, sin esperar retorno
+
+                    // Recarga la página para actualizar la lista
+                    Response.Redirect(Request.RawUrl);
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine("Error al eliminar publicación: " + ex.Message);
+                    // Aquí puedes mostrar una alerta en pantalla si deseas
+                }
+            }
+        }
+
     }
 }
