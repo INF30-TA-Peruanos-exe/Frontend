@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container mt-5 mb-5">
-        <!-- CARD DE PERFIL -->
+        <!-- card para los datos del perfil -->
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card shadow" style="background-color: #f8f9fa;">
@@ -18,12 +18,15 @@
                         <asp:Label ID="lblCorreo" runat="server" CssClass="perfil-info d-block mb-2" Text="Correo: -"></asp:Label>
                         <asp:Label ID="lblNombreUsuario" runat="server" CssClass="perfil-info d-block mb-2" Text="Nombre de Usuario: -"></asp:Label>
                         <asp:Label ID="lblEstado" runat="server" CssClass="perfil-estado badge mt-2" Text="Estado: -"></asp:Label>
+                        <asp:Button ID="btnEditarPerfil" runat="server" CssClass="btn btn-outline-primary position-absolute top-0 end-0 m-3" Text='Modificar perfil'
+                        UseSubmitBehavior="false" OnClientClick="abrirModalEditar(); return false;" />
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- REPETIDOR DE PUBLICACIONES -->
+        <!-- repetidor para mostrar las publicaciones del usuario -->
         <div class="row justify-content-center mt-5">
             <div class="col-md-10">
                 <h3 class="mb-4">Mis Publicaciones</h3>
@@ -37,7 +40,7 @@
                                     <small class="text-muted">Publicado el <%# Container.Page.GetType().GetMethod("FormatearFechaString").Invoke(Container.Page, new object[] { Eval("idPublicacion") }) %></small>
                                 </a>
                                 <asp:LinkButton ID="btnEliminar" runat="server" CssClass="btn btn-outline-danger btn-sm float-end" CommandName="Eliminar" 
-                                     CommandArgument='<%# Eval("idPublicacion") %>' OnClientClick="return confirm('¿Estás seguro de que deseas eliminar esta publicación?');"><i class="fas fa-trash-alt"></i>
+                                     CommandArgument='<%# Eval("idPublicacion") %>' OnClientClick="return confirm('¿Seguro que quieres eliminar esta publicación?');"><i class="fas fa-trash-alt"></i>
                                 </asp:LinkButton>
                            </div>
                         </div>
@@ -46,7 +49,45 @@
             </div>
         </div>
     </div>
+
+    <!-- modal para editar el perfil del usuario -->
+    <div class="modal fade" id="modalEditarPerfil" tabindex="-1" role="dialog" aria-labelledby="modalEditarPerfilLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Editar Perfil</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="txtNombre" class="form-label">Nombre</label>
+              <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="txtCorreo" class="form-label">Correo</label>
+              <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="txtNombreUsuario" class="form-label">Nombre de Usuario</label>
+              <asp:TextBox ID="txtNombreUsuario" runat="server" CssClass="form-control" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <asp:Button ID="btnGuardarCambios" runat="server" CssClass="btn btn-success" Text="Guardar cambios" OnClick="btnGuardarCambios_Click" />
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
+    <script>
+    function abrirModalEditar() {
+        var modal = new bootstrap.Modal(document.getElementById('modalEditarPerfil'));
+        modal.show();
+    }
+    </script>
 </asp:Content>

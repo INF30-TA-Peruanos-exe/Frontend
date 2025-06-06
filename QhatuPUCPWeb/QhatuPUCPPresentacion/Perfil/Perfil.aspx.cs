@@ -26,6 +26,12 @@ namespace QhatuPUCPPresentacion.Perfil
                 lblEstado.Text = "Estado: " + usuario.estado.ToString();
                 lblEstado.CssClass = "perfil-estado badge " + (usuario.estado == estadoUsuario.HABILITADO ? "bg-success" : "bg-danger");
 
+                //Para el modal
+                txtNombre.Text = usuario.nombre;
+                txtCorreo.Text = usuario.correo;
+                txtNombreUsuario.Text = usuario.nombreUsuario;
+                //---
+
                 PublicacionWSClient publicacionService = new PublicacionWSClient();
                 publicacion[] todas = publicacionService.listarPublicacion();
 
@@ -97,6 +103,37 @@ namespace QhatuPUCPPresentacion.Perfil
                 }
             }
         }
+
+        protected void btnGuardarCambios_Click(object sender, EventArgs e)
+        {
+            usuario usuarioActual = Session["usuario"] as usuario;
+
+            if (usuarioActual != null)
+            {
+                usuarioActual.nombre = txtNombre.Text.Trim();
+                usuarioActual.correo = txtCorreo.Text.Trim();
+                usuarioActual.nombreUsuario = txtNombreUsuario.Text.Trim();
+
+                try
+                {
+                    UsuarioWSClient usuarioService = new UsuarioWSClient();
+                    usuarioService.actualizarUsuario(usuarioActual);
+
+                    Session["usuario"] = usuarioActual;
+
+                    lblNombre.Text = "Nombre: " + usuarioActual.nombre;
+                    lblCorreo.Text = "Correo: " + usuarioActual.correo;
+                    lblNombreUsuario.Text = "Nombre de Usuario: " + usuarioActual.nombreUsuario;
+
+                    ScriptManager.RegisterStartupScript(this, GetType(), "modalClose", "$('#modalEditarPerfil').modal('hide');", true);
+                }
+                catch (Exception ex)
+                {
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alertaError", $"alert('Error al modificar: {ex.Message}');", true);
+                }
+            }
+        }
+
 
     }
 }
