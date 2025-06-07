@@ -5,11 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/PublicacionWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="obtenerPublicacion">
-    <part name="parameters" element="tns:obtenerPublicacion" />
+  <message name="esFavorito">
+    <part name="parameters" element="tns:esFavorito" />
   </message>
-  <message name="obtenerPublicacionResponse">
-    <part name="parameters" element="tns:obtenerPublicacionResponse" />
+  <message name="esFavoritoResponse">
+    <part name="parameters" element="tns:esFavoritoResponse" />
   </message>
   <message name="listarPorCurso">
     <part name="parameters" element="tns:listarPorCurso" />
@@ -17,17 +17,11 @@
   <message name="listarPorCursoResponse">
     <part name="parameters" element="tns:listarPorCursoResponse" />
   </message>
-  <message name="eliminarFavoritos">
-    <part name="parameters" element="tns:eliminarFavoritos" />
+  <message name="obtenerPublicacion">
+    <part name="parameters" element="tns:obtenerPublicacion" />
   </message>
-  <message name="eliminarFavoritosResponse">
-    <part name="parameters" element="tns:eliminarFavoritosResponse" />
-  </message>
-  <message name="listarPorFacultad">
-    <part name="parameters" element="tns:listarPorFacultad" />
-  </message>
-  <message name="listarPorFacultadResponse">
-    <part name="parameters" element="tns:listarPorFacultadResponse" />
+  <message name="obtenerPublicacionResponse">
+    <part name="parameters" element="tns:obtenerPublicacionResponse" />
   </message>
   <message name="listarPublicacion">
     <part name="parameters" element="tns:listarPublicacion" />
@@ -41,11 +35,11 @@
   <message name="listarFavoritosResponse">
     <part name="parameters" element="tns:listarFavoritosResponse" />
   </message>
-  <message name="crearPublicacion">
-    <part name="parameters" element="tns:crearPublicacion" />
+  <message name="listarPorFacultad">
+    <part name="parameters" element="tns:listarPorFacultad" />
   </message>
-  <message name="crearPublicacionResponse">
-    <part name="parameters" element="tns:crearPublicacionResponse" />
+  <message name="listarPorFacultadResponse">
+    <part name="parameters" element="tns:listarPorFacultadResponse" />
   </message>
   <message name="agregarFavoritos">
     <part name="parameters" element="tns:agregarFavoritos" />
@@ -53,29 +47,29 @@
   <message name="agregarFavoritosResponse">
     <part name="parameters" element="tns:agregarFavoritosResponse" />
   </message>
+  <message name="crearPublicacion">
+    <part name="parameters" element="tns:crearPublicacion" />
+  </message>
+  <message name="crearPublicacionResponse">
+    <part name="parameters" element="tns:crearPublicacionResponse" />
+  </message>
+  <message name="eliminarFavoritos">
+    <part name="parameters" element="tns:eliminarFavoritos" />
+  </message>
+  <message name="eliminarFavoritosResponse">
+    <part name="parameters" element="tns:eliminarFavoritosResponse" />
+  </message>
   <message name="obtenerFechaPublicacionFormateada">
     <part name="parameters" element="tns:obtenerFechaPublicacionFormateada" />
   </message>
   <message name="obtenerFechaPublicacionFormateadaResponse">
     <part name="parameters" element="tns:obtenerFechaPublicacionFormateadaResponse" />
   </message>
-  <message name="esFavorito">
-    <part name="parameters" element="tns:esFavorito" />
-  </message>
-  <message name="esFavoritoResponse">
-    <part name="parameters" element="tns:esFavoritoResponse" />
-  </message>
   <message name="eliminarPublicacion">
     <part name="parameters" element="tns:eliminarPublicacion" />
   </message>
   <message name="eliminarPublicacionResponse">
     <part name="parameters" element="tns:eliminarPublicacionResponse" />
-  </message>
-  <message name="listarPorEspecialidad">
-    <part name="parameters" element="tns:listarPorEspecialidad" />
-  </message>
-  <message name="listarPorEspecialidadResponse">
-    <part name="parameters" element="tns:listarPorEspecialidadResponse" />
   </message>
   <message name="cambiarEstadoPublicacion">
     <part name="parameters" element="tns:cambiarEstadoPublicacion" />
@@ -89,22 +83,24 @@
   <message name="actualizarPublicacionResponse">
     <part name="parameters" element="tns:actualizarPublicacionResponse" />
   </message>
+  <message name="listarPorEspecialidad">
+    <part name="parameters" element="tns:listarPorEspecialidad" />
+  </message>
+  <message name="listarPorEspecialidadResponse">
+    <part name="parameters" element="tns:listarPorEspecialidadResponse" />
+  </message>
   <portType name="PublicacionWS">
-    <operation name="obtenerPublicacion">
-      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionRequest" message="tns:obtenerPublicacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionResponse" message="tns:obtenerPublicacionResponse" />
+    <operation name="esFavorito">
+      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/esFavoritoRequest" message="tns:esFavorito" />
+      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/esFavoritoResponse" message="tns:esFavoritoResponse" />
     </operation>
     <operation name="listarPorCurso">
       <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoRequest" message="tns:listarPorCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoResponse" message="tns:listarPorCursoResponse" />
     </operation>
-    <operation name="eliminarFavoritos">
-      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosRequest" message="tns:eliminarFavoritos" />
-      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosResponse" message="tns:eliminarFavoritosResponse" />
-    </operation>
-    <operation name="listarPorFacultad">
-      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadRequest" message="tns:listarPorFacultad" />
-      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadResponse" message="tns:listarPorFacultadResponse" />
+    <operation name="obtenerPublicacion">
+      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionRequest" message="tns:obtenerPublicacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionResponse" message="tns:obtenerPublicacionResponse" />
     </operation>
     <operation name="listarPublicacion">
       <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionRequest" message="tns:listarPublicacion" />
@@ -114,29 +110,29 @@
       <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosRequest" message="tns:listarFavoritos" />
       <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosResponse" message="tns:listarFavoritosResponse" />
     </operation>
-    <operation name="crearPublicacion">
-      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionRequest" message="tns:crearPublicacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionResponse" message="tns:crearPublicacionResponse" />
+    <operation name="listarPorFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadRequest" message="tns:listarPorFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadResponse" message="tns:listarPorFacultadResponse" />
     </operation>
     <operation name="agregarFavoritos">
       <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosRequest" message="tns:agregarFavoritos" />
       <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosResponse" message="tns:agregarFavoritosResponse" />
     </operation>
+    <operation name="crearPublicacion">
+      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionRequest" message="tns:crearPublicacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionResponse" message="tns:crearPublicacionResponse" />
+    </operation>
+    <operation name="eliminarFavoritos">
+      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosRequest" message="tns:eliminarFavoritos" />
+      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosResponse" message="tns:eliminarFavoritosResponse" />
+    </operation>
     <operation name="obtenerFechaPublicacionFormateada">
       <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaRequest" message="tns:obtenerFechaPublicacionFormateada" />
       <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaResponse" message="tns:obtenerFechaPublicacionFormateadaResponse" />
     </operation>
-    <operation name="esFavorito">
-      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/esFavoritoRequest" message="tns:esFavorito" />
-      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/esFavoritoResponse" message="tns:esFavoritoResponse" />
-    </operation>
     <operation name="eliminarPublicacion">
       <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionRequest" message="tns:eliminarPublicacion" />
       <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionResponse" message="tns:eliminarPublicacionResponse" />
-    </operation>
-    <operation name="listarPorEspecialidad">
-      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorEspecialidadRequest" message="tns:listarPorEspecialidad" />
-      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorEspecialidadResponse" message="tns:listarPorEspecialidadResponse" />
     </operation>
     <operation name="cambiarEstadoPublicacion">
       <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/cambiarEstadoPublicacionRequest" message="tns:cambiarEstadoPublicacion" />
@@ -146,10 +142,14 @@
       <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionRequest" message="tns:actualizarPublicacion" />
       <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionResponse" message="tns:actualizarPublicacionResponse" />
     </operation>
+    <operation name="listarPorEspecialidad">
+      <input wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorEspecialidadRequest" message="tns:listarPorEspecialidad" />
+      <output wsam:Action="com.pucp.pucpqhatu/PublicacionWS/listarPorEspecialidadResponse" message="tns:listarPorEspecialidadResponse" />
+    </operation>
   </portType>
   <binding name="PublicacionWSPortBinding" type="tns:PublicacionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="obtenerPublicacion">
+    <operation name="esFavorito">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -167,16 +167,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarFavoritos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPorFacultad">
+    <operation name="obtenerPublicacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -203,7 +194,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="crearPublicacion">
+    <operation name="listarPorFacultad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -221,6 +212,24 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="crearPublicacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarFavoritos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="obtenerFechaPublicacionFormateada">
       <soap:operation soapAction="" />
       <input>
@@ -230,25 +239,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="esFavorito">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="eliminarPublicacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPorEspecialidad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -267,6 +258,15 @@
       </output>
     </operation>
     <operation name="actualizarPublicacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPorEspecialidad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

@@ -39,6 +39,10 @@
                                     <p class="card-text"><%# Eval("descripcion") %></p>
                                     <small class="text-muted">Publicado el <%# Container.Page.GetType().GetMethod("FormatearFechaString").Invoke(Container.Page, new object[] { Eval("idPublicacion") }) %></small>
                                 </a>
+                                <asp:LinkButton ID="btnEditar" runat="server" CssClass="btn btn-outline-warning btn-sm me-2 float-end"
+                                    CommandName="Editar"
+                                    CommandArgument='<%# Eval("idPublicacion") %>'><i class="fas fa-edit"></i> Editar
+                                </asp:LinkButton>
                                 <asp:LinkButton ID="btnEliminar" runat="server" CssClass="btn btn-outline-danger btn-sm float-end" CommandName="Eliminar" 
                                      CommandArgument='<%# Eval("idPublicacion") %>' OnClientClick="return confirm('¿Seguro que quieres eliminar esta publicación?');"><i class="fas fa-trash-alt"></i>
                                 </asp:LinkButton>

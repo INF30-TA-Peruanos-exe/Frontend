@@ -102,6 +102,11 @@ namespace QhatuPUCPPresentacion.Perfil
                     // Aquí puedes mostrar una alerta en pantalla si deseas
                 }
             }
+            else if (e.CommandName == "Editar")
+            {
+                int idPublicacion = Convert.ToInt32(e.CommandArgument);
+                Response.Redirect($"~/Perfil/EditarPublicacion.aspx?id={idPublicacion}");
+            }
         }
 
         protected void btnGuardarCambios_Click(object sender, EventArgs e)

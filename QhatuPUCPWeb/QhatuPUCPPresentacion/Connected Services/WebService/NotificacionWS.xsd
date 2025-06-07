@@ -42,7 +42,7 @@
       <xs:element minOccurs="0" name="rutaImagen" type="xs:string" />
       <xs:element name="activo" type="xs:boolean" />
       <xs:element minOccurs="0" name="estado" type="tns:estadoPublicacion" />
-      <xs:element minOccurs="0" name="fechaPublicacion" type="tns:date" />
+      <xs:element minOccurs="0" name="fechaPublicacion" type="xs:dateTime" />
       <xs:element minOccurs="0" name="usuario" type="tns:usuario" />
       <xs:element minOccurs="0" name="publicacionesCursos">
         <xs:complexType>
@@ -66,9 +66,6 @@
         </xs:complexType>
       </xs:element>
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="date">
-    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="usuario">
     <xs:sequence>
@@ -102,6 +99,9 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="date">
+    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="actualizarNotificacion">
     <xs:sequence>

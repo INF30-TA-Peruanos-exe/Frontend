@@ -283,6 +283,7 @@
     <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
     <Content Include="PaginaPrueba.aspx" />
+    <Content Include="Perfil\EditarPublicacion.aspx" />
     <Content Include="Perfil\estilos_perfil.css" />
     <Content Include="Perfil\Perfil.aspx" />
     <Content Include="Public\css\bootstrap-reboot.css" />
@@ -371,6 +372,13 @@
     </Compile>
     <Compile Include="PaginaPrueba.aspx.designer.cs">
       <DependentUpon>PaginaPrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil\EditarPublicacion.aspx.cs">
+      <DependentUpon>EditarPublicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil\EditarPublicacion.aspx.designer.cs">
+      <DependentUpon>EditarPublicacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Perfil\Perfil.aspx.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>

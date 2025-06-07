@@ -53,7 +53,7 @@
       <xs:element minOccurs="0" name="rutaImagen" type="xs:string" />
       <xs:element name="activo" type="xs:boolean" />
       <xs:element minOccurs="0" name="estado" type="tns:estadoPublicacion" />
-      <xs:element minOccurs="0" name="fechaPublicacion" type="tns:date" />
+      <xs:element minOccurs="0" name="fechaPublicacion" type="xs:dateTime" />
       <xs:element minOccurs="0" name="usuario" type="tns:usuario" />
       <xs:element minOccurs="0" name="publicacionesCursos">
         <xs:complexType>
