@@ -1,0 +1,134 @@
+﻿/*Para bajar todo el contenedor*/
+.mt-offset {
+    margin-top: 3.2rem;
+}
+
+/* Card de publicación */
+.publicacion-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    color: #212529;
+    font-size: 0.9rem;
+}
+
+.btn-denunciar {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: 1.5px solid #e63946;
+    color: #e63946;
+    border-radius: 12px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.autor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icono-favorito {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Panel de comentarios */
+.comentario-panel {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-size: 0.85rem;
+}
+
+/* Avatar de usuario */
+.comentario-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Comentario individual */
+.comentario-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.comentario-content {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 0.75rem 1rem;
+    flex-grow: 1;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    word-break: break-word;
+    box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    position: relative;
+    color: #212529;
+}
+
+.comentario-meta {
+    font-size: 0.75rem;
+    color: #606770;
+}
+
+/* Estrellas */
+.estrella {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+    .estrella.seleccionada {
+        color: gold;
+    }
+
+/* Botón opciones (⋯) */
+.btn-opciones {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.6rem;
+    font-size: 18px;
+    color: #606770;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botón de volver */
+.btn-volver {
+    background: none;
+    border: none;
+    color: #2f5e93;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+    .btn-volver svg {
+        stroke: #2f5e93;
+    }
+
+/* Responsive para móviles */
+@media (max-width: 767.98px) {
+    .publicacion-card, .comentario-panel {
+        padding: 1rem 1.25rem;
+    }
+
+    .detalle-box {
+        padding: 1rem;
+    }
+}

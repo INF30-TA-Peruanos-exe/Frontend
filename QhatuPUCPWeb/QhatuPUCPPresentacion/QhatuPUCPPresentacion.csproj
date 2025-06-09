@@ -286,6 +286,8 @@
     <Content Include="Perfil\EditarPublicacion.aspx" />
     <Content Include="Perfil\estilos_perfil.css" />
     <Content Include="Perfil\Perfil.aspx" />
+    <Content Include="Publicacion\DetallePublicacion.aspx" />
+    <Content Include="Publicacion\detallePublicacion.css" />
     <Content Include="Public\css\bootstrap-reboot.css" />
     <Content Include="Public\css\bootstrap-reboot.min.css" />
     <Content Include="Public\css\bootstrap.css" />
@@ -395,6 +397,13 @@
     <Compile Include="MainLayout.Master.designer.cs">
       <DependentUpon>MainLayout.Master</DependentUpon>
     </Compile>
+    <Compile Include="Publicacion\DetallePublicacion.aspx.cs">
+      <DependentUpon>DetallePublicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publicacion\DetallePublicacion.aspx.designer.cs">
+      <DependentUpon>DetallePublicacion.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -429,7 +438,6 @@
   <ItemGroup>
     <Folder Include="Favoritos\" />
     <Folder Include="Notificaciones\" />
-    <Folder Include="Publicacion\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
