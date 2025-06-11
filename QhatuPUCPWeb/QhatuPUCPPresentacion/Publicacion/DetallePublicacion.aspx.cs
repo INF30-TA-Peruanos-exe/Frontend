@@ -46,6 +46,7 @@ namespace QhatuPUCPPresentacion.Publicacion
             lblAutor.Text = pub.usuario.nombre;
             lblTiempo.Text = publicacionService.obtenerFechaPublicacionFormateada(id);
             imgPublicacion.ImageUrl = pub.rutaImagen;
+            imgAvatar.ImageUrl = "/Public/images/user-avatar.png";
         }
 
         private void CargarComentarios(int idPublicacion)
@@ -66,9 +67,7 @@ namespace QhatuPUCPPresentacion.Publicacion
                 {
                     Autor = c.comentador?.nombre ?? "Usuario",
                     AvatarUrl = "/Public/images/user-avatar.png",
-                    Fecha = DateTime.TryParse(c.fecha?.ToString(), out DateTime fecha)
-                                ? fecha.ToString("dd/MM/yyyy")
-                                : "",
+                    Fecha = c.fecha.ToString("dd/MM/yyyy") ?? "",
                     Contenido = c.contenido,
                     Valoracion = c.valoracion
                 })

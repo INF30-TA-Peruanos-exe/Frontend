@@ -24,7 +24,7 @@
       <xs:element name="activo" type="xs:boolean" />
       <xs:element minOccurs="0" name="comentador" type="tns:usuario" />
       <xs:element minOccurs="0" name="contenido" type="xs:string" />
-      <xs:element minOccurs="0" name="fecha" type="tns:date" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
       <xs:element name="idComentario" type="xs:int" />
       <xs:element minOccurs="0" name="publicacion" type="tns:publicacion" />
       <xs:element name="valoracion" type="xs:int" />
@@ -41,9 +41,6 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
       <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="date">
-    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="publicacion">
     <xs:sequence>

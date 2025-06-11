@@ -11,12 +11,6 @@
   <message name="obtenerEspecialidadResponse">
     <part name="parameters" element="tns:obtenerEspecialidadResponse" />
   </message>
-  <message name="eliminarEspecialidad">
-    <part name="parameters" element="tns:eliminarEspecialidad" />
-  </message>
-  <message name="eliminarEspecialidadResponse">
-    <part name="parameters" element="tns:eliminarEspecialidadResponse" />
-  </message>
   <message name="registrarEspecialidad">
     <part name="parameters" element="tns:registrarEspecialidad" />
   </message>
@@ -29,6 +23,12 @@
   <message name="actualizarEspecialidadResponse">
     <part name="parameters" element="tns:actualizarEspecialidadResponse" />
   </message>
+  <message name="eliminarEspecialidad">
+    <part name="parameters" element="tns:eliminarEspecialidad" />
+  </message>
+  <message name="eliminarEspecialidadResponse">
+    <part name="parameters" element="tns:eliminarEspecialidadResponse" />
+  </message>
   <message name="listarEspecialidad">
     <part name="parameters" element="tns:listarEspecialidad" />
   </message>
@@ -40,10 +40,6 @@
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/obtenerEspecialidadRequest" message="tns:obtenerEspecialidad" />
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/obtenerEspecialidadResponse" message="tns:obtenerEspecialidadResponse" />
     </operation>
-    <operation name="eliminarEspecialidad">
-      <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadRequest" message="tns:eliminarEspecialidad" />
-      <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse" message="tns:eliminarEspecialidadResponse" />
-    </operation>
     <operation name="registrarEspecialidad">
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/registrarEspecialidadRequest" message="tns:registrarEspecialidad" />
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/registrarEspecialidadResponse" message="tns:registrarEspecialidadResponse" />
@@ -51,6 +47,10 @@
     <operation name="actualizarEspecialidad">
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/actualizarEspecialidadRequest" message="tns:actualizarEspecialidad" />
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/actualizarEspecialidadResponse" message="tns:actualizarEspecialidadResponse" />
+    </operation>
+    <operation name="eliminarEspecialidad">
+      <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadRequest" message="tns:eliminarEspecialidad" />
+      <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse" message="tns:eliminarEspecialidadResponse" />
     </operation>
     <operation name="listarEspecialidad">
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadRequest" message="tns:listarEspecialidad" />
@@ -68,15 +68,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarEspecialidad">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="registrarEspecialidad">
       <soap:operation soapAction="" />
       <input>
@@ -87,6 +78,15 @@
       </output>
     </operation>
     <operation name="actualizarEspecialidad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarEspecialidad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
