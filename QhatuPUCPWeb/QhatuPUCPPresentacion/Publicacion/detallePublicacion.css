@@ -132,3 +132,30 @@
         padding: 1rem;
     }
 }
+
+/* Compactar dropdown de los comentarios */
+.dropdown.comment-options .dropdown-menu {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    min-width: auto;
+    width: max-content;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown.comment-options .dropdown-item {
+    padding: 0.25rem 0.75rem;
+    white-space: nowrap;
+}
+
+/* Modal de tamaño personalizado */
+.custom-modal-ancho {
+    max-width: 500px; /* ajusta el ancho aquí */
+}
+
+@media (max-width: 768px) {
+    .custom-modal-ancho {
+        max-width: 90vw; /* más responsivo en móviles */
+    }
+}
+

@@ -40,6 +40,7 @@ namespace QhatuPUCPPresentacion.Publicacion
         private void CargarPublicacion(int id)
         {
             var pub = publicacionService.obtenerPublicacion(id);
+            var usuario = Session["usuario"] as usuario;
 
             lblTitulo.Text = pub.titulo;
             lblDescripcion.Text = pub.descripcion;
@@ -47,13 +48,54 @@ namespace QhatuPUCPPresentacion.Publicacion
             lblTiempo.Text = publicacionService.obtenerFechaPublicacionFormateada(id);
             imgPublicacion.ImageUrl = pub.rutaImagen;
             imgAvatar.ImageUrl = "/Public/images/user-avatar.png";
+
+            if (usuario != null && pub.usuario != null)
+            {
+                pnlDenunciar.Visible = (usuario.idUsuario != pub.usuario.idUsuario);
+            }
+        }
+
+        protected void btnConfirmarDenuncia_Click(object sender, EventArgs e)
+        {
+            var usuario = Session["usuario"] as usuario;
+            if (usuario == null)
+            {
+                Response.Redirect("~/Inicio/Login.aspx");
+                return;
+            }
+
+            string motivo = txtMotivoDenuncia.Text.Trim();
+            if (string.IsNullOrWhiteSpace(motivo))
+            {
+                // Puedes mostrar un error con JS si deseas
+                ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('El motivo no puede estar vacío.');", true);
+                return;
+            }
+
+            int idPublicacion = int.Parse(hfIdPublicacion.Value);
+
+            var denuncia = new denuncia
+            {
+                denunciante = usuario,
+                autor = new publicacion { idPublicacion = idPublicacion },
+                motivo = motivo,
+                activo = true
+            };
+
+            var denunciaService = new DenunciaWSClient();
+            denunciaService.registrarDenuncia(denuncia);
+
+            // Opcional: cerrar el modal y mostrar mensaje
+            ScriptManager.RegisterStartupScript(this, GetType(), "denunciaOk", "$('#modalDenuncia').modal('hide'); alert('Denuncia registrada.');", true);
+
+            txtMotivoDenuncia.Text = "";
         }
 
         private void CargarComentarios(int idPublicacion)
         {
+            var usuario = Session["usuario"] as usuario;
             var todos = comentarioService.listarComentario();
 
-            // Validación: evitar errores si el servicio devuelve null
             if (todos == null)
             {
                 rptComentarios.DataSource = new List<object>();
@@ -65,11 +107,13 @@ namespace QhatuPUCPPresentacion.Publicacion
                 .Where(c => c.publicacion != null && c.publicacion.idPublicacion == idPublicacion && c.activo)
                 .Select(c => new
                 {
+                    IdComentario = c.idComentario,
                     Autor = c.comentador?.nombre ?? "Usuario",
                     AvatarUrl = "/Public/images/user-avatar.png",
                     Fecha = c.fecha.ToString("dd/MM/yyyy") ?? "",
                     Contenido = c.contenido,
-                    Valoracion = c.valoracion
+                    Valoracion = c.valoracion,
+                    EsPropio = usuario != null && c.comentador != null && c.comentador.idUsuario == usuario.idUsuario
                 })
                 .ToList();
 
@@ -77,7 +121,16 @@ namespace QhatuPUCPPresentacion.Publicacion
             rptComentarios.DataBind();
         }
 
-
+        protected void rptComentarios_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "Eliminar")
+            {
+                int idComentario = int.Parse(e.CommandArgument.ToString());
+                comentarioService.eliminarComentario(idComentario);
+                int idPublicacion = int.Parse(hfIdPublicacion.Value);
+                CargarComentarios(idPublicacion);
+            }
+        }
 
         protected void btnComentar_Click(object sender, EventArgs e)
         {

@@ -13,7 +13,15 @@
         <!-- Columna izquierda: publicación -->
         <div class="w-100 w-lg-25">
             <div class="publicacion-card position-relative bg-white rounded-4 p-4 shadow-sm text-dark">
-
+                <!-- Botón denunciar -->
+                <asp:Panel ID="pnlDenunciar" runat="server" CssClass="position-absolute top-0 end-0 m-3" Visible="false">
+                    <button type="button"
+                        class="btn btn-outline-danger btn-sm rounded-pill px-3 py-1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalDenuncia">
+                        Denunciar
+                    </button>
+                </asp:Panel>
                 <div class="d-flex align-items-center mb-3">
                     <asp:Image ID="imgAvatar" runat="server" CssClass="autor-avatar me-3" />
                     <div>
@@ -52,27 +60,65 @@
                             <span class="estrella" data-valor="5">&#9734;</span>
                         </div>
 
-                        <asp:Button ID="btnComentar" runat="server" CssClass="btn btn-primary btn-sm" Text="Comentar" OnClick="btnComentar_Click" />
+                        <asp:Button ID="btnComentar" runat="server" Text="Comentar"
+                            CssClass="btn btn-outline-primary btn-sm rounded-pill px-3 py-1"
+                            OnClick="btnComentar_Click" />
                     </div>
                 </div>
 
                 <!-- Lista de comentarios -->
-                <asp:Repeater ID="rptComentarios" runat="server">
+                <asp:Repeater ID="rptComentarios" runat="server" OnItemCommand="rptComentarios_ItemCommand">
                     <ItemTemplate>
-                        <div class="d-flex align-items-start mb-3 comentario-item">
+                        <div class="d-flex align-items-start mb-3 comentario-item position-relative">
                             <img src='<%# Eval("AvatarUrl") %>' class="comentario-avatar me-3 mt-1" />
-                            <div class="comentario-content position-relative">
+                            <div class="comentario-content position-relative w-100">
                                 <strong><%# Eval("Autor") %></strong>
                                 <div class="comentario-meta"><%# Eval("Fecha") %></div>
                                 <div class="mt-1"><%# Eval("Contenido") %></div>
                                 <div class="mt-1 small">
                                     Valoración:
-                                    <%# new string('★', Convert.ToInt32(Eval("Valoracion"))) + new string('☆', 5 - Convert.ToInt32(Eval("Valoracion"))) %>
+                    <%# new string('★', Convert.ToInt32(Eval("Valoracion"))) + new string('☆', 5 - Convert.ToInt32(Eval("Valoracion"))) %>
                                 </div>
+
+                                <%-- Botón de tres puntos para opciones (visible solo si el comentario es del usuario) --%>
+                                <asp:Panel runat="server" CssClass="dropdown comment-options position-absolute top-0 end-0"
+                                    Visible='<%# Convert.ToBoolean(Eval("EsPropio")) %>'>
+                                    <button class="btn btn-sm bg-transparent border-0 px-2" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" title="Opciones">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <asp:LinkButton ID="btnEliminarComentario" runat="server" CssClass="dropdown-item"
+                                                CommandName="Eliminar" CommandArgument='<%# Eval("IdComentario") %>'>Eliminar
+                                            </asp:LinkButton>
+                                        </li>
+                                    </ul>
+                                </asp:Panel>
                             </div>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
+            </div>
+        </div>
+    </div>
+    <!--Modal de denuncia-->
+    <div class="modal fade" id="modalDenuncia" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-ancho">
+            <div class="modal-content rounded-4">
+                <div class="modal-body p-4">
+                    <h6 class="fw-bold text-dark mb-2">Motivo</h6>
+
+                    <asp:TextBox ID="txtMotivoDenuncia" runat="server"
+                        CssClass="form-control rounded-3 border-0 shadow-sm mb-3"
+                        placeholder="Escribe el motivo de la denuncia" TextMode="MultiLine" Rows="3" />
+
+                    <div class="d-flex justify-content-end">
+                        <asp:Button ID="btnConfirmarDenuncia" runat="server" Text="Denunciar"
+                            CssClass="btn btn-outline-danger btn-sm rounded-pill px-3 py-1"
+                            OnClick="btnConfirmarDenuncia_Click" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>

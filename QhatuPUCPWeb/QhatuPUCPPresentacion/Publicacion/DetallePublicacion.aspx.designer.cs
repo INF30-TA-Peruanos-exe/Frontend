@@ -42,6 +42,15 @@ namespace QhatuPUCPPresentacion.Publicacion
         protected global::System.Web.UI.WebControls.HiddenField hfIdPublicacion;
 
         /// <summary>
+        /// Control pnlDenunciar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlDenunciar;
+
+        /// <summary>
         /// Control imgAvatar.
         /// </summary>
         /// <remarks>
@@ -121,5 +130,23 @@ namespace QhatuPUCPPresentacion.Publicacion
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptComentarios;
+
+        /// <summary>
+        /// Control txtMotivoDenuncia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMotivoDenuncia;
+
+        /// <summary>
+        /// Control btnConfirmarDenuncia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConfirmarDenuncia;
     }
 }
