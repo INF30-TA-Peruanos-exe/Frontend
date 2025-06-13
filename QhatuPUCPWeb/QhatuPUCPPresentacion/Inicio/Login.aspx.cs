@@ -11,10 +11,12 @@ namespace QhatuPUCPPresentacion.Inicio
     public partial class Login : System.Web.UI.Page
     {
         protected UsuarioWSClient usuarioService;
+        protected AdministradorWSClient administradorService;
 
         protected void Page_Init(object senver, EventArgs e)
         {
             usuarioService = new UsuarioWSClient();
+            administradorService = new AdministradorWSClient();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -43,20 +45,36 @@ namespace QhatuPUCPPresentacion.Inicio
             {
                 usuario[] usuarios=usuarioService.listarUsuarios();
                 usuario usuarioValido = null;
-                
+                administrador[] administradores = administradorService.listarAdministrador();
+                administrador administradorValido = null;
+
                 //Busca en todos los usuarios
-                for(int i = 0; i < usuarios.Length; i++)
+                for (int i = 0; i < usuarios.Length; i++)
                 {
                     if (usuarios[i].correo == correo && usuarios[i].contrasena == contrasena)
                     {
                         usuarioValido = usuarios[i];
                         break;
                     }
+                    for(int j = 0; j < administradores.Length; j++)
+                    {
+                        if (usuarios[i].idUsuario == administradores[j].idUsuario && administradores[j].claveMaestra == contrasena)
+                        {
+                            administradorValido = administradores[j];
+                            break;
+                        }
+                    }
+
                 }
 
                 if (usuarioValido != null)
                 {
                     Session["usuario"] = usuarioValido;
+                    Response.Redirect("~/Inicio/PaginaInicio.aspx");
+                }
+                else if (administradorValido != null)
+                {
+                    Session["administrador"] = administradorValido;
                     Response.Redirect("~/Inicio/PaginaInicio.aspx");
                 }
                 else

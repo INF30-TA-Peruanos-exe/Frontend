@@ -1,25 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://usuarios.webservice.pucp.com/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="AdministradorWS" targetNamespace="http://usuarios.webservice.pucp.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="com.pucp.pucpqhatu" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="AdministradorWS" targetNamespace="com.pucp.pucpqhatu" xmlns="http://schemas.xmlsoap.org/wsdl/">
   <types>
     <xsd:schema>
-      <xsd:import schemaLocation="http://localhost:8080/WebService/AdministradorWS?xsd=1" namespace="http://usuarios.webservice.pucp.com/" />
+      <xsd:import schemaLocation="http://localhost:8080/WebService/AdministradorWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="hello">
-    <part name="parameters" element="tns:hello" />
+  <message name="eliminarAdministrador">
+    <part name="parameters" element="tns:eliminarAdministrador" />
   </message>
-  <message name="helloResponse">
-    <part name="parameters" element="tns:helloResponse" />
+  <message name="eliminarAdministradorResponse">
+    <part name="parameters" element="tns:eliminarAdministradorResponse" />
+  </message>
+  <message name="obtenerAdministrador">
+    <part name="parameters" element="tns:obtenerAdministrador" />
+  </message>
+  <message name="obtenerAdministradorResponse">
+    <part name="parameters" element="tns:obtenerAdministradorResponse" />
+  </message>
+  <message name="actualizarAdministrador">
+    <part name="parameters" element="tns:actualizarAdministrador" />
+  </message>
+  <message name="actualizarAdministradorResponse">
+    <part name="parameters" element="tns:actualizarAdministradorResponse" />
+  </message>
+  <message name="registrarAdministrador">
+    <part name="parameters" element="tns:registrarAdministrador" />
+  </message>
+  <message name="registrarAdministradorResponse">
+    <part name="parameters" element="tns:registrarAdministradorResponse" />
+  </message>
+  <message name="listarAdministrador">
+    <part name="parameters" element="tns:listarAdministrador" />
+  </message>
+  <message name="listarAdministradorResponse">
+    <part name="parameters" element="tns:listarAdministradorResponse" />
   </message>
   <portType name="AdministradorWS">
-    <operation name="hello">
-      <input wsam:Action="http://usuarios.webservice.pucp.com/AdministradorWS/helloRequest" message="tns:hello" />
-      <output wsam:Action="http://usuarios.webservice.pucp.com/AdministradorWS/helloResponse" message="tns:helloResponse" />
+    <operation name="eliminarAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorRequest" message="tns:eliminarAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorResponse" message="tns:eliminarAdministradorResponse" />
+    </operation>
+    <operation name="obtenerAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorRequest" message="tns:obtenerAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorResponse" message="tns:obtenerAdministradorResponse" />
+    </operation>
+    <operation name="actualizarAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorRequest" message="tns:actualizarAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorResponse" message="tns:actualizarAdministradorResponse" />
+    </operation>
+    <operation name="registrarAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorRequest" message="tns:registrarAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorResponse" message="tns:registrarAdministradorResponse" />
+    </operation>
+    <operation name="listarAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorRequest" message="tns:listarAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorResponse" message="tns:listarAdministradorResponse" />
     </operation>
   </portType>
   <binding name="AdministradorWSPortBinding" type="tns:AdministradorWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="hello">
+    <operation name="eliminarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAdministrador">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

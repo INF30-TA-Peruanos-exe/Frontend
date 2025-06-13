@@ -1,15 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://usuarios.webservice.pucp.com/" targetNamespace="http://usuarios.webservice.pucp.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="hello" type="tns:hello" />
-  <xs:element name="helloResponse" type="tns:helloResponse" />
-  <xs:complexType name="hello">
+<xs:schema xmlns:tns="com.pucp.pucpqhatu" targetNamespace="com.pucp.pucpqhatu" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="actualizarAdministrador" type="tns:actualizarAdministrador" />
+  <xs:element name="actualizarAdministradorResponse" type="tns:actualizarAdministradorResponse" />
+  <xs:element name="eliminarAdministrador" type="tns:eliminarAdministrador" />
+  <xs:element name="eliminarAdministradorResponse" type="tns:eliminarAdministradorResponse" />
+  <xs:element name="listarAdministrador" type="tns:listarAdministrador" />
+  <xs:element name="listarAdministradorResponse" type="tns:listarAdministradorResponse" />
+  <xs:element name="obtenerAdministrador" type="tns:obtenerAdministrador" />
+  <xs:element name="obtenerAdministradorResponse" type="tns:obtenerAdministradorResponse" />
+  <xs:element name="registrarAdministrador" type="tns:registrarAdministrador" />
+  <xs:element name="registrarAdministradorResponse" type="tns:registrarAdministradorResponse" />
+  <xs:complexType name="listarAdministrador">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarAdministradorResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:administrador" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="helloResponse">
+  <xs:complexType name="administrador">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuario">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="claveMaestra" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuario">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
+      <xs:element name="activo" type="xs:boolean" />
+      <xs:element name="codigoPUCP" type="xs:int" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" type="tns:estadoUsuario" />
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreUsuario" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="actualizarAdministrador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="tns:administrador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarAdministradorResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="eliminarAdministrador">
+    <xs:sequence>
+      <xs:element name="idAdministrador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAdministradorResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="registrarAdministrador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="administrador" type="tns:administrador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarAdministradorResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="obtenerAdministrador">
+    <xs:sequence>
+      <xs:element name="idAdministrador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerAdministradorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:administrador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="estadoUsuario">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HABILITADO" />
+      <xs:enumeration value="RESTRINGIDO" />
+    </xs:restriction>
+  </xs:simpleType>
 </xs:schema>
