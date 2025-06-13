@@ -60,6 +60,7 @@ namespace QhatuPUCPPresentacion.Inicio
                     {
                         if (usuarios[i].idUsuario == administradores[j].idUsuario && administradores[j].claveMaestra == contrasena)
                         {
+                            usuarioValido = usuarios[i];
                             administradorValido = administradores[j];
                             break;
                         }
@@ -67,7 +68,7 @@ namespace QhatuPUCPPresentacion.Inicio
 
                 }
 
-                if (usuarioValido != null)
+                if (usuarioValido != null && administradorValido == null)
                 {
                     Session["usuario"] = usuarioValido;
                     Response.Redirect("~/Inicio/PaginaInicio.aspx");
@@ -75,6 +76,7 @@ namespace QhatuPUCPPresentacion.Inicio
                 else if (administradorValido != null)
                 {
                     Session["administrador"] = administradorValido;
+                    Session["usuario"] = usuarioValido;
                     Response.Redirect("~/Inicio/PaginaInicio.aspx");
                 }
                 else

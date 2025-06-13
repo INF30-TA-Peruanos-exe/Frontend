@@ -106,7 +106,7 @@
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
               "ToolTip": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAvwEsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAvwEYAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T16:40:46.288Z",
               "EditorCaption": ""
@@ -186,7 +186,8 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
               "ViewState": "AgIAAIEAAAAAAAAAAAAawFUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T04:06:05.334Z"
+              "WhenOpened": "2025-06-09T04:06:05.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -224,7 +225,8 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\Public\\css\\site.css",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-09T03:36:34.874Z"
+              "WhenOpened": "2025-06-09T03:36:34.874Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
