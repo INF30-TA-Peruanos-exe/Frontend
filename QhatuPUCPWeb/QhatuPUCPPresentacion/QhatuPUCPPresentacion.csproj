@@ -297,6 +297,7 @@
     <Content Include="Inicio\Login.aspx" />
     <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
+    <Content Include="Inicio\PaginaInicioAdmin.aspx" />
     <Content Include="PaginaPrueba.aspx" />
     <Content Include="Perfil\EditarPublicacion.aspx" />
     <Content Include="Perfil\estilos_perfil.css" />
@@ -342,6 +343,7 @@
     <None Include="Connected Services\WebService\UsuarioWS.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="MainLayoutMasterAdmin.Master" />
     <None Include="Public\js\jquery-3.7.1.intellisense.js" />
     <Content Include="Public\js\jquery-3.7.1.js" />
     <Content Include="Public\js\jquery-3.7.1.min.js" />
@@ -382,6 +384,20 @@
     </Compile>
     <Compile Include="Inicio\PaginaInicio.aspx.designer.cs">
       <DependentUpon>PaginaInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\PaginaInicioAdmin.aspx.cs">
+      <DependentUpon>PaginaInicioAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\PaginaInicioAdmin.aspx.designer.cs">
+      <DependentUpon>PaginaInicioAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainLayoutMasterAdmin.Master.cs">
+      <DependentUpon>MainLayoutMasterAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainLayoutMasterAdmin.Master.designer.cs">
+      <DependentUpon>MainLayoutMasterAdmin.Master</DependentUpon>
     </Compile>
     <Compile Include="PaginaPrueba.aspx.cs">
       <DependentUpon>PaginaPrueba.aspx</DependentUpon>
