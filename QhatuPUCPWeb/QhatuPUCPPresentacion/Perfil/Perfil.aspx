@@ -38,6 +38,9 @@
                                     <h5 class="card-title"><%# Eval("titulo") %></h5>
                                     <p class="card-text"><%# Eval("descripcion") %></p>
                                     <small class="text-muted">Publicado el <%# Container.Page.GetType().GetMethod("FormatearFechaString").Invoke(Container.Page, new object[] { Eval("idPublicacion") }) %></small>
+                                    <span class='<%# "badge me-2 " + cambiarSegunEstado(Eval("estado").ToString()) %>'>
+                                    <%# Eval("estado") %>
+                                </span>
                                 </a>
                                 <asp:LinkButton ID="btnEditar" runat="server" CssClass="btn btn-outline-warning btn-sm me-2 float-end"
                                     CommandName="Editar"
