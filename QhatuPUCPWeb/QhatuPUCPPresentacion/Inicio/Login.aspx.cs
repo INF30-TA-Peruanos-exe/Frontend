@@ -43,13 +43,13 @@ namespace QhatuPUCPPresentacion.Inicio
             //}
             try
             {
-                usuario[] usuarios=usuarioService.listarUsuarios();
-                usuario usuarioValido = null;
-                administrador[] administradores = administradorService.listarAdministrador();
-                administrador administradorValido = null;
+                //usuario[] usuarios=usuarioService.listarUsuarios();
+                usuario usuarioValido = usuarioService.obtenerUsuarioPorCorreoYContra(correo,contrasena);
+                //administrador[] administradores = administradorService.listarAdministrador();
+                administrador administradorValido = administradorService.obtenerAdministradorPorCorreoYContra(contrasena);
 
                 //Busca en todos los usuarios
-                for (int i = 0; i < usuarios.Length; i++)
+                /*for (int i = 0; i < usuarios.Length; i++)
                 {
                     if (usuarios[i].correo == correo && usuarios[i].contrasena == contrasena)
                     {
@@ -66,7 +66,7 @@ namespace QhatuPUCPPresentacion.Inicio
                         }
                     }
 
-                }
+                }*/
 
                 if (usuarioValido != null && administradorValido == null)
                 {

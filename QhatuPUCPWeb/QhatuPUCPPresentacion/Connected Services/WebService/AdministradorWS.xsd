@@ -7,6 +7,8 @@
   <xs:element name="listarAdministrador" type="tns:listarAdministrador" />
   <xs:element name="listarAdministradorResponse" type="tns:listarAdministradorResponse" />
   <xs:element name="obtenerAdministrador" type="tns:obtenerAdministrador" />
+  <xs:element name="obtenerAdministradorPorCorreoYContra" type="tns:obtenerAdministradorPorCorreoYContra" />
+  <xs:element name="obtenerAdministradorPorCorreoYContraResponse" type="tns:obtenerAdministradorPorCorreoYContraResponse" />
   <xs:element name="obtenerAdministradorResponse" type="tns:obtenerAdministradorResponse" />
   <xs:element name="registrarAdministrador" type="tns:registrarAdministrador" />
   <xs:element name="registrarAdministradorResponse" type="tns:registrarAdministradorResponse" />
@@ -47,6 +49,14 @@
   <xs:complexType name="actualizarAdministradorResponse">
     <xs:sequence />
   </xs:complexType>
+  <xs:complexType name="eliminarAdministrador">
+    <xs:sequence>
+      <xs:element name="idAdministrador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAdministradorResponse">
+    <xs:sequence />
+  </xs:complexType>
   <xs:complexType name="registrarAdministrador">
     <xs:sequence>
       <xs:element minOccurs="0" name="administrador" type="tns:administrador" />
@@ -55,13 +65,15 @@
   <xs:complexType name="registrarAdministradorResponse">
     <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="eliminarAdministrador">
+  <xs:complexType name="obtenerAdministradorPorCorreoYContra">
     <xs:sequence>
-      <xs:element name="idAdministrador" type="xs:int" />
+      <xs:element minOccurs="0" name="clave" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarAdministradorResponse">
-    <xs:sequence />
+  <xs:complexType name="obtenerAdministradorPorCorreoYContraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:administrador" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="obtenerAdministrador">
     <xs:sequence>

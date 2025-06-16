@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\sebastian\\onedrive\\escritorio\\programacion 3\\pucp_ta\\front\\qhatupucpweb\\qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\inicio\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\sebastian\\onedrive\\escritorio\\programacion 3\\pucp_ta\\front\\qhatupucpweb\\qhatupucppresentacion\\inicio\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayout.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\inicio\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\login.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\inicio\\paginainicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
@@ -23,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\sebastian\\onedrive\\escritorio\\programacion 3\\pucp_ta\\front\\qhatupucpweb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -53,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\inicio\\paginainicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\inicio\\paginainicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\qhatupucppresentacion\\favoritos\\paginafavoritosnew.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 25,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,7 +142,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Login.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.designer.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T21:59:47.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainLayoutMasterAdmin.Master",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
@@ -146,24 +162,23 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T20:40:38.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T20:40:38.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "PaginaInicio.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx.cs",
               "ToolTip": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAswHoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T16:01:42.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "PaginaFavoritosNew.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritosNew.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritosNew.aspx.cs",
@@ -175,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "PaginaFavoritosNew.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritosNew.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritosNew.aspx",
@@ -187,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PaginaFavoritos.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritos.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritos.aspx.cs",
@@ -199,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "PaginaInicio.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
@@ -211,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "PaginaInicioAdmin.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
@@ -223,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DetallePublicacion.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
@@ -231,12 +246,11 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-09T04:00:23.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T04:00:23.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PaginaFavoritos.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritos.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritos.aspx",
@@ -248,20 +262,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainLayout.Master.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master.cs",
               "ToolTip": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayout.Master.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T16:01:20.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "MainLayout.Master.designer.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
@@ -269,12 +283,11 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayout.Master.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T16:10:01.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:10:01.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainLayout.Master",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master",
@@ -282,12 +295,11 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayout.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T16:01:23.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:01:23.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "UsuariosAdmin.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\UsuariosAdmin.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\PaginasAdministrador\\UsuariosAdmin.aspx.cs",
@@ -299,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "PaginaInicioAdmin.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
@@ -311,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Perfil.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\Perfil.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Perfil\\Perfil.aspx",
@@ -323,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "UsuariosAdmin.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\UsuariosAdmin.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\PaginasAdministrador\\UsuariosAdmin.aspx",
@@ -335,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Perfil.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\Perfil.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Perfil\\Perfil.aspx.cs",
@@ -347,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "EditarUsuario.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Usuario\\EditarUsuario.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Usuario\\EditarUsuario.aspx",
@@ -359,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Login.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Login.aspx",
@@ -367,12 +379,11 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-13T16:26:46.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T16:26:46.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "DetallePublicacion.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\DetallePublicacion.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\DetallePublicacion.aspx",
@@ -384,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "PaginaFavoritos.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritos.aspx.designer.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Favoritos\\PaginaFavoritos.aspx.designer.cs",
@@ -396,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainLayoutMasterAdmin.Master.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
@@ -404,12 +415,11 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA1wB4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T18:08:24.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T18:08:24.782Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Postear.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
@@ -421,20 +431,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
               "ToolTip": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\Login.aspx.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAkwEQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwDAAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T16:40:46.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Login.css",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Login.css",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Login.css",
@@ -446,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DetallePublicacion.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
@@ -454,12 +464,11 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAAAFEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T04:06:05.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T04:06:05.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "detallePublicacion.css",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
@@ -467,12 +476,11 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-09T04:01:36.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-09T04:01:36.002Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Public\\css\\site.css",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Public\\css\\site.css",
@@ -484,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "EditarPublicacion.aspx",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx",
@@ -496,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "EditarPublicacion.aspx.cs",
               "DocumentMoniker": "C:\\Users\\SEBASTIAN\\OneDrive\\Escritorio\\PROGRAMACION 3\\PUCP_TA\\Front\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx.cs",
