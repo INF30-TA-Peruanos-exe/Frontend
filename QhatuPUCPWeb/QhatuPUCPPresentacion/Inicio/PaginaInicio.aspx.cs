@@ -108,6 +108,23 @@ namespace QhatuPUCPPresentacion.Inicio
         {
             CargarPublicaciones();
         }
+        protected void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            int id_objeto = Int32.Parse(((LinkButton)sender).CommandArgument);
+
+            PublicacionWSClient client = new PublicacionWSClient();
+
+            publicacion publicacion = client.obtenerPublicacion(id_objeto);
+            usuario usuario = Session["usuario"] as usuario;
+            int id_user = publicacion.usuario.idUsuario;
+            if (!client.esFavorito(usuario.idUsuario, id_objeto))
+            {
+                client.agregarFavoritos(usuario.idUsuario, id_objeto);
+            }
+            CargarPublicaciones();
+            //Response.Redirect("/Usuario/EditarUsuario.aspx?id_usuario=" + id_usuario_str);
+        }
+
     }
 
 

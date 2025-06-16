@@ -32,6 +32,11 @@
                                     <div class="card-body d-flex justify-content-between align-items-center">
                                         <p class="card-text mb-0"><%# Eval("titulo") %></p>
                                     </div>
+                                     <asp:LinkButton ID="BtnAgregar" runat="server"
+                                     CommandName="Agregar" CommandArgument='<%# Eval("idPublicacion") %>'
+                                     OnClick="BtnAgregar_Click"
+                                     OnClientClick="return confirm('¿Está seguro de agregar favorito?');"
+                                    Text="<i class='fa-solid fa-star'></i>" />
                                 </div>
                             </a>
                         </div>
