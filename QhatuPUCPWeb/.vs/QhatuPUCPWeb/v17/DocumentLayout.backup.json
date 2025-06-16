@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\filtros\\nuevaespecialidad.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\filtros\\nuevaespecialidad.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\filtros\\nuevafacultad.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\filtros\\nuevafacultad.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\filtros\\nuevocurso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\filtros\\nuevocurso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\apoyo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\apoyo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,42 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NuevaFacultad.aspx",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\NuevaFacultad.aspx",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Filtros\\NuevaFacultad.aspx",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\NuevaFacultad.aspx",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Filtros\\NuevaFacultad.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T16:48:35.948Z",
-              "IsPinned": true,
+              "DocumentIndex": 0,
+              "Title": "DetallePublicacion.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwHIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T17:36:07.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NuevaEspecialidad.aspx",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\NuevaEspecialidad.aspx",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Filtros\\NuevaEspecialidad.aspx",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\NuevaEspecialidad.aspx",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Filtros\\NuevaEspecialidad.aspx",
+              "DocumentIndex": 1,
+              "Title": "DetallePublicacion.aspx",
+              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
+              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T16:48:36.978Z",
+              "WhenOpened": "2025-06-16T17:36:04.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NuevoCurso.aspx",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\NuevoCurso.aspx",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Filtros\\NuevoCurso.aspx",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\NuevoCurso.aspx",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Filtros\\NuevoCurso.aspx",
+              "Title": "Apoyo.aspx",
+              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Apoyo.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\Apoyo.aspx",
+              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\Apoyo.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\Apoyo.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T16:48:34.884Z",
+              "WhenOpened": "2025-06-16T17:25:52.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.Master",
+              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master",
+              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayout.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-16T17:18:24.791Z",
               "EditorCaption": ""
             }
           ]
