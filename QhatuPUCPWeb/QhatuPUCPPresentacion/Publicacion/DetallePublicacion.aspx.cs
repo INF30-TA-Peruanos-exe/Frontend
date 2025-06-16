@@ -79,6 +79,7 @@ namespace QhatuPUCPPresentacion.Publicacion
                 denunciante = usuario,
                 autor = new publicacion { idPublicacion = idPublicacion },
                 motivo = motivo,
+                admin = null,
                 activo = true
             };
 

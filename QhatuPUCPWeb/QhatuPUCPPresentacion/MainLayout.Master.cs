@@ -19,5 +19,11 @@ namespace QhatuPUCPPresentacion
                 }
             }
         }
+
+        protected void BtnCerrarSession_Click(object sender, EventArgs e)
+        {
+            Session["usuario"] = null;
+            Response.Redirect("~/Inicio/Login.aspx");
+        }
     }
 }
