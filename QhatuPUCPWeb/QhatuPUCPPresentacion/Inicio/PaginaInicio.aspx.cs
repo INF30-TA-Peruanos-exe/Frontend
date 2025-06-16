@@ -80,6 +80,11 @@ namespace QhatuPUCPPresentacion.Inicio
                     publicaciones = client.listarPublicacion().ToList();
                 }
 
+                //Para que solo muestre las publicaciones con estado VISIBLE porque sino salen todas
+                publicaciones = publicaciones
+                    .Where(p => p.estado == estadoPublicacion.VISIBLE)
+                    .ToList();
+
                 rptPublicaciones.DataSource = publicaciones;
                 rptPublicaciones.DataBind();
             }

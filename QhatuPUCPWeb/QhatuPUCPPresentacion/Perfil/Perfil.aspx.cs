@@ -139,6 +139,22 @@ namespace QhatuPUCPPresentacion.Perfil
             }
         }
 
+        //con esto vamos a cambiar de color la etiqueta del estado de la publicacion segun su estado
+        public String cambiarSegunEstado(String estado)
+        {
+            switch (estado)
+            {
+                case "VISIBLE":
+                    return "bg-success text-white";
+                case "RESTRINGIDO":
+                    return "bg-warning text-dark";
+                case "OCULTO":
+                    return "bg-dark text-white";
+                default:
+                    return "bg-light text-dark";
+            }
+        }
+
 
     }
 }

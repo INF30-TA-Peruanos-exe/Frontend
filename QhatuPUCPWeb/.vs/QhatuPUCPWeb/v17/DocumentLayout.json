@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\perfil\\perfil.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\perfil\\perfil.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\perfil\\perfil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\perfil\\perfil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\paginainicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\paginainicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\universidad\\programacion 3\\ta-pom\\frontend\\qhatupucpweb\\qhatupucppresentacion\\perfil\\editarpublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\perfil\\editarpublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +42,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Perfil.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\Perfil.aspx.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Perfil\\Perfil.aspx.cs",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\Perfil.aspx.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Perfil\\Perfil.aspx.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAA2wI0AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T03:16:21.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Perfil.aspx",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\Perfil.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Perfil\\Perfil.aspx",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\Perfil.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Perfil\\Perfil.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-16T03:15:51.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaginaInicio.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx.cs",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwFIAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T03:06:33.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaginaInicio.aspx",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\PaginaInicio.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-16T03:06:30.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EditarPublicacion.aspx",
               "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx",
@@ -39,13 +107,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EditarPublicacion.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx.cs",
               "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\Universidad\\Programacion 3\\TA-POM\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Perfil\\EditarPublicacion.aspx.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDUAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwDUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T03:03:05.875Z",
               "EditorCaption": ""
