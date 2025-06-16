@@ -35,6 +35,8 @@ namespace QhatuPUCPPresentacion.Perfil
 
                 txtTitulo.Text = publicacion.titulo;
                 txtDescripcion.Text = publicacion.descripcion;
+                ddlEstado.SelectedValue = publicacion.estado.ToString();
+
             }
         }
 
@@ -45,6 +47,7 @@ namespace QhatuPUCPPresentacion.Perfil
                 publicacion publicacion = publicacionService.obtenerPublicacion(idPublicacion);
                 publicacion.titulo = txtTitulo.Text.Trim();
                 publicacion.descripcion = txtDescripcion.Text.Trim();
+                publicacion.estado = (estadoPublicacion)Enum.Parse(typeof(estadoPublicacion), ddlEstado.SelectedValue);
 
                 // === DEBUG: Imprimir atributos de la publicación antes de enviar ===
                 System.Diagnostics.Debug.WriteLine("== DATOS DE LA PUBLICACIÓN ==");

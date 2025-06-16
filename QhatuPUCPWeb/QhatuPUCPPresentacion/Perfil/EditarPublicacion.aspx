@@ -18,6 +18,13 @@
                     <label for="txtDescripcion" class="form-label">Descripción</label>
                     <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine" Rows="5" CssClass="form-control" />
                 </div>
+                <div class="mb-3">
+                <label for="ddlEstado" class="form-label">Estado</label>
+                    <asp:DropDownList ID="ddlEstado" runat="server" CssClass="form-select">
+                        <asp:ListItem Text="VISIBLE" Value="VISIBLE" />
+                        <asp:ListItem Text="OCULTO" Value="OCULTO" />
+                    </asp:DropDownList>
+                </div>
                 <asp:Button ID="btnGuardar" runat="server" CssClass="btn btn-success" Text="Guardar Cambios" OnClick="btnGuardar_Click" />
                 <asp:Button ID="btnCancelar" runat="server" CssClass="btn btn-secondary ms-2" Text="Cancelar" PostBackUrl="~/Perfil/Perfil.aspx" />
             </div>
