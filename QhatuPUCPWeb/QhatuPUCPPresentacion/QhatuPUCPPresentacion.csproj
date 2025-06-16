@@ -300,6 +300,9 @@
     <Content Include="Inicio\PaginaInicio.aspx" />
     <Content Include="Inicio\PaginaInicioAdmin.aspx" />
     <Content Include="PaginaPrueba.aspx" />
+    <Content Include="PaginasAdministrador\DenunciasAdmin.aspx" />
+    <Content Include="PaginasAdministrador\GestionFiltros.aspx" />
+    <Content Include="PaginasAdministrador\UsuariosAdmin.aspx" />
     <Content Include="Perfil\EditarPublicacion.aspx" />
     <Content Include="Perfil\estilos_perfil.css" />
     <Content Include="Perfil\Perfil.aspx" />
@@ -413,6 +416,27 @@
     </Compile>
     <Compile Include="PaginaPrueba.aspx.designer.cs">
       <DependentUpon>PaginaPrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdministrador\DenunciasAdmin.aspx.cs">
+      <DependentUpon>DenunciasAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdministrador\DenunciasAdmin.aspx.designer.cs">
+      <DependentUpon>DenunciasAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdministrador\GestionFiltros.aspx.cs">
+      <DependentUpon>GestionFiltros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdministrador\GestionFiltros.aspx.designer.cs">
+      <DependentUpon>GestionFiltros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdministrador\UsuariosAdmin.aspx.cs">
+      <DependentUpon>UsuariosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdministrador\UsuariosAdmin.aspx.designer.cs">
+      <DependentUpon>UsuariosAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Perfil\EditarPublicacion.aspx.cs">
       <DependentUpon>EditarPublicacion.aspx</DependentUpon>
