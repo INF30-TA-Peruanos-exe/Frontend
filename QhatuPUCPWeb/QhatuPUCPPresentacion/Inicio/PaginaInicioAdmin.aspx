@@ -4,6 +4,10 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
+    <!-- Título de la página -->
+    <div class="container mb-4">
+        <h2 class="fw-bold">Publicaciones</h2>
+    </div>
     <!-- Filtros -->
     <div class="container mb-4">
         <div class="row g-2">
@@ -18,31 +22,79 @@
             </div>
         </div>
     </div>
-
-    <!-- Cards con contenedor -->
-    <div class="container">
-        <div class="cards-box p-4">
-            <div class="row g-4">
+    <!-- Tabla con datos -->
+    <div class="container p-4">
+        <table class="table table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Usuario</th>
+                    <th>Título</th>
+                    <th>Estado Publicación</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
                 <asp:Repeater ID="rptPublicaciones" runat="server">
                     <ItemTemplate>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <a href='<%# ResolveUrl("~/Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")) %>' style="text-decoration: none; color: inherit;">
-                                <div class="card h-100 shadow-sm border-0">
-                                    <img src='<%# Eval("rutaImagen") %>' class="card-img-top" style="height: 180px; object-fit: cover;" />
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <p class="card-text mb-0"><%# Eval("titulo") %></p>
+                        <tr>
+                            <td><%# Eval("Usuario.nombre") %></td>
+                            <td><%# Eval("titulo") %></td>
+                            <td><%# Eval("estado") %></td>
+                            <td><%# Eval("fechaPublicacion", "{0:dd/MM/yyyy}") %></td>
+                            <td style="position: relative;">
+                                <a class="btn btn-sm btn-primary"
+                                   href='<%# ResolveUrl("~/Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")) %>'>
+                                    Ver Detalle
+                                </a>
+
+                                <div style="display: inline-block; position: relative;">
+                                    <!-- Botón Eliminar -->
+                                    <button type="button" class="btn btn-sm btn-danger ms-2" onclick="mostrarConfirmacion(this)">
+                                        Eliminar
+                                    </button>
+
+                                    <!-- Globo de confirmación -->
+                                    <div class="confirmacion-eliminar alert alert-warning d-none p-2 position-absolute" 
+                                         style="top: 100%; left: 0; z-index: 1000; white-space: nowrap;">
+                                        ¿Eliminar?
+                                        <div class="mt-1 text-end">
+                                            <asp:Button ID="btnEliminar" runat="server"
+                                                CommandName="Eliminar"
+                                                CommandArgument='<%# Eval("idPublicacion") %>'
+                                                Text="Sí"
+                                                CssClass="btn btn-sm btn-danger me-1" />
+                                            <button type="button" class="btn btn-sm btn-secondary" onclick="cancelarConfirmacion(this)">
+                                                No
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
+                            </td>
+                        </tr>
                     </ItemTemplate>
                 </asp:Repeater>
-            </div>
-        </div>
+            </tbody>
+        </table>
     </div>
 
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
+    <script>
+        function mostrarConfirmacion(boton) {
+            // Cierra otras confirmaciones abiertas
+            document.querySelectorAll('.confirmacion-eliminar').forEach(el => el.classList.add('d-none'));
 
+            // Muestra la confirmación actual
+            const contenedor = boton.nextElementSibling;
+            contenedor.classList.remove('d-none');
+        }
+
+        function cancelarConfirmacion(boton) {
+            const contenedor = boton.closest('.confirmacion-eliminar');
+            contenedor.classList.add('d-none');
+            contenedor.previousElementSibling.style.display = 'inline-block';
+        }
+    </script>
 </asp:Content>

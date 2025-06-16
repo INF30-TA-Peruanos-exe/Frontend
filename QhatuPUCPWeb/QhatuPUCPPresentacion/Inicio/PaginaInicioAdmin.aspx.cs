@@ -90,6 +90,19 @@ namespace QhatuPUCPPresentacion.Inicio
             }
         }
 
+        protected void rptPublicaciones_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "Eliminar")
+            {
+                PublicacionWSClient client = new PublicacionWSClient();
+                int id = Convert.ToInt32(e.CommandArgument);
+                // Lógica para eliminar publicación
+                client.eliminarPublicacion(id);
+                // Volver a cargar las publicaciones actualizadas
+                CargarPublicaciones();
+            }
+        }
+
         protected void ddlFacultad_SelectedIndexChanged(object sender, EventArgs e)
         {
             CargarPublicaciones();
