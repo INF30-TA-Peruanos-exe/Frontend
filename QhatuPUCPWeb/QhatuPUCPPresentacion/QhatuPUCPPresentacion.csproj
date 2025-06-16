@@ -291,6 +291,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Filtros\ListaCurso.aspx" />
+    <Content Include="Filtros\ListaEspecialidad.aspx" />
+    <Content Include="Filtros\ListaFacultad.aspx" />
+    <Content Include="Filtros\NuevaEspecialidad.aspx" />
+    <Content Include="Filtros\NuevaFacultad.aspx" />
+    <Content Include="Filtros\NuevoCurso.aspx" />
     <Content Include="HacerPubli\estilos_postear.css" />
     <Content Include="HacerPubli\Postear.aspx" />
     <Content Include="Inicio\DetallePublicacion.aspx" />
@@ -352,6 +358,7 @@
     <Content Include="Public\js\jquery-3.7.1.min.js" />
     <Content Include="Public\js\jquery-3.7.1.slim.js" />
     <Content Include="Public\js\jquery-3.7.1.slim.min.js" />
+    <Content Include="Usuario\EditarUsuario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -359,6 +366,48 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\ListaCurso.aspx.cs">
+      <DependentUpon>ListaCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filtros\ListaCurso.aspx.designer.cs">
+      <DependentUpon>ListaCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\ListaEspecialidad.aspx.cs">
+      <DependentUpon>ListaEspecialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filtros\ListaEspecialidad.aspx.designer.cs">
+      <DependentUpon>ListaEspecialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\ListaFacultad.aspx.cs">
+      <DependentUpon>ListaFacultad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filtros\ListaFacultad.aspx.designer.cs">
+      <DependentUpon>ListaFacultad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\NuevaEspecialidad.aspx.cs">
+      <DependentUpon>NuevaEspecialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filtros\NuevaEspecialidad.aspx.designer.cs">
+      <DependentUpon>NuevaEspecialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\NuevaFacultad.aspx.cs">
+      <DependentUpon>NuevaFacultad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filtros\NuevaFacultad.aspx.designer.cs">
+      <DependentUpon>NuevaFacultad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Filtros\NuevoCurso.aspx.cs">
+      <DependentUpon>NuevoCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filtros\NuevoCurso.aspx.designer.cs">
+      <DependentUpon>NuevoCurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="HacerPubli\Postear.aspx.cs">
       <DependentUpon>Postear.aspx</DependentUpon>
@@ -458,6 +507,13 @@
     </Compile>
     <Compile Include="Publicacion\DetallePublicacion.aspx.designer.cs">
       <DependentUpon>DetallePublicacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\EditarUsuario.aspx.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\EditarUsuario.aspx.designer.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

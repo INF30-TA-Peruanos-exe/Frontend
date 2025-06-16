@@ -1,15 +1,22 @@
-﻿using System;
+﻿using QhatuPUCPPresentacion.WebService;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using QhatuPUCPPresentacion.WebService;
 
 namespace QhatuPUCPPresentacion.PaginasAdministrador
 {
     public partial class UsuariosAdmin : System.Web.UI.Page
     {
+        protected UsuarioWSClient client;
+        protected void Page_Init(object sender, EventArgs e)
+        {
+            client = new UsuarioWSClient();
+            CargarUsuarios();
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -22,7 +29,6 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         {
             try
             {
-                UsuarioWSClient client = new UsuarioWSClient();
                 List<usuario> usuarios = new List<usuario>();
 
                 // Si no hay filtro, cargar todas
@@ -37,33 +43,34 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
             }
         }
 
-        protected void rptUsuarios_ItemCommand(object source, RepeaterCommandEventArgs e)
+        protected void BtnEditar_Click(object sender, EventArgs e)
         {
-            UsuarioWSClient client = new UsuarioWSClient();
-            int id = Convert.ToInt32(e.CommandArgument);
+            int id_usuario= Int32.Parse(((LinkButton)sender).CommandArgument);
 
-            if (e.CommandName == "Eliminar")
+            usuario update_usuario = client.obtenerUsuario(id_usuario);
+
+            if (update_usuario.estado == estadoUsuario.HABILITADO)
+                update_usuario.estado = estadoUsuario.RESTRINGIDO;
+            else
+                update_usuario.estado = estadoUsuario.HABILITADO;
+
+            client.actualizarUsuario(update_usuario);
+
+            CargarUsuarios();
+
+            //Response.Redirect("/Usuario/EditarUsuario.aspx?id_usuario=" + id_usuario_str);
+        }
+
+        protected void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            string argument = ((LinkButton)sender).CommandArgument.ToString();
+            int id_usuario = int.Parse(argument);
+            if (!client.eliminarUsuario(id_usuario))
             {
-                // Lógica para eliminar Usuario
-                client.eliminarUsuario(id);
-                // Volver a cargar las usuarios actualizadas
-                CargarUsuarios();
+                LblError.Text = "Error al eliminar el área";
             }
-            else if (e.CommandName == "CambiarEstado")
+            else
             {
-                usuario update_user = client.obtenerUsuario(id);
-
-                if (update_user.estado == estadoUsuario.HABILITADO)
-                {
-                    update_user.estado = estadoUsuario.RESTRINGIDO;
-                }
-                else
-                {
-                    update_user.estado = estadoUsuario.HABILITADO;
-                }
-
-                client.actualizarUsuario(update_user);
-                // Volver a cargar las usuarios actualizadas
                 CargarUsuarios();
             }
         }

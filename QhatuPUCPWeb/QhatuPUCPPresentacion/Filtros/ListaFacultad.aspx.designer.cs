@@ -7,21 +7,30 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace QhatuPUCPPresentacion.PaginasAdministrador
+namespace QhatuPUCPPresentacion.Filtros
 {
 
 
-    public partial class UsuariosAdmin
+    public partial class ListaFacultad
     {
 
         /// <summary>
-        /// Control rptUsuarios.
+        /// Control BtnAgregar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptUsuarios;
+        protected global::System.Web.UI.WebControls.Button BtnAgregar;
+
+        /// <summary>
+        /// Control rptFacultades.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptFacultades;
 
         /// <summary>
         /// Control LblError.

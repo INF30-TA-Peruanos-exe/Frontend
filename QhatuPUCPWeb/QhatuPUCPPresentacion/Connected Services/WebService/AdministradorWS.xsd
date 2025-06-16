@@ -47,20 +47,20 @@
   <xs:complexType name="actualizarAdministradorResponse">
     <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="eliminarAdministrador">
-    <xs:sequence>
-      <xs:element name="idAdministrador" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarAdministradorResponse">
-    <xs:sequence />
-  </xs:complexType>
   <xs:complexType name="registrarAdministrador">
     <xs:sequence>
       <xs:element minOccurs="0" name="administrador" type="tns:administrador" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="registrarAdministradorResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="eliminarAdministrador">
+    <xs:sequence>
+      <xs:element name="idAdministrador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAdministradorResponse">
     <xs:sequence />
   </xs:complexType>
   <xs:complexType name="obtenerAdministrador">
