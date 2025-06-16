@@ -24,7 +24,7 @@ namespace QhatuPUCPPresentacion.Filtros
         protected global::System.Web.UI.WebControls.Button BtnAgregar;
 
         /// <summary>
-        /// Control rptFacultades.
+        /// Control rptEspecialidades.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.

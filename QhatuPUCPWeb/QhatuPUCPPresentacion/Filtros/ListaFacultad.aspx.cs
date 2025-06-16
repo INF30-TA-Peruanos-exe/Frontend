@@ -47,7 +47,9 @@ namespace QhatuPUCPPresentacion.Filtros
         }
         protected void BtnEditar_Click(object sender, EventArgs e)
         {
-            //Response.Redirect("/Usuario/EditarUsuario.aspx?id_usuario=" + id_usuario_str);
+            string id_facultad_str = ((LinkButton)sender).CommandArgument.ToString();
+            
+            Response.Redirect("/Filtros/NuevaFacultad.aspx?id_facultad=" + id_facultad_str);
         }
 
         protected void BtnEliminar_Click(object sender, EventArgs e)

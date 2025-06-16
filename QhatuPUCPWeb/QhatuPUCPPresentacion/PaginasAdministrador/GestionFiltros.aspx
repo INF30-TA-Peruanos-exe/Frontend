@@ -12,7 +12,7 @@
             </div>
             <div class="col-12 col-md">
                 <a href="<%= ResolveUrl("~/Filtros/ListaEspecialidad.aspx") %>" class="btn btn-light btn-lg w-100 text-start">
-                    Especialidad
+                    Especialidades
                 </a>
             </div>
             <div class="col-12 col-md">
