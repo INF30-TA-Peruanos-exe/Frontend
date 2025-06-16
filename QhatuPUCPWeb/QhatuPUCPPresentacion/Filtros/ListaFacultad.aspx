@@ -6,9 +6,9 @@
     <h2 class="fw-bold">Facultades</h2>
     </div>
     <div class="text-end pb-3">
-    <asp:Button ID="BtnAgregar" OnClick="BtnAgregar_Click" runat="server" Text="Agregar Area" CssClass="btn btn-success" />
+    <asp:Button ID="BtnAgregar" OnClick="BtnAgregar_Click" runat="server" Text="Agregar Facultad" CssClass="btn btn-success" />
     </div>
-<!-- Tabla con datos -->
+<!-- Tabla con datos -->    
 <div class="container p-4">
     <table class="table table-hover table-bordered">
         <thead class="table-dark">
