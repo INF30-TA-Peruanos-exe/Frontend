@@ -73,7 +73,7 @@ namespace QhatuPUCPPresentacion.Inicio
                     Session["usuario"] = usuarioValido;
                     Response.Redirect("~/Inicio/PaginaInicio.aspx");
                 }
-                else if (administradorValido != null)
+                else if (administradorValido != null && administradorValido.correo==correo)
                 {
                     Session["administrador"] = administradorValido;
                     Session["usuario"] = usuarioValido;
