@@ -56,34 +56,51 @@ namespace QhatuPUCPPresentacion.Inicio
             try
             {
                 PublicacionWSClient client = new PublicacionWSClient();
-                List<publicacion> publicaciones = new List<publicacion>();
 
-                // Lógica de filtros: prioridad Facultad > Especialidad > Curso
-                if (ddlFacultad.SelectedIndex > 0)
+                List<publicacion> publicaciones = client.listarPublicacion()?.ToList() ?? new List<publicacion>();
+
+                int idFacultad = int.Parse(ddlFacultad.SelectedValue);
+                int idEspecialidad = int.Parse(ddlEspecialidad.SelectedValue);
+                int idCurso = int.Parse(ddlCurso.SelectedValue);
+
+                //filtro de publicacion-facultad
+                if (idFacultad > 0)
                 {
-                    int idFacultad = int.Parse(ddlFacultad.SelectedValue);
-                    publicaciones = client.listarPorFacultad(idFacultad).ToList();
-                }
-                else if (ddlEspecialidad.SelectedIndex > 0)
-                {
-                    int idEspecialidad = int.Parse(ddlEspecialidad.SelectedValue);
-                    publicaciones = client.listarPorEspecialidad(idEspecialidad).ToList();
-                }
-                else if (ddlCurso.SelectedIndex > 0)
-                {
-                    int idCurso = int.Parse(ddlCurso.SelectedValue);
-                    publicaciones = client.listarPorCurso(idCurso).ToList();
-                }
-                else
-                {
-                    // Si no hay filtro, cargar todas
-                    publicaciones = client.listarPublicacion().ToList();
+                    var publicacionesFacultad = client.listarPorFacultad(idFacultad) ?? new publicacion[0]; //si devuelve vacio se reemplaza por un arreglo vacio
+                    var idsFacultad = new HashSet<int>(publicacionesFacultad.Select(p => p.idPublicacion));
+
+                    if (idsFacultad.Count == 0)
+                        publicaciones.Clear();
+                    else
+                        publicaciones = publicaciones.Where(p => idsFacultad.Contains(p.idPublicacion)).ToList();
                 }
 
-                //Para que solo muestre las publicaciones con estado VISIBLE porque sino salen todas
-                publicaciones = publicaciones
-                    .Where(p => p.estado == estadoPublicacion.VISIBLE)
-                    .ToList();
+                //filtro de publicacion-especialidad
+                if (idEspecialidad > 0 && publicaciones.Count > 0)
+                {
+                    var publicacionesEspecialidad = client.listarPorEspecialidad(idEspecialidad) ?? new publicacion[0];
+                    var idsEspecialidad = new HashSet<int>(publicacionesEspecialidad.Select(p => p.idPublicacion));
+
+                    if (idsEspecialidad.Count == 0)
+                        publicaciones.Clear();
+                    else
+                        publicaciones = publicaciones.Where(p => idsEspecialidad.Contains(p.idPublicacion)).ToList();
+                }
+
+                //filtro de publicacion-curso
+                if (idCurso > 0 && publicaciones.Count > 0)
+                {
+                    var publicacionesCurso = client.listarPorCurso(idCurso) ?? new publicacion[0];
+                    var idsCurso = new HashSet<int>(publicacionesCurso.Select(p => p.idPublicacion));
+
+                    if (idsCurso.Count == 0)
+                        publicaciones.Clear();
+                    else
+                        publicaciones = publicaciones.Where(p => idsCurso.Contains(p.idPublicacion)).ToList();
+                }
+
+                // se muestra solo las publicaciones que tengan estado visible
+                publicaciones = publicaciones.Where(p => p.estado == estadoPublicacion.VISIBLE).ToList();
 
                 rptPublicaciones.DataSource = publicaciones;
                 rptPublicaciones.DataBind();
@@ -93,6 +110,11 @@ namespace QhatuPUCPPresentacion.Inicio
                 Console.WriteLine("Error al cargar publicaciones: " + ex.Message);
             }
         }
+    
+
+
+
+
 
         protected void ddlFacultad_SelectedIndexChanged(object sender, EventArgs e)
         {
