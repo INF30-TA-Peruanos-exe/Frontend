@@ -8,8 +8,6 @@
   <xs:element name="especialidad" type="tns:especialidad" />
   <xs:element name="facultad" type="tns:facultad" />
   <xs:element name="listarComentario" type="tns:listarComentario" />
-  <xs:element name="listarComentarioPorPublicacion" type="tns:listarComentarioPorPublicacion" />
-  <xs:element name="listarComentarioPorPublicacionResponse" type="tns:listarComentarioPorPublicacionResponse" />
   <xs:element name="listarComentarioResponse" type="tns:listarComentarioResponse" />
   <xs:element name="obtenerComentario" type="tns:obtenerComentario" />
   <xs:element name="obtenerComentarioResponse" type="tns:obtenerComentarioResponse" />
@@ -117,16 +115,6 @@
   <xs:complexType name="obtenerComentarioResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="tns:comentario" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarComentarioPorPublicacion">
-    <xs:sequence>
-      <xs:element name="idPublicacion" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarComentarioPorPublicacionResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:comentario" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarComentario">

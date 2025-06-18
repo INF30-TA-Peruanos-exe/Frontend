@@ -49,6 +49,16 @@
   <xs:complexType name="actualizarAdministradorResponse">
     <xs:sequence />
   </xs:complexType>
+  <xs:complexType name="obtenerAdministradorPorCorreoYContra">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clave" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerAdministradorPorCorreoYContraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:administrador" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="eliminarAdministrador">
     <xs:sequence>
       <xs:element name="idAdministrador" type="xs:int" />
@@ -64,16 +74,6 @@
   </xs:complexType>
   <xs:complexType name="registrarAdministradorResponse">
     <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="obtenerAdministradorPorCorreoYContra">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="clave" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="obtenerAdministradorPorCorreoYContraResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:administrador" />
-    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="obtenerAdministrador">
     <xs:sequence>

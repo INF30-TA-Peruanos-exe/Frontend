@@ -95,35 +95,8 @@ namespace QhatuPUCPPresentacion.Publicacion
         private void CargarComentarios(int idPublicacion)
         {
             var usuario = Session["usuario"] as usuario;
+            var todos = comentarioService.listarComentario();
 
-            var comentarios = comentarioService.listarComentarioPorPublicacion(idPublicacion);
-
-            if (comentarios == null)
-            {
-                rptComentarios.DataSource = new List<object>();
-                rptComentarios.DataBind();
-                return;
-            }
-
-            var comentariosProcesados = comentarios
-                .Select(c => new
-                {
-                    IdComentario = c.idComentario,
-                    Autor = c.comentador?.nombre ?? "Usuario",
-                    AvatarUrl = "/Public/images/user-avatar.png",
-                    Fecha = c.fecha.ToString("dd/MM/yyyy"),
-                    Contenido = c.contenido,
-                    Valoracion = c.valoracion,
-                    EsPropio = usuario != null && c.comentador != null && c.comentador.idUsuario == usuario.idUsuario
-                })
-                .ToList();
-
-            rptComentarios.DataSource = comentariosProcesados;
-            rptComentarios.DataBind();
-
-
-
-            /*
             if (todos == null)
             {
                 rptComentarios.DataSource = new List<object>();
@@ -131,8 +104,8 @@ namespace QhatuPUCPPresentacion.Publicacion
                 return;
             }
 
-            var comentarios = todos;
-              .Where(c => c.publicacion != null && c.publicacion.idPublicacion == idPublicacion && c.activo)
+            var comentarios = todos
+                .Where(c => c.publicacion != null && c.publicacion.idPublicacion == idPublicacion && c.activo)
                 .Select(c => new
                 {
                     IdComentario = c.idComentario,
@@ -143,9 +116,10 @@ namespace QhatuPUCPPresentacion.Publicacion
                     Valoracion = c.valoracion,
                     EsPropio = usuario != null && c.comentador != null && c.comentador.idUsuario == usuario.idUsuario
                 })
-                .ToList();*/
+                .ToList();
 
-
+            rptComentarios.DataSource = comentarios;
+            rptComentarios.DataBind();
         }
 
         protected void rptComentarios_ItemCommand(object source, RepeaterCommandEventArgs e)
