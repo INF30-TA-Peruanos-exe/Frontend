@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\paginainicioadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicioadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\filtros\\listacurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\filtros\\listacurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\paginainicioadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicioadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\filtros\\listacurso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\filtros\\listacurso.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,72 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PaginaInicioAdmin.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAIwIAAAAAFAAAAAAAAAA==",
+              "Title": "DetallePublicacion.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAcwG4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T02:53:25.308Z",
+              "WhenOpened": "2025-06-18T03:18:51.641Z",
               "EditorCaption": ""
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaginaInicioAdmin.aspx",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-18T02:52:22.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainLayoutMasterAdmin.Master",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-18T02:52:14.904Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ListaCurso.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx.cs",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx.cs",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T02:53:09.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ListaCurso.aspx",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx",
+              "Title": "DetallePublicacion.aspx",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-18T02:52:33.534Z",
+              "WhenOpened": "2025-06-09T04:00:23.709Z",
               "EditorCaption": ""
             }
           ]

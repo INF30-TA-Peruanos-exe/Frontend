@@ -175,15 +175,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarFavoritos">
-    <xs:sequence>
-      <xs:element name="idUsuario" type="xs:int" />
-      <xs:element name="idPublicacion" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarFavoritosResponse">
-    <xs:sequence />
-  </xs:complexType>
   <xs:complexType name="obtenerPublicacion">
     <xs:sequence>
       <xs:element name="idPublicacion" type="xs:int" />
@@ -193,6 +184,15 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="tns:publicacion" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFavoritos">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element name="idPublicacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFavoritosResponse">
+    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="actualizarPublicacion">
     <xs:sequence>
