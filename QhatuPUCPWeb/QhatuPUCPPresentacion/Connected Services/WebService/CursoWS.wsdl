@@ -5,11 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/CursoWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="obtenerCurso">
-    <part name="parameters" element="tns:obtenerCurso" />
+  <message name="listarCurso">
+    <part name="parameters" element="tns:listarCurso" />
   </message>
-  <message name="obtenerCursoResponse">
-    <part name="parameters" element="tns:obtenerCursoResponse" />
+  <message name="listarCursoResponse">
+    <part name="parameters" element="tns:listarCursoResponse" />
   </message>
   <message name="registrarCurso">
     <part name="parameters" element="tns:registrarCurso" />
@@ -29,16 +29,16 @@
   <message name="eliminarCursoResponse">
     <part name="parameters" element="tns:eliminarCursoResponse" />
   </message>
-  <message name="listarCurso">
-    <part name="parameters" element="tns:listarCurso" />
+  <message name="obtenerCurso">
+    <part name="parameters" element="tns:obtenerCurso" />
   </message>
-  <message name="listarCursoResponse">
-    <part name="parameters" element="tns:listarCursoResponse" />
+  <message name="obtenerCursoResponse">
+    <part name="parameters" element="tns:obtenerCursoResponse" />
   </message>
   <portType name="CursoWS">
-    <operation name="obtenerCurso">
-      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
-      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
+    <operation name="listarCurso">
+      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoRequest" message="tns:listarCurso" />
+      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoResponse" message="tns:listarCursoResponse" />
     </operation>
     <operation name="registrarCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest" message="tns:registrarCurso" />
@@ -52,14 +52,14 @@
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
     </operation>
-    <operation name="listarCurso">
-      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoRequest" message="tns:listarCurso" />
-      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoResponse" message="tns:listarCursoResponse" />
+    <operation name="obtenerCurso">
+      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
+      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
     </operation>
   </portType>
   <binding name="CursoWSPortBinding" type="tns:CursoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="obtenerCurso">
+    <operation name="listarCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -95,7 +95,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarCurso">
+    <operation name="obtenerCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

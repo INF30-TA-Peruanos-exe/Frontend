@@ -11,18 +11,6 @@
   <message name="listarNotificacionResponse">
     <part name="parameters" element="tns:listarNotificacionResponse" />
   </message>
-  <message name="eliminarDenuncia">
-    <part name="parameters" element="tns:eliminarDenuncia" />
-  </message>
-  <message name="eliminarDenunciaResponse">
-    <part name="parameters" element="tns:eliminarDenunciaResponse" />
-  </message>
-  <message name="obtenerNotificacion">
-    <part name="parameters" element="tns:obtenerNotificacion" />
-  </message>
-  <message name="obtenerNotificacionResponse">
-    <part name="parameters" element="tns:obtenerNotificacionResponse" />
-  </message>
   <message name="registrarNotificacion">
     <part name="parameters" element="tns:registrarNotificacion" />
   </message>
@@ -35,18 +23,22 @@
   <message name="actualizarNotificacionResponse">
     <part name="parameters" element="tns:actualizarNotificacionResponse" />
   </message>
+  <message name="eliminarDenuncia">
+    <part name="parameters" element="tns:eliminarDenuncia" />
+  </message>
+  <message name="eliminarDenunciaResponse">
+    <part name="parameters" element="tns:eliminarDenunciaResponse" />
+  </message>
+  <message name="obtenerNotificacion">
+    <part name="parameters" element="tns:obtenerNotificacion" />
+  </message>
+  <message name="obtenerNotificacionResponse">
+    <part name="parameters" element="tns:obtenerNotificacionResponse" />
+  </message>
   <portType name="NotificacionWS">
     <operation name="listarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionRequest" message="tns:listarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionResponse" message="tns:listarNotificacionResponse" />
-    </operation>
-    <operation name="eliminarDenuncia">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
-    </operation>
-    <operation name="obtenerNotificacion">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionRequest" message="tns:obtenerNotificacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionResponse" message="tns:obtenerNotificacionResponse" />
     </operation>
     <operation name="registrarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionRequest" message="tns:registrarNotificacion" />
@@ -55,6 +47,14 @@
     <operation name="actualizarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
+    </operation>
+    <operation name="eliminarDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
+    </operation>
+    <operation name="obtenerNotificacion">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionRequest" message="tns:obtenerNotificacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionResponse" message="tns:obtenerNotificacionResponse" />
     </operation>
   </portType>
   <binding name="NotificacionWSPortBinding" type="tns:NotificacionWS">
@@ -68,24 +68,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarDenuncia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerNotificacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="registrarNotificacion">
       <soap:operation soapAction="" />
       <input>
@@ -96,6 +78,24 @@
       </output>
     </operation>
     <operation name="actualizarNotificacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDenuncia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerNotificacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

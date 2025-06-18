@@ -1,6 +1,8 @@
 ﻿using QhatuPUCPPresentacion.WebService;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -78,6 +80,35 @@ namespace QhatuPUCPPresentacion.HacerPubli
                     throw new Exception("Sesión de usuario no válida.");
                 }
                 nueva.usuario = usuarioSesion;
+
+                //Subida de imagen
+                if (fuImagen.HasFile)
+                {
+                    try
+                    {
+                        // Validar extensión permitida
+                        string extension = Path.GetExtension(fuImagen.FileName).ToLower();
+                        string[] extensionesPermitidas = {".jpg", ".jpeg", ".png"};
+
+                        if (!extensionesPermitidas.Contains(extension))
+                        {
+                            lblMensaje.Text = "Solo se permiten imágenes (.jpg, .jpeg, .png)";
+                            return; 
+                        }
+
+                        string nombreArchivo = Path.GetFileName(fuImagen.FileName);
+                        string rutaRelativa = "/Imagenes/" + nombreArchivo;
+                        string rutaFisica = Server.MapPath(rutaRelativa);
+
+                        fuImagen.SaveAs(rutaFisica);
+                        nueva.rutaImagen = rutaRelativa; // Se actualiza con la imagen subida
+                    }
+                    catch (Exception exImg)
+                    {
+                        System.Diagnostics.Debug.WriteLine("Error al guardar imagen: " + exImg.Message);
+                        // Se mantiene imagen por defecto si ocurre error
+                    }
+                }
 
                 // Cursos
                 List<curso> cursos = new List<curso>();

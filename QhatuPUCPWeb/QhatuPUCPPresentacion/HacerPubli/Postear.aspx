@@ -42,9 +42,11 @@
 
                     <!-- Imagen -->
                     <div class="mb-3">
-                        <label class="form-label">Imagen</label>
-                        <div class="form-text">Se usará una imagen por defecto: <code>/Public/images/imagen-ataque.jpg</code></div>
+                        <label for="fuImagen" class="form-label">Subir imagen</label>
+                        <asp:FileUpload ID="fuImagen" runat="server" CssClass="form-control" />
+                        <small class="form-text text-muted">Si no subes una imagen, se usará la predeterminada.</small>
                     </div>
+
 
                     <!-- Botón -->
                     <div class="text-end">

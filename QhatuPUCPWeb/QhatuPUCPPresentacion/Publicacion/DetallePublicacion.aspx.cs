@@ -85,8 +85,14 @@ namespace QhatuPUCPPresentacion.Publicacion
             var denunciaService = new DenunciaWSClient();
             denunciaService.registrarDenuncia(denuncia);
 
-            ScriptManager.RegisterStartupScript(this, GetType(), "denunciaOk", "$('#modalDenuncia').modal('hide'); alert('Denuncia registrada.');", true);
+            ScriptManager.RegisterStartupScript(this, GetType(), "denunciaOk", @"
+                var modalElement = document.getElementById('modalDenuncia');
+                var modal = bootstrap.Modal.getInstance(modalElement);
+                if(modal) modal.hide();
 
+                var toastEl = document.getElementById('toastDenuncia');
+                var toast = new bootstrap.Toast(toastEl, {delay: 3000});
+                toast.show();", true);
             txtMotivoDenuncia.Text = "";
         }
 

@@ -15,7 +15,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body>
-    <form runat="server">
+    <form runat="server" enctype="multipart/form-data">
     <div class="d-flex">
         <!-- Sidebar -->
         <div id="bdSidebar" class="sidebar sidebar-custom p-3 border-end d-flex flex-column">

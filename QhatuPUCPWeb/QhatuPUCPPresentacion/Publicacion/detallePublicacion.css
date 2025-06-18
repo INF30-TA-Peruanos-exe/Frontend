@@ -159,3 +159,26 @@
     }
 }
 
+/*Para el toast de denuncia exitosa*/
+.toast-exito {
+    background-color: #f3f0eb;
+    color: #2f5e93;
+    border-left: 4px solid #23496f;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    font-size: 0.95rem;
+}
+
+    .toast-exito .toast-body {
+        display: flex;
+        align-items: center;
+    }
+
+    .toast-exito .fas {
+        font-size: 1.2rem;
+    }
+
+    .toast-exito .btn-close {
+        filter: invert(27%) sepia(24%) saturate(902%) hue-rotate(175deg) brightness(94%) contrast(89%);
+    }
+
+

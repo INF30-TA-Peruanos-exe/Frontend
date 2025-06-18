@@ -572,6 +572,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Imagenes\" />
     <Folder Include="Notificaciones\" />
   </ItemGroup>
   <ItemGroup>
