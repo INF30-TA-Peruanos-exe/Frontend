@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="PaginaInicio.aspx.cs" Inherits="QhatuPUCPPresentacion.Inicio.PaginaInicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
+    <link href="/Inicio/paginaInicio.css" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
@@ -52,6 +52,19 @@
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
+                <div class="d-flex justify-content-end mt-4">
+                    <div class="btn-group pagination-wrapper" role="group">
+                        <asp:Repeater ID="rptPaginas" runat="server" OnItemCommand="rptPaginas_ItemCommand">
+                            <ItemTemplate>
+                                <asp:LinkButton runat="server"
+                                    CommandName="Page"
+                                    CommandArgument='<%# Eval("Numero") %>'
+                                    CssClass='<%# (bool)Eval("EsActual") ? "btn btn-sm btn-custom-active" : "btn btn-sm btn-custom-inactive" %>'
+                                    Text='<%# Eval("Texto") %>' />
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

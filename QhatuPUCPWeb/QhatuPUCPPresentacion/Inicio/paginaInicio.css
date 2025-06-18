@@ -1,0 +1,30 @@
+﻿.btn-custom-active {
+    background-color: #2f5e93;
+    color: white;
+    border-color: #2f5e93;
+}
+
+.btn-custom-inactive {
+    background-color: white;
+    color: #2f5e93;
+    border: 1px solid #2f5e93;
+}
+
+.btn-group .btn {
+    border-radius: 0 !important; /*elimina bordes redondeados*/
+    margin-right: -1px; /*los une*/
+}
+
+.pagination-wrapper .btn {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.6rem;
+}
+
+.btn-custom-inactive:hover {
+    background-color: #2f5e93; 
+    color: white;
+    border-color: #2f5e93;
+    cursor: pointer;
+}
+
+

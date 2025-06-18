@@ -311,6 +311,7 @@
     <Content Include="HacerPubli\Postear.aspx" />
     <Content Include="Inicio\Apoyo.aspx" />
     <Content Include="Inicio\DetallePublicacion.aspx" />
+    <Content Include="Inicio\paginaInicio.css" />
     <Content Include="Inicio\Login.aspx" />
     <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
