@@ -117,6 +117,15 @@ namespace QhatuPUCPPresentacion.Inicio
         {
             CargarPublicaciones();
         }
+
+        protected void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            PublicacionWSClient client = new PublicacionWSClient();
+            string argument = ((LinkButton)sender).CommandArgument.ToString();
+            int id_publicacion = int.Parse(argument);
+            client.eliminarPublicacion(id_publicacion);
+            CargarPublicaciones();
+        }
     }
     /*
     public partial class PaginaInicio : System.Web.UI.Page

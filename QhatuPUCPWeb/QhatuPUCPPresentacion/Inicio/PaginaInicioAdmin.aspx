@@ -48,28 +48,13 @@
                                     Ver Detalle
                                 </a>
 
-                                <div style="display: inline-block; position: relative;">
-                                    <!-- Botón Eliminar -->
-                                    <button type="button" class="btn btn-sm btn-danger ms-2" onclick="mostrarConfirmacion(this)">
-                                        Eliminar
-                                    </button>
-
-                                    <!-- Globo de confirmación -->
-                                    <div class="confirmacion-eliminar alert alert-warning d-none p-2 position-absolute" 
-                                         style="top: 100%; left: 0; z-index: 1000; white-space: nowrap;">
-                                        ¿Eliminar?
-                                        <div class="mt-1 text-end">
-                                            <asp:Button ID="btnEliminar" runat="server"
-                                                CommandName="Eliminar"
-                                                CommandArgument='<%# Eval("idPublicacion") %>'
-                                                Text="Sí"
-                                                CssClass="btn btn-sm btn-danger me-1" />
-                                            <button type="button" class="btn btn-sm btn-secondary" onclick="cancelarConfirmacion(this)">
-                                                No
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <asp:LinkButton ID="BtnEliminar" runat="server"
+                                    CommandName="Eliminar" CommandArgument='<%# Eval("idPublicacion") %>'
+                                    OnClick="BtnEliminar_Click"
+                                    OnClientClick="return confirm('¿Está seguro de eliminar la publicacion?');"
+                                    CssClass="btn btn-sm btn-danger">
+                                    <i class="fa-solid fa-trash"></i>
+                                </asp:LinkButton>
                             </td>
                         </tr>
                     </ItemTemplate>
