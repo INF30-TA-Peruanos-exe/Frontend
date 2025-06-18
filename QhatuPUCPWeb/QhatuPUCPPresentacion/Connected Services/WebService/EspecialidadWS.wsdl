@@ -5,6 +5,12 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/EspecialidadWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
+  <message name="registrarEspecialidad">
+    <part name="parameters" element="tns:registrarEspecialidad" />
+  </message>
+  <message name="registrarEspecialidadResponse">
+    <part name="parameters" element="tns:registrarEspecialidadResponse" />
+  </message>
   <message name="eliminarEspecialidad">
     <part name="parameters" element="tns:eliminarEspecialidad" />
   </message>
@@ -23,12 +29,6 @@
   <message name="actualizarEspecialidadResponse">
     <part name="parameters" element="tns:actualizarEspecialidadResponse" />
   </message>
-  <message name="registrarEspecialidad">
-    <part name="parameters" element="tns:registrarEspecialidad" />
-  </message>
-  <message name="registrarEspecialidadResponse">
-    <part name="parameters" element="tns:registrarEspecialidadResponse" />
-  </message>
   <message name="listarEspecialidad">
     <part name="parameters" element="tns:listarEspecialidad" />
   </message>
@@ -36,6 +36,10 @@
     <part name="parameters" element="tns:listarEspecialidadResponse" />
   </message>
   <portType name="EspecialidadWS">
+    <operation name="registrarEspecialidad">
+      <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/registrarEspecialidadRequest" message="tns:registrarEspecialidad" />
+      <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/registrarEspecialidadResponse" message="tns:registrarEspecialidadResponse" />
+    </operation>
     <operation name="eliminarEspecialidad">
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadRequest" message="tns:eliminarEspecialidad" />
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse" message="tns:eliminarEspecialidadResponse" />
@@ -48,10 +52,6 @@
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/actualizarEspecialidadRequest" message="tns:actualizarEspecialidad" />
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/actualizarEspecialidadResponse" message="tns:actualizarEspecialidadResponse" />
     </operation>
-    <operation name="registrarEspecialidad">
-      <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/registrarEspecialidadRequest" message="tns:registrarEspecialidad" />
-      <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/registrarEspecialidadResponse" message="tns:registrarEspecialidadResponse" />
-    </operation>
     <operation name="listarEspecialidad">
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadRequest" message="tns:listarEspecialidad" />
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadResponse" message="tns:listarEspecialidadResponse" />
@@ -59,6 +59,15 @@
   </portType>
   <binding name="EspecialidadWSPortBinding" type="tns:EspecialidadWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="registrarEspecialidad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="eliminarEspecialidad">
       <soap:operation soapAction="" />
       <input>
@@ -78,15 +87,6 @@
       </output>
     </operation>
     <operation name="actualizarEspecialidad">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="registrarEspecialidad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

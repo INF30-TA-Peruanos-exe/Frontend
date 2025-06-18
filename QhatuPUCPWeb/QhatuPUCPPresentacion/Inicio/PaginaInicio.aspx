@@ -4,7 +4,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <!-- Filtros -->
     <div class="container mb-4">
         <div class="row g-2">
             <div class="col-auto">
@@ -19,26 +18,37 @@
         </div>
     </div>
 
-    <!-- Cards con contenedor -->
     <div class="container">
         <div class="cards-box p-4">
             <div class="row g-4">
                 <asp:Repeater ID="rptPublicaciones" runat="server">
                     <ItemTemplate>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <a href='<%# ResolveUrl("~/Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")) %>' style="text-decoration: none; color: inherit;">
-                                <div class="card h-100 shadow-sm border-0">
-                                    <img src='<%# Eval("rutaImagen") %>' class="card-img-top" style="height: 180px; object-fit: cover;" />
-                                    <div class="card-body d-flex justify-content-between align-items-center">
-                                        <p class="card-text mb-0"><%# Eval("titulo") %></p>
+                        <div class="col-12 col-sm-6 col-md-4 position-relative">
+                            <div class="card h-100 shadow-sm border-0">
+                                <a href='<%# ResolveUrl("~/Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")) %>'
+                                    style="text-decoration: none; color: inherit;">
+                                    <img src='<%# Eval("rutaImagen") %>' class="card-img-top"
+                                        style="height: 180px; object-fit: cover;" />
+
+                                    <div class="card-body pb-4">
+                                        <p class="card-text mb-0 fw-medium" style="font-size: 0.95rem;">
+                                            <%# Eval("titulo") %>
+                                        </p>
                                     </div>
-                                     <asp:LinkButton ID="BtnAgregar" runat="server"
-                                     CommandName="Agregar" CommandArgument='<%# Eval("idPublicacion") %>'
-                                     OnClick="BtnAgregar_Click"
-                                     OnClientClick="return confirm('¿Está seguro de agregar favorito?');"
-                                    Text="<i class='fa-solid fa-star'></i>" />
-                                </div>
-                            </a>
+                                </a>
+
+                                <asp:LinkButton ID="BtnGuardar" runat="server"
+                                    CommandName="Agregar" CommandArgument='<%# Eval("idPublicacion") %>'
+                                    OnClick="BtnGuardar_Click"
+                                    OnClientClick="return confirm('¿Está seguro de guardar la publicación?');"
+                                    CssClass="position-absolute bottom-0 end-0 m-3 p-0 bg-transparent border-0"
+                                    Style="z-index: 10;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                         stroke-width="1.5" stroke="#2f5e93" width="24" height="24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507 c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                                    </svg>
+                                </asp:LinkButton>
+                            </div>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>

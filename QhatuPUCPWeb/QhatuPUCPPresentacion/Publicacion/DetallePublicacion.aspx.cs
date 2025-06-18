@@ -67,7 +67,6 @@ namespace QhatuPUCPPresentacion.Publicacion
             string motivo = txtMotivoDenuncia.Text.Trim();
             if (string.IsNullOrWhiteSpace(motivo))
             {
-                // Puedes mostrar un error con JS si deseas
                 ScriptManager.RegisterStartupScript(this, GetType(), "error", "alert('El motivo no puede estar vacío.');", true);
                 return;
             }
@@ -86,7 +85,6 @@ namespace QhatuPUCPPresentacion.Publicacion
             var denunciaService = new DenunciaWSClient();
             denunciaService.registrarDenuncia(denuncia);
 
-            // Opcional: cerrar el modal y mostrar mensaje
             ScriptManager.RegisterStartupScript(this, GetType(), "denunciaOk", "$('#modalDenuncia').modal('hide'); alert('Denuncia registrada.');", true);
 
             txtMotivoDenuncia.Text = "";
@@ -95,8 +93,6 @@ namespace QhatuPUCPPresentacion.Publicacion
         private void CargarComentarios(int idPublicacion)
         {
             var usuario = Session["usuario"] as usuario;
-            //var todos = comentarioService.listarComentario();
-
             var comentarios = comentarioService.listarComentarioPorPublicacion(idPublicacion);
 
             if (comentarios == null)
@@ -145,7 +141,6 @@ namespace QhatuPUCPPresentacion.Publicacion
 
             if (string.IsNullOrWhiteSpace(txtComentario.Text) || string.IsNullOrWhiteSpace(hfValoracion.Value))
             {
-                // Validación mínima (puedes mostrar mensaje si deseas)
                 return;
             }
 
@@ -162,12 +157,8 @@ namespace QhatuPUCPPresentacion.Publicacion
             };
 
             comentarioService.registrarComentario(comentario);
-
-            // Limpiar campos
             txtComentario.Text = "";
             hfValoracion.Value = "";
-
-            // Recargar comentarios
             CargarComentarios(comentario.publicacion.idPublicacion);
         }
     }
