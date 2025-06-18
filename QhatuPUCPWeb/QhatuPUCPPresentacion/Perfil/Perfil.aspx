@@ -34,7 +34,7 @@
                     <ItemTemplate>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <a href=' <%# "../Inicio/DetallePublicacion.aspx?id=" + Eval("idPublicacion")%>' style="text-decoration:none; color: inherit">
+                                <a href=' <%# "../Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")%>' style="text-decoration:none; color: inherit">
                                     <h5 class="card-title"><%# Eval("titulo") %></h5>
                                     <p class="card-text"><%# Eval("descripcion") %></p>
                                     <small class="text-muted">Publicado el <%# Container.Page.GetType().GetMethod("FormatearFechaString").Invoke(Container.Page, new object[] { Eval("idPublicacion") }) %></small>

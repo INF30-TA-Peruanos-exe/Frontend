@@ -9,8 +9,13 @@
 }
 
 .card {
-    max-width: 600px;
+    max-width: 1024px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 1rem;
+}
+
+.form-check input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.1);
 }

@@ -5,52 +5,56 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <asp:Panel ID="pnlCrearPublicacion" runat="server" CssClass="card p-4 shadow-sm">
-        <h3 class="mb-4">Crear nueva publicación</h3>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+                <asp:Panel ID="pnlCrearPublicacion" runat="server" CssClass="card p-4 shadow-sm rounded-4 w-100">
+                    <h3 class="mb-0 fw-semibold">Crear nueva publicación</h3>
 
-        <asp:Label ID="lblMensaje" runat="server" CssClass="text-danger mb-3 d-block" />
+                    <asp:Label ID="lblMensaje" runat="server" CssClass="text-danger mb-3 d-block" />
 
-        <!-- Título -->
-        <div class="mb-3">
-            <label for="txtTitulo" class="form-label">Título</label>
-            <asp:TextBox ID="txtTitulo" runat="server" CssClass="form-control" placeholder="Ingresa el título" />
+                    <!-- Título -->
+                    <div class="mb-3">
+                        <label for="txtTitulo" class="form-label">Título</label>
+                        <asp:TextBox ID="txtTitulo" runat="server" CssClass="form-control" placeholder="Ingresa el título" />
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="mb-3">
+                        <label for="txtDescripcion" class="form-label">Descripción</label>
+                        <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="4" placeholder="Escribe la descripción de tu publicación" />
+                    </div>
+
+                    <!-- Sección de checkboxes -->
+                    <div class="row mb-0">
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">Cursos asociados</label>
+                            <asp:CheckBoxList ID="chkCursos" runat="server" CssClass="form-check mb-2 d-block" RepeatDirection="Vertical" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">Facultades asociadas</label>
+                            <asp:CheckBoxList ID="chkFacultades" runat="server" CssClass="form-check mb-2 d-block" RepeatDirection="Vertical" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">Especialidades asociadas</label>
+                            <asp:CheckBoxList ID="chkEspecialidades" runat="server" CssClass="form-check mb-2 d-block" RepeatDirection="Vertical" />
+                        </div>
+                    </div>
+
+                    <!-- Imagen -->
+                    <div class="mb-3">
+                        <label class="form-label">Imagen</label>
+                        <div class="form-text">Se usará una imagen por defecto: <code>/Public/images/imagen-ataque.jpg</code></div>
+                    </div>
+
+                    <!-- Botón -->
+                    <div class="text-end">
+                        <asp:Button ID="btnPublicar" runat="server" Text="Publicar" CssClass="btn btn-primary px-4" OnClick="btnPublicar_Click" />
+                    </div>
+                </asp:Panel>
+            
         </div>
-
-        <!-- Descripción -->
-        <div class="mb-3">
-            <label for="txtDescripcion" class="form-label">Descripción</label>
-            <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="4" placeholder="Escribe la descripción de tu publicación" />
-        </div>
-
-        <!-- Cursos -->
-        <div class="mb-3">
-            <label class="form-label">Cursos asociados</label>
-            <asp:CheckBoxList ID="chkCursos" runat="server" CssClass="form-check mb-2 d-block" RepeatDirection="Vertical" />
-        </div>
-
-        <!-- Facultades -->
-        <div class="mb-3">
-            <label class="form-label">Facultades asociadas</label>
-            <asp:CheckBoxList ID="chkFacultades" runat="server" CssClass="form-check mb-2 d-block" RepeatDirection="Vertical" />
-        </div>
-
-        <!-- Especialidades -->
-        <div class="mb-3">
-            <label class="form-label">Especialidades asociadas</label>
-            <asp:CheckBoxList ID="chkEspecialidades" runat="server" CssClass="form-check mb-2 d-block" RepeatDirection="Vertical" />
-        </div>
-
-        <!-- Imagen -->
-        <div class="mb-3">
-            <label class="form-label">Imagen</label>
-            <div class="form-text">Se usará una imagen por defecto: <code>/Public/images/imagen-ataque.jpg</code></div>
-        </div>
-
-        <!-- Botón -->
-        <asp:Button ID="btnPublicar" runat="server" Text="Publicar" CssClass="btn btn-primary" OnClick="btnPublicar_Click" />
-    </asp:Panel>
+    </div>
 </asp:Content>
-
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
 </asp:Content>

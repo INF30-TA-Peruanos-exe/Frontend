@@ -17,12 +17,6 @@
   <message name="registrarCursoResponse">
     <part name="parameters" element="tns:registrarCursoResponse" />
   </message>
-  <message name="listarCurso">
-    <part name="parameters" element="tns:listarCurso" />
-  </message>
-  <message name="listarCursoResponse">
-    <part name="parameters" element="tns:listarCursoResponse" />
-  </message>
   <message name="actualizarCurso">
     <part name="parameters" element="tns:actualizarCurso" />
   </message>
@@ -35,6 +29,12 @@
   <message name="eliminarCursoResponse">
     <part name="parameters" element="tns:eliminarCursoResponse" />
   </message>
+  <message name="listarCurso">
+    <part name="parameters" element="tns:listarCurso" />
+  </message>
+  <message name="listarCursoResponse">
+    <part name="parameters" element="tns:listarCursoResponse" />
+  </message>
   <portType name="CursoWS">
     <operation name="obtenerCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
@@ -44,10 +44,6 @@
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest" message="tns:registrarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse" message="tns:registrarCursoResponse" />
     </operation>
-    <operation name="listarCurso">
-      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoRequest" message="tns:listarCurso" />
-      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoResponse" message="tns:listarCursoResponse" />
-    </operation>
     <operation name="actualizarCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest" message="tns:actualizarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse" message="tns:actualizarCursoResponse" />
@@ -55,6 +51,10 @@
     <operation name="eliminarCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
+    </operation>
+    <operation name="listarCurso">
+      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoRequest" message="tns:listarCurso" />
+      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoResponse" message="tns:listarCursoResponse" />
     </operation>
   </portType>
   <binding name="CursoWSPortBinding" type="tns:CursoWS">
@@ -77,15 +77,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarCurso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="actualizarCurso">
       <soap:operation soapAction="" />
       <input>
@@ -96,6 +87,15 @@
       </output>
     </operation>
     <operation name="eliminarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

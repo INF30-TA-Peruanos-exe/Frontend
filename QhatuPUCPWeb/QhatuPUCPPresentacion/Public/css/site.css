@@ -12,6 +12,7 @@
     bottom: 0;
     height: 100vh;
     z-index: 1030;
+    width:204px;
 }
 
 .sidebar-custom {
@@ -30,7 +31,7 @@
 }
 
 .main-content{
-    margin-left: 196px;
+    margin-left: 204px;
 }
 
 /* Navegación lateral */
