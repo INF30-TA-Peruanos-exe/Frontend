@@ -65,6 +65,7 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="esFavorito" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="usuario">

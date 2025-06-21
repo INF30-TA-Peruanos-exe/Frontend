@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -15,7 +16,7 @@ namespace QhatuPUCPPresentacion.Inicio
             set { ViewState["PaginaActual"] = value; }
         }
 
-        private const int TamanoPagina = 3;
+        private const int TamanoPagina = 9;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -65,8 +66,10 @@ namespace QhatuPUCPPresentacion.Inicio
             try
             {
                 PublicacionWSClient client = new PublicacionWSClient();
+                usuario usuario = Session["usuario"] as usuario;
+                if (usuario == null) return;
 
-                List<publicacion> publicaciones = client.listarPublicacion()?.ToList() ?? new List<publicacion>();
+                List<publicacion> publicaciones = client.listarPublicacionConFavoritos(usuario.idUsuario)?.ToList() ?? new List<publicacion>();
 
                 int idFacultad = int.Parse(ddlFacultad.SelectedValue);
                 int idEspecialidad = int.Parse(ddlEspecialidad.SelectedValue);
@@ -208,19 +211,27 @@ namespace QhatuPUCPPresentacion.Inicio
             CargarPublicaciones();
         }
 
-        protected void BtnGuardar_Click(object sender, EventArgs e)
+        [System.Web.Services.WebMethod]
+        public static object CambiarFavorito(int idPublicacion)
         {
-            int id_objeto = Int32.Parse(((LinkButton)sender).CommandArgument);
-            PublicacionWSClient client = new PublicacionWSClient();
-            publicacion publicacion = client.obtenerPublicacion(id_objeto);
-
-            usuario usuario = Session["usuario"] as usuario;
-            if (usuario != null && !client.esFavorito(usuario.idUsuario, id_objeto))
+            var usuario = HttpContext.Current.Session["usuario"] as usuario;
+            if (usuario == null)
+                return new { exito = false, mensaje = "Sesión expirada" };
+            var publicacion = new PublicacionWSClient();
+            bool esFavorito = publicacion.esFavorito(usuario.idUsuario, idPublicacion);
+            try
             {
-                client.agregarFavoritos(usuario.idUsuario, id_objeto);
+                if (esFavorito)
+                    publicacion.eliminarFavoritos(usuario.idUsuario, idPublicacion);
+                else
+                    publicacion.agregarFavoritos(usuario.idUsuario, idPublicacion);
+                return new { exito = true, nuevoEstado = !esFavorito };
             }
-
-            CargarPublicaciones();
+            catch (Exception ex)
+            {
+                return new { exito = false, mensaje = ex.Message };
+            }
         }
+
     }
 }

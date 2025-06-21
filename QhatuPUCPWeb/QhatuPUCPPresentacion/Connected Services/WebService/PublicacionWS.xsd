@@ -26,18 +26,20 @@
   <xs:element name="listarPorFacultad" type="tns:listarPorFacultad" />
   <xs:element name="listarPorFacultadResponse" type="tns:listarPorFacultadResponse" />
   <xs:element name="listarPublicacion" type="tns:listarPublicacion" />
+  <xs:element name="listarPublicacionConFavoritos" type="tns:listarPublicacionConFavoritos" />
+  <xs:element name="listarPublicacionConFavoritosResponse" type="tns:listarPublicacionConFavoritosResponse" />
   <xs:element name="listarPublicacionResponse" type="tns:listarPublicacionResponse" />
   <xs:element name="obtenerFechaPublicacionFormateada" type="tns:obtenerFechaPublicacionFormateada" />
   <xs:element name="obtenerFechaPublicacionFormateadaResponse" type="tns:obtenerFechaPublicacionFormateadaResponse" />
   <xs:element name="obtenerPublicacion" type="tns:obtenerPublicacion" />
   <xs:element name="obtenerPublicacionResponse" type="tns:obtenerPublicacionResponse" />
   <xs:element name="publicacion" type="tns:publicacion" />
-  <xs:complexType name="listarFavoritos">
+  <xs:complexType name="listarPublicacionConFavoritos">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarFavoritosResponse">
+  <xs:complexType name="listarPublicacionConFavoritosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
@@ -73,6 +75,7 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="esFavorito" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="usuario">
@@ -106,6 +109,16 @@
       <xs:element name="idFacultad" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
       <xs:element name="activo" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarFavoritos">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarFavoritosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarPorCurso">

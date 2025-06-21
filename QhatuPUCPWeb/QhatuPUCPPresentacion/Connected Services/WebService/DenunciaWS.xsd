@@ -14,6 +14,8 @@
   <xs:element name="publicacion" type="tns:publicacion" />
   <xs:element name="registrarDenuncia" type="tns:registrarDenuncia" />
   <xs:element name="registrarDenunciaResponse" type="tns:registrarDenunciaResponse" />
+  <xs:element name="reporteIncidencias" type="tns:reporteIncidencias" />
+  <xs:element name="reporteIncidenciasResponse" type="tns:reporteIncidenciasResponse" />
   <xs:complexType name="registrarDenuncia">
     <xs:sequence>
       <xs:element minOccurs="0" name="denuncia" type="tns:denuncia" />
@@ -82,6 +84,7 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="esFavorito" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="curso">
@@ -110,6 +113,14 @@
   </xs:complexType>
   <xs:complexType name="registrarDenunciaResponse">
     <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="reporteIncidencias">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="reporteIncidenciasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarDenuncia">
     <xs:sequence />
