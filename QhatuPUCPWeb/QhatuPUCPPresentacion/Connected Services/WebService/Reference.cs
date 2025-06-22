@@ -15,40 +15,16 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.ServiceModel.ServiceContractAttribute(Namespace="com.pucp.pucpqhatu", ConfigurationName="WebService.UsuarioWS")]
     public interface UsuarioWS {
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse obtenerUsuarioPorCorreoYContra(QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse> obtenerUsuarioPorCorreoYContraAsync(QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest request);
-        
         // CODEGEN: El parámetro 'usuario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse actualizarUsuario(QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest request);
+        QhatuPUCPPresentacion.WebService.registrarUsuarioResponse registrarUsuario(QhatuPUCPPresentacion.WebService.registrarUsuarioRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse> actualizarUsuarioAsync(QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarUsuariosResponse listarUsuarios(QhatuPUCPPresentacion.WebService.listarUsuariosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarUsuariosResponse> listarUsuariosAsync(QhatuPUCPPresentacion.WebService.listarUsuariosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarUsuarioResponse> registrarUsuarioAsync(QhatuPUCPPresentacion.WebService.registrarUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioResponse")]
@@ -62,16 +38,28 @@ namespace QhatuPUCPPresentacion.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerUsuarioResponse> obtenerUsuarioAsync(QhatuPUCPPresentacion.WebService.obtenerUsuarioRequest request);
         
-        // CODEGEN: El parámetro 'usuario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.registrarUsuarioResponse registrarUsuario(QhatuPUCPPresentacion.WebService.registrarUsuarioRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarUsuariosResponse listarUsuarios(QhatuPUCPPresentacion.WebService.listarUsuariosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarUsuarioResponse> registrarUsuarioAsync(QhatuPUCPPresentacion.WebService.registrarUsuarioRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarUsuariosResponse> listarUsuariosAsync(QhatuPUCPPresentacion.WebService.listarUsuariosRequest request);
+        
+        // CODEGEN: El parámetro 'usuario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse actualizarUsuario(QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse> actualizarUsuarioAsync(QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioResponse")]
@@ -84,6 +72,18 @@ namespace QhatuPUCPPresentacion.WebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarUsuarioResponse> eliminarUsuarioAsync(QhatuPUCPPresentacion.WebService.eliminarUsuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse obtenerUsuarioPorCorreoYContra(QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraRequest", ReplyAction="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse> obtenerUsuarioPorCorreoYContraAsync(QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest request);
     }
     
     /// <remarks/>
@@ -1110,58 +1110,17 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioPorCorreoYContra", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class obtenerUsuarioPorCorreoYContraRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string correo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string contra;
-        
-        public obtenerUsuarioPorCorreoYContraRequest() {
-        }
-        
-        public obtenerUsuarioPorCorreoYContraRequest(string correo, string contra) {
-            this.correo = correo;
-            this.contra = contra;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioPorCorreoYContraResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class obtenerUsuarioPorCorreoYContraResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.usuario @return;
-        
-        public obtenerUsuarioPorCorreoYContraResponse() {
-        }
-        
-        public obtenerUsuarioPorCorreoYContraResponse(QhatuPUCPPresentacion.WebService.usuario @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarUsuario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarUsuarioRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarUsuario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class registrarUsuarioRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public QhatuPUCPPresentacion.WebService.usuario usuario;
         
-        public actualizarUsuarioRequest() {
+        public registrarUsuarioRequest() {
         }
         
-        public actualizarUsuarioRequest(QhatuPUCPPresentacion.WebService.usuario usuario) {
+        public registrarUsuarioRequest(QhatuPUCPPresentacion.WebService.usuario usuario) {
             this.usuario = usuario;
         }
     }
@@ -1169,38 +1128,10 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarUsuarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarUsuarioResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarUsuarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class registrarUsuarioResponse {
         
-        public actualizarUsuarioResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarUsuarios", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarUsuariosRequest {
-        
-        public listarUsuariosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarUsuariosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarUsuariosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.usuario[] @return;
-        
-        public listarUsuariosResponse() {
-        }
-        
-        public listarUsuariosResponse(QhatuPUCPPresentacion.WebService.usuario[] @return) {
-            this.@return = @return;
+        public registrarUsuarioResponse() {
         }
     }
     
@@ -1243,17 +1174,45 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarUsuario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class registrarUsuarioRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarUsuarios", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarUsuariosRequest {
+        
+        public listarUsuariosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarUsuariosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarUsuariosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.usuario[] @return;
+        
+        public listarUsuariosResponse() {
+        }
+        
+        public listarUsuariosResponse(QhatuPUCPPresentacion.WebService.usuario[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarUsuario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarUsuarioRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public QhatuPUCPPresentacion.WebService.usuario usuario;
         
-        public registrarUsuarioRequest() {
+        public actualizarUsuarioRequest() {
         }
         
-        public registrarUsuarioRequest(QhatuPUCPPresentacion.WebService.usuario usuario) {
+        public actualizarUsuarioRequest(QhatuPUCPPresentacion.WebService.usuario usuario) {
             this.usuario = usuario;
         }
     }
@@ -1261,10 +1220,10 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarUsuarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class registrarUsuarioResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarUsuarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarUsuarioResponse {
         
-        public registrarUsuarioResponse() {
+        public actualizarUsuarioResponse() {
         }
     }
     
@@ -1304,6 +1263,47 @@ namespace QhatuPUCPPresentacion.WebService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioPorCorreoYContra", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class obtenerUsuarioPorCorreoYContraRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string correo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string contra;
+        
+        public obtenerUsuarioPorCorreoYContraRequest() {
+        }
+        
+        public obtenerUsuarioPorCorreoYContraRequest(string correo, string contra) {
+            this.correo = correo;
+            this.contra = contra;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioPorCorreoYContraResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class obtenerUsuarioPorCorreoYContraResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.usuario @return;
+        
+        public obtenerUsuarioPorCorreoYContraResponse() {
+        }
+        
+        public obtenerUsuarioPorCorreoYContraResponse(QhatuPUCPPresentacion.WebService.usuario @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface UsuarioWSChannel : QhatuPUCPPresentacion.WebService.UsuarioWS, System.ServiceModel.IClientChannel {
     }
@@ -1332,71 +1332,25 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse QhatuPUCPPresentacion.WebService.UsuarioWS.obtenerUsuarioPorCorreoYContra(QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest request) {
-            return base.Channel.obtenerUsuarioPorCorreoYContra(request);
+        QhatuPUCPPresentacion.WebService.registrarUsuarioResponse QhatuPUCPPresentacion.WebService.UsuarioWS.registrarUsuario(QhatuPUCPPresentacion.WebService.registrarUsuarioRequest request) {
+            return base.Channel.registrarUsuario(request);
         }
         
-        public QhatuPUCPPresentacion.WebService.usuario obtenerUsuarioPorCorreoYContra(string correo, string contra) {
-            QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest();
-            inValue.correo = correo;
-            inValue.contra = contra;
-            QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse retVal = ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).obtenerUsuarioPorCorreoYContra(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse> QhatuPUCPPresentacion.WebService.UsuarioWS.obtenerUsuarioPorCorreoYContraAsync(QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest request) {
-            return base.Channel.obtenerUsuarioPorCorreoYContraAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse> obtenerUsuarioPorCorreoYContraAsync(string correo, string contra) {
-            QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest();
-            inValue.correo = correo;
-            inValue.contra = contra;
-            return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).obtenerUsuarioPorCorreoYContraAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse QhatuPUCPPresentacion.WebService.UsuarioWS.actualizarUsuario(QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest request) {
-            return base.Channel.actualizarUsuario(request);
-        }
-        
-        public void actualizarUsuario(QhatuPUCPPresentacion.WebService.usuario usuario) {
-            QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest();
+        public void registrarUsuario(QhatuPUCPPresentacion.WebService.usuario usuario) {
+            QhatuPUCPPresentacion.WebService.registrarUsuarioRequest inValue = new QhatuPUCPPresentacion.WebService.registrarUsuarioRequest();
             inValue.usuario = usuario;
-            QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse retVal = ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).actualizarUsuario(inValue);
+            QhatuPUCPPresentacion.WebService.registrarUsuarioResponse retVal = ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).registrarUsuario(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse> QhatuPUCPPresentacion.WebService.UsuarioWS.actualizarUsuarioAsync(QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest request) {
-            return base.Channel.actualizarUsuarioAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarUsuarioResponse> QhatuPUCPPresentacion.WebService.UsuarioWS.registrarUsuarioAsync(QhatuPUCPPresentacion.WebService.registrarUsuarioRequest request) {
+            return base.Channel.registrarUsuarioAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse> actualizarUsuarioAsync(QhatuPUCPPresentacion.WebService.usuario usuario) {
-            QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest();
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarUsuarioResponse> registrarUsuarioAsync(QhatuPUCPPresentacion.WebService.usuario usuario) {
+            QhatuPUCPPresentacion.WebService.registrarUsuarioRequest inValue = new QhatuPUCPPresentacion.WebService.registrarUsuarioRequest();
             inValue.usuario = usuario;
-            return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).actualizarUsuarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarUsuariosResponse QhatuPUCPPresentacion.WebService.UsuarioWS.listarUsuarios(QhatuPUCPPresentacion.WebService.listarUsuariosRequest request) {
-            return base.Channel.listarUsuarios(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.usuario[] listarUsuarios() {
-            QhatuPUCPPresentacion.WebService.listarUsuariosRequest inValue = new QhatuPUCPPresentacion.WebService.listarUsuariosRequest();
-            QhatuPUCPPresentacion.WebService.listarUsuariosResponse retVal = ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).listarUsuarios(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarUsuariosResponse> QhatuPUCPPresentacion.WebService.UsuarioWS.listarUsuariosAsync(QhatuPUCPPresentacion.WebService.listarUsuariosRequest request) {
-            return base.Channel.listarUsuariosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarUsuariosResponse> listarUsuariosAsync() {
-            QhatuPUCPPresentacion.WebService.listarUsuariosRequest inValue = new QhatuPUCPPresentacion.WebService.listarUsuariosRequest();
-            return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).listarUsuariosAsync(inValue);
+            return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).registrarUsuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1423,25 +1377,46 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.registrarUsuarioResponse QhatuPUCPPresentacion.WebService.UsuarioWS.registrarUsuario(QhatuPUCPPresentacion.WebService.registrarUsuarioRequest request) {
-            return base.Channel.registrarUsuario(request);
+        QhatuPUCPPresentacion.WebService.listarUsuariosResponse QhatuPUCPPresentacion.WebService.UsuarioWS.listarUsuarios(QhatuPUCPPresentacion.WebService.listarUsuariosRequest request) {
+            return base.Channel.listarUsuarios(request);
         }
         
-        public void registrarUsuario(QhatuPUCPPresentacion.WebService.usuario usuario) {
-            QhatuPUCPPresentacion.WebService.registrarUsuarioRequest inValue = new QhatuPUCPPresentacion.WebService.registrarUsuarioRequest();
-            inValue.usuario = usuario;
-            QhatuPUCPPresentacion.WebService.registrarUsuarioResponse retVal = ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).registrarUsuario(inValue);
+        public QhatuPUCPPresentacion.WebService.usuario[] listarUsuarios() {
+            QhatuPUCPPresentacion.WebService.listarUsuariosRequest inValue = new QhatuPUCPPresentacion.WebService.listarUsuariosRequest();
+            QhatuPUCPPresentacion.WebService.listarUsuariosResponse retVal = ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).listarUsuarios(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarUsuarioResponse> QhatuPUCPPresentacion.WebService.UsuarioWS.registrarUsuarioAsync(QhatuPUCPPresentacion.WebService.registrarUsuarioRequest request) {
-            return base.Channel.registrarUsuarioAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarUsuariosResponse> QhatuPUCPPresentacion.WebService.UsuarioWS.listarUsuariosAsync(QhatuPUCPPresentacion.WebService.listarUsuariosRequest request) {
+            return base.Channel.listarUsuariosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarUsuarioResponse> registrarUsuarioAsync(QhatuPUCPPresentacion.WebService.usuario usuario) {
-            QhatuPUCPPresentacion.WebService.registrarUsuarioRequest inValue = new QhatuPUCPPresentacion.WebService.registrarUsuarioRequest();
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarUsuariosResponse> listarUsuariosAsync() {
+            QhatuPUCPPresentacion.WebService.listarUsuariosRequest inValue = new QhatuPUCPPresentacion.WebService.listarUsuariosRequest();
+            return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).listarUsuariosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse QhatuPUCPPresentacion.WebService.UsuarioWS.actualizarUsuario(QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest request) {
+            return base.Channel.actualizarUsuario(request);
+        }
+        
+        public void actualizarUsuario(QhatuPUCPPresentacion.WebService.usuario usuario) {
+            QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest();
             inValue.usuario = usuario;
-            return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).registrarUsuarioAsync(inValue);
+            QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse retVal = ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).actualizarUsuario(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse> QhatuPUCPPresentacion.WebService.UsuarioWS.actualizarUsuarioAsync(QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest request) {
+            return base.Channel.actualizarUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarUsuarioResponse> actualizarUsuarioAsync(QhatuPUCPPresentacion.WebService.usuario usuario) {
+            QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarUsuarioRequest();
+            inValue.usuario = usuario;
+            return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).actualizarUsuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1466,33 +1441,165 @@ namespace QhatuPUCPPresentacion.WebService {
             inValue.idUsuario = idUsuario;
             return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).eliminarUsuarioAsync(inValue);
         }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse QhatuPUCPPresentacion.WebService.UsuarioWS.obtenerUsuarioPorCorreoYContra(QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest request) {
+            return base.Channel.obtenerUsuarioPorCorreoYContra(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.usuario obtenerUsuarioPorCorreoYContra(string correo, string contra) {
+            QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest();
+            inValue.correo = correo;
+            inValue.contra = contra;
+            QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse retVal = ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).obtenerUsuarioPorCorreoYContra(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse> QhatuPUCPPresentacion.WebService.UsuarioWS.obtenerUsuarioPorCorreoYContraAsync(QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest request) {
+            return base.Channel.obtenerUsuarioPorCorreoYContraAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraResponse> obtenerUsuarioPorCorreoYContraAsync(string correo, string contra) {
+            QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerUsuarioPorCorreoYContraRequest();
+            inValue.correo = correo;
+            inValue.contra = contra;
+            return ((QhatuPUCPPresentacion.WebService.UsuarioWS)(this)).obtenerUsuarioPorCorreoYContraAsync(inValue);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="com.pucp.pucpqhatu", ConfigurationName="WebService.PublicacionWS")]
     public interface PublicacionWS {
         
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarPublicacionResponse listarPublicacion(QhatuPUCPPresentacion.WebService.listarPublicacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionResponse> listarPublicacionAsync(QhatuPUCPPresentacion.WebService.listarPublicacionRequest request);
+        
+        // CODEGEN: El parámetro 'idUsuario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse eliminarFavoritos(QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse> eliminarFavoritosAsync(QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse obtenerPublicacion(QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse> obtenerPublicacionAsync(QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest request);
+        
+        // CODEGEN: El parámetro 'idUsuario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.agregarFavoritosResponse agregarFavoritos(QhatuPUCPPresentacion.WebService.agregarFavoritosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.agregarFavoritosResponse> agregarFavoritosAsync(QhatuPUCPPresentacion.WebService.agregarFavoritosRequest request);
+        
         // CODEGEN: El parámetro 'publicacion' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse actualizarPublicacion(QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest request);
+        QhatuPUCPPresentacion.WebService.crearPublicacionResponse crearPublicacion(QhatuPUCPPresentacion.WebService.crearPublicacionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse> actualizarPublicacionAsync(QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.crearPublicacionResponse> crearPublicacionAsync(QhatuPUCPPresentacion.WebService.crearPublicacionRequest request);
         
-        // CODEGEN: El parámetro 'idPublicacion' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse eliminarPublicacion(QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarPorFacultadResponse listarPorFacultad(QhatuPUCPPresentacion.WebService.listarPorFacultadRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse> eliminarPublicacionAsync(QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorFacultadResponse> listarPorFacultadAsync(QhatuPUCPPresentacion.WebService.listarPorFacultadRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarPorCursoResponse listarPorCurso(QhatuPUCPPresentacion.WebService.listarPorCursoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorCursoResponse> listarPorCursoAsync(QhatuPUCPPresentacion.WebService.listarPorCursoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarFavoritosResponse listarFavoritos(QhatuPUCPPresentacion.WebService.listarFavoritosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFavoritosResponse> listarFavoritosAsync(QhatuPUCPPresentacion.WebService.listarFavoritosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/esFavoritoRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/esFavoritoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.esFavoritoResponse esFavorito(QhatuPUCPPresentacion.WebService.esFavoritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/esFavoritoRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/esFavoritoResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.esFavoritoResponse> esFavoritoAsync(QhatuPUCPPresentacion.WebService.esFavoritoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionConFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionConFavoritosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse listarPublicacionConFavoritos(QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionConFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionConFavoritosResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse> listarPublicacionConFavoritosAsync(QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse obtenerFechaPublicacionFormateada(QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse> obtenerFechaPublicacionFormateadaAsync(QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest request);
         
         // CODEGEN: El parámetro 'idPublicacion' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/cambiarEstadoPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/cambiarEstadoPublicacionResponse")]
@@ -1517,178 +1624,76 @@ namespace QhatuPUCPPresentacion.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorEspecialidadResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorEspecialidadResponse> listarPorEspecialidadAsync(QhatuPUCPPresentacion.WebService.listarPorEspecialidadRequest request);
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse obtenerFechaPublicacionFormateada(QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/obtenerFechaPublicacionFormateadaResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse> obtenerFechaPublicacionFormateadaAsync(QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionConFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionConFavoritosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse listarPublicacionConFavoritos(QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionConFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionConFavoritosResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse> listarPublicacionConFavoritosAsync(QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/esFavoritoRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/esFavoritoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.esFavoritoResponse esFavorito(QhatuPUCPPresentacion.WebService.esFavoritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/esFavoritoRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/esFavoritoResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.esFavoritoResponse> esFavoritoAsync(QhatuPUCPPresentacion.WebService.esFavoritoRequest request);
-        
-        // CODEGEN: El parámetro 'idUsuario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.agregarFavoritosResponse agregarFavoritos(QhatuPUCPPresentacion.WebService.agregarFavoritosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/agregarFavoritosResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.agregarFavoritosResponse> agregarFavoritosAsync(QhatuPUCPPresentacion.WebService.agregarFavoritosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse obtenerPublicacion(QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/obtenerPublicacionResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse> obtenerPublicacionAsync(QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarPublicacionResponse listarPublicacion(QhatuPUCPPresentacion.WebService.listarPublicacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPublicacionResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionResponse> listarPublicacionAsync(QhatuPUCPPresentacion.WebService.listarPublicacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarPorFacultadResponse listarPorFacultad(QhatuPUCPPresentacion.WebService.listarPorFacultadRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorFacultadResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorFacultadResponse> listarPorFacultadAsync(QhatuPUCPPresentacion.WebService.listarPorFacultadRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarFavoritosResponse listarFavoritos(QhatuPUCPPresentacion.WebService.listarFavoritosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarFavoritosResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFavoritosResponse> listarFavoritosAsync(QhatuPUCPPresentacion.WebService.listarFavoritosRequest request);
-        
         // CODEGEN: El parámetro 'publicacion' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.crearPublicacionResponse crearPublicacion(QhatuPUCPPresentacion.WebService.crearPublicacionRequest request);
+        QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse actualizarPublicacion(QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/crearPublicacionResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.crearPublicacionResponse> crearPublicacionAsync(QhatuPUCPPresentacion.WebService.crearPublicacionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/actualizarPublicacionResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse> actualizarPublicacionAsync(QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest request);
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoResponse")]
+        // CODEGEN: El parámetro 'idPublicacion' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarPorCursoResponse listarPorCurso(QhatuPUCPPresentacion.WebService.listarPorCursoRequest request);
+        QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse eliminarPublicacion(QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/listarPorCursoResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorCursoResponse> listarPorCursoAsync(QhatuPUCPPresentacion.WebService.listarPorCursoRequest request);
-        
-        // CODEGEN: El parámetro 'idUsuario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse eliminarFavoritos(QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/eliminarFavoritosResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse> eliminarFavoritosAsync(QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/PublicacionWS/eliminarPublicacionResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse> eliminarPublicacionAsync(QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarPublicacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarPublicacionRequest {
+        
+        public listarPublicacionRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarPublicacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
+        
+        public listarPublicacionResponse() {
+        }
+        
+        public listarPublicacionResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarFavoritos", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarFavoritosRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.publicacion publicacion;
+        public int idUsuario;
         
-        public actualizarPublicacionRequest() {
-        }
-        
-        public actualizarPublicacionRequest(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
-            this.publicacion = publicacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarPublicacionResponse {
-        
-        public actualizarPublicacionResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarPublicacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int idPublicacion;
         
-        public eliminarPublicacionRequest() {
+        public eliminarFavoritosRequest() {
         }
         
-        public eliminarPublicacionRequest(int idPublicacion) {
+        public eliminarFavoritosRequest(int idUsuario, int idPublicacion) {
+            this.idUsuario = idUsuario;
             this.idPublicacion = idPublicacion;
         }
     }
@@ -1696,10 +1701,328 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarPublicacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarFavoritosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarFavoritosResponse {
         
-        public eliminarPublicacionResponse() {
+        public eliminarFavoritosResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class obtenerPublicacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPublicacion;
+        
+        public obtenerPublicacionRequest() {
+        }
+        
+        public obtenerPublicacionRequest(int idPublicacion) {
+            this.idPublicacion = idPublicacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class obtenerPublicacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.publicacion @return;
+        
+        public obtenerPublicacionResponse() {
+        }
+        
+        public obtenerPublicacionResponse(QhatuPUCPPresentacion.WebService.publicacion @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="agregarFavoritos", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class agregarFavoritosRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPublicacion;
+        
+        public agregarFavoritosRequest() {
+        }
+        
+        public agregarFavoritosRequest(int idUsuario, int idPublicacion) {
+            this.idUsuario = idUsuario;
+            this.idPublicacion = idPublicacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="agregarFavoritosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class agregarFavoritosResponse {
+        
+        public agregarFavoritosResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="crearPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class crearPublicacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.publicacion publicacion;
+        
+        public crearPublicacionRequest() {
+        }
+        
+        public crearPublicacionRequest(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
+            this.publicacion = publicacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="crearPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class crearPublicacionResponse {
+        
+        public crearPublicacionResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorFacultad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarPorFacultadRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idFacultad;
+        
+        public listarPorFacultadRequest() {
+        }
+        
+        public listarPorFacultadRequest(int idFacultad) {
+            this.idFacultad = idFacultad;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorFacultadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarPorFacultadResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
+        
+        public listarPorFacultadResponse() {
+        }
+        
+        public listarPorFacultadResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorCurso", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarPorCursoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idCurso;
+        
+        public listarPorCursoRequest() {
+        }
+        
+        public listarPorCursoRequest(int idCurso) {
+            this.idCurso = idCurso;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorCursoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarPorCursoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
+        
+        public listarPorCursoResponse() {
+        }
+        
+        public listarPorCursoResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarFavoritos", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarFavoritosRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public listarFavoritosRequest() {
+        }
+        
+        public listarFavoritosRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarFavoritosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarFavoritosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
+        
+        public listarFavoritosResponse() {
+        }
+        
+        public listarFavoritosResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="esFavorito", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class esFavoritoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPublicacion;
+        
+        public esFavoritoRequest() {
+        }
+        
+        public esFavoritoRequest(int idUsuario, int idPublicacion) {
+            this.idUsuario = idUsuario;
+            this.idPublicacion = idPublicacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="esFavoritoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class esFavoritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public esFavoritoResponse() {
+        }
+        
+        public esFavoritoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPublicacionConFavoritos", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarPublicacionConFavoritosRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public listarPublicacionConFavoritosRequest() {
+        }
+        
+        public listarPublicacionConFavoritosRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPublicacionConFavoritosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarPublicacionConFavoritosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
+        
+        public listarPublicacionConFavoritosResponse() {
+        }
+        
+        public listarPublicacionConFavoritosResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerFechaPublicacionFormateada", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class obtenerFechaPublicacionFormateadaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPublicacion;
+        
+        public obtenerFechaPublicacionFormateadaRequest() {
+        }
+        
+        public obtenerFechaPublicacionFormateadaRequest(int idPublicacion) {
+            this.idPublicacion = idPublicacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerFechaPublicacionFormateadaResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class obtenerFechaPublicacionFormateadaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string @return;
+        
+        public obtenerFechaPublicacionFormateadaResponse() {
+        }
+        
+        public obtenerFechaPublicacionFormateadaResponse(string @return) {
+            this.@return = @return;
         }
     }
     
@@ -1775,299 +2098,17 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerFechaPublicacionFormateada", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class obtenerFechaPublicacionFormateadaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPublicacion;
-        
-        public obtenerFechaPublicacionFormateadaRequest() {
-        }
-        
-        public obtenerFechaPublicacionFormateadaRequest(int idPublicacion) {
-            this.idPublicacion = idPublicacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerFechaPublicacionFormateadaResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class obtenerFechaPublicacionFormateadaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string @return;
-        
-        public obtenerFechaPublicacionFormateadaResponse() {
-        }
-        
-        public obtenerFechaPublicacionFormateadaResponse(string @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPublicacionConFavoritos", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarPublicacionConFavoritosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        public listarPublicacionConFavoritosRequest() {
-        }
-        
-        public listarPublicacionConFavoritosRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPublicacionConFavoritosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarPublicacionConFavoritosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
-        
-        public listarPublicacionConFavoritosResponse() {
-        }
-        
-        public listarPublicacionConFavoritosResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="esFavorito", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class esFavoritoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPublicacion;
-        
-        public esFavoritoRequest() {
-        }
-        
-        public esFavoritoRequest(int idUsuario, int idPublicacion) {
-            this.idUsuario = idUsuario;
-            this.idPublicacion = idPublicacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="esFavoritoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class esFavoritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public esFavoritoResponse() {
-        }
-        
-        public esFavoritoResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="agregarFavoritos", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class agregarFavoritosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPublicacion;
-        
-        public agregarFavoritosRequest() {
-        }
-        
-        public agregarFavoritosRequest(int idUsuario, int idPublicacion) {
-            this.idUsuario = idUsuario;
-            this.idPublicacion = idPublicacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="agregarFavoritosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class agregarFavoritosResponse {
-        
-        public agregarFavoritosResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class obtenerPublicacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPublicacion;
-        
-        public obtenerPublicacionRequest() {
-        }
-        
-        public obtenerPublicacionRequest(int idPublicacion) {
-            this.idPublicacion = idPublicacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class obtenerPublicacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.publicacion @return;
-        
-        public obtenerPublicacionResponse() {
-        }
-        
-        public obtenerPublicacionResponse(QhatuPUCPPresentacion.WebService.publicacion @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarPublicacionRequest {
-        
-        public listarPublicacionRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarPublicacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
-        
-        public listarPublicacionResponse() {
-        }
-        
-        public listarPublicacionResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorFacultad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarPorFacultadRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idFacultad;
-        
-        public listarPorFacultadRequest() {
-        }
-        
-        public listarPorFacultadRequest(int idFacultad) {
-            this.idFacultad = idFacultad;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorFacultadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarPorFacultadResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
-        
-        public listarPorFacultadResponse() {
-        }
-        
-        public listarPorFacultadResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarFavoritos", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarFavoritosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        public listarFavoritosRequest() {
-        }
-        
-        public listarFavoritosRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarFavoritosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarFavoritosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
-        
-        public listarFavoritosResponse() {
-        }
-        
-        public listarFavoritosResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="crearPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class crearPublicacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarPublicacionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public QhatuPUCPPresentacion.WebService.publicacion publicacion;
         
-        public crearPublicacionRequest() {
+        public actualizarPublicacionRequest() {
         }
         
-        public crearPublicacionRequest(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
+        public actualizarPublicacionRequest(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
             this.publicacion = publicacion;
         }
     }
@@ -2075,68 +2116,27 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="crearPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class crearPublicacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarPublicacionResponse {
         
-        public crearPublicacionResponse() {
+        public actualizarPublicacionResponse() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorCurso", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarPorCursoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarPublicacionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idCurso;
-        
-        public listarPorCursoRequest() {
-        }
-        
-        public listarPorCursoRequest(int idCurso) {
-            this.idCurso = idCurso;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorCursoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarPorCursoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.publicacion[] @return;
-        
-        public listarPorCursoResponse() {
-        }
-        
-        public listarPorCursoResponse(QhatuPUCPPresentacion.WebService.publicacion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarFavoritos", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarFavoritosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int idPublicacion;
         
-        public eliminarFavoritosRequest() {
+        public eliminarPublicacionRequest() {
         }
         
-        public eliminarFavoritosRequest(int idUsuario, int idPublicacion) {
-            this.idUsuario = idUsuario;
+        public eliminarPublicacionRequest(int idPublicacion) {
             this.idPublicacion = idPublicacion;
         }
     }
@@ -2144,10 +2144,10 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarFavoritosResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarFavoritosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarPublicacionResponse {
         
-        public eliminarFavoritosResponse() {
+        public eliminarPublicacionResponse() {
         }
     }
     
@@ -2179,47 +2179,257 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.actualizarPublicacion(QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest request) {
-            return base.Channel.actualizarPublicacion(request);
+        QhatuPUCPPresentacion.WebService.listarPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarPublicacion(QhatuPUCPPresentacion.WebService.listarPublicacionRequest request) {
+            return base.Channel.listarPublicacion(request);
         }
         
-        public void actualizarPublicacion(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
-            QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest();
-            inValue.publicacion = publicacion;
-            QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).actualizarPublicacion(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.actualizarPublicacionAsync(QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest request) {
-            return base.Channel.actualizarPublicacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse> actualizarPublicacionAsync(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
-            QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest();
-            inValue.publicacion = publicacion;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).actualizarPublicacionAsync(inValue);
+        public QhatuPUCPPresentacion.WebService.publicacion[] listarPublicacion() {
+            QhatuPUCPPresentacion.WebService.listarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.listarPublicacionRequest();
+            QhatuPUCPPresentacion.WebService.listarPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPublicacion(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.eliminarPublicacion(QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest request) {
-            return base.Channel.eliminarPublicacion(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarPublicacionAsync(QhatuPUCPPresentacion.WebService.listarPublicacionRequest request) {
+            return base.Channel.listarPublicacionAsync(request);
         }
         
-        public void eliminarPublicacion(int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest();
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionResponse> listarPublicacionAsync() {
+            QhatuPUCPPresentacion.WebService.listarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.listarPublicacionRequest();
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPublicacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse QhatuPUCPPresentacion.WebService.PublicacionWS.eliminarFavoritos(QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest request) {
+            return base.Channel.eliminarFavoritos(request);
+        }
+        
+        public void eliminarFavoritos(int idUsuario, int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest();
+            inValue.idUsuario = idUsuario;
             inValue.idPublicacion = idPublicacion;
-            QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).eliminarPublicacion(inValue);
+            QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).eliminarFavoritos(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.eliminarPublicacionAsync(QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest request) {
-            return base.Channel.eliminarPublicacionAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.eliminarFavoritosAsync(QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest request) {
+            return base.Channel.eliminarFavoritosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse> eliminarPublicacionAsync(int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest();
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse> eliminarFavoritosAsync(int idUsuario, int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest();
+            inValue.idUsuario = idUsuario;
             inValue.idPublicacion = idPublicacion;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).eliminarPublicacionAsync(inValue);
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).eliminarFavoritosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.obtenerPublicacion(QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest request) {
+            return base.Channel.obtenerPublicacion(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.publicacion obtenerPublicacion(int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest();
+            inValue.idPublicacion = idPublicacion;
+            QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).obtenerPublicacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.obtenerPublicacionAsync(QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest request) {
+            return base.Channel.obtenerPublicacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse> obtenerPublicacionAsync(int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest();
+            inValue.idPublicacion = idPublicacion;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).obtenerPublicacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.agregarFavoritosResponse QhatuPUCPPresentacion.WebService.PublicacionWS.agregarFavoritos(QhatuPUCPPresentacion.WebService.agregarFavoritosRequest request) {
+            return base.Channel.agregarFavoritos(request);
+        }
+        
+        public void agregarFavoritos(int idUsuario, int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.agregarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.agregarFavoritosRequest();
+            inValue.idUsuario = idUsuario;
+            inValue.idPublicacion = idPublicacion;
+            QhatuPUCPPresentacion.WebService.agregarFavoritosResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).agregarFavoritos(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.agregarFavoritosResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.agregarFavoritosAsync(QhatuPUCPPresentacion.WebService.agregarFavoritosRequest request) {
+            return base.Channel.agregarFavoritosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.agregarFavoritosResponse> agregarFavoritosAsync(int idUsuario, int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.agregarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.agregarFavoritosRequest();
+            inValue.idUsuario = idUsuario;
+            inValue.idPublicacion = idPublicacion;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).agregarFavoritosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.crearPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.crearPublicacion(QhatuPUCPPresentacion.WebService.crearPublicacionRequest request) {
+            return base.Channel.crearPublicacion(request);
+        }
+        
+        public void crearPublicacion(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
+            QhatuPUCPPresentacion.WebService.crearPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.crearPublicacionRequest();
+            inValue.publicacion = publicacion;
+            QhatuPUCPPresentacion.WebService.crearPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).crearPublicacion(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.crearPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.crearPublicacionAsync(QhatuPUCPPresentacion.WebService.crearPublicacionRequest request) {
+            return base.Channel.crearPublicacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.crearPublicacionResponse> crearPublicacionAsync(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
+            QhatuPUCPPresentacion.WebService.crearPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.crearPublicacionRequest();
+            inValue.publicacion = publicacion;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).crearPublicacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.listarPorFacultadResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarPorFacultad(QhatuPUCPPresentacion.WebService.listarPorFacultadRequest request) {
+            return base.Channel.listarPorFacultad(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.publicacion[] listarPorFacultad(int idFacultad) {
+            QhatuPUCPPresentacion.WebService.listarPorFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.listarPorFacultadRequest();
+            inValue.idFacultad = idFacultad;
+            QhatuPUCPPresentacion.WebService.listarPorFacultadResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPorFacultad(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorFacultadResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarPorFacultadAsync(QhatuPUCPPresentacion.WebService.listarPorFacultadRequest request) {
+            return base.Channel.listarPorFacultadAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorFacultadResponse> listarPorFacultadAsync(int idFacultad) {
+            QhatuPUCPPresentacion.WebService.listarPorFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.listarPorFacultadRequest();
+            inValue.idFacultad = idFacultad;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPorFacultadAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.listarPorCursoResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarPorCurso(QhatuPUCPPresentacion.WebService.listarPorCursoRequest request) {
+            return base.Channel.listarPorCurso(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.publicacion[] listarPorCurso(int idCurso) {
+            QhatuPUCPPresentacion.WebService.listarPorCursoRequest inValue = new QhatuPUCPPresentacion.WebService.listarPorCursoRequest();
+            inValue.idCurso = idCurso;
+            QhatuPUCPPresentacion.WebService.listarPorCursoResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPorCurso(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorCursoResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarPorCursoAsync(QhatuPUCPPresentacion.WebService.listarPorCursoRequest request) {
+            return base.Channel.listarPorCursoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorCursoResponse> listarPorCursoAsync(int idCurso) {
+            QhatuPUCPPresentacion.WebService.listarPorCursoRequest inValue = new QhatuPUCPPresentacion.WebService.listarPorCursoRequest();
+            inValue.idCurso = idCurso;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPorCursoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.listarFavoritosResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarFavoritos(QhatuPUCPPresentacion.WebService.listarFavoritosRequest request) {
+            return base.Channel.listarFavoritos(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.publicacion[] listarFavoritos(int idUsuario) {
+            QhatuPUCPPresentacion.WebService.listarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.listarFavoritosRequest();
+            inValue.idUsuario = idUsuario;
+            QhatuPUCPPresentacion.WebService.listarFavoritosResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarFavoritos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFavoritosResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarFavoritosAsync(QhatuPUCPPresentacion.WebService.listarFavoritosRequest request) {
+            return base.Channel.listarFavoritosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFavoritosResponse> listarFavoritosAsync(int idUsuario) {
+            QhatuPUCPPresentacion.WebService.listarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.listarFavoritosRequest();
+            inValue.idUsuario = idUsuario;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarFavoritosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.esFavoritoResponse QhatuPUCPPresentacion.WebService.PublicacionWS.esFavorito(QhatuPUCPPresentacion.WebService.esFavoritoRequest request) {
+            return base.Channel.esFavorito(request);
+        }
+        
+        public bool esFavorito(int idUsuario, int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.esFavoritoRequest inValue = new QhatuPUCPPresentacion.WebService.esFavoritoRequest();
+            inValue.idUsuario = idUsuario;
+            inValue.idPublicacion = idPublicacion;
+            QhatuPUCPPresentacion.WebService.esFavoritoResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).esFavorito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.esFavoritoResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.esFavoritoAsync(QhatuPUCPPresentacion.WebService.esFavoritoRequest request) {
+            return base.Channel.esFavoritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.esFavoritoResponse> esFavoritoAsync(int idUsuario, int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.esFavoritoRequest inValue = new QhatuPUCPPresentacion.WebService.esFavoritoRequest();
+            inValue.idUsuario = idUsuario;
+            inValue.idPublicacion = idPublicacion;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).esFavoritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarPublicacionConFavoritos(QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest request) {
+            return base.Channel.listarPublicacionConFavoritos(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.publicacion[] listarPublicacionConFavoritos(int idUsuario) {
+            QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest();
+            inValue.idUsuario = idUsuario;
+            QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPublicacionConFavoritos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarPublicacionConFavoritosAsync(QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest request) {
+            return base.Channel.listarPublicacionConFavoritosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse> listarPublicacionConFavoritosAsync(int idUsuario) {
+            QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest();
+            inValue.idUsuario = idUsuario;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPublicacionConFavoritosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse QhatuPUCPPresentacion.WebService.PublicacionWS.obtenerFechaPublicacionFormateada(QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest request) {
+            return base.Channel.obtenerFechaPublicacionFormateada(request);
+        }
+        
+        public string obtenerFechaPublicacionFormateada(int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest();
+            inValue.idPublicacion = idPublicacion;
+            QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).obtenerFechaPublicacionFormateada(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.obtenerFechaPublicacionFormateadaAsync(QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest request) {
+            return base.Channel.obtenerFechaPublicacionFormateadaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse> obtenerFechaPublicacionFormateadaAsync(int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest();
+            inValue.idPublicacion = idPublicacion;
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).obtenerFechaPublicacionFormateadaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2270,263 +2480,64 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse QhatuPUCPPresentacion.WebService.PublicacionWS.obtenerFechaPublicacionFormateada(QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest request) {
-            return base.Channel.obtenerFechaPublicacionFormateada(request);
+        QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.actualizarPublicacion(QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest request) {
+            return base.Channel.actualizarPublicacion(request);
         }
         
-        public string obtenerFechaPublicacionFormateada(int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest();
-            inValue.idPublicacion = idPublicacion;
-            QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).obtenerFechaPublicacionFormateada(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.obtenerFechaPublicacionFormateadaAsync(QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest request) {
-            return base.Channel.obtenerFechaPublicacionFormateadaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaResponse> obtenerFechaPublicacionFormateadaAsync(int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerFechaPublicacionFormateadaRequest();
-            inValue.idPublicacion = idPublicacion;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).obtenerFechaPublicacionFormateadaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarPublicacionConFavoritos(QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest request) {
-            return base.Channel.listarPublicacionConFavoritos(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.publicacion[] listarPublicacionConFavoritos(int idUsuario) {
-            QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest();
-            inValue.idUsuario = idUsuario;
-            QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPublicacionConFavoritos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarPublicacionConFavoritosAsync(QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest request) {
-            return base.Channel.listarPublicacionConFavoritosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosResponse> listarPublicacionConFavoritosAsync(int idUsuario) {
-            QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.listarPublicacionConFavoritosRequest();
-            inValue.idUsuario = idUsuario;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPublicacionConFavoritosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.esFavoritoResponse QhatuPUCPPresentacion.WebService.PublicacionWS.esFavorito(QhatuPUCPPresentacion.WebService.esFavoritoRequest request) {
-            return base.Channel.esFavorito(request);
-        }
-        
-        public bool esFavorito(int idUsuario, int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.esFavoritoRequest inValue = new QhatuPUCPPresentacion.WebService.esFavoritoRequest();
-            inValue.idUsuario = idUsuario;
-            inValue.idPublicacion = idPublicacion;
-            QhatuPUCPPresentacion.WebService.esFavoritoResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).esFavorito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.esFavoritoResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.esFavoritoAsync(QhatuPUCPPresentacion.WebService.esFavoritoRequest request) {
-            return base.Channel.esFavoritoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.esFavoritoResponse> esFavoritoAsync(int idUsuario, int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.esFavoritoRequest inValue = new QhatuPUCPPresentacion.WebService.esFavoritoRequest();
-            inValue.idUsuario = idUsuario;
-            inValue.idPublicacion = idPublicacion;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).esFavoritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.agregarFavoritosResponse QhatuPUCPPresentacion.WebService.PublicacionWS.agregarFavoritos(QhatuPUCPPresentacion.WebService.agregarFavoritosRequest request) {
-            return base.Channel.agregarFavoritos(request);
-        }
-        
-        public void agregarFavoritos(int idUsuario, int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.agregarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.agregarFavoritosRequest();
-            inValue.idUsuario = idUsuario;
-            inValue.idPublicacion = idPublicacion;
-            QhatuPUCPPresentacion.WebService.agregarFavoritosResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).agregarFavoritos(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.agregarFavoritosResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.agregarFavoritosAsync(QhatuPUCPPresentacion.WebService.agregarFavoritosRequest request) {
-            return base.Channel.agregarFavoritosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.agregarFavoritosResponse> agregarFavoritosAsync(int idUsuario, int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.agregarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.agregarFavoritosRequest();
-            inValue.idUsuario = idUsuario;
-            inValue.idPublicacion = idPublicacion;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).agregarFavoritosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.obtenerPublicacion(QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest request) {
-            return base.Channel.obtenerPublicacion(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.publicacion obtenerPublicacion(int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest();
-            inValue.idPublicacion = idPublicacion;
-            QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).obtenerPublicacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.obtenerPublicacionAsync(QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest request) {
-            return base.Channel.obtenerPublicacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerPublicacionResponse> obtenerPublicacionAsync(int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerPublicacionRequest();
-            inValue.idPublicacion = idPublicacion;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).obtenerPublicacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarPublicacion(QhatuPUCPPresentacion.WebService.listarPublicacionRequest request) {
-            return base.Channel.listarPublicacion(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.publicacion[] listarPublicacion() {
-            QhatuPUCPPresentacion.WebService.listarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.listarPublicacionRequest();
-            QhatuPUCPPresentacion.WebService.listarPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPublicacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarPublicacionAsync(QhatuPUCPPresentacion.WebService.listarPublicacionRequest request) {
-            return base.Channel.listarPublicacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPublicacionResponse> listarPublicacionAsync() {
-            QhatuPUCPPresentacion.WebService.listarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.listarPublicacionRequest();
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPublicacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarPorFacultadResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarPorFacultad(QhatuPUCPPresentacion.WebService.listarPorFacultadRequest request) {
-            return base.Channel.listarPorFacultad(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.publicacion[] listarPorFacultad(int idFacultad) {
-            QhatuPUCPPresentacion.WebService.listarPorFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.listarPorFacultadRequest();
-            inValue.idFacultad = idFacultad;
-            QhatuPUCPPresentacion.WebService.listarPorFacultadResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPorFacultad(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorFacultadResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarPorFacultadAsync(QhatuPUCPPresentacion.WebService.listarPorFacultadRequest request) {
-            return base.Channel.listarPorFacultadAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorFacultadResponse> listarPorFacultadAsync(int idFacultad) {
-            QhatuPUCPPresentacion.WebService.listarPorFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.listarPorFacultadRequest();
-            inValue.idFacultad = idFacultad;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPorFacultadAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarFavoritosResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarFavoritos(QhatuPUCPPresentacion.WebService.listarFavoritosRequest request) {
-            return base.Channel.listarFavoritos(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.publicacion[] listarFavoritos(int idUsuario) {
-            QhatuPUCPPresentacion.WebService.listarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.listarFavoritosRequest();
-            inValue.idUsuario = idUsuario;
-            QhatuPUCPPresentacion.WebService.listarFavoritosResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarFavoritos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFavoritosResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarFavoritosAsync(QhatuPUCPPresentacion.WebService.listarFavoritosRequest request) {
-            return base.Channel.listarFavoritosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFavoritosResponse> listarFavoritosAsync(int idUsuario) {
-            QhatuPUCPPresentacion.WebService.listarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.listarFavoritosRequest();
-            inValue.idUsuario = idUsuario;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarFavoritosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.crearPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.crearPublicacion(QhatuPUCPPresentacion.WebService.crearPublicacionRequest request) {
-            return base.Channel.crearPublicacion(request);
-        }
-        
-        public void crearPublicacion(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
-            QhatuPUCPPresentacion.WebService.crearPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.crearPublicacionRequest();
+        public void actualizarPublicacion(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
+            QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest();
             inValue.publicacion = publicacion;
-            QhatuPUCPPresentacion.WebService.crearPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).crearPublicacion(inValue);
+            QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).actualizarPublicacion(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.crearPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.crearPublicacionAsync(QhatuPUCPPresentacion.WebService.crearPublicacionRequest request) {
-            return base.Channel.crearPublicacionAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.actualizarPublicacionAsync(QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest request) {
+            return base.Channel.actualizarPublicacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.crearPublicacionResponse> crearPublicacionAsync(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
-            QhatuPUCPPresentacion.WebService.crearPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.crearPublicacionRequest();
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarPublicacionResponse> actualizarPublicacionAsync(QhatuPUCPPresentacion.WebService.publicacion publicacion) {
+            QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarPublicacionRequest();
             inValue.publicacion = publicacion;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).crearPublicacionAsync(inValue);
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).actualizarPublicacionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarPorCursoResponse QhatuPUCPPresentacion.WebService.PublicacionWS.listarPorCurso(QhatuPUCPPresentacion.WebService.listarPorCursoRequest request) {
-            return base.Channel.listarPorCurso(request);
+        QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse QhatuPUCPPresentacion.WebService.PublicacionWS.eliminarPublicacion(QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest request) {
+            return base.Channel.eliminarPublicacion(request);
         }
         
-        public QhatuPUCPPresentacion.WebService.publicacion[] listarPorCurso(int idCurso) {
-            QhatuPUCPPresentacion.WebService.listarPorCursoRequest inValue = new QhatuPUCPPresentacion.WebService.listarPorCursoRequest();
-            inValue.idCurso = idCurso;
-            QhatuPUCPPresentacion.WebService.listarPorCursoResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPorCurso(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorCursoResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.listarPorCursoAsync(QhatuPUCPPresentacion.WebService.listarPorCursoRequest request) {
-            return base.Channel.listarPorCursoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarPorCursoResponse> listarPorCursoAsync(int idCurso) {
-            QhatuPUCPPresentacion.WebService.listarPorCursoRequest inValue = new QhatuPUCPPresentacion.WebService.listarPorCursoRequest();
-            inValue.idCurso = idCurso;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).listarPorCursoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse QhatuPUCPPresentacion.WebService.PublicacionWS.eliminarFavoritos(QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest request) {
-            return base.Channel.eliminarFavoritos(request);
-        }
-        
-        public void eliminarFavoritos(int idUsuario, int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest();
-            inValue.idUsuario = idUsuario;
+        public void eliminarPublicacion(int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest();
             inValue.idPublicacion = idPublicacion;
-            QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).eliminarFavoritos(inValue);
+            QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).eliminarPublicacion(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.eliminarFavoritosAsync(QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest request) {
-            return base.Channel.eliminarFavoritosAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse> QhatuPUCPPresentacion.WebService.PublicacionWS.eliminarPublicacionAsync(QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest request) {
+            return base.Channel.eliminarPublicacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFavoritosResponse> eliminarFavoritosAsync(int idUsuario, int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarFavoritosRequest();
-            inValue.idUsuario = idUsuario;
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarPublicacionResponse> eliminarPublicacionAsync(int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarPublicacionRequest();
             inValue.idPublicacion = idPublicacion;
-            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).eliminarFavoritosAsync(inValue);
+            return ((QhatuPUCPPresentacion.WebService.PublicacionWS)(this)).eliminarPublicacionAsync(inValue);
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="com.pucp.pucpqhatu", ConfigurationName="WebService.CursoWS")]
     public interface CursoWS {
+        
+        // CODEGEN: El parámetro 'idCurso' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.eliminarCursoResponse eliminarCurso(QhatuPUCPPresentacion.WebService.eliminarCursoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarCursoResponse> eliminarCursoAsync(QhatuPUCPPresentacion.WebService.eliminarCursoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/listarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/listarCursoResponse")]
@@ -2541,15 +2552,15 @@ namespace QhatuPUCPPresentacion.WebService {
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarCursoResponse> listarCursoAsync(QhatuPUCPPresentacion.WebService.listarCursoRequest request);
         
         // CODEGEN: El parámetro 'curso' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.registrarCursoResponse registrarCurso(QhatuPUCPPresentacion.WebService.registrarCursoRequest request);
+        QhatuPUCPPresentacion.WebService.actualizarCursoResponse actualizarCurso(QhatuPUCPPresentacion.WebService.actualizarCursoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarCursoResponse> registrarCursoAsync(QhatuPUCPPresentacion.WebService.registrarCursoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarCursoResponse> actualizarCursoAsync(QhatuPUCPPresentacion.WebService.actualizarCursoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/obtenerCursoResponse")]
@@ -2563,27 +2574,44 @@ namespace QhatuPUCPPresentacion.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/obtenerCursoResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerCursoResponse> obtenerCursoAsync(QhatuPUCPPresentacion.WebService.obtenerCursoRequest request);
         
-        // CODEGEN: El parámetro 'idCurso' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.eliminarCursoResponse eliminarCurso(QhatuPUCPPresentacion.WebService.eliminarCursoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarCursoResponse> eliminarCursoAsync(QhatuPUCPPresentacion.WebService.eliminarCursoRequest request);
-        
         // CODEGEN: El parámetro 'curso' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.actualizarCursoResponse actualizarCurso(QhatuPUCPPresentacion.WebService.actualizarCursoRequest request);
+        QhatuPUCPPresentacion.WebService.registrarCursoResponse registrarCurso(QhatuPUCPPresentacion.WebService.registrarCursoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarCursoResponse> actualizarCursoAsync(QhatuPUCPPresentacion.WebService.actualizarCursoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest", ReplyAction="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarCursoResponse> registrarCursoAsync(QhatuPUCPPresentacion.WebService.registrarCursoRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarCurso", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarCursoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idCurso;
+        
+        public eliminarCursoRequest() {
+        }
+        
+        public eliminarCursoRequest(int idCurso) {
+            this.idCurso = idCurso;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarCursoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarCursoResponse {
+        
+        public eliminarCursoResponse() {
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2617,17 +2645,17 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarCurso", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class registrarCursoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarCurso", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarCursoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public QhatuPUCPPresentacion.WebService.curso curso;
         
-        public registrarCursoRequest() {
+        public actualizarCursoRequest() {
         }
         
-        public registrarCursoRequest(QhatuPUCPPresentacion.WebService.curso curso) {
+        public actualizarCursoRequest(QhatuPUCPPresentacion.WebService.curso curso) {
             this.curso = curso;
         }
     }
@@ -2635,10 +2663,10 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarCursoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class registrarCursoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarCursoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarCursoResponse {
         
-        public registrarCursoResponse() {
+        public actualizarCursoResponse() {
         }
     }
     
@@ -2681,45 +2709,17 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarCurso", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarCursoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idCurso;
-        
-        public eliminarCursoRequest() {
-        }
-        
-        public eliminarCursoRequest(int idCurso) {
-            this.idCurso = idCurso;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarCursoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarCursoResponse {
-        
-        public eliminarCursoResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarCurso", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarCursoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarCurso", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class registrarCursoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public QhatuPUCPPresentacion.WebService.curso curso;
         
-        public actualizarCursoRequest() {
+        public registrarCursoRequest() {
         }
         
-        public actualizarCursoRequest(QhatuPUCPPresentacion.WebService.curso curso) {
+        public registrarCursoRequest(QhatuPUCPPresentacion.WebService.curso curso) {
             this.curso = curso;
         }
     }
@@ -2727,10 +2727,10 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarCursoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarCursoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarCursoResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class registrarCursoResponse {
         
-        public actualizarCursoResponse() {
+        public registrarCursoResponse() {
         }
     }
     
@@ -2762,6 +2762,28 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.eliminarCursoResponse QhatuPUCPPresentacion.WebService.CursoWS.eliminarCurso(QhatuPUCPPresentacion.WebService.eliminarCursoRequest request) {
+            return base.Channel.eliminarCurso(request);
+        }
+        
+        public void eliminarCurso(int idCurso) {
+            QhatuPUCPPresentacion.WebService.eliminarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarCursoRequest();
+            inValue.idCurso = idCurso;
+            QhatuPUCPPresentacion.WebService.eliminarCursoResponse retVal = ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).eliminarCurso(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarCursoResponse> QhatuPUCPPresentacion.WebService.CursoWS.eliminarCursoAsync(QhatuPUCPPresentacion.WebService.eliminarCursoRequest request) {
+            return base.Channel.eliminarCursoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarCursoResponse> eliminarCursoAsync(int idCurso) {
+            QhatuPUCPPresentacion.WebService.eliminarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarCursoRequest();
+            inValue.idCurso = idCurso;
+            return ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).eliminarCursoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         QhatuPUCPPresentacion.WebService.listarCursoResponse QhatuPUCPPresentacion.WebService.CursoWS.listarCurso(QhatuPUCPPresentacion.WebService.listarCursoRequest request) {
             return base.Channel.listarCurso(request);
         }
@@ -2783,25 +2805,25 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.registrarCursoResponse QhatuPUCPPresentacion.WebService.CursoWS.registrarCurso(QhatuPUCPPresentacion.WebService.registrarCursoRequest request) {
-            return base.Channel.registrarCurso(request);
+        QhatuPUCPPresentacion.WebService.actualizarCursoResponse QhatuPUCPPresentacion.WebService.CursoWS.actualizarCurso(QhatuPUCPPresentacion.WebService.actualizarCursoRequest request) {
+            return base.Channel.actualizarCurso(request);
         }
         
-        public void registrarCurso(QhatuPUCPPresentacion.WebService.curso curso) {
-            QhatuPUCPPresentacion.WebService.registrarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.registrarCursoRequest();
+        public void actualizarCurso(QhatuPUCPPresentacion.WebService.curso curso) {
+            QhatuPUCPPresentacion.WebService.actualizarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarCursoRequest();
             inValue.curso = curso;
-            QhatuPUCPPresentacion.WebService.registrarCursoResponse retVal = ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).registrarCurso(inValue);
+            QhatuPUCPPresentacion.WebService.actualizarCursoResponse retVal = ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).actualizarCurso(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarCursoResponse> QhatuPUCPPresentacion.WebService.CursoWS.registrarCursoAsync(QhatuPUCPPresentacion.WebService.registrarCursoRequest request) {
-            return base.Channel.registrarCursoAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarCursoResponse> QhatuPUCPPresentacion.WebService.CursoWS.actualizarCursoAsync(QhatuPUCPPresentacion.WebService.actualizarCursoRequest request) {
+            return base.Channel.actualizarCursoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarCursoResponse> registrarCursoAsync(QhatuPUCPPresentacion.WebService.curso curso) {
-            QhatuPUCPPresentacion.WebService.registrarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.registrarCursoRequest();
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarCursoResponse> actualizarCursoAsync(QhatuPUCPPresentacion.WebService.curso curso) {
+            QhatuPUCPPresentacion.WebService.actualizarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarCursoRequest();
             inValue.curso = curso;
-            return ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).registrarCursoAsync(inValue);
+            return ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).actualizarCursoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2828,47 +2850,25 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.eliminarCursoResponse QhatuPUCPPresentacion.WebService.CursoWS.eliminarCurso(QhatuPUCPPresentacion.WebService.eliminarCursoRequest request) {
-            return base.Channel.eliminarCurso(request);
+        QhatuPUCPPresentacion.WebService.registrarCursoResponse QhatuPUCPPresentacion.WebService.CursoWS.registrarCurso(QhatuPUCPPresentacion.WebService.registrarCursoRequest request) {
+            return base.Channel.registrarCurso(request);
         }
         
-        public void eliminarCurso(int idCurso) {
-            QhatuPUCPPresentacion.WebService.eliminarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarCursoRequest();
-            inValue.idCurso = idCurso;
-            QhatuPUCPPresentacion.WebService.eliminarCursoResponse retVal = ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).eliminarCurso(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarCursoResponse> QhatuPUCPPresentacion.WebService.CursoWS.eliminarCursoAsync(QhatuPUCPPresentacion.WebService.eliminarCursoRequest request) {
-            return base.Channel.eliminarCursoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarCursoResponse> eliminarCursoAsync(int idCurso) {
-            QhatuPUCPPresentacion.WebService.eliminarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarCursoRequest();
-            inValue.idCurso = idCurso;
-            return ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).eliminarCursoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.actualizarCursoResponse QhatuPUCPPresentacion.WebService.CursoWS.actualizarCurso(QhatuPUCPPresentacion.WebService.actualizarCursoRequest request) {
-            return base.Channel.actualizarCurso(request);
-        }
-        
-        public void actualizarCurso(QhatuPUCPPresentacion.WebService.curso curso) {
-            QhatuPUCPPresentacion.WebService.actualizarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarCursoRequest();
+        public void registrarCurso(QhatuPUCPPresentacion.WebService.curso curso) {
+            QhatuPUCPPresentacion.WebService.registrarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.registrarCursoRequest();
             inValue.curso = curso;
-            QhatuPUCPPresentacion.WebService.actualizarCursoResponse retVal = ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).actualizarCurso(inValue);
+            QhatuPUCPPresentacion.WebService.registrarCursoResponse retVal = ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).registrarCurso(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarCursoResponse> QhatuPUCPPresentacion.WebService.CursoWS.actualizarCursoAsync(QhatuPUCPPresentacion.WebService.actualizarCursoRequest request) {
-            return base.Channel.actualizarCursoAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarCursoResponse> QhatuPUCPPresentacion.WebService.CursoWS.registrarCursoAsync(QhatuPUCPPresentacion.WebService.registrarCursoRequest request) {
+            return base.Channel.registrarCursoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarCursoResponse> actualizarCursoAsync(QhatuPUCPPresentacion.WebService.curso curso) {
-            QhatuPUCPPresentacion.WebService.actualizarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarCursoRequest();
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarCursoResponse> registrarCursoAsync(QhatuPUCPPresentacion.WebService.curso curso) {
+            QhatuPUCPPresentacion.WebService.registrarCursoRequest inValue = new QhatuPUCPPresentacion.WebService.registrarCursoRequest();
             inValue.curso = curso;
-            return ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).actualizarCursoAsync(inValue);
+            return ((QhatuPUCPPresentacion.WebService.CursoWS)(this)).registrarCursoAsync(inValue);
         }
     }
     
@@ -2876,16 +2876,17 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.ServiceModel.ServiceContractAttribute(Namespace="com.pucp.pucpqhatu", ConfigurationName="WebService.AdministradorWS")]
     public interface AdministradorWS {
         
-        // CODEGEN: El parámetro 'idAdministrador' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse eliminarAdministrador(QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse obtenerAdministradorPorCorreoYContra(QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse> eliminarAdministradorAsync(QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse> obtenerAdministradorPorCorreoYContraAsync(QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorResponse")]
@@ -2899,6 +2900,17 @@ namespace QhatuPUCPPresentacion.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerAdministradorResponse> obtenerAdministradorAsync(QhatuPUCPPresentacion.WebService.obtenerAdministradorRequest request);
         
+        // CODEGEN: El parámetro 'administrador' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.registrarAdministradorResponse registrarAdministrador(QhatuPUCPPresentacion.WebService.registrarAdministradorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarAdministradorResponse> registrarAdministradorAsync(QhatuPUCPPresentacion.WebService.registrarAdministradorRequest request);
+        
         // CODEGEN: El parámetro 'usuario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -2909,6 +2921,17 @@ namespace QhatuPUCPPresentacion.WebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse> actualizarAdministradorAsync(QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest request);
+        
+        // CODEGEN: El parámetro 'idAdministrador' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse eliminarAdministrador(QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse> eliminarAdministradorAsync(QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorResponse")]
@@ -2921,56 +2944,41 @@ namespace QhatuPUCPPresentacion.WebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarAdministradorResponse> listarAdministradorAsync(QhatuPUCPPresentacion.WebService.listarAdministradorRequest request);
-        
-        // CODEGEN: El parámetro 'administrador' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.registrarAdministradorResponse registrarAdministrador(QhatuPUCPPresentacion.WebService.registrarAdministradorRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarAdministradorResponse> registrarAdministradorAsync(QhatuPUCPPresentacion.WebService.registrarAdministradorRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse obtenerAdministradorPorCorreoYContra(QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraRequest", ReplyAction="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse> obtenerAdministradorPorCorreoYContraAsync(QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAdministrador", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarAdministradorRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAdministradorPorCorreoYContra", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class obtenerAdministradorPorCorreoYContraRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idAdministrador;
+        public string clave;
         
-        public eliminarAdministradorRequest() {
+        public obtenerAdministradorPorCorreoYContraRequest() {
         }
         
-        public eliminarAdministradorRequest(int idAdministrador) {
-            this.idAdministrador = idAdministrador;
+        public obtenerAdministradorPorCorreoYContraRequest(string clave) {
+            this.clave = clave;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAdministradorResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarAdministradorResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAdministradorPorCorreoYContraResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class obtenerAdministradorPorCorreoYContraResponse {
         
-        public eliminarAdministradorResponse() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.administrador @return;
+        
+        public obtenerAdministradorPorCorreoYContraResponse() {
+        }
+        
+        public obtenerAdministradorPorCorreoYContraResponse(QhatuPUCPPresentacion.WebService.administrador @return) {
+            this.@return = @return;
         }
     }
     
@@ -3013,62 +3021,6 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarAdministrador", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarAdministradorRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.administrador usuario;
-        
-        public actualizarAdministradorRequest() {
-        }
-        
-        public actualizarAdministradorRequest(QhatuPUCPPresentacion.WebService.administrador usuario) {
-            this.usuario = usuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarAdministradorResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarAdministradorResponse {
-        
-        public actualizarAdministradorResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAdministrador", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarAdministradorRequest {
-        
-        public listarAdministradorRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAdministradorResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarAdministradorResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.administrador[] @return;
-        
-        public listarAdministradorResponse() {
-        }
-        
-        public listarAdministradorResponse(QhatuPUCPPresentacion.WebService.administrador[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="registrarAdministrador", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
     public partial class registrarAdministradorRequest {
         
@@ -3097,35 +3049,83 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAdministradorPorCorreoYContra", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class obtenerAdministradorPorCorreoYContraRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarAdministrador", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarAdministradorRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string clave;
+        public QhatuPUCPPresentacion.WebService.administrador usuario;
         
-        public obtenerAdministradorPorCorreoYContraRequest() {
+        public actualizarAdministradorRequest() {
         }
         
-        public obtenerAdministradorPorCorreoYContraRequest(string clave) {
-            this.clave = clave;
+        public actualizarAdministradorRequest(QhatuPUCPPresentacion.WebService.administrador usuario) {
+            this.usuario = usuario;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAdministradorPorCorreoYContraResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class obtenerAdministradorPorCorreoYContraResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarAdministradorResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarAdministradorResponse {
+        
+        public actualizarAdministradorResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAdministrador", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarAdministradorRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.administrador @return;
+        public int idAdministrador;
         
-        public obtenerAdministradorPorCorreoYContraResponse() {
+        public eliminarAdministradorRequest() {
         }
         
-        public obtenerAdministradorPorCorreoYContraResponse(QhatuPUCPPresentacion.WebService.administrador @return) {
+        public eliminarAdministradorRequest(int idAdministrador) {
+            this.idAdministrador = idAdministrador;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAdministradorResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarAdministradorResponse {
+        
+        public eliminarAdministradorResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAdministrador", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarAdministradorRequest {
+        
+        public listarAdministradorRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAdministradorResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarAdministradorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.administrador[] @return;
+        
+        public listarAdministradorResponse() {
+        }
+        
+        public listarAdministradorResponse(QhatuPUCPPresentacion.WebService.administrador[] @return) {
             this.@return = @return;
         }
     }
@@ -3158,25 +3158,26 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse QhatuPUCPPresentacion.WebService.AdministradorWS.eliminarAdministrador(QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest request) {
-            return base.Channel.eliminarAdministrador(request);
+        QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse QhatuPUCPPresentacion.WebService.AdministradorWS.obtenerAdministradorPorCorreoYContra(QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest request) {
+            return base.Channel.obtenerAdministradorPorCorreoYContra(request);
         }
         
-        public void eliminarAdministrador(int idAdministrador) {
-            QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest();
-            inValue.idAdministrador = idAdministrador;
-            QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse retVal = ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).eliminarAdministrador(inValue);
+        public QhatuPUCPPresentacion.WebService.administrador obtenerAdministradorPorCorreoYContra(string clave) {
+            QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest();
+            inValue.clave = clave;
+            QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse retVal = ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).obtenerAdministradorPorCorreoYContra(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse> QhatuPUCPPresentacion.WebService.AdministradorWS.eliminarAdministradorAsync(QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest request) {
-            return base.Channel.eliminarAdministradorAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse> QhatuPUCPPresentacion.WebService.AdministradorWS.obtenerAdministradorPorCorreoYContraAsync(QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest request) {
+            return base.Channel.obtenerAdministradorPorCorreoYContraAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse> eliminarAdministradorAsync(int idAdministrador) {
-            QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest();
-            inValue.idAdministrador = idAdministrador;
-            return ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).eliminarAdministradorAsync(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse> obtenerAdministradorPorCorreoYContraAsync(string clave) {
+            QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest();
+            inValue.clave = clave;
+            return ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).obtenerAdministradorPorCorreoYContraAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3203,49 +3204,6 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse QhatuPUCPPresentacion.WebService.AdministradorWS.actualizarAdministrador(QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest request) {
-            return base.Channel.actualizarAdministrador(request);
-        }
-        
-        public void actualizarAdministrador(QhatuPUCPPresentacion.WebService.administrador usuario) {
-            QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest();
-            inValue.usuario = usuario;
-            QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse retVal = ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).actualizarAdministrador(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse> QhatuPUCPPresentacion.WebService.AdministradorWS.actualizarAdministradorAsync(QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest request) {
-            return base.Channel.actualizarAdministradorAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse> actualizarAdministradorAsync(QhatuPUCPPresentacion.WebService.administrador usuario) {
-            QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest();
-            inValue.usuario = usuario;
-            return ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).actualizarAdministradorAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarAdministradorResponse QhatuPUCPPresentacion.WebService.AdministradorWS.listarAdministrador(QhatuPUCPPresentacion.WebService.listarAdministradorRequest request) {
-            return base.Channel.listarAdministrador(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.administrador[] listarAdministrador() {
-            QhatuPUCPPresentacion.WebService.listarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.listarAdministradorRequest();
-            QhatuPUCPPresentacion.WebService.listarAdministradorResponse retVal = ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).listarAdministrador(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarAdministradorResponse> QhatuPUCPPresentacion.WebService.AdministradorWS.listarAdministradorAsync(QhatuPUCPPresentacion.WebService.listarAdministradorRequest request) {
-            return base.Channel.listarAdministradorAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarAdministradorResponse> listarAdministradorAsync() {
-            QhatuPUCPPresentacion.WebService.listarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.listarAdministradorRequest();
-            return ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).listarAdministradorAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         QhatuPUCPPresentacion.WebService.registrarAdministradorResponse QhatuPUCPPresentacion.WebService.AdministradorWS.registrarAdministrador(QhatuPUCPPresentacion.WebService.registrarAdministradorRequest request) {
             return base.Channel.registrarAdministrador(request);
         }
@@ -3268,26 +3226,68 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse QhatuPUCPPresentacion.WebService.AdministradorWS.obtenerAdministradorPorCorreoYContra(QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest request) {
-            return base.Channel.obtenerAdministradorPorCorreoYContra(request);
+        QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse QhatuPUCPPresentacion.WebService.AdministradorWS.actualizarAdministrador(QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest request) {
+            return base.Channel.actualizarAdministrador(request);
         }
         
-        public QhatuPUCPPresentacion.WebService.administrador obtenerAdministradorPorCorreoYContra(string clave) {
-            QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest();
-            inValue.clave = clave;
-            QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse retVal = ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).obtenerAdministradorPorCorreoYContra(inValue);
+        public void actualizarAdministrador(QhatuPUCPPresentacion.WebService.administrador usuario) {
+            QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest();
+            inValue.usuario = usuario;
+            QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse retVal = ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).actualizarAdministrador(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse> QhatuPUCPPresentacion.WebService.AdministradorWS.actualizarAdministradorAsync(QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest request) {
+            return base.Channel.actualizarAdministradorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarAdministradorResponse> actualizarAdministradorAsync(QhatuPUCPPresentacion.WebService.administrador usuario) {
+            QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarAdministradorRequest();
+            inValue.usuario = usuario;
+            return ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).actualizarAdministradorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse QhatuPUCPPresentacion.WebService.AdministradorWS.eliminarAdministrador(QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest request) {
+            return base.Channel.eliminarAdministrador(request);
+        }
+        
+        public void eliminarAdministrador(int idAdministrador) {
+            QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest();
+            inValue.idAdministrador = idAdministrador;
+            QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse retVal = ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).eliminarAdministrador(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse> QhatuPUCPPresentacion.WebService.AdministradorWS.eliminarAdministradorAsync(QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest request) {
+            return base.Channel.eliminarAdministradorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarAdministradorResponse> eliminarAdministradorAsync(int idAdministrador) {
+            QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarAdministradorRequest();
+            inValue.idAdministrador = idAdministrador;
+            return ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).eliminarAdministradorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.listarAdministradorResponse QhatuPUCPPresentacion.WebService.AdministradorWS.listarAdministrador(QhatuPUCPPresentacion.WebService.listarAdministradorRequest request) {
+            return base.Channel.listarAdministrador(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.administrador[] listarAdministrador() {
+            QhatuPUCPPresentacion.WebService.listarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.listarAdministradorRequest();
+            QhatuPUCPPresentacion.WebService.listarAdministradorResponse retVal = ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).listarAdministrador(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse> QhatuPUCPPresentacion.WebService.AdministradorWS.obtenerAdministradorPorCorreoYContraAsync(QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest request) {
-            return base.Channel.obtenerAdministradorPorCorreoYContraAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarAdministradorResponse> QhatuPUCPPresentacion.WebService.AdministradorWS.listarAdministradorAsync(QhatuPUCPPresentacion.WebService.listarAdministradorRequest request) {
+            return base.Channel.listarAdministradorAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraResponse> obtenerAdministradorPorCorreoYContraAsync(string clave) {
-            QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerAdministradorPorCorreoYContraRequest();
-            inValue.clave = clave;
-            return ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).obtenerAdministradorPorCorreoYContraAsync(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarAdministradorResponse> listarAdministradorAsync() {
+            QhatuPUCPPresentacion.WebService.listarAdministradorRequest inValue = new QhatuPUCPPresentacion.WebService.listarAdministradorRequest();
+            return ((QhatuPUCPPresentacion.WebService.AdministradorWS)(this)).listarAdministradorAsync(inValue);
         }
     }
     
@@ -3318,6 +3318,17 @@ namespace QhatuPUCPPresentacion.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse> eliminarDenunciaAsync(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request);
         
+        // CODEGEN: El parámetro 'denuncia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest", ReplyAction="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse actualizarNotificacion(QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest", ReplyAction="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse> actualizarNotificacionAsync(QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest request);
+        
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionRequest", ReplyAction="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -3340,17 +3351,6 @@ namespace QhatuPUCPPresentacion.WebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionRequest", ReplyAction="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarNotificacionResponse> registrarNotificacionAsync(QhatuPUCPPresentacion.WebService.registrarNotificacionRequest request);
-        
-        // CODEGEN: El parámetro 'denuncia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest", ReplyAction="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse actualizarNotificacion(QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest", ReplyAction="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse> actualizarNotificacionAsync(QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3406,6 +3406,34 @@ namespace QhatuPUCPPresentacion.WebService {
     public partial class eliminarDenunciaResponse {
         
         public eliminarDenunciaResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarNotificacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarNotificacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.notificacion denuncia;
+        
+        public actualizarNotificacionRequest() {
+        }
+        
+        public actualizarNotificacionRequest(QhatuPUCPPresentacion.WebService.notificacion denuncia) {
+            this.denuncia = denuncia;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarNotificacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarNotificacionResponse {
+        
+        public actualizarNotificacionResponse() {
         }
     }
     
@@ -3470,34 +3498,6 @@ namespace QhatuPUCPPresentacion.WebService {
     public partial class registrarNotificacionResponse {
         
         public registrarNotificacionResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarNotificacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarNotificacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.notificacion denuncia;
-        
-        public actualizarNotificacionRequest() {
-        }
-        
-        public actualizarNotificacionRequest(QhatuPUCPPresentacion.WebService.notificacion denuncia) {
-            this.denuncia = denuncia;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarNotificacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarNotificacionResponse {
-        
-        public actualizarNotificacionResponse() {
         }
     }
     
@@ -3572,6 +3572,28 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse QhatuPUCPPresentacion.WebService.NotificacionWS.actualizarNotificacion(QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest request) {
+            return base.Channel.actualizarNotificacion(request);
+        }
+        
+        public void actualizarNotificacion(QhatuPUCPPresentacion.WebService.notificacion denuncia) {
+            QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest();
+            inValue.denuncia = denuncia;
+            QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse retVal = ((QhatuPUCPPresentacion.WebService.NotificacionWS)(this)).actualizarNotificacion(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse> QhatuPUCPPresentacion.WebService.NotificacionWS.actualizarNotificacionAsync(QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest request) {
+            return base.Channel.actualizarNotificacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse> actualizarNotificacionAsync(QhatuPUCPPresentacion.WebService.notificacion denuncia) {
+            QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest();
+            inValue.denuncia = denuncia;
+            return ((QhatuPUCPPresentacion.WebService.NotificacionWS)(this)).actualizarNotificacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         QhatuPUCPPresentacion.WebService.obtenerNotificacionResponse QhatuPUCPPresentacion.WebService.NotificacionWS.obtenerNotificacion(QhatuPUCPPresentacion.WebService.obtenerNotificacionRequest request) {
             return base.Channel.obtenerNotificacion(request);
         }
@@ -3615,78 +3637,11 @@ namespace QhatuPUCPPresentacion.WebService {
             inValue.denuncia = denuncia;
             return ((QhatuPUCPPresentacion.WebService.NotificacionWS)(this)).registrarNotificacionAsync(inValue);
         }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse QhatuPUCPPresentacion.WebService.NotificacionWS.actualizarNotificacion(QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest request) {
-            return base.Channel.actualizarNotificacion(request);
-        }
-        
-        public void actualizarNotificacion(QhatuPUCPPresentacion.WebService.notificacion denuncia) {
-            QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest();
-            inValue.denuncia = denuncia;
-            QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse retVal = ((QhatuPUCPPresentacion.WebService.NotificacionWS)(this)).actualizarNotificacion(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse> QhatuPUCPPresentacion.WebService.NotificacionWS.actualizarNotificacionAsync(QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest request) {
-            return base.Channel.actualizarNotificacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarNotificacionResponse> actualizarNotificacionAsync(QhatuPUCPPresentacion.WebService.notificacion denuncia) {
-            QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarNotificacionRequest();
-            inValue.denuncia = denuncia;
-            return ((QhatuPUCPPresentacion.WebService.NotificacionWS)(this)).actualizarNotificacionAsync(inValue);
-        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="com.pucp.pucpqhatu", ConfigurationName="WebService.FacultadWS")]
     public interface FacultadWS {
-        
-        // CODEGEN: El parámetro 'idFacultad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.eliminarFacultadResponse eliminarFacultad(QhatuPUCPPresentacion.WebService.eliminarFacultadRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFacultadResponse> eliminarFacultadAsync(QhatuPUCPPresentacion.WebService.eliminarFacultadRequest request);
-        
-        // CODEGEN: El parámetro 'facultad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.actualizarFacultadResponse actualizarFacultad(QhatuPUCPPresentacion.WebService.actualizarFacultadRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarFacultadResponse> actualizarFacultadAsync(QhatuPUCPPresentacion.WebService.actualizarFacultadRequest request);
-        
-        // CODEGEN: El parámetro 'facultad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.registrarFacultadResponse registrarFacultad(QhatuPUCPPresentacion.WebService.registrarFacultadRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarFacultadResponse> registrarFacultadAsync(QhatuPUCPPresentacion.WebService.registrarFacultadRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.obtenerFacultadResponse obtenerFacultad(QhatuPUCPPresentacion.WebService.obtenerFacultadRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerFacultadResponse> obtenerFacultadAsync(QhatuPUCPPresentacion.WebService.obtenerFacultadRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse")]
@@ -3699,33 +3654,106 @@ namespace QhatuPUCPPresentacion.WebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFacultadResponse> listarFacultadAsync(QhatuPUCPPresentacion.WebService.listarFacultadRequest request);
+        
+        // CODEGEN: El parámetro 'facultad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.registrarFacultadResponse registrarFacultad(QhatuPUCPPresentacion.WebService.registrarFacultadRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarFacultadResponse> registrarFacultadAsync(QhatuPUCPPresentacion.WebService.registrarFacultadRequest request);
+        
+        // CODEGEN: El parámetro 'facultad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.actualizarFacultadResponse actualizarFacultad(QhatuPUCPPresentacion.WebService.actualizarFacultadRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarFacultadResponse> actualizarFacultadAsync(QhatuPUCPPresentacion.WebService.actualizarFacultadRequest request);
+        
+        // CODEGEN: El parámetro 'idFacultad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.eliminarFacultadResponse eliminarFacultad(QhatuPUCPPresentacion.WebService.eliminarFacultadRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFacultadResponse> eliminarFacultadAsync(QhatuPUCPPresentacion.WebService.eliminarFacultadRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.obtenerFacultadResponse obtenerFacultad(QhatuPUCPPresentacion.WebService.obtenerFacultadRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest", ReplyAction="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerFacultadResponse> obtenerFacultadAsync(QhatuPUCPPresentacion.WebService.obtenerFacultadRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarFacultad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarFacultadRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarFacultad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarFacultadRequest {
+        
+        public listarFacultadRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarFacultadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarFacultadResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.facultad[] @return;
+        
+        public listarFacultadResponse() {
+        }
+        
+        public listarFacultadResponse(QhatuPUCPPresentacion.WebService.facultad[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarFacultad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class registrarFacultadRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idFacultad;
+        public QhatuPUCPPresentacion.WebService.facultad facultad;
         
-        public eliminarFacultadRequest() {
+        public registrarFacultadRequest() {
         }
         
-        public eliminarFacultadRequest(int idFacultad) {
-            this.idFacultad = idFacultad;
+        public registrarFacultadRequest(QhatuPUCPPresentacion.WebService.facultad facultad) {
+            this.facultad = facultad;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarFacultadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarFacultadResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarFacultadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class registrarFacultadResponse {
         
-        public eliminarFacultadResponse() {
+        public registrarFacultadResponse() {
         }
     }
     
@@ -3760,28 +3788,28 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarFacultad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class registrarFacultadRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarFacultad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarFacultadRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.facultad facultad;
+        public int idFacultad;
         
-        public registrarFacultadRequest() {
+        public eliminarFacultadRequest() {
         }
         
-        public registrarFacultadRequest(QhatuPUCPPresentacion.WebService.facultad facultad) {
-            this.facultad = facultad;
+        public eliminarFacultadRequest(int idFacultad) {
+            this.idFacultad = idFacultad;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarFacultadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class registrarFacultadResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarFacultadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarFacultadResponse {
         
-        public registrarFacultadResponse() {
+        public eliminarFacultadResponse() {
         }
     }
     
@@ -3821,34 +3849,6 @@ namespace QhatuPUCPPresentacion.WebService {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarFacultad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarFacultadRequest {
-        
-        public listarFacultadRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarFacultadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarFacultadResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.facultad[] @return;
-        
-        public listarFacultadResponse() {
-        }
-        
-        public listarFacultadResponse(QhatuPUCPPresentacion.WebService.facultad[] @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface FacultadWSChannel : QhatuPUCPPresentacion.WebService.FacultadWS, System.ServiceModel.IClientChannel {
     }
@@ -3877,47 +3877,24 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.eliminarFacultadResponse QhatuPUCPPresentacion.WebService.FacultadWS.eliminarFacultad(QhatuPUCPPresentacion.WebService.eliminarFacultadRequest request) {
-            return base.Channel.eliminarFacultad(request);
+        QhatuPUCPPresentacion.WebService.listarFacultadResponse QhatuPUCPPresentacion.WebService.FacultadWS.listarFacultad(QhatuPUCPPresentacion.WebService.listarFacultadRequest request) {
+            return base.Channel.listarFacultad(request);
         }
         
-        public void eliminarFacultad(int idFacultad) {
-            QhatuPUCPPresentacion.WebService.eliminarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarFacultadRequest();
-            inValue.idFacultad = idFacultad;
-            QhatuPUCPPresentacion.WebService.eliminarFacultadResponse retVal = ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).eliminarFacultad(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFacultadResponse> QhatuPUCPPresentacion.WebService.FacultadWS.eliminarFacultadAsync(QhatuPUCPPresentacion.WebService.eliminarFacultadRequest request) {
-            return base.Channel.eliminarFacultadAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFacultadResponse> eliminarFacultadAsync(int idFacultad) {
-            QhatuPUCPPresentacion.WebService.eliminarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarFacultadRequest();
-            inValue.idFacultad = idFacultad;
-            return ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).eliminarFacultadAsync(inValue);
+        public QhatuPUCPPresentacion.WebService.facultad[] listarFacultad() {
+            QhatuPUCPPresentacion.WebService.listarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.listarFacultadRequest();
+            QhatuPUCPPresentacion.WebService.listarFacultadResponse retVal = ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).listarFacultad(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.actualizarFacultadResponse QhatuPUCPPresentacion.WebService.FacultadWS.actualizarFacultad(QhatuPUCPPresentacion.WebService.actualizarFacultadRequest request) {
-            return base.Channel.actualizarFacultad(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFacultadResponse> QhatuPUCPPresentacion.WebService.FacultadWS.listarFacultadAsync(QhatuPUCPPresentacion.WebService.listarFacultadRequest request) {
+            return base.Channel.listarFacultadAsync(request);
         }
         
-        public void actualizarFacultad(QhatuPUCPPresentacion.WebService.facultad facultad) {
-            QhatuPUCPPresentacion.WebService.actualizarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarFacultadRequest();
-            inValue.facultad = facultad;
-            QhatuPUCPPresentacion.WebService.actualizarFacultadResponse retVal = ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).actualizarFacultad(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarFacultadResponse> QhatuPUCPPresentacion.WebService.FacultadWS.actualizarFacultadAsync(QhatuPUCPPresentacion.WebService.actualizarFacultadRequest request) {
-            return base.Channel.actualizarFacultadAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarFacultadResponse> actualizarFacultadAsync(QhatuPUCPPresentacion.WebService.facultad facultad) {
-            QhatuPUCPPresentacion.WebService.actualizarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarFacultadRequest();
-            inValue.facultad = facultad;
-            return ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).actualizarFacultadAsync(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFacultadResponse> listarFacultadAsync() {
+            QhatuPUCPPresentacion.WebService.listarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.listarFacultadRequest();
+            return ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).listarFacultadAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3943,6 +3920,50 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.actualizarFacultadResponse QhatuPUCPPresentacion.WebService.FacultadWS.actualizarFacultad(QhatuPUCPPresentacion.WebService.actualizarFacultadRequest request) {
+            return base.Channel.actualizarFacultad(request);
+        }
+        
+        public void actualizarFacultad(QhatuPUCPPresentacion.WebService.facultad facultad) {
+            QhatuPUCPPresentacion.WebService.actualizarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarFacultadRequest();
+            inValue.facultad = facultad;
+            QhatuPUCPPresentacion.WebService.actualizarFacultadResponse retVal = ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).actualizarFacultad(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarFacultadResponse> QhatuPUCPPresentacion.WebService.FacultadWS.actualizarFacultadAsync(QhatuPUCPPresentacion.WebService.actualizarFacultadRequest request) {
+            return base.Channel.actualizarFacultadAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarFacultadResponse> actualizarFacultadAsync(QhatuPUCPPresentacion.WebService.facultad facultad) {
+            QhatuPUCPPresentacion.WebService.actualizarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarFacultadRequest();
+            inValue.facultad = facultad;
+            return ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).actualizarFacultadAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.eliminarFacultadResponse QhatuPUCPPresentacion.WebService.FacultadWS.eliminarFacultad(QhatuPUCPPresentacion.WebService.eliminarFacultadRequest request) {
+            return base.Channel.eliminarFacultad(request);
+        }
+        
+        public void eliminarFacultad(int idFacultad) {
+            QhatuPUCPPresentacion.WebService.eliminarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarFacultadRequest();
+            inValue.idFacultad = idFacultad;
+            QhatuPUCPPresentacion.WebService.eliminarFacultadResponse retVal = ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).eliminarFacultad(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFacultadResponse> QhatuPUCPPresentacion.WebService.FacultadWS.eliminarFacultadAsync(QhatuPUCPPresentacion.WebService.eliminarFacultadRequest request) {
+            return base.Channel.eliminarFacultadAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarFacultadResponse> eliminarFacultadAsync(int idFacultad) {
+            QhatuPUCPPresentacion.WebService.eliminarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarFacultadRequest();
+            inValue.idFacultad = idFacultad;
+            return ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).eliminarFacultadAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         QhatuPUCPPresentacion.WebService.obtenerFacultadResponse QhatuPUCPPresentacion.WebService.FacultadWS.obtenerFacultad(QhatuPUCPPresentacion.WebService.obtenerFacultadRequest request) {
             return base.Channel.obtenerFacultad(request);
         }
@@ -3964,67 +3985,11 @@ namespace QhatuPUCPPresentacion.WebService {
             inValue.idFacultad = idFacultad;
             return ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).obtenerFacultadAsync(inValue);
         }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarFacultadResponse QhatuPUCPPresentacion.WebService.FacultadWS.listarFacultad(QhatuPUCPPresentacion.WebService.listarFacultadRequest request) {
-            return base.Channel.listarFacultad(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.facultad[] listarFacultad() {
-            QhatuPUCPPresentacion.WebService.listarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.listarFacultadRequest();
-            QhatuPUCPPresentacion.WebService.listarFacultadResponse retVal = ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).listarFacultad(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFacultadResponse> QhatuPUCPPresentacion.WebService.FacultadWS.listarFacultadAsync(QhatuPUCPPresentacion.WebService.listarFacultadRequest request) {
-            return base.Channel.listarFacultadAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarFacultadResponse> listarFacultadAsync() {
-            QhatuPUCPPresentacion.WebService.listarFacultadRequest inValue = new QhatuPUCPPresentacion.WebService.listarFacultadRequest();
-            return ((QhatuPUCPPresentacion.WebService.FacultadWS)(this)).listarFacultadAsync(inValue);
-        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="com.pucp.pucpqhatu", ConfigurationName="WebService.ComentarioWS")]
     public interface ComentarioWS {
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse listarComentarioPorPublicacion(QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse> listarComentarioPorPublicacionAsync(QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest request);
-        
-        // CODEGEN: El parámetro 'idComentario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.eliminarComentarioResponse eliminarComentario(QhatuPUCPPresentacion.WebService.eliminarComentarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarComentarioResponse> eliminarComentarioAsync(QhatuPUCPPresentacion.WebService.eliminarComentarioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarComentarioResponse listarComentario(QhatuPUCPPresentacion.WebService.listarComentarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioResponse> listarComentarioAsync(QhatuPUCPPresentacion.WebService.listarComentarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioResponse")]
@@ -4038,16 +4003,40 @@ namespace QhatuPUCPPresentacion.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerComentarioResponse> obtenerComentarioAsync(QhatuPUCPPresentacion.WebService.obtenerComentarioRequest request);
         
-        // CODEGEN: El parámetro 'comentario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.actualizarComentarioResponse actualizarComentario(QhatuPUCPPresentacion.WebService.actualizarComentarioRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarComentarioResponse listarComentario(QhatuPUCPPresentacion.WebService.listarComentarioRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarComentarioResponse> actualizarComentarioAsync(QhatuPUCPPresentacion.WebService.actualizarComentarioRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioResponse> listarComentarioAsync(QhatuPUCPPresentacion.WebService.listarComentarioRequest request);
+        
+        // CODEGEN: El parámetro 'idComentario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.eliminarComentarioResponse eliminarComentario(QhatuPUCPPresentacion.WebService.eliminarComentarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarComentarioResponse> eliminarComentarioAsync(QhatuPUCPPresentacion.WebService.eliminarComentarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse listarComentarioPorPublicacion(QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse> listarComentarioPorPublicacionAsync(QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest request);
         
         // CODEGEN: El parámetro 'comentario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/registrarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/registrarComentarioResponse")]
@@ -4059,98 +4048,17 @@ namespace QhatuPUCPPresentacion.WebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/registrarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/registrarComentarioResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarComentarioResponse> registrarComentarioAsync(QhatuPUCPPresentacion.WebService.registrarComentarioRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComentarioPorPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarComentarioPorPublicacionRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPublicacion;
+        // CODEGEN: El parámetro 'comentario' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.actualizarComentarioResponse actualizarComentario(QhatuPUCPPresentacion.WebService.actualizarComentarioRequest request);
         
-        public listarComentarioPorPublicacionRequest() {
-        }
-        
-        public listarComentarioPorPublicacionRequest(int idPublicacion) {
-            this.idPublicacion = idPublicacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComentarioPorPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarComentarioPorPublicacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.comentario[] @return;
-        
-        public listarComentarioPorPublicacionResponse() {
-        }
-        
-        public listarComentarioPorPublicacionResponse(QhatuPUCPPresentacion.WebService.comentario[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarComentario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarComentarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idComentario;
-        
-        public eliminarComentarioRequest() {
-        }
-        
-        public eliminarComentarioRequest(int idComentario) {
-            this.idComentario = idComentario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarComentarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarComentarioResponse {
-        
-        public eliminarComentarioResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComentario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarComentarioRequest {
-        
-        public listarComentarioRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComentarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarComentarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.comentario[] @return;
-        
-        public listarComentarioResponse() {
-        }
-        
-        public listarComentarioResponse(QhatuPUCPPresentacion.WebService.comentario[] @return) {
-            this.@return = @return;
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioRequest", ReplyAction="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarComentarioResponse> actualizarComentarioAsync(QhatuPUCPPresentacion.WebService.actualizarComentarioRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4192,28 +4100,92 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarComentario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarComentarioRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComentario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarComentarioRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.comentario comentario;
-        
-        public actualizarComentarioRequest() {
-        }
-        
-        public actualizarComentarioRequest(QhatuPUCPPresentacion.WebService.comentario comentario) {
-            this.comentario = comentario;
+        public listarComentarioRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarComentarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class actualizarComentarioResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComentarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarComentarioResponse {
         
-        public actualizarComentarioResponse() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.comentario[] @return;
+        
+        public listarComentarioResponse() {
+        }
+        
+        public listarComentarioResponse(QhatuPUCPPresentacion.WebService.comentario[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarComentario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarComentarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idComentario;
+        
+        public eliminarComentarioRequest() {
+        }
+        
+        public eliminarComentarioRequest(int idComentario) {
+            this.idComentario = idComentario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarComentarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarComentarioResponse {
+        
+        public eliminarComentarioResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComentarioPorPublicacion", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarComentarioPorPublicacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPublicacion;
+        
+        public listarComentarioPorPublicacionRequest() {
+        }
+        
+        public listarComentarioPorPublicacionRequest(int idPublicacion) {
+            this.idPublicacion = idPublicacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComentarioPorPublicacionResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarComentarioPorPublicacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.comentario[] @return;
+        
+        public listarComentarioPorPublicacionResponse() {
+        }
+        
+        public listarComentarioPorPublicacionResponse(QhatuPUCPPresentacion.WebService.comentario[] @return) {
+            this.@return = @return;
         }
     }
     
@@ -4245,6 +4217,34 @@ namespace QhatuPUCPPresentacion.WebService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarComentario", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarComentarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.comentario comentario;
+        
+        public actualizarComentarioRequest() {
+        }
+        
+        public actualizarComentarioRequest(QhatuPUCPPresentacion.WebService.comentario comentario) {
+            this.comentario = comentario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarComentarioResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class actualizarComentarioResponse {
+        
+        public actualizarComentarioResponse() {
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface ComentarioWSChannel : QhatuPUCPPresentacion.WebService.ComentarioWS, System.ServiceModel.IClientChannel {
     }
@@ -4273,26 +4273,47 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse QhatuPUCPPresentacion.WebService.ComentarioWS.listarComentarioPorPublicacion(QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest request) {
-            return base.Channel.listarComentarioPorPublicacion(request);
+        QhatuPUCPPresentacion.WebService.obtenerComentarioResponse QhatuPUCPPresentacion.WebService.ComentarioWS.obtenerComentario(QhatuPUCPPresentacion.WebService.obtenerComentarioRequest request) {
+            return base.Channel.obtenerComentario(request);
         }
         
-        public QhatuPUCPPresentacion.WebService.comentario[] listarComentarioPorPublicacion(int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest();
-            inValue.idPublicacion = idPublicacion;
-            QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).listarComentarioPorPublicacion(inValue);
+        public QhatuPUCPPresentacion.WebService.comentario obtenerComentario(int idComentario) {
+            QhatuPUCPPresentacion.WebService.obtenerComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerComentarioRequest();
+            inValue.idComentario = idComentario;
+            QhatuPUCPPresentacion.WebService.obtenerComentarioResponse retVal = ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).obtenerComentario(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse> QhatuPUCPPresentacion.WebService.ComentarioWS.listarComentarioPorPublicacionAsync(QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest request) {
-            return base.Channel.listarComentarioPorPublicacionAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerComentarioResponse> QhatuPUCPPresentacion.WebService.ComentarioWS.obtenerComentarioAsync(QhatuPUCPPresentacion.WebService.obtenerComentarioRequest request) {
+            return base.Channel.obtenerComentarioAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse> listarComentarioPorPublicacionAsync(int idPublicacion) {
-            QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest();
-            inValue.idPublicacion = idPublicacion;
-            return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).listarComentarioPorPublicacionAsync(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerComentarioResponse> obtenerComentarioAsync(int idComentario) {
+            QhatuPUCPPresentacion.WebService.obtenerComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerComentarioRequest();
+            inValue.idComentario = idComentario;
+            return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).obtenerComentarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.listarComentarioResponse QhatuPUCPPresentacion.WebService.ComentarioWS.listarComentario(QhatuPUCPPresentacion.WebService.listarComentarioRequest request) {
+            return base.Channel.listarComentario(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.comentario[] listarComentario() {
+            QhatuPUCPPresentacion.WebService.listarComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.listarComentarioRequest();
+            QhatuPUCPPresentacion.WebService.listarComentarioResponse retVal = ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).listarComentario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioResponse> QhatuPUCPPresentacion.WebService.ComentarioWS.listarComentarioAsync(QhatuPUCPPresentacion.WebService.listarComentarioRequest request) {
+            return base.Channel.listarComentarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioResponse> listarComentarioAsync() {
+            QhatuPUCPPresentacion.WebService.listarComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.listarComentarioRequest();
+            return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).listarComentarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4318,69 +4339,26 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarComentarioResponse QhatuPUCPPresentacion.WebService.ComentarioWS.listarComentario(QhatuPUCPPresentacion.WebService.listarComentarioRequest request) {
-            return base.Channel.listarComentario(request);
+        QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse QhatuPUCPPresentacion.WebService.ComentarioWS.listarComentarioPorPublicacion(QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest request) {
+            return base.Channel.listarComentarioPorPublicacion(request);
         }
         
-        public QhatuPUCPPresentacion.WebService.comentario[] listarComentario() {
-            QhatuPUCPPresentacion.WebService.listarComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.listarComentarioRequest();
-            QhatuPUCPPresentacion.WebService.listarComentarioResponse retVal = ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).listarComentario(inValue);
+        public QhatuPUCPPresentacion.WebService.comentario[] listarComentarioPorPublicacion(int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest();
+            inValue.idPublicacion = idPublicacion;
+            QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse retVal = ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).listarComentarioPorPublicacion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioResponse> QhatuPUCPPresentacion.WebService.ComentarioWS.listarComentarioAsync(QhatuPUCPPresentacion.WebService.listarComentarioRequest request) {
-            return base.Channel.listarComentarioAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse> QhatuPUCPPresentacion.WebService.ComentarioWS.listarComentarioPorPublicacionAsync(QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest request) {
+            return base.Channel.listarComentarioPorPublicacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioResponse> listarComentarioAsync() {
-            QhatuPUCPPresentacion.WebService.listarComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.listarComentarioRequest();
-            return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).listarComentarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.obtenerComentarioResponse QhatuPUCPPresentacion.WebService.ComentarioWS.obtenerComentario(QhatuPUCPPresentacion.WebService.obtenerComentarioRequest request) {
-            return base.Channel.obtenerComentario(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.comentario obtenerComentario(int idComentario) {
-            QhatuPUCPPresentacion.WebService.obtenerComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerComentarioRequest();
-            inValue.idComentario = idComentario;
-            QhatuPUCPPresentacion.WebService.obtenerComentarioResponse retVal = ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).obtenerComentario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerComentarioResponse> QhatuPUCPPresentacion.WebService.ComentarioWS.obtenerComentarioAsync(QhatuPUCPPresentacion.WebService.obtenerComentarioRequest request) {
-            return base.Channel.obtenerComentarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerComentarioResponse> obtenerComentarioAsync(int idComentario) {
-            QhatuPUCPPresentacion.WebService.obtenerComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.obtenerComentarioRequest();
-            inValue.idComentario = idComentario;
-            return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).obtenerComentarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.actualizarComentarioResponse QhatuPUCPPresentacion.WebService.ComentarioWS.actualizarComentario(QhatuPUCPPresentacion.WebService.actualizarComentarioRequest request) {
-            return base.Channel.actualizarComentario(request);
-        }
-        
-        public void actualizarComentario(QhatuPUCPPresentacion.WebService.comentario comentario) {
-            QhatuPUCPPresentacion.WebService.actualizarComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarComentarioRequest();
-            inValue.comentario = comentario;
-            QhatuPUCPPresentacion.WebService.actualizarComentarioResponse retVal = ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).actualizarComentario(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarComentarioResponse> QhatuPUCPPresentacion.WebService.ComentarioWS.actualizarComentarioAsync(QhatuPUCPPresentacion.WebService.actualizarComentarioRequest request) {
-            return base.Channel.actualizarComentarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarComentarioResponse> actualizarComentarioAsync(QhatuPUCPPresentacion.WebService.comentario comentario) {
-            QhatuPUCPPresentacion.WebService.actualizarComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarComentarioRequest();
-            inValue.comentario = comentario;
-            return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).actualizarComentarioAsync(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionResponse> listarComentarioPorPublicacionAsync(int idPublicacion) {
+            QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest inValue = new QhatuPUCPPresentacion.WebService.listarComentarioPorPublicacionRequest();
+            inValue.idPublicacion = idPublicacion;
+            return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).listarComentarioPorPublicacionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4404,11 +4382,56 @@ namespace QhatuPUCPPresentacion.WebService {
             inValue.comentario = comentario;
             return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).registrarComentarioAsync(inValue);
         }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.actualizarComentarioResponse QhatuPUCPPresentacion.WebService.ComentarioWS.actualizarComentario(QhatuPUCPPresentacion.WebService.actualizarComentarioRequest request) {
+            return base.Channel.actualizarComentario(request);
+        }
+        
+        public void actualizarComentario(QhatuPUCPPresentacion.WebService.comentario comentario) {
+            QhatuPUCPPresentacion.WebService.actualizarComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarComentarioRequest();
+            inValue.comentario = comentario;
+            QhatuPUCPPresentacion.WebService.actualizarComentarioResponse retVal = ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).actualizarComentario(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarComentarioResponse> QhatuPUCPPresentacion.WebService.ComentarioWS.actualizarComentarioAsync(QhatuPUCPPresentacion.WebService.actualizarComentarioRequest request) {
+            return base.Channel.actualizarComentarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarComentarioResponse> actualizarComentarioAsync(QhatuPUCPPresentacion.WebService.comentario comentario) {
+            QhatuPUCPPresentacion.WebService.actualizarComentarioRequest inValue = new QhatuPUCPPresentacion.WebService.actualizarComentarioRequest();
+            inValue.comentario = comentario;
+            return ((QhatuPUCPPresentacion.WebService.ComentarioWS)(this)).actualizarComentarioAsync(inValue);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="com.pucp.pucpqhatu", ConfigurationName="WebService.EspecialidadWS")]
     public interface EspecialidadWS {
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarEspecialidadResponse listarEspecialidad(QhatuPUCPPresentacion.WebService.listarEspecialidadRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarEspecialidadResponse> listarEspecialidadAsync(QhatuPUCPPresentacion.WebService.listarEspecialidadRequest request);
+        
+        // CODEGEN: El parámetro 'idEspecialidad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse eliminarEspecialidad(QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse> eliminarEspecialidadAsync(QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest request);
         
         // CODEGEN: El parámetro 'especialidad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/actualizarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/actualizarEspecialidadResponse")]
@@ -4443,29 +4466,62 @@ namespace QhatuPUCPPresentacion.WebService {
         
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/obtenerEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/obtenerEspecialidadResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerEspecialidadResponse> obtenerEspecialidadAsync(QhatuPUCPPresentacion.WebService.obtenerEspecialidadRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEspecialidad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarEspecialidadRequest {
         
-        // CODEGEN: El parámetro 'idEspecialidad' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse eliminarEspecialidad(QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest request);
+        public listarEspecialidadRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEspecialidadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarEspecialidadResponse {
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse> eliminarEspecialidadAsync(QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest request);
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.especialidad[] @return;
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarEspecialidadResponse listarEspecialidad(QhatuPUCPPresentacion.WebService.listarEspecialidadRequest request);
+        public listarEspecialidadResponse() {
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadRequest", ReplyAction="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarEspecialidadResponse> listarEspecialidadAsync(QhatuPUCPPresentacion.WebService.listarEspecialidadRequest request);
+        public listarEspecialidadResponse(QhatuPUCPPresentacion.WebService.especialidad[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarEspecialidad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarEspecialidadRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idEspecialidad;
+        
+        public eliminarEspecialidadRequest() {
+        }
+        
+        public eliminarEspecialidadRequest(int idEspecialidad) {
+            this.idEspecialidad = idEspecialidad;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarEspecialidadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class eliminarEspecialidadResponse {
+        
+        public eliminarEspecialidadResponse() {
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4560,62 +4616,6 @@ namespace QhatuPUCPPresentacion.WebService {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarEspecialidad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarEspecialidadRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idEspecialidad;
-        
-        public eliminarEspecialidadRequest() {
-        }
-        
-        public eliminarEspecialidadRequest(int idEspecialidad) {
-            this.idEspecialidad = idEspecialidad;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarEspecialidadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class eliminarEspecialidadResponse {
-        
-        public eliminarEspecialidadResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEspecialidad", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarEspecialidadRequest {
-        
-        public listarEspecialidadRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEspecialidadResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarEspecialidadResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.especialidad[] @return;
-        
-        public listarEspecialidadResponse() {
-        }
-        
-        public listarEspecialidadResponse(QhatuPUCPPresentacion.WebService.especialidad[] @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface EspecialidadWSChannel : QhatuPUCPPresentacion.WebService.EspecialidadWS, System.ServiceModel.IClientChannel {
     }
@@ -4641,6 +4641,49 @@ namespace QhatuPUCPPresentacion.WebService {
         
         public EspecialidadWSClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.listarEspecialidadResponse QhatuPUCPPresentacion.WebService.EspecialidadWS.listarEspecialidad(QhatuPUCPPresentacion.WebService.listarEspecialidadRequest request) {
+            return base.Channel.listarEspecialidad(request);
+        }
+        
+        public QhatuPUCPPresentacion.WebService.especialidad[] listarEspecialidad() {
+            QhatuPUCPPresentacion.WebService.listarEspecialidadRequest inValue = new QhatuPUCPPresentacion.WebService.listarEspecialidadRequest();
+            QhatuPUCPPresentacion.WebService.listarEspecialidadResponse retVal = ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).listarEspecialidad(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarEspecialidadResponse> QhatuPUCPPresentacion.WebService.EspecialidadWS.listarEspecialidadAsync(QhatuPUCPPresentacion.WebService.listarEspecialidadRequest request) {
+            return base.Channel.listarEspecialidadAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarEspecialidadResponse> listarEspecialidadAsync() {
+            QhatuPUCPPresentacion.WebService.listarEspecialidadRequest inValue = new QhatuPUCPPresentacion.WebService.listarEspecialidadRequest();
+            return ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).listarEspecialidadAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse QhatuPUCPPresentacion.WebService.EspecialidadWS.eliminarEspecialidad(QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest request) {
+            return base.Channel.eliminarEspecialidad(request);
+        }
+        
+        public void eliminarEspecialidad(int idEspecialidad) {
+            QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest();
+            inValue.idEspecialidad = idEspecialidad;
+            QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse retVal = ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).eliminarEspecialidad(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse> QhatuPUCPPresentacion.WebService.EspecialidadWS.eliminarEspecialidadAsync(QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest request) {
+            return base.Channel.eliminarEspecialidadAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse> eliminarEspecialidadAsync(int idEspecialidad) {
+            QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest();
+            inValue.idEspecialidad = idEspecialidad;
+            return ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).eliminarEspecialidadAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4709,54 +4752,44 @@ namespace QhatuPUCPPresentacion.WebService {
             inValue.idEspecialidad = idEspecialidad;
             return ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).obtenerEspecialidadAsync(inValue);
         }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse QhatuPUCPPresentacion.WebService.EspecialidadWS.eliminarEspecialidad(QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest request) {
-            return base.Channel.eliminarEspecialidad(request);
-        }
-        
-        public void eliminarEspecialidad(int idEspecialidad) {
-            QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest();
-            inValue.idEspecialidad = idEspecialidad;
-            QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse retVal = ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).eliminarEspecialidad(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse> QhatuPUCPPresentacion.WebService.EspecialidadWS.eliminarEspecialidadAsync(QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest request) {
-            return base.Channel.eliminarEspecialidadAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarEspecialidadResponse> eliminarEspecialidadAsync(int idEspecialidad) {
-            QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarEspecialidadRequest();
-            inValue.idEspecialidad = idEspecialidad;
-            return ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).eliminarEspecialidadAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarEspecialidadResponse QhatuPUCPPresentacion.WebService.EspecialidadWS.listarEspecialidad(QhatuPUCPPresentacion.WebService.listarEspecialidadRequest request) {
-            return base.Channel.listarEspecialidad(request);
-        }
-        
-        public QhatuPUCPPresentacion.WebService.especialidad[] listarEspecialidad() {
-            QhatuPUCPPresentacion.WebService.listarEspecialidadRequest inValue = new QhatuPUCPPresentacion.WebService.listarEspecialidadRequest();
-            QhatuPUCPPresentacion.WebService.listarEspecialidadResponse retVal = ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).listarEspecialidad(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarEspecialidadResponse> QhatuPUCPPresentacion.WebService.EspecialidadWS.listarEspecialidadAsync(QhatuPUCPPresentacion.WebService.listarEspecialidadRequest request) {
-            return base.Channel.listarEspecialidadAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarEspecialidadResponse> listarEspecialidadAsync() {
-            QhatuPUCPPresentacion.WebService.listarEspecialidadRequest inValue = new QhatuPUCPPresentacion.WebService.listarEspecialidadRequest();
-            return ((QhatuPUCPPresentacion.WebService.EspecialidadWS)(this)).listarEspecialidadAsync(inValue);
-        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="com.pucp.pucpqhatu", ConfigurationName="WebService.DenunciaWS")]
     public interface DenunciaWS {
+        
+        // CODEGEN: El parámetro 'denuncia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.registrarDenunciaResponse registrarDenuncia(QhatuPUCPPresentacion.WebService.registrarDenunciaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarDenunciaResponse> registrarDenunciaAsync(QhatuPUCPPresentacion.WebService.registrarDenunciaRequest request);
+        
+        // CODEGEN: El parámetro 'denuncia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.actualizarDenunciaResponse actualizarDenuncia(QhatuPUCPPresentacion.WebService.actualizarDenunciaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarDenunciaResponse> actualizarDenunciaAsync(QhatuPUCPPresentacion.WebService.actualizarDenunciaRequest request);
+        
+        // CODEGEN: El parámetro 'idDenuncia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
+        QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse eliminarDenuncia(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse> eliminarDenunciaAsync(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasResponse")]
@@ -4770,40 +4803,6 @@ namespace QhatuPUCPPresentacion.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse> reporteIncidenciasAsync(QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest request);
         
-        // CODEGEN: El parámetro 'denuncia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.actualizarDenunciaResponse actualizarDenuncia(QhatuPUCPPresentacion.WebService.actualizarDenunciaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.actualizarDenunciaResponse> actualizarDenunciaAsync(QhatuPUCPPresentacion.WebService.actualizarDenunciaRequest request);
-        
-        // CODEGEN: El parámetro 'denuncia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.registrarDenunciaResponse registrarDenuncia(QhatuPUCPPresentacion.WebService.registrarDenunciaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarDenunciaResponse> registrarDenunciaAsync(QhatuPUCPPresentacion.WebService.registrarDenunciaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        QhatuPUCPPresentacion.WebService.listarDenunciaResponse listarDenuncia(QhatuPUCPPresentacion.WebService.listarDenunciaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarDenunciaResponse> listarDenunciaAsync(QhatuPUCPPresentacion.WebService.listarDenunciaRequest request);
-        
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -4816,43 +4815,44 @@ namespace QhatuPUCPPresentacion.WebService {
         [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaResponse")]
         System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.obtenerDenunciaResponse> obtenerDenunciaAsync(QhatuPUCPPresentacion.WebService.obtenerDenunciaRequest request);
         
-        // CODEGEN: El parámetro 'idDenuncia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(curso[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(especialidad[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(facultad[]))]
-        QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse eliminarDenuncia(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        QhatuPUCPPresentacion.WebService.listarDenunciaResponse listarDenuncia(QhatuPUCPPresentacion.WebService.listarDenunciaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse")]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse> eliminarDenunciaAsync(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaRequest", ReplyAction="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaResponse")]
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarDenunciaResponse> listarDenunciaAsync(QhatuPUCPPresentacion.WebService.listarDenunciaRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="reporteIncidencias", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class reporteIncidenciasRequest {
-        
-        public reporteIncidenciasRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="reporteIncidenciasResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class reporteIncidenciasResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarDenuncia", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class registrarDenunciaRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
-        public byte[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.denuncia denuncia;
         
-        public reporteIncidenciasResponse() {
+        public registrarDenunciaRequest() {
         }
         
-        public reporteIncidenciasResponse(byte[] @return) {
-            this.@return = @return;
+        public registrarDenunciaRequest(QhatuPUCPPresentacion.WebService.denuncia denuncia) {
+            this.denuncia = denuncia;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarDenunciaResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class registrarDenunciaResponse {
+        
+        public registrarDenunciaResponse() {
         }
     }
     
@@ -4887,55 +4887,27 @@ namespace QhatuPUCPPresentacion.WebService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarDenuncia", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class registrarDenunciaRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="reporteIncidencias", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class reporteIncidenciasRequest {
+        
+        public reporteIncidenciasRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="reporteIncidenciasResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class reporteIncidenciasResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.denuncia denuncia;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true)]
+        public byte[] @return;
         
-        public registrarDenunciaRequest() {
+        public reporteIncidenciasResponse() {
         }
         
-        public registrarDenunciaRequest(QhatuPUCPPresentacion.WebService.denuncia denuncia) {
-            this.denuncia = denuncia;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarDenunciaResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class registrarDenunciaResponse {
-        
-        public registrarDenunciaResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarDenuncia", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarDenunciaRequest {
-        
-        public listarDenunciaRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarDenunciaResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
-    public partial class listarDenunciaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public QhatuPUCPPresentacion.WebService.denuncia[] @return;
-        
-        public listarDenunciaResponse() {
-        }
-        
-        public listarDenunciaResponse(QhatuPUCPPresentacion.WebService.denuncia[] @return) {
+        public reporteIncidenciasResponse(byte[] @return) {
             this.@return = @return;
         }
     }
@@ -4976,6 +4948,34 @@ namespace QhatuPUCPPresentacion.WebService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarDenuncia", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarDenunciaRequest {
+        
+        public listarDenunciaRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarDenunciaResponse", WrapperNamespace="com.pucp.pucpqhatu", IsWrapped=true)]
+    public partial class listarDenunciaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="com.pucp.pucpqhatu", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public QhatuPUCPPresentacion.WebService.denuncia[] @return;
+        
+        public listarDenunciaResponse() {
+        }
+        
+        public listarDenunciaResponse(QhatuPUCPPresentacion.WebService.denuncia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface DenunciaWSChannel : QhatuPUCPPresentacion.WebService.DenunciaWS, System.ServiceModel.IClientChannel {
     }
@@ -5004,24 +5004,25 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse QhatuPUCPPresentacion.WebService.DenunciaWS.reporteIncidencias(QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest request) {
-            return base.Channel.reporteIncidencias(request);
+        QhatuPUCPPresentacion.WebService.registrarDenunciaResponse QhatuPUCPPresentacion.WebService.DenunciaWS.registrarDenuncia(QhatuPUCPPresentacion.WebService.registrarDenunciaRequest request) {
+            return base.Channel.registrarDenuncia(request);
         }
         
-        public byte[] reporteIncidencias() {
-            QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest inValue = new QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest();
-            QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse retVal = ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).reporteIncidencias(inValue);
-            return retVal.@return;
+        public void registrarDenuncia(QhatuPUCPPresentacion.WebService.denuncia denuncia) {
+            QhatuPUCPPresentacion.WebService.registrarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.registrarDenunciaRequest();
+            inValue.denuncia = denuncia;
+            QhatuPUCPPresentacion.WebService.registrarDenunciaResponse retVal = ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).registrarDenuncia(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse> QhatuPUCPPresentacion.WebService.DenunciaWS.reporteIncidenciasAsync(QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest request) {
-            return base.Channel.reporteIncidenciasAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarDenunciaResponse> QhatuPUCPPresentacion.WebService.DenunciaWS.registrarDenunciaAsync(QhatuPUCPPresentacion.WebService.registrarDenunciaRequest request) {
+            return base.Channel.registrarDenunciaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse> reporteIncidenciasAsync() {
-            QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest inValue = new QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest();
-            return ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).reporteIncidenciasAsync(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarDenunciaResponse> registrarDenunciaAsync(QhatuPUCPPresentacion.WebService.denuncia denuncia) {
+            QhatuPUCPPresentacion.WebService.registrarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.registrarDenunciaRequest();
+            inValue.denuncia = denuncia;
+            return ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).registrarDenunciaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5047,46 +5048,46 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.registrarDenunciaResponse QhatuPUCPPresentacion.WebService.DenunciaWS.registrarDenuncia(QhatuPUCPPresentacion.WebService.registrarDenunciaRequest request) {
-            return base.Channel.registrarDenuncia(request);
+        QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse QhatuPUCPPresentacion.WebService.DenunciaWS.eliminarDenuncia(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request) {
+            return base.Channel.eliminarDenuncia(request);
         }
         
-        public void registrarDenuncia(QhatuPUCPPresentacion.WebService.denuncia denuncia) {
-            QhatuPUCPPresentacion.WebService.registrarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.registrarDenunciaRequest();
-            inValue.denuncia = denuncia;
-            QhatuPUCPPresentacion.WebService.registrarDenunciaResponse retVal = ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).registrarDenuncia(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarDenunciaResponse> QhatuPUCPPresentacion.WebService.DenunciaWS.registrarDenunciaAsync(QhatuPUCPPresentacion.WebService.registrarDenunciaRequest request) {
-            return base.Channel.registrarDenunciaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.registrarDenunciaResponse> registrarDenunciaAsync(QhatuPUCPPresentacion.WebService.denuncia denuncia) {
-            QhatuPUCPPresentacion.WebService.registrarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.registrarDenunciaRequest();
-            inValue.denuncia = denuncia;
-            return ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).registrarDenunciaAsync(inValue);
+        public void eliminarDenuncia(int idDenuncia) {
+            QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest();
+            inValue.idDenuncia = idDenuncia;
+            QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse retVal = ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).eliminarDenuncia(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.listarDenunciaResponse QhatuPUCPPresentacion.WebService.DenunciaWS.listarDenuncia(QhatuPUCPPresentacion.WebService.listarDenunciaRequest request) {
-            return base.Channel.listarDenuncia(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse> QhatuPUCPPresentacion.WebService.DenunciaWS.eliminarDenunciaAsync(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request) {
+            return base.Channel.eliminarDenunciaAsync(request);
         }
         
-        public QhatuPUCPPresentacion.WebService.denuncia[] listarDenuncia() {
-            QhatuPUCPPresentacion.WebService.listarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.listarDenunciaRequest();
-            QhatuPUCPPresentacion.WebService.listarDenunciaResponse retVal = ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).listarDenuncia(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse> eliminarDenunciaAsync(int idDenuncia) {
+            QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest();
+            inValue.idDenuncia = idDenuncia;
+            return ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).eliminarDenunciaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse QhatuPUCPPresentacion.WebService.DenunciaWS.reporteIncidencias(QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest request) {
+            return base.Channel.reporteIncidencias(request);
+        }
+        
+        public byte[] reporteIncidencias() {
+            QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest inValue = new QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest();
+            QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse retVal = ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).reporteIncidencias(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarDenunciaResponse> QhatuPUCPPresentacion.WebService.DenunciaWS.listarDenunciaAsync(QhatuPUCPPresentacion.WebService.listarDenunciaRequest request) {
-            return base.Channel.listarDenunciaAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse> QhatuPUCPPresentacion.WebService.DenunciaWS.reporteIncidenciasAsync(QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest request) {
+            return base.Channel.reporteIncidenciasAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarDenunciaResponse> listarDenunciaAsync() {
-            QhatuPUCPPresentacion.WebService.listarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.listarDenunciaRequest();
-            return ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).listarDenunciaAsync(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse> reporteIncidenciasAsync() {
+            QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest inValue = new QhatuPUCPPresentacion.WebService.reporteIncidenciasRequest();
+            return ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).reporteIncidenciasAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5113,25 +5114,24 @@ namespace QhatuPUCPPresentacion.WebService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse QhatuPUCPPresentacion.WebService.DenunciaWS.eliminarDenuncia(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request) {
-            return base.Channel.eliminarDenuncia(request);
+        QhatuPUCPPresentacion.WebService.listarDenunciaResponse QhatuPUCPPresentacion.WebService.DenunciaWS.listarDenuncia(QhatuPUCPPresentacion.WebService.listarDenunciaRequest request) {
+            return base.Channel.listarDenuncia(request);
         }
         
-        public void eliminarDenuncia(int idDenuncia) {
-            QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest();
-            inValue.idDenuncia = idDenuncia;
-            QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse retVal = ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).eliminarDenuncia(inValue);
+        public QhatuPUCPPresentacion.WebService.denuncia[] listarDenuncia() {
+            QhatuPUCPPresentacion.WebService.listarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.listarDenunciaRequest();
+            QhatuPUCPPresentacion.WebService.listarDenunciaResponse retVal = ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).listarDenuncia(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse> QhatuPUCPPresentacion.WebService.DenunciaWS.eliminarDenunciaAsync(QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest request) {
-            return base.Channel.eliminarDenunciaAsync(request);
+        System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarDenunciaResponse> QhatuPUCPPresentacion.WebService.DenunciaWS.listarDenunciaAsync(QhatuPUCPPresentacion.WebService.listarDenunciaRequest request) {
+            return base.Channel.listarDenunciaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.eliminarDenunciaResponse> eliminarDenunciaAsync(int idDenuncia) {
-            QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.eliminarDenunciaRequest();
-            inValue.idDenuncia = idDenuncia;
-            return ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).eliminarDenunciaAsync(inValue);
+        public System.Threading.Tasks.Task<QhatuPUCPPresentacion.WebService.listarDenunciaResponse> listarDenunciaAsync() {
+            QhatuPUCPPresentacion.WebService.listarDenunciaRequest inValue = new QhatuPUCPPresentacion.WebService.listarDenunciaRequest();
+            return ((QhatuPUCPPresentacion.WebService.DenunciaWS)(this)).listarDenunciaAsync(inValue);
         }
     }
 }

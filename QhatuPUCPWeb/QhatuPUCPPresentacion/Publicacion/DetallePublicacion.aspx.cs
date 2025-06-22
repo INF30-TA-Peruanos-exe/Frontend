@@ -150,16 +150,15 @@ namespace QhatuPUCPPresentacion.Publicacion
                 return;
             }
 
+            var publicacionCompleta = publicacionService.obtenerPublicacion(int.Parse(hfIdPublicacion.Value));
+
             var comentario = new comentario
             {
                 contenido = txtComentario.Text.Trim(),
                 valoracion = int.Parse(hfValoracion.Value),
                 comentador = usuario,
                 activo = true,
-                publicacion = new publicacion
-                {
-                    idPublicacion = int.Parse(hfIdPublicacion.Value)
-                }
+                publicacion = publicacionCompleta
             };
 
             comentarioService.registrarComentario(comentario);
