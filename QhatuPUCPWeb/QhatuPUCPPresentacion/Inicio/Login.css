@@ -1,23 +1,72 @@
 ﻿body {
-    background-color: #000;
+    background: linear-gradient(to bottom right, #ffffff, #f0f2f5);
+    min-height: 100vh;
 }
 
-
-.card {
-    width: 400px;
-    border: none;
+.bg-pucp {
+    background-color: #033A78;
 }
 
-
-
-
-.btr {
-    border-top-right-radius: 5px !important;
+.login-logo {
+    max-width: 200px;
 }
 
+.login-formulario .tab-pane {
+    min-height: 360px;
+}
 
-.btl {
-    border-top-left-radius: 5px !important;
+.login-card {
+    max-width: 1000px;
+    min-height: 480px;
+    margin: 0 auto;
+}
+
+.login-imagen h3 {
+    font-size: 2.4rem;
+}
+
+.login-imagen h2 {
+    font-size: 2rem;
+}
+
+.login-imagen p {
+    font-size: 1.2rem;
+}
+
+@media (orientation: portrait) {
+    .login-container > .d-flex {
+        flex-direction: column !important;
+        max-width: 75%;
+        margin-inline: auto;
+    }
+
+    .login-imagen,
+    .login-formulario {
+        width: 100% !important;
+    }
+
+    .login-logo {
+        max-width: 100px;
+    }
+
+    .login-imagen img {
+        max-width: 108px;
+    }
+
+    .login-imagen h3 {
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .login-imagen h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .login-imagen p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
 }
 
 .btn-dark {
@@ -26,13 +75,11 @@
     border-color: #0d6efd;
 }
 
-
     .btn-dark:hover {
         color: #fff;
         background-color: #0d6efd;
         border-color: #0d6efd;
     }
-
 
 .nav-pills {
     display: table !important;
@@ -48,24 +95,3 @@
     display: table-cell;
     background: #0d6efd2e;
 }
-
-
-.form {
-    padding: 10px;
-    height: 300px;
-}
-
-    .form input {
-        margin-bottom: 12px;
-        border-radius: 3px;
-    }
-
-
-        .form input:focus {
-            box-shadow: none;
-        }
-
-
-    .form button {
-        margin-top: 20px;
-    }
