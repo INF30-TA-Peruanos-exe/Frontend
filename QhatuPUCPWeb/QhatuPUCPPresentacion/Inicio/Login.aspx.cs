@@ -101,12 +101,10 @@ namespace QhatuPUCPPresentacion.Inicio
             string nombreUsuario = txtNombreUsuario.Text.Trim();
             string contrasena = txtContrasenaNueva.Text.Trim();
 
-            // Reemplaza el bloque de validación en BtnSignup_Click:
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(correo) ||
                 string.IsNullOrEmpty(codigoPucp) || string.IsNullOrEmpty(contrasena) || string.IsNullOrEmpty(nombreUsuario))
             {
                 lblSignupError.Text = "Por favor, complete todos los campos.";
-                // Mantener el tab "pills-profile" activo usando JavaScript
                 ScriptManager.RegisterStartupScript(this, GetType(), "activarProfileTab",
                     "$('#pills-profile-tab').tab('show');", true);
                 return;
@@ -121,28 +119,24 @@ namespace QhatuPUCPPresentacion.Inicio
                     correo = correo,
                     contrasena = contrasena,
                     nombre = nombre,
-                    nombreUsuario = nombreUsuario
+                    nombreUsuario = nombreUsuario,
+                    estado = estadoUsuario.HABILITADO,
+                    estadoSpecified = true
                 };
 
-                usuario.estado = estadoUsuario.HABILITADO; // o RESTRINGIDO si deseas eso
-                usuario.estadoSpecified = true;
-
-
-                // Imprimir el valor de estado para pruebas en la consola del navegador
-                System.Diagnostics.Debug.WriteLine("Valor de estado: " + usuario.estado);
-                System.Diagnostics.Debug.WriteLine("usuario es nulo? " + (usuario == null));
-                System.Diagnostics.Debug.WriteLine("correo: " + usuario.correo);
-                System.Diagnostics.Debug.WriteLine("nombreUsuario: " + usuario.nombreUsuario);
-                System.Diagnostics.Debug.WriteLine("Usuario Service: " + usuarioService);
-
-                // Aquí deberías consumir tu WebService de Usuario para registrar el nuevo usuario
+                UsuarioWSClient usuarioService = new UsuarioWSClient();
                 usuarioService.registrarUsuario(usuario);
 
-                lblSignupError.CssClass = "text-success mt-2";
-                lblSignupError.Text = "Usuario registrado correctamente.";
+                usuario usuarioRegistrado = usuarioService.obtenerUsuarioPorCorreoYContra(correo, contrasena);
+
+                Session["usuario"] = usuarioRegistrado;
+                Response.Redirect("~/Inicio/PaginaInicio.aspx");
             }
             catch (Exception ex)
             {
+                lblSignupError.CssClass = "text-danger mt-2";
+                ScriptManager.RegisterStartupScript(this, GetType(), "activarProfileTab",
+                    "$('#pills-profile-tab').tab('show');", true);
                 lblSignupError.Text = "Error al registrar: " + ex.Message;
             }
         }
