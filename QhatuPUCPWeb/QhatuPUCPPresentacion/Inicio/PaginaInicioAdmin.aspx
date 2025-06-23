@@ -27,7 +27,7 @@
         <table class="table table-hover table-bordered">
             <thead class="table-dark">
                 <tr>
-                    <th>Usuario</th>
+                    <th>ID</th>
                     <th>Título</th>
                     <th>Estado Publicación</th>
                     <th>Fecha</th>
@@ -35,16 +35,16 @@
                 </tr>
             </thead>
             <tbody>
-                <asp:Repeater ID="rptPublicaciones" runat="server">
+                <asp:Repeater ID="rptPublicaciones" runat="server"  OnItemDataBound="rptPublicaciones_ItemDataBound">
                     <ItemTemplate>
-                        <tr>
-                            <td><%# Eval("Usuario.nombre") %></td>
+                        <tr runat="server" id="filaPublicacion">
+                            <td><%# Eval("idPublicacion")%></td>
                             <td><%# Eval("titulo") %></td>
                             <td><%# Eval("estado") %></td>
                             <td><%# Eval("fechaPublicacion", "{0:dd/MM/yyyy}") %></td>
                             <td style="position: relative;">
                                 <a class="btn btn-sm btn-primary"
-                                   href='<%# ResolveUrl("~/Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")) %>'>
+                                   href='<%# ResolveUrl("~/PaginasAdministrador/DetallePublicacionAdmin.aspx?id=" + Eval("idPublicacion")) %>'>
                                     Ver Detalle
                                 </a>
 
@@ -66,20 +66,4 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
-    <script>
-        function mostrarConfirmacion(boton) {
-            // Cierra otras confirmaciones abiertas
-            document.querySelectorAll('.confirmacion-eliminar').forEach(el => el.classList.add('d-none'));
-
-            // Muestra la confirmación actual
-            const contenedor = boton.nextElementSibling;
-            contenedor.classList.remove('d-none');
-        }
-
-        function cancelarConfirmacion(boton) {
-            const contenedor = boton.closest('.confirmacion-eliminar');
-            contenedor.classList.add('d-none');
-            contenedor.previousElementSibling.style.display = 'inline-block';
-        }
-    </script>
 </asp:Content>

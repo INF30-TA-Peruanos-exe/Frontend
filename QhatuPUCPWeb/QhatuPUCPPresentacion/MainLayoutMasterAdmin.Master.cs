@@ -16,7 +16,6 @@ namespace QhatuPUCPPresentacion
                 if (Session["administrador"] != null)
                 {
                     var administrador = (WebService.administrador)Session["administrador"];
-                    lblUsuario.Text = administrador.nombreUsuario;
                 }
                 else
                 {
