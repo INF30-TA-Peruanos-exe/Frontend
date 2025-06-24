@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\paginainicioadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicioadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\inicio\\paginainicioadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\inicio\\paginainicioadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\filtros\\listacurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\filtros\\listacurso.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\axel2\\desktop\\frontend\\qhatupucpweb\\qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PaginaInicioAdmin.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAmwJUAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ListaCurso.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx.cs",
+              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Filtros\\ListaCurso.aspx.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:57:40.568Z",
+              "WhenOpened": "2025-06-24T20:43:50.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PaginaInicioAdmin.aspx",
-              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
-              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
-              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
-              "RelativeToolTip": "QhatuPUCPPresentacion\\Inicio\\PaginaInicioAdmin.aspx",
+              "DocumentIndex": 2,
+              "Title": "DenunciasAdmin.aspx",
+              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx",
+              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-23T15:54:51.349Z",
+              "WhenOpened": "2025-06-24T19:49:13.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DenunciasAdmin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx.cs",
+              "ToolTip": "C:\\Users\\axel2\\Desktop\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T19:50:00.072Z",
               "EditorCaption": ""
             }
           ]

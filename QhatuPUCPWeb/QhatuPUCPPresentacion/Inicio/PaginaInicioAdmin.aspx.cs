@@ -90,6 +90,7 @@ namespace QhatuPUCPPresentacion.Inicio
                     publicaciones = client.listarPublicacion().ToList();
                 }
 
+                ViewState["Publicaciones"] = publicaciones; // guardar para filtrado posterior
                 rptPublicaciones.DataSource = publicaciones;
                 rptPublicaciones.DataBind();
             }
@@ -98,19 +99,32 @@ namespace QhatuPUCPPresentacion.Inicio
                 Console.WriteLine("Error al cargar publicaciones: " + ex.Message);
             }
         }
-
-        protected void rptPublicaciones_ItemCommand(object source, RepeaterCommandEventArgs e)
+        protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            if (e.CommandName == "Eliminar")
+            string criterio = txtBuscar.Text.Trim().ToLower();
+
+            if (ViewState["Publicaciones"] != null)
             {
-                int id = Convert.ToInt32(e.CommandArgument);
-                // Lógica para eliminar publicación
-                client.eliminarPublicacion(id);
-                // Volver a cargar las publicaciones actualizadas
-                CargarPublicaciones();
+                var publicaciones = (List<publicacion>)ViewState["Publicaciones"];
+                var filtradas = publicaciones
+                    .Where(p => p.titulo.ToLower().Contains(criterio))
+                    .ToList();
+
+                rptPublicaciones.DataSource = filtradas;
+                rptPublicaciones.DataBind();
             }
         }
-
+        protected void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            btnBuscar_Click(sender, e); // o directamente filtrar aquí
+        }
+        protected void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            string argument = ((LinkButton)sender).CommandArgument.ToString();
+            int id_publi = int.Parse(argument);
+            client.eliminarPublicacion(id_publi);
+            CargarPublicaciones();
+        }
         protected void ddlFacultad_SelectedIndexChanged(object sender, EventArgs e)
         {
             CargarPublicaciones();

@@ -33,6 +33,7 @@ namespace QhatuPUCPPresentacion.Filtros
                 // Si no hay filtro, cargar todas
                 cursos = client.listarCurso().ToList();
 
+                ViewState["Cursos"] = cursos; // guardar para filtrado posterior
                 rptCursos.DataSource = cursos;
                 rptCursos.DataBind();
             }
@@ -40,6 +41,25 @@ namespace QhatuPUCPPresentacion.Filtros
             {
                 Console.WriteLine("Error al cargar cursos: " + ex.Message);
             }
+        }
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string criterio = txtBuscar.Text.Trim().ToLower();
+
+            if (ViewState["Cursos"] != null)
+            {
+                var cursos = (List<curso>)ViewState["Cursos"];
+                var filtradas = cursos
+                    .Where(u => u.nombre.ToLower().Contains(criterio))
+                    .ToList();
+
+                rptCursos.DataSource = filtradas;
+                rptCursos.DataBind();
+            }
+        }
+        protected void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            btnBuscar_Click(sender, e); // o directamente filtrar aquí
         }
         protected void BtnAgregar_Click(object sender, EventArgs e)
         {

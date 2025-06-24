@@ -5,6 +5,13 @@
     <div class="container mb-4">
         <h2 class="fw-bold">Usuarios</h2>
     </div>
+    <!-- Barra de búsqueda -->
+    <div class="container mb-3">
+        <div class="input-group">
+            <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" placeholder="Buscar por nombre..."  AutoPostBack="true" OnTextChanged="txtBuscar_TextChanged" />
+            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-secondary" OnClick="btnBuscar_Click" />
+        </div>
+    </div>
     <!-- Tabla con datos -->
     <div class="container p-4">
         <table class="table table-hover table-bordered">

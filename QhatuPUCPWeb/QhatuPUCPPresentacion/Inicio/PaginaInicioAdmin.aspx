@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayoutMasterAdmin.Master" AutoEventWireup="true" CodeBehind="PaginaInicioAdmin.aspx.cs" Inherits="QhatuPUCPPresentacion.Inicio.PaginaInicioAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
@@ -22,6 +21,13 @@
             </div>
         </div>
     </div>
+    <!-- Barra de búsqueda -->
+    <div class="container mb-3">
+        <div class="input-group">
+            <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" placeholder="Buscar por título..."  AutoPostBack="true" OnTextChanged="txtBuscar_TextChanged" />
+            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-secondary" OnClick="btnBuscar_Click" />
+        </div>
+    </div>
     <!-- Tabla con datos -->
     <div class="container p-4">
         <table class="table table-hover table-bordered">
@@ -35,9 +41,9 @@
                 </tr>
             </thead>
             <tbody>
-                <asp:Repeater ID="rptPublicaciones" runat="server"  OnItemDataBound="rptPublicaciones_ItemDataBound">
+                <asp:Repeater ID="rptPublicaciones" runat="server">
                     <ItemTemplate>
-                        <tr runat="server" id="filaPublicacion">
+                        <tr>
                             <td><%# Eval("idPublicacion")%></td>
                             <td><%# Eval("titulo") %></td>
                             <td><%# Eval("estado") %></td>
@@ -62,7 +68,6 @@
             </tbody>
         </table>
     </div>
-
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">

@@ -15,7 +15,6 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         protected void Page_Init(object sender, EventArgs e)
         {
             client = new UsuarioWSClient();
-            CargarUsuarios();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -34,6 +33,7 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
                 // Si no hay filtro, cargar todas
                 usuarios = client.listarUsuarios().ToList();
 
+                ViewState["Usuarios"] = usuarios; // guardar para filtrado posterior
                 rptUsuarios.DataSource = usuarios;
                 rptUsuarios.DataBind();
             }
@@ -42,7 +42,25 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
                 Console.WriteLine("Error al cargar usuarios: " + ex.Message);
             }
         }
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string criterio = txtBuscar.Text.Trim().ToLower();
 
+            if (ViewState["Usuarios"] != null)
+            {
+                var usuarios = (List<usuario>)ViewState["Usuarios"];
+                var filtradas = usuarios
+                    .Where(u => u.nombre.ToLower().Contains(criterio))
+                    .ToList();
+
+                rptUsuarios.DataSource = filtradas;
+                rptUsuarios.DataBind();
+            }
+        }
+        protected void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            btnBuscar_Click(sender, e); // o directamente filtrar aquí
+        }
         protected void BtnEditar_Click(object sender, EventArgs e)
         {
             int id_usuario= Int32.Parse(((LinkButton)sender).CommandArgument);
