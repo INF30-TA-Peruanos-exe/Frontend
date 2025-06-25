@@ -322,6 +322,7 @@
     <Content Include="Filtros\NuevoCurso.aspx" />
     <Content Include="HacerPubli\estilos_postear.css" />
     <Content Include="HacerPubli\Postear.aspx" />
+    <Content Include="Imagenes\71To5CylmgL.png" />
     <Content Include="Inicio\Apoyo.aspx" />
     <Content Include="Inicio\DetallePublicacion.aspx" />
     <Content Include="Inicio\paginaInicio.css" />
@@ -364,6 +365,8 @@
     <Content Include="Public\fonts\css\v4-shims.min.css" />
     <Content Include="Public\fonts\css\v5-font-face.css" />
     <Content Include="Public\fonts\css\v5-font-face.min.css" />
+    <Content Include="Public\images\Apoyo.jpg" />
+    <Content Include="Public\images\bienvenida-login.png" />
     <Content Include="Public\images\imagen-ataque.jpg" />
     <Content Include="Public\images\QhatuPucp.png" />
     <Content Include="Public\images\user-avatar.png" />
@@ -602,9 +605,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imagenes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

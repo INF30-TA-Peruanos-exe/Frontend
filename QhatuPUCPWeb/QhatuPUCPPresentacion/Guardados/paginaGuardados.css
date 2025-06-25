@@ -72,3 +72,9 @@
 .custom-margin-top {
     margin-top: 60px;
 }
+
+.filtro-oculto {
+    filter: grayscale(100%) brightness(0.85);
+    position: relative;
+    pointer-events: none;
+}

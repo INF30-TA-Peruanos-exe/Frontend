@@ -26,9 +26,6 @@ namespace QhatuPUCPPresentacion.Notificaciones
                 Response.Redirect("~/Inicio/Login.aspx");
             }
             NotificacionWSClient notificacion = new NotificacionWSClient();
-            // Aquí obtienes las notificaciones del usuario actual
-            // Puedes obtenerlas de una base de datos, servicio web, etc.
-            // Este es un ejemplo con datos de prueba
             usuario usuario = Session["usuario"] as usuario;
             var notificaciones = notificacion.listarNotificacionUsuario(usuario.idUsuario);
 
@@ -39,7 +36,6 @@ namespace QhatuPUCPPresentacion.Notificaciones
             }
             else
             {
-                // El Repeater ya maneja el caso de no haber notificaciones con el FooterTemplate
                 rptNotificacionesUsuario.DataSource = null;
                 rptNotificacionesUsuario.DataBind();
             }

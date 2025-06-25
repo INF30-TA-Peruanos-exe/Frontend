@@ -10,7 +10,6 @@ namespace QhatuPUCPPresentacion.Favoritos
 {
     public partial class PaginaFavoritosNew : System.Web.UI.Page
     {
-        /*Para manejar la paginación*/
         private int PaginaActual
         {
             get { return ViewState["PaginaActual"] != null ? (int)ViewState["PaginaActual"] : 0; }
@@ -39,9 +38,9 @@ namespace QhatuPUCPPresentacion.Favoritos
                 List<publicacion> guardados = publicacionService.listarPublicacionConFavoritos(usuario.idUsuario)?.Where(p => p.esFavorito).ToList() ?? new List<publicacion>();
 
 
-                // Solo publicaciones visibles
+                /* Solo publicaciones visibles
                 guardados = guardados.Where(p => p.estado == estadoPublicacion.VISIBLE).ToList();
-
+                */
                 // Paginación
                 PagedDataSource pagedData = new PagedDataSource
                 {

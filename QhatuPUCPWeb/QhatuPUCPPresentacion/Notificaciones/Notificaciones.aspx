@@ -18,7 +18,7 @@
         }
         .notificacion-mensaje {
             margin-top: 5px;
-            color: #000000; /* Texto en color negro */
+            color: #000000; 
         }
         .sin-notificaciones {
             text-align: center;
@@ -50,7 +50,5 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
     <script type="text/javascript">
-        // Puedes agregar aquí cualquier script JavaScript que necesites
-        // Por ejemplo, para marcar notificaciones como leídas
     </script>
 </asp:Content>
