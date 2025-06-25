@@ -1,12 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayoutMasterAdmin.Master" AutoEventWireup="true" CodeBehind="PaginaInicioAdmin.aspx.cs" Inherits="QhatuPUCPPresentacion.Inicio.PaginaInicioAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <!-- Título de la página -->
-    <div class="container mb-4">
-        <h2 class="fw-bold">Publicaciones</h2>
+    <div class="container-fluid px-4 py-3 mb-4 bg-light border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-primary mb-0">
+                Administración de Publicaciones
+            </h3>
+        </div>
     </div>
     <!-- Filtros -->
     <div class="container mb-4">
@@ -22,12 +25,19 @@
             </div>
         </div>
     </div>
+    <!-- Barra de búsqueda -->
+    <div class="container mb-3">
+        <div class="input-group">
+            <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" placeholder="Buscar por título..."  AutoPostBack="true" OnTextChanged="txtBuscar_TextChanged" />
+            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-secondary" OnClick="btnBuscar_Click" />
+        </div>
+    </div>
     <!-- Tabla con datos -->
     <div class="container p-4">
         <table class="table table-hover table-bordered">
             <thead class="table-dark">
                 <tr>
-                    <th>Usuario</th>
+                    <th>ID</th>
                     <th>Título</th>
                     <th>Estado Publicación</th>
                     <th>Fecha</th>
@@ -38,13 +48,13 @@
                 <asp:Repeater ID="rptPublicaciones" runat="server">
                     <ItemTemplate>
                         <tr>
-                            <td><%# Eval("Usuario.nombre") %></td>
+                            <td><%# Eval("idPublicacion")%></td>
                             <td><%# Eval("titulo") %></td>
                             <td><%# Eval("estado") %></td>
                             <td><%# Eval("fechaPublicacion", "{0:dd/MM/yyyy}") %></td>
                             <td style="position: relative;">
                                 <a class="btn btn-sm btn-primary"
-                                   href='<%# ResolveUrl("~/Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")) %>'>
+                                   href='<%# ResolveUrl("~/PaginasAdministrador/DetallePublicacionAdmin.aspx?id=" + Eval("idPublicacion")) %>'>
                                     Ver Detalle
                                 </a>
 
@@ -62,24 +72,7 @@
             </tbody>
         </table>
     </div>
-
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
-    <script>
-        function mostrarConfirmacion(boton) {
-            // Cierra otras confirmaciones abiertas
-            document.querySelectorAll('.confirmacion-eliminar').forEach(el => el.classList.add('d-none'));
-
-            // Muestra la confirmación actual
-            const contenedor = boton.nextElementSibling;
-            contenedor.classList.remove('d-none');
-        }
-
-        function cancelarConfirmacion(boton) {
-            const contenedor = boton.closest('.confirmacion-eliminar');
-            contenedor.classList.add('d-none');
-            contenedor.previousElementSibling.style.display = 'inline-block';
-        }
-    </script>
 </asp:Content>

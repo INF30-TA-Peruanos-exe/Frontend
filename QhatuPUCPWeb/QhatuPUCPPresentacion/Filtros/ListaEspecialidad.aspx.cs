@@ -34,6 +34,7 @@ namespace QhatuPUCPPresentacion.Filtros
                 // Si no hay filtro, cargar todas
                 especialidades = client.listarEspecialidad().ToList();
 
+                ViewState["Especialidades"] = especialidades; // guardar para filtrado posterior
                 rptEspecialidades.DataSource = especialidades;
                 rptEspecialidades.DataBind();
             }
@@ -41,6 +42,25 @@ namespace QhatuPUCPPresentacion.Filtros
             {
                 Console.WriteLine("Error al cargar especialidades: " + ex.Message);
             }
+        }
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string criterio = txtBuscar.Text.Trim().ToLower();
+
+            if (ViewState["Especialidades"] != null)
+            {
+                var especialidades = (List<curso>)ViewState["Especialidades"];
+                var filtradas = especialidades
+                    .Where(u => u.nombre.ToLower().Contains(criterio))
+                    .ToList();
+
+                rptEspecialidades.DataSource = filtradas;
+                rptEspecialidades.DataBind();
+            }
+        }
+        protected void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            btnBuscar_Click(sender, e); // o directamente filtrar aquí
         }
         protected void BtnAgregar_Click(object sender, EventArgs e)
         {

@@ -325,6 +325,8 @@
     <Content Include="Inicio\PaginaInicioAdmin.aspx" />
     <Content Include="PaginaPrueba.aspx" />
     <Content Include="PaginasAdministrador\DenunciasAdmin.aspx" />
+    <Content Include="PaginasAdministrador\DetallePubliAdmin.css" />
+    <Content Include="PaginasAdministrador\DetallePublicacionAdmin.aspx" />
     <Content Include="PaginasAdministrador\GestionFiltros.aspx" />
     <Content Include="PaginasAdministrador\UsuariosAdmin.aspx" />
     <Content Include="Perfil\EditarPublicacion.aspx" />
@@ -497,6 +499,13 @@
     </Compile>
     <Compile Include="PaginasAdministrador\DenunciasAdmin.aspx.designer.cs">
       <DependentUpon>DenunciasAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdministrador\DetallePublicacionAdmin.aspx.cs">
+      <DependentUpon>DetallePublicacionAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdministrador\DetallePublicacionAdmin.aspx.designer.cs">
+      <DependentUpon>DetallePublicacionAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginasAdministrador\GestionFiltros.aspx.cs">
       <DependentUpon>GestionFiltros.aspx</DependentUpon>

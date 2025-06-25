@@ -2,8 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <div class="container mb-4">
-        <h2 class="fw-bold">Usuarios</h2>
+    <div class="container-fluid px-4 py-3 mb-4 bg-light border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-primary mb-0">
+                Administración de Usuarios
+            </h3>
+        </div>
+    </div>
+    <!-- Barra de búsqueda -->
+    <div class="container mb-3">
+        <div class="input-group">
+            <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" placeholder="Buscar por nombre..."  AutoPostBack="true" OnTextChanged="txtBuscar_TextChanged" />
+            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-secondary" OnClick="btnBuscar_Click" />
+        </div>
     </div>
     <!-- Tabla con datos -->
     <div class="container p-4">

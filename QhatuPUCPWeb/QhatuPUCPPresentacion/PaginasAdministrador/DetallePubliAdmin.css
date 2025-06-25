@@ -1,0 +1,13 @@
+﻿.card-header {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.img-thumbnail {
+    max-height: 180px;
+    object-fit: cover;
+}

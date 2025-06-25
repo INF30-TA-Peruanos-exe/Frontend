@@ -5,11 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/FacultadWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="listarFacultad">
-    <part name="parameters" element="tns:listarFacultad" />
+  <message name="obtenerFacultad">
+    <part name="parameters" element="tns:obtenerFacultad" />
   </message>
-  <message name="listarFacultadResponse">
-    <part name="parameters" element="tns:listarFacultadResponse" />
+  <message name="obtenerFacultadResponse">
+    <part name="parameters" element="tns:obtenerFacultadResponse" />
   </message>
   <message name="registrarFacultad">
     <part name="parameters" element="tns:registrarFacultad" />
@@ -23,22 +23,22 @@
   <message name="actualizarFacultadResponse">
     <part name="parameters" element="tns:actualizarFacultadResponse" />
   </message>
+  <message name="listarFacultad">
+    <part name="parameters" element="tns:listarFacultad" />
+  </message>
+  <message name="listarFacultadResponse">
+    <part name="parameters" element="tns:listarFacultadResponse" />
+  </message>
   <message name="eliminarFacultad">
     <part name="parameters" element="tns:eliminarFacultad" />
   </message>
   <message name="eliminarFacultadResponse">
     <part name="parameters" element="tns:eliminarFacultadResponse" />
   </message>
-  <message name="obtenerFacultad">
-    <part name="parameters" element="tns:obtenerFacultad" />
-  </message>
-  <message name="obtenerFacultadResponse">
-    <part name="parameters" element="tns:obtenerFacultadResponse" />
-  </message>
   <portType name="FacultadWS">
-    <operation name="listarFacultad">
-      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest" message="tns:listarFacultad" />
-      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse" message="tns:listarFacultadResponse" />
+    <operation name="obtenerFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest" message="tns:obtenerFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse" message="tns:obtenerFacultadResponse" />
     </operation>
     <operation name="registrarFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest" message="tns:registrarFacultad" />
@@ -48,18 +48,18 @@
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest" message="tns:actualizarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse" message="tns:actualizarFacultadResponse" />
     </operation>
+    <operation name="listarFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest" message="tns:listarFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse" message="tns:listarFacultadResponse" />
+    </operation>
     <operation name="eliminarFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest" message="tns:eliminarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse" message="tns:eliminarFacultadResponse" />
     </operation>
-    <operation name="obtenerFacultad">
-      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest" message="tns:obtenerFacultad" />
-      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse" message="tns:obtenerFacultadResponse" />
-    </operation>
   </portType>
   <binding name="FacultadWSPortBinding" type="tns:FacultadWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarFacultad">
+    <operation name="obtenerFacultad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -86,7 +86,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarFacultad">
+    <operation name="listarFacultad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -95,7 +95,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="obtenerFacultad">
+    <operation name="eliminarFacultad">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
