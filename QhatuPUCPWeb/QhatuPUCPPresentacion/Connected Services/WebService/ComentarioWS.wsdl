@@ -11,17 +11,28 @@
   <message name="eliminarComentarioResponse">
     <part name="parameters" element="tns:eliminarComentarioResponse" />
   </message>
-  <message name="listarComentario">
-    <part name="parameters" element="tns:listarComentario" />
-  </message>
-  <message name="listarComentarioResponse">
-    <part name="parameters" element="tns:listarComentarioResponse" />
-  </message>
   <message name="obtenerComentario">
     <part name="parameters" element="tns:obtenerComentario" />
   </message>
   <message name="obtenerComentarioResponse">
     <part name="parameters" element="tns:obtenerComentarioResponse" />
+  </message>
+<<<<<<< HEAD
+  <message name="obtenerComentario">
+    <part name="parameters" element="tns:obtenerComentario" />
+=======
+  <message name="eliminarComentario">
+    <part name="parameters" element="tns:eliminarComentario" />
+  </message>
+  <message name="eliminarComentarioResponse">
+    <part name="parameters" element="tns:eliminarComentarioResponse" />
+  </message>
+  <message name="listarComentario">
+    <part name="parameters" element="tns:listarComentario" />
+>>>>>>> parent of af54682 (asd)
+  </message>
+  <message name="listarComentarioResponse">
+    <part name="parameters" element="tns:listarComentarioResponse" />
   </message>
   <message name="actualizarComentario">
     <part name="parameters" element="tns:actualizarComentario" />
@@ -46,13 +57,23 @@
       <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioRequest" message="tns:eliminarComentario" />
       <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioResponse" message="tns:eliminarComentarioResponse" />
     </operation>
-    <operation name="listarComentario">
-      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest" message="tns:listarComentario" />
-      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse" message="tns:listarComentarioResponse" />
-    </operation>
     <operation name="obtenerComentario">
       <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioRequest" message="tns:obtenerComentario" />
       <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioResponse" message="tns:obtenerComentarioResponse" />
+    </operation>
+<<<<<<< HEAD
+    <operation name="obtenerComentario">
+      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioRequest" message="tns:obtenerComentario" />
+      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioResponse" message="tns:obtenerComentarioResponse" />
+=======
+    <operation name="eliminarComentario">
+      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioRequest" message="tns:eliminarComentario" />
+      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioResponse" message="tns:eliminarComentarioResponse" />
+    </operation>
+    <operation name="listarComentario">
+      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest" message="tns:listarComentario" />
+      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse" message="tns:listarComentarioResponse" />
+>>>>>>> parent of af54682 (asd)
     </operation>
     <operation name="actualizarComentario">
       <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioRequest" message="tns:actualizarComentario" />
@@ -78,7 +99,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarComentario">
+    <operation name="obtenerComentario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -96,6 +117,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
     <operation name="actualizarComentario">
       <soap:operation soapAction="" />
       <input>
@@ -115,6 +137,9 @@
       </output>
     </operation>
     <operation name="listarComentarioPorPublicacion">
+=======
+    <operation name="listarComentario">
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

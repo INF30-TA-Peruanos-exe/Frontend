@@ -5,12 +5,42 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/UsuarioWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
+<<<<<<< HEAD
+=======
+  <message name="obtenerUsuarioPorCorreoYContra">
+    <part name="parameters" element="tns:obtenerUsuarioPorCorreoYContra" />
+  </message>
+  <message name="obtenerUsuarioPorCorreoYContraResponse">
+    <part name="parameters" element="tns:obtenerUsuarioPorCorreoYContraResponse" />
+  </message>
+  <message name="listarUsuarios">
+    <part name="parameters" element="tns:listarUsuarios" />
+  </message>
+  <message name="listarUsuariosResponse">
+    <part name="parameters" element="tns:listarUsuariosResponse" />
+  </message>
+>>>>>>> parent of af54682 (asd)
   <message name="actualizarUsuario">
     <part name="parameters" element="tns:actualizarUsuario" />
   </message>
   <message name="actualizarUsuarioResponse">
     <part name="parameters" element="tns:actualizarUsuarioResponse" />
   </message>
+<<<<<<< HEAD
+=======
+  <message name="registrarUsuario">
+    <part name="parameters" element="tns:registrarUsuario" />
+  </message>
+  <message name="registrarUsuarioResponse">
+    <part name="parameters" element="tns:registrarUsuarioResponse" />
+  </message>
+  <message name="eliminarUsuario">
+    <part name="parameters" element="tns:eliminarUsuario" />
+  </message>
+  <message name="eliminarUsuarioResponse">
+    <part name="parameters" element="tns:eliminarUsuarioResponse" />
+  </message>
+>>>>>>> parent of af54682 (asd)
   <message name="obtenerUsuario">
     <part name="parameters" element="tns:obtenerUsuario" />
   </message>
@@ -42,10 +72,32 @@
     <part name="parameters" element="tns:obtenerUsuarioPorCorreoYContraResponse" />
   </message>
   <portType name="UsuarioWS">
+<<<<<<< HEAD
+=======
+    <operation name="obtenerUsuarioPorCorreoYContra">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraRequest" message="tns:obtenerUsuarioPorCorreoYContra" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraResponse" message="tns:obtenerUsuarioPorCorreoYContraResponse" />
+    </operation>
+    <operation name="listarUsuarios">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosRequest" message="tns:listarUsuarios" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosResponse" message="tns:listarUsuariosResponse" />
+    </operation>
+>>>>>>> parent of af54682 (asd)
     <operation name="actualizarUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest" message="tns:actualizarUsuario" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse" message="tns:actualizarUsuarioResponse" />
     </operation>
+<<<<<<< HEAD
+=======
+    <operation name="registrarUsuario">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioRequest" message="tns:registrarUsuario" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioResponse" message="tns:registrarUsuarioResponse" />
+    </operation>
+    <operation name="eliminarUsuario">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioRequest" message="tns:eliminarUsuario" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioResponse" message="tns:eliminarUsuarioResponse" />
+    </operation>
+>>>>>>> parent of af54682 (asd)
     <operation name="obtenerUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioRequest" message="tns:obtenerUsuario" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioResponse" message="tns:obtenerUsuarioResponse" />
@@ -69,16 +121,9 @@
   </portType>
   <binding name="UsuarioWSPortBinding" type="tns:UsuarioWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="actualizarUsuario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerUsuario">
+<<<<<<< HEAD
+=======
+    <operation name="obtenerUsuarioPorCorreoYContra">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -88,6 +133,38 @@
       </output>
     </operation>
     <operation name="listarUsuarios">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+>>>>>>> parent of af54682 (asd)
+    <operation name="actualizarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+<<<<<<< HEAD
+    <operation name="obtenerUsuario">
+=======
+    <operation name="registrarUsuario">
+>>>>>>> parent of af54682 (asd)
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

@@ -5,12 +5,15 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/NotificacionWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
+<<<<<<< HEAD
   <message name="actualizarNotificacion">
     <part name="parameters" element="tns:actualizarNotificacion" />
   </message>
   <message name="actualizarNotificacionResponse">
     <part name="parameters" element="tns:actualizarNotificacionResponse" />
   </message>
+=======
+>>>>>>> parent of af54682 (asd)
   <message name="obtenerNotificacion">
     <part name="parameters" element="tns:obtenerNotificacion" />
   </message>
@@ -29,6 +32,15 @@
   <message name="registrarNotificacionResponse">
     <part name="parameters" element="tns:registrarNotificacionResponse" />
   </message>
+<<<<<<< HEAD
+=======
+  <message name="actualizarNotificacion">
+    <part name="parameters" element="tns:actualizarNotificacion" />
+  </message>
+  <message name="actualizarNotificacionResponse">
+    <part name="parameters" element="tns:actualizarNotificacionResponse" />
+  </message>
+>>>>>>> parent of af54682 (asd)
   <message name="listarNotificacion">
     <part name="parameters" element="tns:listarNotificacion" />
   </message>
@@ -36,10 +48,13 @@
     <part name="parameters" element="tns:listarNotificacionResponse" />
   </message>
   <portType name="NotificacionWS">
+<<<<<<< HEAD
     <operation name="actualizarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
     </operation>
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="obtenerNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionRequest" message="tns:obtenerNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionResponse" message="tns:obtenerNotificacionResponse" />
@@ -52,6 +67,13 @@
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionRequest" message="tns:registrarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionResponse" message="tns:registrarNotificacionResponse" />
     </operation>
+<<<<<<< HEAD
+=======
+    <operation name="actualizarNotificacion">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
+    </operation>
+>>>>>>> parent of af54682 (asd)
     <operation name="listarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionRequest" message="tns:listarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionResponse" message="tns:listarNotificacionResponse" />
@@ -59,6 +81,7 @@
   </portType>
   <binding name="NotificacionWSPortBinding" type="tns:NotificacionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+<<<<<<< HEAD
     <operation name="actualizarNotificacion">
       <soap:operation soapAction="" />
       <input>
@@ -68,6 +91,8 @@
         <soap:body use="literal" />
       </output>
     </operation>
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="obtenerNotificacion">
       <soap:operation soapAction="" />
       <input>
@@ -87,6 +112,18 @@
       </output>
     </operation>
     <operation name="registrarNotificacion">
+<<<<<<< HEAD
+=======
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarNotificacion">
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
