@@ -7,9 +7,30 @@
   </types>
   <message name="actualizarFacultad">
     <part name="parameters" element="tns:actualizarFacultad" />
+<<<<<<< HEAD
+=======
   </message>
   <message name="actualizarFacultadResponse">
     <part name="parameters" element="tns:actualizarFacultadResponse" />
+  </message>
+  <message name="obtenerFacultad">
+    <part name="parameters" element="tns:obtenerFacultad" />
+  </message>
+  <message name="obtenerFacultadResponse">
+    <part name="parameters" element="tns:obtenerFacultadResponse" />
+  </message>
+  <message name="registrarFacultad">
+    <part name="parameters" element="tns:registrarFacultad" />
+  </message>
+  <message name="registrarFacultadResponse">
+    <part name="parameters" element="tns:registrarFacultadResponse" />
+  </message>
+  <message name="eliminarFacultad">
+    <part name="parameters" element="tns:eliminarFacultad" />
+>>>>>>> Admin
+  </message>
+  <message name="eliminarFacultadResponse">
+    <part name="parameters" element="tns:eliminarFacultadResponse" />
   </message>
   <message name="obtenerFacultad">
     <part name="parameters" element="tns:obtenerFacultad" />
@@ -23,6 +44,7 @@
   <message name="listarFacultadResponse">
     <part name="parameters" element="tns:listarFacultadResponse" />
   </message>
+<<<<<<< HEAD
   <message name="eliminarFacultad">
     <part name="parameters" element="tns:eliminarFacultad" />
   </message>
@@ -35,10 +57,27 @@
   <message name="registrarFacultadResponse">
     <part name="parameters" element="tns:registrarFacultadResponse" />
   </message>
+=======
+>>>>>>> Admin
   <portType name="FacultadWS">
     <operation name="actualizarFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest" message="tns:actualizarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse" message="tns:actualizarFacultadResponse" />
+<<<<<<< HEAD
+=======
+    </operation>
+    <operation name="obtenerFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest" message="tns:obtenerFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse" message="tns:obtenerFacultadResponse" />
+    </operation>
+    <operation name="registrarFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest" message="tns:registrarFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse" message="tns:registrarFacultadResponse" />
+    </operation>
+    <operation name="eliminarFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest" message="tns:eliminarFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse" message="tns:eliminarFacultadResponse" />
+>>>>>>> Admin
     </operation>
     <operation name="obtenerFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest" message="tns:obtenerFacultad" />
@@ -48,6 +87,7 @@
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest" message="tns:listarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse" message="tns:listarFacultadResponse" />
     </operation>
+<<<<<<< HEAD
     <operation name="eliminarFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest" message="tns:eliminarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse" message="tns:eliminarFacultadResponse" />
@@ -56,10 +96,42 @@
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest" message="tns:registrarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse" message="tns:registrarFacultadResponse" />
     </operation>
+=======
+>>>>>>> Admin
   </portType>
   <binding name="FacultadWSPortBinding" type="tns:FacultadWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <operation name="actualizarFacultad">
+<<<<<<< HEAD
+=======
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerFacultad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarFacultad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarFacultad">
+>>>>>>> Admin
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -86,6 +158,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
     <operation name="eliminarFacultad">
       <soap:operation soapAction="" />
       <input>
@@ -104,6 +177,8 @@
         <soap:body use="literal" />
       </output>
     </operation>
+=======
+>>>>>>> Admin
   </binding>
   <service name="FacultadWS">
     <port name="FacultadWSPort" binding="tns:FacultadWSPortBinding">
