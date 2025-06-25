@@ -19,6 +19,9 @@
   <message name="listarUsuariosResponse">
     <part name="parameters" element="tns:listarUsuariosResponse" />
   </message>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
   <message name="actualizarUsuario">
     <part name="parameters" element="tns:actualizarUsuario" />
@@ -27,7 +30,10 @@
     <part name="parameters" element="tns:actualizarUsuarioResponse" />
   </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
   <message name="registrarUsuario">
     <part name="parameters" element="tns:registrarUsuario" />
   </message>
@@ -40,6 +46,9 @@
   <message name="eliminarUsuarioResponse">
     <part name="parameters" element="tns:eliminarUsuarioResponse" />
   </message>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
   <message name="obtenerUsuario">
     <part name="parameters" element="tns:obtenerUsuario" />
@@ -82,13 +91,19 @@
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosRequest" message="tns:listarUsuarios" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosResponse" message="tns:listarUsuariosResponse" />
     </operation>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
     <operation name="actualizarUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest" message="tns:actualizarUsuario" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse" message="tns:actualizarUsuarioResponse" />
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="registrarUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioRequest" message="tns:registrarUsuario" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioResponse" message="tns:registrarUsuarioResponse" />
@@ -97,6 +112,9 @@
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioRequest" message="tns:eliminarUsuario" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioResponse" message="tns:eliminarUsuarioResponse" />
     </operation>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
     <operation name="obtenerUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioRequest" message="tns:obtenerUsuario" />
@@ -133,6 +151,36 @@
       </output>
     </operation>
     <operation name="listarUsuarios">
+<<<<<<< HEAD
+=======
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarUsuario">
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

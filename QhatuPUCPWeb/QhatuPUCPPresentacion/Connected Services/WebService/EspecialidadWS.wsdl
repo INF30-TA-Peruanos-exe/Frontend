@@ -12,13 +12,19 @@
     <part name="parameters" element="tns:listarEspecialidadResponse" />
   </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
   <message name="eliminarEspecialidad">
     <part name="parameters" element="tns:eliminarEspecialidad" />
   </message>
   <message name="eliminarEspecialidadResponse">
     <part name="parameters" element="tns:eliminarEspecialidadResponse" />
   </message>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
   <message name="obtenerEspecialidad">
     <part name="parameters" element="tns:obtenerEspecialidad" />
@@ -50,11 +56,17 @@
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/listarEspecialidadResponse" message="tns:listarEspecialidadResponse" />
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="eliminarEspecialidad">
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadRequest" message="tns:eliminarEspecialidad" />
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse" message="tns:eliminarEspecialidadResponse" />
     </operation>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
     <operation name="obtenerEspecialidad">
       <input wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/obtenerEspecialidadRequest" message="tns:obtenerEspecialidad" />
@@ -85,7 +97,10 @@
       </output>
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="eliminarEspecialidad">
       <soap:operation soapAction="" />
       <input>
@@ -95,6 +110,9 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
     <operation name="obtenerEspecialidad">
       <soap:operation soapAction="" />
