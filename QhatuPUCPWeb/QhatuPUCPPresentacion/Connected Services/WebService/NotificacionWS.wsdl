@@ -5,7 +5,6 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/NotificacionWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-<<<<<<< HEAD
   <message name="actualizarNotificacion">
     <part name="parameters" element="tns:actualizarNotificacion" />
   </message>
@@ -24,35 +23,12 @@
   <message name="eliminarDenunciaResponse">
     <part name="parameters" element="tns:eliminarDenunciaResponse" />
   </message>
-=======
->>>>>>> Admin
   <message name="registrarNotificacion">
     <part name="parameters" element="tns:registrarNotificacion" />
   </message>
   <message name="registrarNotificacionResponse">
     <part name="parameters" element="tns:registrarNotificacionResponse" />
   </message>
-<<<<<<< HEAD
-=======
-  <message name="obtenerNotificacion">
-    <part name="parameters" element="tns:obtenerNotificacion" />
-  </message>
-  <message name="obtenerNotificacionResponse">
-    <part name="parameters" element="tns:obtenerNotificacionResponse" />
-  </message>
-  <message name="actualizarNotificacion">
-    <part name="parameters" element="tns:actualizarNotificacion" />
-  </message>
-  <message name="actualizarNotificacionResponse">
-    <part name="parameters" element="tns:actualizarNotificacionResponse" />
-  </message>
-  <message name="eliminarDenuncia">
-    <part name="parameters" element="tns:eliminarDenuncia" />
-  </message>
-  <message name="eliminarDenunciaResponse">
-    <part name="parameters" element="tns:eliminarDenunciaResponse" />
-  </message>
->>>>>>> Admin
   <message name="listarNotificacion">
     <part name="parameters" element="tns:listarNotificacion" />
   </message>
@@ -60,7 +36,6 @@
     <part name="parameters" element="tns:listarNotificacionResponse" />
   </message>
   <portType name="NotificacionWS">
-<<<<<<< HEAD
     <operation name="actualizarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
@@ -73,27 +48,10 @@
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
     </operation>
-=======
->>>>>>> Admin
     <operation name="registrarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionRequest" message="tns:registrarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionResponse" message="tns:registrarNotificacionResponse" />
     </operation>
-<<<<<<< HEAD
-=======
-    <operation name="obtenerNotificacion">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionRequest" message="tns:obtenerNotificacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionResponse" message="tns:obtenerNotificacionResponse" />
-    </operation>
-    <operation name="actualizarNotificacion">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
-    </operation>
-    <operation name="eliminarDenuncia">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
-    </operation>
->>>>>>> Admin
     <operation name="listarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionRequest" message="tns:listarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionResponse" message="tns:listarNotificacionResponse" />
@@ -101,7 +59,6 @@
   </portType>
   <binding name="NotificacionWSPortBinding" type="tns:NotificacionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-<<<<<<< HEAD
     <operation name="actualizarNotificacion">
       <soap:operation soapAction="" />
       <input>
@@ -129,8 +86,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-=======
->>>>>>> Admin
     <operation name="registrarNotificacion">
       <soap:operation soapAction="" />
       <input>
@@ -140,36 +95,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-<<<<<<< HEAD
-=======
-    <operation name="obtenerNotificacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="actualizarNotificacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarDenuncia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
->>>>>>> Admin
     <operation name="listarNotificacion">
       <soap:operation soapAction="" />
       <input>

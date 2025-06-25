@@ -5,19 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/DenunciaWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-<<<<<<< HEAD
   <message name="reporteIncidencias">
     <part name="parameters" element="tns:reporteIncidencias" />
   </message>
   <message name="reporteIncidenciasResponse">
     <part name="parameters" element="tns:reporteIncidenciasResponse" />
-=======
-  <message name="eliminarDenuncia">
-    <part name="parameters" element="tns:eliminarDenuncia" />
-  </message>
-  <message name="eliminarDenunciaResponse">
-    <part name="parameters" element="tns:eliminarDenunciaResponse" />
->>>>>>> Admin
   </message>
   <message name="registrarDenuncia">
     <part name="parameters" element="tns:registrarDenuncia" />
@@ -25,7 +17,6 @@
   <message name="registrarDenunciaResponse">
     <part name="parameters" element="tns:registrarDenunciaResponse" />
   </message>
-<<<<<<< HEAD
   <message name="actualizarDenuncia">
     <part name="parameters" element="tns:actualizarDenuncia" />
   </message>
@@ -34,16 +25,6 @@
   </message>
   <message name="obtenerDenuncia">
     <part name="parameters" element="tns:obtenerDenuncia" />
-=======
-  <message name="obtenerDenuncia">
-    <part name="parameters" element="tns:obtenerDenuncia" />
-  </message>
-  <message name="obtenerDenunciaResponse">
-    <part name="parameters" element="tns:obtenerDenunciaResponse" />
-  </message>
-  <message name="reporteIncidencias">
-    <part name="parameters" element="tns:reporteIncidencias" />
->>>>>>> Admin
   </message>
   <message name="obtenerDenunciaResponse">
     <part name="parameters" element="tns:obtenerDenunciaResponse" />
@@ -54,11 +35,11 @@
   <message name="listarDenunciaResponse">
     <part name="parameters" element="tns:listarDenunciaResponse" />
   </message>
-  <message name="actualizarDenuncia">
-    <part name="parameters" element="tns:actualizarDenuncia" />
+  <message name="eliminarDenuncia">
+    <part name="parameters" element="tns:eliminarDenuncia" />
   </message>
-  <message name="actualizarDenunciaResponse">
-    <part name="parameters" element="tns:actualizarDenunciaResponse" />
+  <message name="eliminarDenunciaResponse">
+    <part name="parameters" element="tns:eliminarDenunciaResponse" />
   </message>
   <message name="contarDenunciasPorPublicacion">
     <part name="parameters" element="tns:contarDenunciasPorPublicacion" />
@@ -67,21 +48,14 @@
     <part name="parameters" element="tns:contarDenunciasPorPublicacionResponse" />
   </message>
   <portType name="DenunciaWS">
-<<<<<<< HEAD
     <operation name="reporteIncidencias">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasRequest" message="tns:reporteIncidencias" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasResponse" message="tns:reporteIncidenciasResponse" />
-=======
-    <operation name="eliminarDenuncia">
-      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
-      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
->>>>>>> Admin
     </operation>
     <operation name="registrarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest" message="tns:registrarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse" message="tns:registrarDenunciaResponse" />
     </operation>
-<<<<<<< HEAD
     <operation name="actualizarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest" message="tns:actualizarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaResponse" message="tns:actualizarDenunciaResponse" />
@@ -89,23 +63,14 @@
     <operation name="obtenerDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaRequest" message="tns:obtenerDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaResponse" message="tns:obtenerDenunciaResponse" />
-=======
-    <operation name="obtenerDenuncia">
-      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaRequest" message="tns:obtenerDenuncia" />
-      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaResponse" message="tns:obtenerDenunciaResponse" />
-    </operation>
-    <operation name="reporteIncidencias">
-      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasRequest" message="tns:reporteIncidencias" />
-      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasResponse" message="tns:reporteIncidenciasResponse" />
->>>>>>> Admin
     </operation>
     <operation name="listarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaRequest" message="tns:listarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaResponse" message="tns:listarDenunciaResponse" />
     </operation>
-    <operation name="actualizarDenuncia">
-      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest" message="tns:actualizarDenuncia" />
-      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaResponse" message="tns:actualizarDenunciaResponse" />
+    <operation name="eliminarDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
     </operation>
     <operation name="contarDenunciasPorPublicacion">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/contarDenunciasPorPublicacionRequest" message="tns:contarDenunciasPorPublicacion" />
@@ -114,20 +79,7 @@
   </portType>
   <binding name="DenunciaWSPortBinding" type="tns:DenunciaWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-<<<<<<< HEAD
     <operation name="reporteIncidencias">
-=======
-    <operation name="eliminarDenuncia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="registrarDenuncia">
->>>>>>> Admin
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -145,7 +97,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-<<<<<<< HEAD
     <operation name="actualizarDenuncia">
       <soap:operation soapAction="" />
       <input>
@@ -156,9 +107,6 @@
       </output>
     </operation>
     <operation name="obtenerDenuncia">
-=======
-    <operation name="reporteIncidencias">
->>>>>>> Admin
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -176,7 +124,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="actualizarDenuncia">
+    <operation name="eliminarDenuncia">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
