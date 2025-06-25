@@ -4,12 +4,8 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <!-- Título de la página -->
-    <div class="container-fluid px-4 py-3 mb-4 bg-light border-bottom">
-        <div class="d-flex justify-content-between align-items-center">
-            <h3 class="fw-bold text-primary mb-0">
-                Administración de Publicaciones
-            </h3>
-        </div>
+    <div class="container mb-4">
+        <h2 class="fw-bold">Publicaciones</h2>
     </div>
     <!-- Filtros -->
     <div class="container mb-4">

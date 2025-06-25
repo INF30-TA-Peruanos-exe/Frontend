@@ -299,7 +299,11 @@
     <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+<<<<<<< HEAD
     <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarNotificacionUsuarioResponse.datasource">
+=======
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.contarDenunciasPorPublicacionResponse.datasource">
+>>>>>>> ceec8dd3ff2809ea605b7396e0b9d6fe288f06bf
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\WebService\servicios.disco" />

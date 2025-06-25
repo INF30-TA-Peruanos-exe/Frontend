@@ -2,14 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <div class="container-fluid px-4 py-3 mb-4 bg-light border-bottom">
-        <div class="d-flex justify-content-between align-items-center">
-            <h3 class="fw-bold text-primary mb-0">
-                Administración de Denuncias
-            </h3>
-            <asp:Button ID="btnDescargarReporte" runat="server" Text="Descargar Reporte" 
-                CssClass="btn btn-success" OnClick="btnDescargarReporte_Click" />
-        </div>
+    <div class="container mb-4">
+        <h2 class="fw-bold">Denuncias</h2>
     </div>
     <!-- Barra de búsqueda -->
 <div class="container mb-3">
@@ -35,8 +29,8 @@
                 <ItemTemplate>
                     <tr>
                         <td><%# Eval("idDenuncia") %></td>
-                        <td><%# Eval("autor.titulo") %></td>
-                        <td><%# Eval("denunciante.nombre") %></td>
+                        <td><%# Eval("autor") %></td>
+                        <td><%# Eval("denunciante") %></td>
                         <td><%# Eval("motivo") %></td>
                         <td><%# Eval("fechaDenuncia", "{0:dd/MM/yyyy}") %></td>
                     </tr>
