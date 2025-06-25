@@ -9,7 +9,6 @@
   <xs:element name="crearPublicacion" type="tns:crearPublicacion" />
   <xs:element name="crearPublicacionResponse" type="tns:crearPublicacionResponse" />
   <xs:element name="curso" type="tns:curso" />
-  <xs:element name="denuncia" type="tns:denuncia" />
   <xs:element name="eliminarFavoritos" type="tns:eliminarFavoritos" />
   <xs:element name="eliminarFavoritosResponse" type="tns:eliminarFavoritosResponse" />
   <xs:element name="eliminarPublicacion" type="tns:eliminarPublicacion" />
@@ -35,12 +34,12 @@
   <xs:element name="obtenerPublicacion" type="tns:obtenerPublicacion" />
   <xs:element name="obtenerPublicacionResponse" type="tns:obtenerPublicacionResponse" />
   <xs:element name="publicacion" type="tns:publicacion" />
-  <xs:complexType name="listarFavoritos">
+  <xs:complexType name="listarPublicacionConFavoritos">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarFavoritosResponse">
+  <xs:complexType name="listarPublicacionConFavoritosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
@@ -73,13 +72,6 @@
         <xs:complexType>
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="unbounded" name="facultad" type="tns:facultad" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element minOccurs="0" name="publicacionDenuncias">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="denuncia" type="tns:denuncia" />
           </xs:sequence>
         </xs:complexType>
       </xs:element>
@@ -119,35 +111,12 @@
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="denuncia">
-    <xs:sequence>
-      <xs:element name="idDenuncia" type="xs:int" />
-      <xs:element minOccurs="0" name="autor" type="tns:publicacion" />
-      <xs:element minOccurs="0" name="denunciante" type="tns:usuario" />
-      <xs:element minOccurs="0" name="motivo" type="xs:string" />
-      <xs:element minOccurs="0" name="fechaDenuncia" type="tns:date" />
-      <xs:element minOccurs="0" name="admin" type="tns:administrador" />
-      <xs:element name="activo" type="xs:boolean" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="date">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="administrador">
-    <xs:complexContent mixed="false">
-      <xs:extension base="tns:usuario">
-        <xs:sequence>
-          <xs:element minOccurs="0" name="claveMaestra" type="xs:string" />
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="listarPublicacionConFavoritos">
+  <xs:complexType name="listarFavoritos">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarPublicacionConFavoritosResponse">
+  <xs:complexType name="listarFavoritosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
