@@ -190,7 +190,7 @@ namespace QhatuPUCPPresentacion.HacerPubli
             }
         }
 
-        private QhatuPUCPPresentacion.WebService.date CrearFechaSoap(DateTime fecha)
+        private SoapDate CrearFechaSoap(DateTime fecha)
         {
             string fechaIso = System.Xml.XmlConvert.ToString(fecha, System.Xml.XmlDateTimeSerializationMode.Utc);
             string xml = $"<date xmlns=\"http://www.w3.org/2001/XMLSchema\">{fechaIso}</date>";
@@ -198,10 +198,17 @@ namespace QhatuPUCPPresentacion.HacerPubli
             System.Xml.XmlDocument doc = new System.Xml.XmlDocument();
             doc.LoadXml(xml);
 
-            var serializer = new System.Xml.Serialization.XmlSerializer(typeof(QhatuPUCPPresentacion.WebService.date));
-            var soapDate = (QhatuPUCPPresentacion.WebService.date)serializer.Deserialize(new System.Xml.XmlNodeReader(doc.DocumentElement));
+            var serializer = new System.Xml.Serialization.XmlSerializer(typeof(SoapDate));
+            var soapDate = (SoapDate)serializer.Deserialize(new System.Xml.XmlNodeReader(doc.DocumentElement));
 
             return soapDate;
+        }
+
+        [System.Xml.Serialization.XmlRoot("date", Namespace = "http://www.w3.org/2001/XMLSchema")]
+        public class SoapDate
+        {
+            [System.Xml.Serialization.XmlText]
+            public DateTime Value { get; set; }
         }
 
 
