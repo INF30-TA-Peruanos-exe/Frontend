@@ -306,7 +306,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Favoritos\PaginaFavoritosNew.aspx" />
+    <Content Include="Guardados\paginaGuardados.css" />
+    <Content Include="Guardados\PaginaGuardados.aspx" />
     <Content Include="Filtros\ListaCurso.aspx" />
     <Content Include="Filtros\ListaEspecialidad.aspx" />
     <Content Include="Filtros\ListaFacultad.aspx" />
@@ -385,12 +386,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Favoritos\PaginaFavoritosNew.aspx.cs">
-      <DependentUpon>PaginaFavoritosNew.aspx</DependentUpon>
+    <Compile Include="Guardados\PaginaGuardados.aspx.cs">
+      <DependentUpon>PaginaGuardados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Favoritos\PaginaFavoritosNew.aspx.designer.cs">
-      <DependentUpon>PaginaFavoritosNew.aspx</DependentUpon>
+    <Compile Include="Guardados\PaginaGuardados.aspx.designer.cs">
+      <DependentUpon>PaginaGuardados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Filtros\ListaCurso.aspx.cs">
       <DependentUpon>ListaCurso.aspx</DependentUpon>

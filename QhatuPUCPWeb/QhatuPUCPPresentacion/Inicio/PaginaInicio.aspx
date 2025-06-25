@@ -99,7 +99,7 @@
             const container = document.getElementById("toast-container");
             const id = "toast_" + Date.now();
             const html = `
-                <div id="${id}" class="toast toast-exito border-0 px-2 py-1 mb-2" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="60000" data-bs-autohide="true">
+                <div id="${id}" class="toast toast-exito border-0 px-2 py-1 mb-2" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="4000" data-bs-autohide="true">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="toast-body d-flex align-items-center flex-grow-1">
                             <i class="fas fa-check-circle me-2 flex-shrink-0"></i>
