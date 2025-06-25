@@ -29,8 +29,8 @@
                 <ItemTemplate>
                     <tr>
                         <td><%# Eval("idDenuncia") %></td>
-                        <td><%# Eval("autor") %></td>
-                        <td><%# Eval("denunciante") %></td>
+                        <td><%# Eval("autor.titulo") %></td>
+                        <td><%# Eval("denunciante.nombre") %></td>
                         <td><%# Eval("motivo") %></td>
                         <td><%# Eval("fechaDenuncia", "{0:dd/MM/yyyy}") %></td>
                     </tr>
