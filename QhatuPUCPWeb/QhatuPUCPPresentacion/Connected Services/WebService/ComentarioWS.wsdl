@@ -5,30 +5,6 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/ComentarioWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="registrarComentario">
-    <part name="parameters" element="tns:registrarComentario" />
-  </message>
-  <message name="registrarComentarioResponse">
-    <part name="parameters" element="tns:registrarComentarioResponse" />
-  </message>
-  <message name="actualizarComentario">
-    <part name="parameters" element="tns:actualizarComentario" />
-  </message>
-  <message name="actualizarComentarioResponse">
-    <part name="parameters" element="tns:actualizarComentarioResponse" />
-  </message>
-  <message name="listarComentarioPorPublicacion">
-    <part name="parameters" element="tns:listarComentarioPorPublicacion" />
-  </message>
-  <message name="listarComentarioPorPublicacionResponse">
-    <part name="parameters" element="tns:listarComentarioPorPublicacionResponse" />
-  </message>
-  <message name="obtenerComentario">
-    <part name="parameters" element="tns:obtenerComentario" />
-  </message>
-  <message name="obtenerComentarioResponse">
-    <part name="parameters" element="tns:obtenerComentarioResponse" />
-  </message>
   <message name="eliminarComentario">
     <part name="parameters" element="tns:eliminarComentario" />
   </message>
@@ -41,23 +17,31 @@
   <message name="listarComentarioResponse">
     <part name="parameters" element="tns:listarComentarioResponse" />
   </message>
+  <message name="obtenerComentario">
+    <part name="parameters" element="tns:obtenerComentario" />
+  </message>
+  <message name="obtenerComentarioResponse">
+    <part name="parameters" element="tns:obtenerComentarioResponse" />
+  </message>
+  <message name="actualizarComentario">
+    <part name="parameters" element="tns:actualizarComentario" />
+  </message>
+  <message name="actualizarComentarioResponse">
+    <part name="parameters" element="tns:actualizarComentarioResponse" />
+  </message>
+  <message name="registrarComentario">
+    <part name="parameters" element="tns:registrarComentario" />
+  </message>
+  <message name="registrarComentarioResponse">
+    <part name="parameters" element="tns:registrarComentarioResponse" />
+  </message>
+  <message name="listarComentarioPorPublicacion">
+    <part name="parameters" element="tns:listarComentarioPorPublicacion" />
+  </message>
+  <message name="listarComentarioPorPublicacionResponse">
+    <part name="parameters" element="tns:listarComentarioPorPublicacionResponse" />
+  </message>
   <portType name="ComentarioWS">
-    <operation name="registrarComentario">
-      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/registrarComentarioRequest" message="tns:registrarComentario" />
-      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/registrarComentarioResponse" message="tns:registrarComentarioResponse" />
-    </operation>
-    <operation name="actualizarComentario">
-      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioRequest" message="tns:actualizarComentario" />
-      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioResponse" message="tns:actualizarComentarioResponse" />
-    </operation>
-    <operation name="listarComentarioPorPublicacion">
-      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionRequest" message="tns:listarComentarioPorPublicacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionResponse" message="tns:listarComentarioPorPublicacionResponse" />
-    </operation>
-    <operation name="obtenerComentario">
-      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioRequest" message="tns:obtenerComentario" />
-      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioResponse" message="tns:obtenerComentarioResponse" />
-    </operation>
     <operation name="eliminarComentario">
       <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioRequest" message="tns:eliminarComentario" />
       <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioResponse" message="tns:eliminarComentarioResponse" />
@@ -66,10 +50,26 @@
       <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest" message="tns:listarComentario" />
       <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse" message="tns:listarComentarioResponse" />
     </operation>
+    <operation name="obtenerComentario">
+      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioRequest" message="tns:obtenerComentario" />
+      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioResponse" message="tns:obtenerComentarioResponse" />
+    </operation>
+    <operation name="actualizarComentario">
+      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioRequest" message="tns:actualizarComentario" />
+      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/actualizarComentarioResponse" message="tns:actualizarComentarioResponse" />
+    </operation>
+    <operation name="registrarComentario">
+      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/registrarComentarioRequest" message="tns:registrarComentario" />
+      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/registrarComentarioResponse" message="tns:registrarComentarioResponse" />
+    </operation>
+    <operation name="listarComentarioPorPublicacion">
+      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionRequest" message="tns:listarComentarioPorPublicacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioPorPublicacionResponse" message="tns:listarComentarioPorPublicacionResponse" />
+    </operation>
   </portType>
   <binding name="ComentarioWSPortBinding" type="tns:ComentarioWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="registrarComentario">
+    <operation name="eliminarComentario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -78,16 +78,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="actualizarComentario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarComentarioPorPublicacion">
+    <operation name="listarComentario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -105,7 +96,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarComentario">
+    <operation name="actualizarComentario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -114,7 +105,16 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarComentario">
+    <operation name="registrarComentario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarComentarioPorPublicacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

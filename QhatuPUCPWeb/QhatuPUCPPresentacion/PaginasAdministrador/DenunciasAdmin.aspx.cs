@@ -14,8 +14,6 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         protected void Page_Init(object sender, EventArgs e)
         {
             client = new DenunciaWSClient();
-            client.Endpoint.Binding.SendTimeout = TimeSpan.FromMinutes(2);
-            client.Endpoint.Binding.ReceiveTimeout = TimeSpan.FromMinutes(2);
             CargarDenuncias();
         }
         protected void Page_Load(object sender, EventArgs e)
@@ -62,36 +60,6 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         protected void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             btnBuscar_Click(sender, e); // o directamente filtrar aquí
-        }
-        protected void btnDescargarReporte_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Llamada al método reporteIncidencias
-                byte[] reportePDF = client.reporteIncidencias();
-
-                // Validación del contenido
-                if (reportePDF != null && reportePDF.Length > 0)
-                {
-                    // Preparar respuesta para descargar el PDF
-                    Response.Clear();
-                    Response.ContentType = "application/pdf";
-                    Response.AddHeader("Content-Disposition", "attachment; filename=ReporteIncidencias.pdf");
-                    Response.OutputStream.Write(reportePDF, 0, reportePDF.Length);
-                    Response.Flush();
-                    Response.End();
-                }
-                else
-                {
-                    // Mensaje de error si viene vacío
-                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('El reporte está vacío o no se pudo generar.');", true);
-                }
-            }
-            catch (Exception ex)
-            {
-                // Mensaje de error
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Error al descargar el reporte: " + ex.Message.Replace("'", "") + "');", true);
-            }
         }
     }
 }

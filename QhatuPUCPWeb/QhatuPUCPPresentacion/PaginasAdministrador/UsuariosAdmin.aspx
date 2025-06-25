@@ -2,12 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <div class="container-fluid px-4 py-3 mb-4 bg-light border-bottom">
-        <div class="d-flex justify-content-between align-items-center">
-            <h3 class="fw-bold text-primary mb-0">
-                Administración de Usuarios
-            </h3>
-        </div>
+    <div class="container mb-4">
+        <h2 class="fw-bold">Usuarios</h2>
     </div>
     <!-- Barra de búsqueda -->
     <div class="container mb-3">
