@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\guardados\\paginaguardados.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\guardados\\paginaguardados.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\guardados\\paginaguardados.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
@@ -14,15 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PaginaGuardados.aspx",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Guardados\\PaginaGuardados.aspx",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Guardados\\PaginaGuardados.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Guardados\\PaginaGuardados.aspx",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Guardados\\PaginaGuardados.aspx",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Guardados\\PaginaGuardados.aspx",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Guardados\\PaginaGuardados.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
