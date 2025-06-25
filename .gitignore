@@ -26,13 +26,4 @@ project.assets.json
 # Archivos del sistema
 Thumbs.db
 .DS_Store
-QhatuPUCPWeb/.vs/QhatuPUCPWeb/v17/.suo
-QhatuPUCPWeb/.vs/QhatuPUCPWeb/v17/DocumentLayout.backup.json
-QhatuPUCPWeb/.vs/QhatuPUCPWeb/v17/DocumentLayout.json
-QhatuPUCPWeb/QhatuPUCPPresentacion/bin/QhatuPUCPPresentacion.dll
-QhatuPUCPWeb/QhatuPUCPPresentacion/bin/QhatuPUCPPresentacion.pdb
-QhatuPUCPWeb/QhatuPUCPPresentacion/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
-QhatuPUCPWeb/QhatuPUCPPresentacion/obj/Debug/QhatuPUCPPresentacion.csproj.CoreCompileInputs.cache
-QhatuPUCPWeb/QhatuPUCPPresentacion/obj/Debug/QhatuPUCPPresentacion.dll
-QhatuPUCPWeb/QhatuPUCPPresentacion/obj/Debug/QhatuPUCPPresentacion.pdb
-QhatuPUCPWeb/QhatuPUCPPresentacion/QhatuPUCPPresentacion.csproj
+

@@ -83,12 +83,6 @@
                 <span class="ms-3 mt-1">PUCP Qhatu</span>
             </div>
 
-            <!-- Usuario arriba a la derecha -->
-            <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-2 d-flex align-items-center shadow user-card">
-                <asp:Label ID="lblUsuario" runat="server" CssClass="me-2 text-dark" />
-                <img src="/Public/images/user-avatar.png" class="rounded-circle" width="30" height="30" />
-            </div>
-
             <!-- Contenido de la página -->
             <div class="p-4">
                     <asp:ContentPlaceHolder ID="Contenido" runat="server" />
