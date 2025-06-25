@@ -470,8 +470,6 @@ C:\Users\Jhonatan\Desktop\TA_P3\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\
 C:\Users\Jhonatan\Desktop\TA_P3\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUC.4D74119F.Up2Date
 C:\Users\Jhonatan\Desktop\TA_P3\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUCPPresentacion.dll
 C:\Users\Jhonatan\Desktop\TA_P3\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUCPPresentacion.pdb
-C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUCPPresentacion.csproj.AssemblyReference.cache
-C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUCPPresentacion.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\bin\QhatuPUCPPresentacion.dll.config
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\bin\QhatuPUCPPresentacion.dll
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\bin\QhatuPUCPPresentacion.pdb
@@ -526,6 +524,8 @@ C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\bi
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUCPPresentacion.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUCPPresentacion.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUC.4D74119F.Up2Date
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUCPPresentacion.dll
 C:\Users\USER\Desktop\Universidad\Frontend\QhatuPUCPWeb\QhatuPUCPPresentacion\obj\Debug\QhatuPUCPPresentacion.pdb

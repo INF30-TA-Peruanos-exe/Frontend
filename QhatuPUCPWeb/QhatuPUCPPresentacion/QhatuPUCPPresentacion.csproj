@@ -329,6 +329,7 @@
     <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
     <Content Include="Inicio\PaginaInicioAdmin.aspx" />
+    <Content Include="Notificaciones\Notificaciones.aspx" />
     <Content Include="PaginaPrueba.aspx" />
     <Content Include="PaginasAdministrador\DenunciasAdmin.aspx" />
     <Content Include="PaginasAdministrador\DetallePubliAdmin.css" />
@@ -492,6 +493,13 @@
     <Compile Include="MainLayoutMasterAdmin.Master.designer.cs">
       <DependentUpon>MainLayoutMasterAdmin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Notificaciones\Notificaciones.aspx.cs">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notificaciones\Notificaciones.aspx.designer.cs">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PaginaPrueba.aspx.cs">
       <DependentUpon>PaginaPrueba.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -596,7 +604,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Imagenes\" />
-    <Folder Include="Notificaciones\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

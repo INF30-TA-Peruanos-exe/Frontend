@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\notificaciones\\notificaciones.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\notificaciones\\notificaciones.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\notificaciones\\notificaciones.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\notificaciones\\notificaciones.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\notificaciones\\notificaciones.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\notificaciones\\notificaciones.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\paginasadministrador\\usuariosadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\paginasadministrador\\usuariosadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\user\\desktop\\universidad\\frontend\\qhatupucpweb\\qhatupucppresentacion\\hacerpubli\\postear.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\hacerpubli\\postear.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\paginasadministrador\\denunciasadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,19 +55,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Notificaciones.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx.designer.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx.designer.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T05:19:08.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Notificaciones.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx.cs",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx.cs",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T05:18:37.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Notificaciones.aspx",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Notificaciones\\Notificaciones.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-25T05:18:15.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuariosAdmin.aspx",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\UsuariosAdmin.aspx",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\PaginasAdministrador\\UsuariosAdmin.aspx",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\UsuariosAdmin.aspx",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\PaginasAdministrador\\UsuariosAdmin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-25T05:17:13.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Postear.aspx.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\HacerPubli\\Postear.aspx.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAAewMsAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAANoAAAAAAAAAAAAawMsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T04:45:12.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Reference.svcmap",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Connected Services\\WebService\\Reference.svcmap",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Connected Services\\WebService\\Reference.svcmap",
@@ -59,12 +127,11 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\Connected Services\\WebService\\Reference.svcmap",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-25T04:45:01.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T04:45:01.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "DenunciasAdmin.aspx.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Universidad\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx.cs",
@@ -84,7 +151,8 @@
               "RelativeToolTip": "QhatuPUCPPresentacion\\PaginasAdministrador\\DenunciasAdmin.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-25T04:35:21.053Z"
+              "WhenOpened": "2025-06-25T04:35:21.053Z",
+              "EditorCaption": ""
             }
           ]
         }
