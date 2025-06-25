@@ -309,7 +309,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Favoritos\PaginaFavoritosNew.aspx" />
+    <Content Include="Guardados\paginaGuardados.css" />
+    <Content Include="Guardados\PaginaGuardados.aspx" />
     <Content Include="Filtros\ListaCurso.aspx" />
     <Content Include="Filtros\ListaEspecialidad.aspx" />
     <Content Include="Filtros\ListaFacultad.aspx" />
@@ -328,6 +329,8 @@
     <Content Include="Notificaciones\Notificaciones.aspx" />
     <Content Include="PaginaPrueba.aspx" />
     <Content Include="PaginasAdministrador\DenunciasAdmin.aspx" />
+    <Content Include="PaginasAdministrador\DetallePubliAdmin.css" />
+    <Content Include="PaginasAdministrador\DetallePublicacionAdmin.aspx" />
     <Content Include="PaginasAdministrador\GestionFiltros.aspx" />
     <Content Include="PaginasAdministrador\UsuariosAdmin.aspx" />
     <Content Include="Perfil\EditarPublicacion.aspx" />
@@ -389,12 +392,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Favoritos\PaginaFavoritosNew.aspx.cs">
-      <DependentUpon>PaginaFavoritosNew.aspx</DependentUpon>
+    <Compile Include="Guardados\PaginaGuardados.aspx.cs">
+      <DependentUpon>PaginaGuardados.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Favoritos\PaginaFavoritosNew.aspx.designer.cs">
-      <DependentUpon>PaginaFavoritosNew.aspx</DependentUpon>
+    <Compile Include="Guardados\PaginaGuardados.aspx.designer.cs">
+      <DependentUpon>PaginaGuardados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Filtros\ListaCurso.aspx.cs">
       <DependentUpon>ListaCurso.aspx</DependentUpon>
@@ -507,6 +510,13 @@
     </Compile>
     <Compile Include="PaginasAdministrador\DenunciasAdmin.aspx.designer.cs">
       <DependentUpon>DenunciasAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdministrador\DetallePublicacionAdmin.aspx.cs">
+      <DependentUpon>DetallePublicacionAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdministrador\DetallePublicacionAdmin.aspx.designer.cs">
+      <DependentUpon>DetallePublicacionAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginasAdministrador\GestionFiltros.aspx.cs">
       <DependentUpon>GestionFiltros.aspx</DependentUpon>

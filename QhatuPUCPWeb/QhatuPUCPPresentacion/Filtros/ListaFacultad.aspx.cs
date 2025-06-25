@@ -33,6 +33,7 @@ namespace QhatuPUCPPresentacion.Filtros
                 // Si no hay filtro, cargar todas
                 facultades = client.listarFacultad().ToList();
 
+                ViewState["Facultades"] = facultades; // guardar para filtrado posterior
                 rptFacultades.DataSource = facultades;
                 rptFacultades.DataBind();
             }
@@ -40,6 +41,25 @@ namespace QhatuPUCPPresentacion.Filtros
             {
                 Console.WriteLine("Error al cargar facultades: " + ex.Message);
             }
+        }
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string criterio = txtBuscar.Text.Trim().ToLower();
+
+            if (ViewState["Facultades"] != null)
+            {
+                var facultades = (List<facultad>)ViewState["Facultades"];
+                var filtradas = facultades
+                    .Where(u => u.nombre.ToLower().Contains(criterio))
+                    .ToList();
+
+                rptFacultades.DataSource = filtradas;
+                rptFacultades.DataBind();
+            }
+        }
+        protected void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            btnBuscar_Click(sender, e); // o directamente filtrar aquí
         }
         protected void BtnAgregar_Click(object sender, EventArgs e)
         {

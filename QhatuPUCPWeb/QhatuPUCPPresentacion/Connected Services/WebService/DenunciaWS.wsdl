@@ -5,11 +5,19 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/DenunciaWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
+<<<<<<< HEAD
   <message name="eliminarDenuncia">
     <part name="parameters" element="tns:eliminarDenuncia" />
   </message>
   <message name="eliminarDenunciaResponse">
     <part name="parameters" element="tns:eliminarDenunciaResponse" />
+=======
+  <message name="registrarDenuncia">
+    <part name="parameters" element="tns:registrarDenuncia" />
+  </message>
+  <message name="registrarDenunciaResponse">
+    <part name="parameters" element="tns:registrarDenunciaResponse" />
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
   </message>
   <message name="obtenerDenuncia">
     <part name="parameters" element="tns:obtenerDenuncia" />
@@ -17,24 +25,37 @@
   <message name="obtenerDenunciaResponse">
     <part name="parameters" element="tns:obtenerDenunciaResponse" />
   </message>
+<<<<<<< HEAD
   <message name="reporteIncidencias">
     <part name="parameters" element="tns:reporteIncidencias" />
   </message>
   <message name="reporteIncidenciasResponse">
     <part name="parameters" element="tns:reporteIncidenciasResponse" />
   </message>
+=======
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
   <message name="actualizarDenuncia">
     <part name="parameters" element="tns:actualizarDenuncia" />
   </message>
   <message name="actualizarDenunciaResponse">
     <part name="parameters" element="tns:actualizarDenunciaResponse" />
   </message>
+<<<<<<< HEAD
+=======
+  <message name="reporteIncidencias">
+    <part name="parameters" element="tns:reporteIncidencias" />
+  </message>
+  <message name="reporteIncidenciasResponse">
+    <part name="parameters" element="tns:reporteIncidenciasResponse" />
+  </message>
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
   <message name="listarDenuncia">
     <part name="parameters" element="tns:listarDenuncia" />
   </message>
   <message name="listarDenunciaResponse">
     <part name="parameters" element="tns:listarDenunciaResponse" />
   </message>
+<<<<<<< HEAD
   <message name="registrarDenuncia">
     <part name="parameters" element="tns:registrarDenuncia" />
   </message>
@@ -45,31 +66,62 @@
     <operation name="eliminarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
+=======
+  <message name="eliminarDenuncia">
+    <part name="parameters" element="tns:eliminarDenuncia" />
+  </message>
+  <message name="eliminarDenunciaResponse">
+    <part name="parameters" element="tns:eliminarDenunciaResponse" />
+  </message>
+  <portType name="DenunciaWS">
+    <operation name="registrarDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest" message="tns:registrarDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse" message="tns:registrarDenunciaResponse" />
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
     </operation>
     <operation name="obtenerDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaRequest" message="tns:obtenerDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/obtenerDenunciaResponse" message="tns:obtenerDenunciaResponse" />
     </operation>
+<<<<<<< HEAD
     <operation name="reporteIncidencias">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasRequest" message="tns:reporteIncidencias" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasResponse" message="tns:reporteIncidenciasResponse" />
     </operation>
+=======
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
     <operation name="actualizarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest" message="tns:actualizarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaResponse" message="tns:actualizarDenunciaResponse" />
     </operation>
+<<<<<<< HEAD
+=======
+    <operation name="reporteIncidencias">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasRequest" message="tns:reporteIncidencias" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasResponse" message="tns:reporteIncidenciasResponse" />
+    </operation>
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
     <operation name="listarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaRequest" message="tns:listarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaResponse" message="tns:listarDenunciaResponse" />
     </operation>
+<<<<<<< HEAD
     <operation name="registrarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest" message="tns:registrarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse" message="tns:registrarDenunciaResponse" />
+=======
+    <operation name="eliminarDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
     </operation>
   </portType>
   <binding name="DenunciaWSPortBinding" type="tns:DenunciaWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+<<<<<<< HEAD
     <operation name="eliminarDenuncia">
+=======
+    <operation name="registrarDenuncia">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -87,6 +139,39 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="actualizarDenuncia">
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+<<<<<<< HEAD
+    <operation name="obtenerDenuncia">
+=======
+    <operation name="reporteIncidencias">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarDenuncia">
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+<<<<<<< HEAD
     <operation name="reporteIncidencias">
       <soap:operation soapAction="" />
       <input>
@@ -106,6 +191,9 @@
       </output>
     </operation>
     <operation name="listarDenuncia">
+=======
+    <operation name="eliminarDenuncia">
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

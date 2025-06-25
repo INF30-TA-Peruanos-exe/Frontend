@@ -27,7 +27,7 @@
       <xs:element minOccurs="0" name="admin" type="tns:administrador" />
       <xs:element minOccurs="0" name="autor" type="tns:publicacion" />
       <xs:element minOccurs="0" name="denunciante" type="tns:usuario" />
-      <xs:element minOccurs="0" name="fechaDenuncia" type="tns:date" />
+      <xs:element minOccurs="0" name="fechaDenuncia" type="xs:dateTime" />
       <xs:element name="idDenuncia" type="xs:int" />
       <xs:element minOccurs="0" name="motivo" type="xs:string" />
     </xs:sequence>
@@ -107,9 +107,6 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="date">
-    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="registrarDenunciaResponse">
     <xs:sequence />

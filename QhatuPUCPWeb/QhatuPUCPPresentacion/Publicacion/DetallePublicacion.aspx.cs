@@ -44,7 +44,7 @@ namespace QhatuPUCPPresentacion.Publicacion
 
             lblTitulo.Text = pub.titulo;
             lblDescripcion.Text = pub.descripcion;
-            lblAutor.Text = pub.usuario.nombre;
+            lblAutor.Text = pub.usuario.nombreUsuario;
             lblTiempo.Text = publicacionService.obtenerFechaPublicacionFormateada(id);
             imgPublicacion.ImageUrl = pub.rutaImagen;
             imgAvatar.ImageUrl = "/Public/images/user-avatar.png";
@@ -112,7 +112,7 @@ namespace QhatuPUCPPresentacion.Publicacion
                 .Select(c => new
                 {
                     IdComentario = c.idComentario,
-                    Autor = c.comentador?.nombre ?? "Usuario",
+                    Autor = c.comentador?.nombreUsuario ?? "Usuario",
                     AvatarUrl = "/Public/images/user-avatar.png",
                     Fecha = c.fecha.ToString("dd/MM/yyyy"),
                     Contenido = c.contenido,

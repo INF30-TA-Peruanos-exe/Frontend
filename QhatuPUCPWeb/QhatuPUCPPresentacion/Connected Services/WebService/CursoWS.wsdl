@@ -5,11 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/CursoWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="eliminarCurso">
-    <part name="parameters" element="tns:eliminarCurso" />
+  <message name="actualizarCurso">
+    <part name="parameters" element="tns:actualizarCurso" />
   </message>
-  <message name="eliminarCursoResponse">
-    <part name="parameters" element="tns:eliminarCursoResponse" />
+  <message name="actualizarCursoResponse">
+    <part name="parameters" element="tns:actualizarCursoResponse" />
   </message>
   <message name="obtenerCurso">
     <part name="parameters" element="tns:obtenerCurso" />
@@ -17,6 +17,7 @@
   <message name="obtenerCursoResponse">
     <part name="parameters" element="tns:obtenerCursoResponse" />
   </message>
+<<<<<<< HEAD
   <message name="actualizarCurso">
     <part name="parameters" element="tns:actualizarCurso" />
   </message>
@@ -25,6 +26,10 @@
   </message>
   <message name="listarCurso">
     <part name="parameters" element="tns:listarCurso" />
+=======
+  <message name="obtenerCurso">
+    <part name="parameters" element="tns:obtenerCurso" />
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
   </message>
   <message name="listarCursoResponse">
     <part name="parameters" element="tns:listarCursoResponse" />
@@ -35,15 +40,22 @@
   <message name="registrarCursoResponse">
     <part name="parameters" element="tns:registrarCursoResponse" />
   </message>
+  <message name="eliminarCurso">
+    <part name="parameters" element="tns:eliminarCurso" />
+  </message>
+  <message name="eliminarCursoResponse">
+    <part name="parameters" element="tns:eliminarCursoResponse" />
+  </message>
   <portType name="CursoWS">
-    <operation name="eliminarCurso">
-      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
-      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
+    <operation name="actualizarCurso">
+      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest" message="tns:actualizarCurso" />
+      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse" message="tns:actualizarCursoResponse" />
     </operation>
     <operation name="obtenerCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
     </operation>
+<<<<<<< HEAD
     <operation name="actualizarCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest" message="tns:actualizarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse" message="tns:actualizarCursoResponse" />
@@ -51,15 +63,24 @@
     <operation name="listarCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoRequest" message="tns:listarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoResponse" message="tns:listarCursoResponse" />
+=======
+    <operation name="obtenerCurso">
+      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
+      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
     </operation>
     <operation name="registrarCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest" message="tns:registrarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse" message="tns:registrarCursoResponse" />
     </operation>
+    <operation name="eliminarCurso">
+      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
+      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
+    </operation>
   </portType>
   <binding name="CursoWSPortBinding" type="tns:CursoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="eliminarCurso">
+    <operation name="actualizarCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -77,6 +98,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
     <operation name="actualizarCurso">
       <soap:operation soapAction="" />
       <input>
@@ -87,6 +109,9 @@
       </output>
     </operation>
     <operation name="listarCurso">
+=======
+    <operation name="obtenerCurso">
+>>>>>>> 8ec91b8c0db17f8d81b703d1af472ca4286ce338
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -96,6 +121,15 @@
       </output>
     </operation>
     <operation name="registrarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

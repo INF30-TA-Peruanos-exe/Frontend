@@ -5,12 +5,10 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="/Public/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <link href="/Public/css/site.css" rel="stylesheet" />
-
     <title>QhatuPUCP</title>
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
@@ -42,7 +40,7 @@
                     </a>
                 </li>
                 <li class="nav-item mb-2">
-                    <a href="<%= ResolveUrl("~/Favoritos/PaginaFavoritosNew.aspx") %>" class="nav-link text-dark d-flex align-items-center gap-2">
+                    <a href="<%= ResolveUrl("~/Guardados/PaginaGuardados.aspx") %>" class="nav-link text-dark d-flex align-items-center gap-2">
                         <!-- Icono Guardados -->
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20">
                             <path stroke-linecap="round" stroke-linejoin="round"  d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507 c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"/>
@@ -99,10 +97,21 @@
                 <span class="ms-3 mt-1">PUCP Qhatu</span>
             </div>
 
-            <!-- Usuario arriba a la derecha -->
-            <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-2 d-flex align-items-center shadow user-card">
-                <asp:Label ID="lblUsuario" runat="server" CssClass="me-2 text-dark" />
-                <img src="/Public/images/user-avatar.png" class="rounded-circle" width="30" height="30" />
+            <!-- Usuario con dropdown -->
+            <div class="position-absolute top-0 end-0 mt-4 me-3 bg-white px-0 py-0 d-flex align-items-center shadow user-card rounded dropdown" id="usuarioDropdown">
+                <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center gap-2 text-dark border-0 shadow-none bg-transparent"
+                    type="button" id="dropdownUser"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <asp:Label ID="lblUsuario" runat="server" CssClass="me-1" />
+                    <img src="/Public/images/user-avatar.png" class="rounded-circle" width="30" height="30" />
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="<%= ResolveUrl("~/Perfil/Perfil.aspx") %>">Perfil</a></li>
+                    <li><a class="dropdown-item" href="<%= ResolveUrl("~/Inicio/Apoyo.aspx") %>">Apóyanos</a></li>
+                    <li>
+                        <asp:LinkButton runat="server" CssClass="dropdown-item" ID="btnCerrarSesion2" OnClick="BtnCerrarSession_Click">Cerrar Sesión</asp:LinkButton>
+                    </li>
+                </ul>
             </div>
 
             <!-- Contenido de la página -->
@@ -117,6 +126,3 @@
         </form>
 </body>
 </html>
-
-
-

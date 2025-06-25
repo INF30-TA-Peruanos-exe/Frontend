@@ -7,56 +7,56 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace QhatuPUCPPresentacion.Filtros
+namespace QhatuPUCPPresentacion.Favoritos
 {
 
 
-    public partial class ListaCurso
+    public partial class PaginaFavoritosNew
     {
 
         /// <summary>
-        /// Control BtnAgregar.
+        /// Control ScriptManager1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAgregar;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
-        /// Control txtBuscar.
+        /// Control UpdatePanelFavoritos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBuscar;
+        protected global::System.Web.UI.UpdatePanel UpdatePanelFavoritos;
 
         /// <summary>
-        /// Control btnBuscar.
+        /// Control rptPublicacionesGuardadas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscar;
+        protected global::System.Web.UI.WebControls.Repeater rptPublicacionesGuardadas;
 
         /// <summary>
-        /// Control rptCursos.
+        /// Control rptPaginas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCursos;
+        protected global::System.Web.UI.WebControls.Repeater rptPaginas;
 
         /// <summary>
-        /// Control LblError.
+        /// Control btnActualizarFavoritos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblError;
+        protected global::System.Web.UI.WebControls.Button btnActualizarFavoritos;
     }
 }

@@ -1,0 +1,74 @@
+﻿/*Para el boton de guardar*/
+
+/* Para cuando NO es favorito */
+.btn-guardar[data-favorito="false"]:hover svg {
+    transform: scale(1.1);
+    transition: transform 0.2s ease, fill 0.2s ease;
+    fill: #2f5e93;
+}
+
+/* Para cuando SÍ es favorito */
+.btn-guardar[data-favorito="true"]:hover svg {
+    transform: scale(1.1);
+    transition: transform 0.2s ease, fill 0.2s ease;
+    fill: none;
+}
+
+/*Para el paginado*/
+.btn-custom-active {
+    background-color: #2f5e93;
+    color: white;
+    border-color: #2f5e93;
+}
+
+.btn-custom-inactive {
+    background-color: white;
+    color: #2f5e93;
+    border: 1px solid #2f5e93;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-group .btn {
+    border-radius: 0 !important; /*elimina bordes redondeados*/
+    margin-right: -1px; /*los une*/
+}
+
+.pagination-wrapper .btn {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.6rem;
+}
+
+.btn-custom-inactive:hover {
+    background-color: #2f5e93;
+    color: white;
+    border-color: #2f5e93;
+    cursor: pointer;
+}
+
+/*Para los toast*/
+.toast-exito {
+    background-color: #f3f0eb;
+    color: #2f5e93;
+    font-size: 0.95rem;
+    border-radius: 0.4rem;
+    max-width: 380px;
+    width: auto;
+}
+
+    .toast-exito .toast-body {
+        display: flex;
+        align-items: center;
+    }
+
+    .toast-exito .fas {
+        font-size: 1.2rem;
+    }
+
+    .toast-exito .btn-close {
+        filter: invert(27%) sepia(24%) saturate(902%) hue-rotate(175deg) brightness(94%) contrast(89%);
+        transform: scale(0.85);
+    }
+
+.custom-margin-top {
+    margin-top: 60px;
+}
