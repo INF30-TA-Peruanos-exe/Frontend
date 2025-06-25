@@ -299,6 +299,9 @@
     <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.reporteIncidenciasResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\WebService\QhatuPUCPPresentacion.WebService.listarNotificacionUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\WebService\servicios.disco" />
     <None Include="Connected Services\WebService\configuration91.svcinfo" />
     <None Include="Connected Services\WebService\configuration.svcinfo" />
@@ -322,6 +325,7 @@
     <Content Include="Inicio\Login.css" />
     <Content Include="Inicio\PaginaInicio.aspx" />
     <Content Include="Inicio\PaginaInicioAdmin.aspx" />
+    <Content Include="Notificaciones\Notificaciones.aspx" />
     <Content Include="PaginaPrueba.aspx" />
     <Content Include="PaginasAdministrador\DenunciasAdmin.aspx" />
     <Content Include="PaginasAdministrador\GestionFiltros.aspx" />
@@ -483,6 +487,13 @@
     <Compile Include="MainLayoutMasterAdmin.Master.designer.cs">
       <DependentUpon>MainLayoutMasterAdmin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Notificaciones\Notificaciones.aspx.cs">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notificaciones\Notificaciones.aspx.designer.cs">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PaginaPrueba.aspx.cs">
       <DependentUpon>PaginaPrueba.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -580,7 +591,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Imagenes\" />
-    <Folder Include="Notificaciones\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

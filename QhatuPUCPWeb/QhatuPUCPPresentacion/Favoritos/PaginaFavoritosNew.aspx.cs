@@ -62,12 +62,12 @@ namespace QhatuPUCPPresentacion.Favoritos
             
             usuario usuario = Session["usuario"] as usuario;
 
-            if (client.esFavorito(usuario.idUsuario, id_objeto))
-            {
+            
                 client.eliminarFavoritos(usuario.idUsuario, id_objeto);
-            }
+            
             CargarFavoritos();
-            //Response.Redirect("/Usuario/EditarUsuario.aspx?id_usuario=" + id_usuario_str);
+           
         }
+        
     }
 }

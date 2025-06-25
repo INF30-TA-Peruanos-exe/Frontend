@@ -5,23 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/NotificacionWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
+  <message name="listarNotificacionUsuario">
+    <part name="parameters" element="tns:listarNotificacionUsuario" />
+  </message>
+  <message name="listarNotificacionUsuarioResponse">
+    <part name="parameters" element="tns:listarNotificacionUsuarioResponse" />
+  </message>
   <message name="listarNotificacion">
     <part name="parameters" element="tns:listarNotificacion" />
   </message>
   <message name="listarNotificacionResponse">
     <part name="parameters" element="tns:listarNotificacionResponse" />
-  </message>
-  <message name="eliminarDenuncia">
-    <part name="parameters" element="tns:eliminarDenuncia" />
-  </message>
-  <message name="eliminarDenunciaResponse">
-    <part name="parameters" element="tns:eliminarDenunciaResponse" />
-  </message>
-  <message name="actualizarNotificacion">
-    <part name="parameters" element="tns:actualizarNotificacion" />
-  </message>
-  <message name="actualizarNotificacionResponse">
-    <part name="parameters" element="tns:actualizarNotificacionResponse" />
   </message>
   <message name="obtenerNotificacion">
     <part name="parameters" element="tns:obtenerNotificacion" />
@@ -35,18 +29,26 @@
   <message name="registrarNotificacionResponse">
     <part name="parameters" element="tns:registrarNotificacionResponse" />
   </message>
+  <message name="eliminarDenuncia">
+    <part name="parameters" element="tns:eliminarDenuncia" />
+  </message>
+  <message name="eliminarDenunciaResponse">
+    <part name="parameters" element="tns:eliminarDenunciaResponse" />
+  </message>
+  <message name="actualizarNotificacion">
+    <part name="parameters" element="tns:actualizarNotificacion" />
+  </message>
+  <message name="actualizarNotificacionResponse">
+    <part name="parameters" element="tns:actualizarNotificacionResponse" />
+  </message>
   <portType name="NotificacionWS">
+    <operation name="listarNotificacionUsuario">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionUsuarioRequest" message="tns:listarNotificacionUsuario" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionUsuarioResponse" message="tns:listarNotificacionUsuarioResponse" />
+    </operation>
     <operation name="listarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionRequest" message="tns:listarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionResponse" message="tns:listarNotificacionResponse" />
-    </operation>
-    <operation name="eliminarDenuncia">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
-    </operation>
-    <operation name="actualizarNotificacion">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
     </operation>
     <operation name="obtenerNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionRequest" message="tns:obtenerNotificacion" />
@@ -56,28 +58,27 @@
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionRequest" message="tns:registrarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionResponse" message="tns:registrarNotificacionResponse" />
     </operation>
+    <operation name="eliminarDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
+    </operation>
+    <operation name="actualizarNotificacion">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
+    </operation>
   </portType>
   <binding name="NotificacionWSPortBinding" type="tns:NotificacionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarNotificacionUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="listarNotificacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarDenuncia">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="actualizarNotificacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -96,6 +97,24 @@
       </output>
     </operation>
     <operation name="registrarNotificacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDenuncia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarNotificacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

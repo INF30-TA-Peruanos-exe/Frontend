@@ -9,6 +9,8 @@
   <xs:element name="facultad" type="tns:facultad" />
   <xs:element name="listarNotificacion" type="tns:listarNotificacion" />
   <xs:element name="listarNotificacionResponse" type="tns:listarNotificacionResponse" />
+  <xs:element name="listarNotificacionUsuario" type="tns:listarNotificacionUsuario" />
+  <xs:element name="listarNotificacionUsuarioResponse" type="tns:listarNotificacionUsuarioResponse" />
   <xs:element name="obtenerNotificacion" type="tns:obtenerNotificacion" />
   <xs:element name="obtenerNotificacionResponse" type="tns:obtenerNotificacionResponse" />
   <xs:element name="publicacion" type="tns:publicacion" />
@@ -27,7 +29,7 @@
       <xs:element name="activo" type="xs:boolean" />
       <xs:element minOccurs="0" name="autor" type="tns:publicacion" />
       <xs:element name="cantidad" type="xs:int" />
-      <xs:element minOccurs="0" name="fecha" type="tns:date" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
       <xs:element name="idNotificacion" type="xs:int" />
       <xs:element minOccurs="0" name="mensaje" type="xs:string" />
       <xs:element minOccurs="0" name="notificador" type="tns:usuario" />
@@ -101,8 +103,15 @@
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="date">
-    <xs:sequence />
+  <xs:complexType name="listarNotificacionUsuario">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarNotificacionUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:notificacion" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="actualizarNotificacion">
     <xs:sequence>
