@@ -3,6 +3,7 @@
   <xs:element name="actualizarNotificacion" type="tns:actualizarNotificacion" />
   <xs:element name="actualizarNotificacionResponse" type="tns:actualizarNotificacionResponse" />
   <xs:element name="curso" type="tns:curso" />
+  <xs:element name="denuncia" type="tns:denuncia" />
   <xs:element name="eliminarDenuncia" type="tns:eliminarDenuncia" />
   <xs:element name="eliminarDenunciaResponse" type="tns:eliminarDenunciaResponse" />
   <xs:element name="especialidad" type="tns:especialidad" />
@@ -65,6 +66,13 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element minOccurs="0" name="publicacionDenuncias">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="denuncia" type="tns:denuncia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
       <xs:element name="esFavorito" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
@@ -101,8 +109,28 @@
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="denuncia">
+    <xs:sequence>
+      <xs:element name="idDenuncia" type="xs:int" />
+      <xs:element minOccurs="0" name="autor" type="tns:publicacion" />
+      <xs:element minOccurs="0" name="denunciante" type="tns:usuario" />
+      <xs:element minOccurs="0" name="motivo" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaDenuncia" type="tns:date" />
+      <xs:element minOccurs="0" name="admin" type="tns:administrador" />
+      <xs:element name="activo" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="date">
     <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="administrador">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuario">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="claveMaestra" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="actualizarNotificacion">
     <xs:sequence>

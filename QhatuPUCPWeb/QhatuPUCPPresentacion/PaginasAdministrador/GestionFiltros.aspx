@@ -3,13 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container mb-4">
-    <div class="container-fluid px-4 py-3 mb-4 bg-light border-bottom">
-        <div class="d-flex justify-content-between align-items-center">
-            <h3 class="fw-bold text-primary mb-0">
-                Administración de Filtros
-            </h3>
-        </div>
-    </div>
+        <h2 class="fw-bold text-white">Gestión de Filtros</h2>
         <div class="row g-3"> <!-- g-3 agrega espacio entre columnas -->
             <div class="col-12 col-md">
                 <a href="<%= ResolveUrl("~/Filtros/ListaFacultad.aspx") %>" class="btn btn-light btn-lg w-100 text-start">
