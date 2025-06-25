@@ -61,5 +61,35 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         {
             btnBuscar_Click(sender, e); // o directamente filtrar aquí
         }
+        protected void btnDescargarReporte_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Llamada al método reporteIncidencias
+                byte[] reportePDF = client.reporteIncidencias();
+
+                // Validación del contenido
+                if (reportePDF != null && reportePDF.Length > 0)
+                {
+                    // Preparar respuesta para descargar el PDF
+                    Response.Clear();
+                    Response.ContentType = "application/pdf";
+                    Response.AddHeader("Content-Disposition", "attachment; filename=ReporteIncidencias.pdf");
+                    Response.OutputStream.Write(reportePDF, 0, reportePDF.Length);
+                    Response.Flush();
+                    Response.End();
+                }
+                else
+                {
+                    // Mensaje de error si viene vacío
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('El reporte está vacío o no se pudo generar.');", true);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Mensaje de error
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Error al descargar el reporte: " + ex.Message.Replace("'", "") + "');", true);
+            }
+        }
     }
 }

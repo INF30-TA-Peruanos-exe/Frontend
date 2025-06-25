@@ -4,6 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container mb-4">
         <h2 class="fw-bold">Denuncias</h2>
+        <asp:Button ID="btnDescargarReporte" runat="server" Text="Descargar Reporte" 
+                CssClass="btn btn-success" OnClick="btnDescargarReporte_Click" />
     </div>
     <!-- Barra de búsqueda -->
 <div class="container mb-3">
