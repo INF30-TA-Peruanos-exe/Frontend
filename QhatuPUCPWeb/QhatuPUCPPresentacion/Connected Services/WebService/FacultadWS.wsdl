@@ -11,12 +11,28 @@
   <message name="obtenerFacultadResponse">
     <part name="parameters" element="tns:obtenerFacultadResponse" />
   </message>
+<<<<<<< HEAD
+=======
+  <message name="registrarFacultad">
+    <part name="parameters" element="tns:registrarFacultad" />
+  </message>
+  <message name="registrarFacultadResponse">
+    <part name="parameters" element="tns:registrarFacultadResponse" />
+  </message>
+  <message name="actualizarFacultad">
+    <part name="parameters" element="tns:actualizarFacultad" />
+  </message>
+  <message name="actualizarFacultadResponse">
+    <part name="parameters" element="tns:actualizarFacultadResponse" />
+  </message>
+>>>>>>> parent of af54682 (asd)
   <message name="listarFacultad">
     <part name="parameters" element="tns:listarFacultad" />
   </message>
   <message name="listarFacultadResponse">
     <part name="parameters" element="tns:listarFacultadResponse" />
   </message>
+<<<<<<< HEAD
   <message name="actualizarFacultad">
     <part name="parameters" element="tns:actualizarFacultad" />
   </message>
@@ -43,22 +59,39 @@
   <message name="listarFacultadResponse">
     <part name="parameters" element="tns:listarFacultadResponse" />
   </message>
+=======
+>>>>>>> parent of af54682 (asd)
   <message name="eliminarFacultad">
     <part name="parameters" element="tns:eliminarFacultad" />
   </message>
   <message name="eliminarFacultadResponse">
     <part name="parameters" element="tns:eliminarFacultadResponse" />
   </message>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
   <portType name="FacultadWS">
     <operation name="obtenerFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadRequest" message="tns:obtenerFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/obtenerFacultadResponse" message="tns:obtenerFacultadResponse" />
     </operation>
+<<<<<<< HEAD
+=======
+    <operation name="registrarFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadRequest" message="tns:registrarFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/registrarFacultadResponse" message="tns:registrarFacultadResponse" />
+    </operation>
+    <operation name="actualizarFacultad">
+      <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest" message="tns:actualizarFacultad" />
+      <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse" message="tns:actualizarFacultadResponse" />
+    </operation>
+>>>>>>> parent of af54682 (asd)
     <operation name="listarFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest" message="tns:listarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse" message="tns:listarFacultadResponse" />
     </operation>
+<<<<<<< HEAD
     <operation name="actualizarFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadRequest" message="tns:actualizarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/actualizarFacultadResponse" message="tns:actualizarFacultadResponse" />
@@ -77,16 +110,42 @@
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadRequest" message="tns:listarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/listarFacultadResponse" message="tns:listarFacultadResponse" />
     </operation>
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="eliminarFacultad">
       <input wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadRequest" message="tns:eliminarFacultad" />
       <output wsam:Action="com.pucp.pucpqhatu/FacultadWS/eliminarFacultadResponse" message="tns:eliminarFacultadResponse" />
     </operation>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
   </portType>
   <binding name="FacultadWSPortBinding" type="tns:FacultadWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <operation name="obtenerFacultad">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarFacultad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarFacultad">
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -104,6 +163,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
     <operation name="actualizarFacultad">
 =======
 >>>>>>> parent of af54682 (asd)
@@ -144,6 +204,8 @@
         <soap:body use="literal" />
       </output>
     </operation>
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="eliminarFacultad">
       <soap:operation soapAction="" />
       <input>
@@ -153,6 +215,9 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
   </binding>
   <service name="FacultadWS">

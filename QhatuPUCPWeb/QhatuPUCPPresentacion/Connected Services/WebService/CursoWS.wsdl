@@ -7,6 +7,7 @@
   </types>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <message name="obtenerCurso">
     <part name="parameters" element="tns:obtenerCurso" />
   </message>
@@ -19,6 +20,8 @@
   <message name="registrarCursoResponse">
     <part name="parameters" element="tns:registrarCursoResponse" />
   </message>
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======
@@ -37,7 +40,10 @@
   </message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
   <message name="obtenerCurso">
@@ -53,6 +59,9 @@
     <part name="parameters" element="tns:registrarCursoResponse" />
   </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -65,6 +74,7 @@
   <portType name="CursoWS">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <operation name="obtenerCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
@@ -73,6 +83,8 @@
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest" message="tns:registrarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse" message="tns:registrarCursoResponse" />
     </operation>
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======
@@ -87,7 +99,10 @@
     </operation>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
     <operation name="obtenerCurso">
@@ -99,6 +114,9 @@
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse" message="tns:registrarCursoResponse" />
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -111,6 +129,9 @@
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <operation name="actualizarCurso">
 =======
     <operation name="actualizarCurso">
       <soap:operation soapAction="" />
@@ -122,6 +143,34 @@
       </output>
     </operation>
     <operation name="listarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarCurso">
+>>>>>>> parent of af54682 (asd)
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

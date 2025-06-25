@@ -7,7 +7,10 @@
   </types>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
   <message name="registrarDenuncia">
     <part name="parameters" element="tns:registrarDenuncia" />
   </message>
@@ -22,9 +25,30 @@
   </message>
   <message name="actualizarDenuncia">
     <part name="parameters" element="tns:actualizarDenuncia" />
+<<<<<<< HEAD
+=======
   </message>
   <message name="actualizarDenunciaResponse">
     <part name="parameters" element="tns:actualizarDenunciaResponse" />
+  </message>
+  <message name="reporteIncidencias">
+    <part name="parameters" element="tns:reporteIncidencias" />
+  </message>
+  <message name="reporteIncidenciasResponse">
+    <part name="parameters" element="tns:reporteIncidenciasResponse" />
+  </message>
+  <message name="listarDenuncia">
+    <part name="parameters" element="tns:listarDenuncia" />
+  </message>
+  <message name="listarDenunciaResponse">
+    <part name="parameters" element="tns:listarDenunciaResponse" />
+  </message>
+  <message name="eliminarDenuncia">
+    <part name="parameters" element="tns:eliminarDenuncia" />
+>>>>>>> parent of af54682 (asd)
+  </message>
+  <message name="eliminarDenunciaResponse">
+    <part name="parameters" element="tns:eliminarDenunciaResponse" />
   </message>
 >>>>>>> parent of af54682 (asd)
   <message name="reporteIncidencias">
@@ -89,7 +113,10 @@
   </message>
   <portType name="DenunciaWS">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="registrarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaRequest" message="tns:registrarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/registrarDenunciaResponse" message="tns:registrarDenunciaResponse" />
@@ -101,6 +128,21 @@
     <operation name="actualizarDenuncia">
       <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaRequest" message="tns:actualizarDenuncia" />
       <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/actualizarDenunciaResponse" message="tns:actualizarDenunciaResponse" />
+<<<<<<< HEAD
+=======
+    </operation>
+    <operation name="reporteIncidencias">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasRequest" message="tns:reporteIncidencias" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/reporteIncidenciasResponse" message="tns:reporteIncidenciasResponse" />
+    </operation>
+    <operation name="listarDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaRequest" message="tns:listarDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/listarDenunciaResponse" message="tns:listarDenunciaResponse" />
+    </operation>
+    <operation name="eliminarDenuncia">
+      <input wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaRequest" message="tns:eliminarDenuncia" />
+      <output wsam:Action="com.pucp.pucpqhatu/DenunciaWS/eliminarDenunciaResponse" message="tns:eliminarDenunciaResponse" />
+>>>>>>> parent of af54682 (asd)
     </operation>
 >>>>>>> parent of af54682 (asd)
     <operation name="reporteIncidencias">
@@ -154,6 +196,7 @@
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <operation name="reporteIncidencias">
       <soap:operation soapAction="" />
       <input>
@@ -163,6 +206,8 @@
         <soap:body use="literal" />
       </output>
     </operation>
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======
@@ -206,6 +251,15 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="actualizarDenuncia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="reporteIncidencias">
 >>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
@@ -228,6 +282,7 @@
     <operation name="eliminarDenuncia">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -237,6 +292,8 @@
       </output>
     </operation>
     <operation name="contarDenunciasPorPublicacion">
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======

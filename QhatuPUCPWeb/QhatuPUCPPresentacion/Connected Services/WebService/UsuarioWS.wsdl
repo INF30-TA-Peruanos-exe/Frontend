@@ -20,6 +20,9 @@
     <part name="parameters" element="tns:listarUsuariosResponse" />
   </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -31,7 +34,10 @@
   </message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
   <message name="registrarUsuario">
@@ -47,6 +53,9 @@
     <part name="parameters" element="tns:eliminarUsuarioResponse" />
   </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -92,6 +101,9 @@
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/listarUsuariosResponse" message="tns:listarUsuariosResponse" />
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -101,7 +113,10 @@
     </operation>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
     <operation name="registrarUsuario">
@@ -113,6 +128,9 @@
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioResponse" message="tns:eliminarUsuarioResponse" />
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -152,7 +170,10 @@
     </operation>
     <operation name="listarUsuarios">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -171,6 +192,7 @@
       </output>
     </operation>
     <operation name="registrarUsuario">
+<<<<<<< HEAD
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -213,6 +235,8 @@
       </output>
     </operation>
     <operation name="eliminarUsuario">
+=======
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -221,7 +245,11 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
     <operation name="registrarUsuario">
+=======
+    <operation name="eliminarUsuario">
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

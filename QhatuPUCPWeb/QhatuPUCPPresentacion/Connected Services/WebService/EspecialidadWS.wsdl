@@ -13,7 +13,10 @@
   </message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
   <message name="eliminarEspecialidad">
@@ -23,6 +26,9 @@
     <part name="parameters" element="tns:eliminarEspecialidadResponse" />
   </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -57,7 +63,10 @@
     </operation>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
     <operation name="eliminarEspecialidad">
@@ -65,6 +74,9 @@
       <output wsam:Action="com.pucp.pucpqhatu/EspecialidadWS/eliminarEspecialidadResponse" message="tns:eliminarEspecialidadResponse" />
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -98,7 +110,10 @@
     </operation>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
     <operation name="eliminarEspecialidad">
@@ -111,6 +126,9 @@
       </output>
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)

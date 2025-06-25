@@ -7,7 +7,10 @@
   </types>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
   <message name="obtenerAdministradorPorCorreoYContra">
@@ -16,7 +19,22 @@
   <message name="obtenerAdministradorPorCorreoYContraResponse">
     <part name="parameters" element="tns:obtenerAdministradorPorCorreoYContraResponse" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+  </message>
+  <message name="listarAdministrador">
+    <part name="parameters" element="tns:listarAdministrador" />
+  </message>
+  <message name="listarAdministradorResponse">
+    <part name="parameters" element="tns:listarAdministradorResponse" />
+  </message>
+  <message name="eliminarAdministrador">
+    <part name="parameters" element="tns:eliminarAdministrador" />
+  </message>
+  <message name="eliminarAdministradorResponse">
+    <part name="parameters" element="tns:eliminarAdministradorResponse" />
+>>>>>>> parent of af54682 (asd)
   </message>
   <message name="listarAdministrador">
     <part name="parameters" element="tns:listarAdministrador" />
@@ -52,6 +70,7 @@
   </message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <message name="eliminarAdministrador">
     <part name="parameters" element="tns:eliminarAdministrador" />
   </message>
@@ -117,6 +136,32 @@
     <operation name="obtenerAdministradorPorCorreoYContra">
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraRequest" message="tns:obtenerAdministradorPorCorreoYContra" />
       <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraResponse" message="tns:obtenerAdministradorPorCorreoYContraResponse" />
+=======
+  <message name="actualizarAdministrador">
+    <part name="parameters" element="tns:actualizarAdministrador" />
+  </message>
+  <message name="actualizarAdministradorResponse">
+    <part name="parameters" element="tns:actualizarAdministradorResponse" />
+  </message>
+  <message name="obtenerAdministrador">
+    <part name="parameters" element="tns:obtenerAdministrador" />
+  </message>
+  <message name="obtenerAdministradorResponse">
+    <part name="parameters" element="tns:obtenerAdministradorResponse" />
+  </message>
+  <portType name="AdministradorWS">
+    <operation name="obtenerAdministradorPorCorreoYContra">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraRequest" message="tns:obtenerAdministradorPorCorreoYContra" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraResponse" message="tns:obtenerAdministradorPorCorreoYContraResponse" />
+    </operation>
+    <operation name="listarAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorRequest" message="tns:listarAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorResponse" message="tns:listarAdministradorResponse" />
+    </operation>
+    <operation name="eliminarAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorRequest" message="tns:eliminarAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorResponse" message="tns:eliminarAdministradorResponse" />
+>>>>>>> parent of af54682 (asd)
     </operation>
     <operation name="listarAdministrador">
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorRequest" message="tns:listarAdministrador" />
@@ -142,6 +187,7 @@
     </operation>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <operation name="eliminarAdministrador">
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorRequest" message="tns:eliminarAdministrador" />
       <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorResponse" message="tns:eliminarAdministradorResponse" />
@@ -150,6 +196,8 @@
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorRequest" message="tns:listarAdministrador" />
       <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorResponse" message="tns:listarAdministradorResponse" />
     </operation>
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======
@@ -163,10 +211,13 @@
       <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorResponse" message="tns:obtenerAdministradorResponse" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     </operation>
     <operation name="obtenerAdministradorPorCorreoYContra">
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraRequest" message="tns:obtenerAdministradorPorCorreoYContra" />
       <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraResponse" message="tns:obtenerAdministradorPorCorreoYContraResponse" />
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======
@@ -177,10 +228,32 @@
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <operation name="obtenerAdministradorPorCorreoYContra">
 =======
     <operation name="obtenerAdministradorPorCorreoYContra">
+=======
+    <operation name="obtenerAdministradorPorCorreoYContra">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAdministrador">
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -238,6 +311,7 @@
     </operation>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <operation name="eliminarAdministrador">
       <soap:operation soapAction="" />
       <input>
@@ -260,6 +334,8 @@
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="actualizarAdministrador">
       <soap:operation soapAction="" />
       <input>
@@ -272,6 +348,7 @@
     <operation name="obtenerAdministrador">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -281,6 +358,8 @@
       </output>
     </operation>
     <operation name="obtenerAdministradorPorCorreoYContra">
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======

@@ -7,12 +7,15 @@
   </types>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <message name="actualizarNotificacion">
     <part name="parameters" element="tns:actualizarNotificacion" />
   </message>
   <message name="actualizarNotificacionResponse">
     <part name="parameters" element="tns:actualizarNotificacionResponse" />
   </message>
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======
@@ -37,7 +40,10 @@
   </message>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
   <message name="actualizarNotificacion">
@@ -47,6 +53,9 @@
     <part name="parameters" element="tns:actualizarNotificacionResponse" />
   </message>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -59,10 +68,13 @@
   <portType name="NotificacionWS">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <operation name="actualizarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
     </operation>
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
 =======
@@ -81,7 +93,10 @@
     </operation>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
     <operation name="actualizarNotificacion">
@@ -89,6 +104,9 @@
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionResponse" message="tns:actualizarNotificacionResponse" />
     </operation>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
 =======
 >>>>>>> parent of af54682 (asd)
@@ -101,8 +119,11 @@
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <operation name="actualizarNotificacion">
 =======
+=======
+>>>>>>> parent of af54682 (asd)
     <operation name="obtenerNotificacion">
       <soap:operation soapAction="" />
       <input>
@@ -113,6 +134,9 @@
       </output>
     </operation>
     <operation name="eliminarDenuncia">
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
@@ -122,6 +146,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> parent of af54682 (asd)
@@ -153,6 +178,9 @@
     <operation name="registrarNotificacion">
 <<<<<<< HEAD
 =======
+=======
+    <operation name="registrarNotificacion">
+>>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -162,6 +190,9 @@
       </output>
     </operation>
     <operation name="actualizarNotificacion">
+<<<<<<< HEAD
+>>>>>>> parent of af54682 (asd)
+=======
 >>>>>>> parent of af54682 (asd)
       <soap:operation soapAction="" />
       <input>
