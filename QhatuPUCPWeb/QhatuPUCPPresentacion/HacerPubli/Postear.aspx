@@ -5,7 +5,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <div class="container mt-5">
+    <div class="container">
         <div class="row justify-content-center">
                 <asp:Panel ID="pnlCrearPublicacion" runat="server" CssClass="card p-4 shadow-sm rounded-4 w-100">
                     <h3 class="mb-0 fw-semibold">Crear nueva publicación</h3>

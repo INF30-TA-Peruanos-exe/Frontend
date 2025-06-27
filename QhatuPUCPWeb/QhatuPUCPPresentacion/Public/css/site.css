@@ -1,6 +1,6 @@
 ﻿html, body {
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #2f5e93;
 }
 
@@ -12,16 +12,22 @@
     bottom: 0;
     height: 100vh;
     z-index: 1030;
-    width:204px;
+    width: 200px;
 }
 
 .sidebar-custom {
-    background-color: #f3f0eb
+    background-color: #f3f0eb !important;
 }
 
 @media (max-width: 767.98px) {
     .sidebar {
-        width: 100% !important;
+        position: fixed;
+        width: 0;
+        overflow-x: hidden;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
     }
 }
 
@@ -30,8 +36,8 @@
     height: 24px;
 }
 
-.main-content{
-    margin-left: 204px;
+.main-content {
+    margin-left: 200px;
 }
 
 /* Navegación lateral */
@@ -40,8 +46,10 @@
     text-decoration: none;
     width: 100%;
     display: block;
-    border-radius: 5px;
-    padding: 8px 5px;
+    border-radius: 6px;
+    padding: 8px 12px;
+    transition: background-color 0.3s, border 0.3s;
+    border: 2px solid transparent;
 }
 
     .mynav li a:hover {
@@ -51,6 +59,11 @@
     .mynav li a i {
         width: 25px;
         text-align: center;
+    }
+
+    .mynav li a.active {
+        font-weight: 600;
+        border: 2.5px solid #2f5e93;
     }
 
 /* Fondo principal azul */
@@ -81,9 +94,9 @@
     flex-shrink: 0;
 }
 
+/* Cards box */
 .cards-box {
     background-color: #f3f0eb;
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    margin-top: 20px;
 }

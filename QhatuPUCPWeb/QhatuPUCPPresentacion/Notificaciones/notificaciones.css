@@ -1,0 +1,29 @@
+﻿.notificacion-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.notificacion-titulo {
+    font-weight: bold;
+    color: #333;
+}
+
+.notificacion-fecha {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.notificacion-mensaje {
+    margin-top: 5px;
+    color: #000000;
+}
+
+.sin-notificaciones {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+}

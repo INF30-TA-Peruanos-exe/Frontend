@@ -8,7 +8,7 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" />
     <asp:UpdatePanel ID="UpdatePanelFavoritos" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
-            <div class="container custom-margin-top">
+            <div class="container">
                 <div class="cards-box p-4">
                     <div class="row g-4">
                         <asp:Repeater ID="rptPublicacionesGuardadas" runat="server">

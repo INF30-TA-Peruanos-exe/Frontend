@@ -1,32 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="Notificaciones.aspx.cs" Inherits="QhatuPUCPPresentacion.Notificaciones.Notificaciones" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .notificacion-item {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .notificacion-titulo {
-            font-weight: bold;
-            color: #333;
-        }
-        .notificacion-fecha {
-            color: #666;
-            font-size: 0.9em;
-        }
-        .notificacion-mensaje {
-            margin-top: 5px;
-            color: #000000; 
-        }
-        .sin-notificaciones {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            font-style: italic;
-        }
-    </style>
+    <link href="/Notificaciones/notificaciones.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container">

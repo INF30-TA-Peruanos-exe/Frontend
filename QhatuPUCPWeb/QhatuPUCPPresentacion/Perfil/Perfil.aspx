@@ -5,7 +5,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <div class="container mt-5 mb-5">
+    <div class="container mt-2 mb-2">
         <!-- card para los datos del perfil -->
         <div class="row justify-content-center">
             <div class="col-md-8">

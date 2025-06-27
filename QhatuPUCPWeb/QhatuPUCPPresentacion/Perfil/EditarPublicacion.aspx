@@ -5,7 +5,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <div class="container mt-5">
+    <div class="container">
         <div class="card shadow">
             <div class="card-body">
                 <h2 class="mb-4">Editar Publicación</h2>

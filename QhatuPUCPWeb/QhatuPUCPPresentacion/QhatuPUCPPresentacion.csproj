@@ -331,6 +331,7 @@
     <Content Include="Inicio\PaginaInicio.aspx" />
     <Content Include="Inicio\PaginaInicioAdmin.aspx" />
     <Content Include="Notificaciones\Notificaciones.aspx" />
+    <Content Include="Notificaciones\notificaciones.css" />
     <Content Include="PaginaPrueba.aspx" />
     <Content Include="PaginasAdministrador\DenunciasAdmin.aspx" />
     <Content Include="PaginasAdministrador\DetallePubliAdmin.css" />
@@ -368,6 +369,7 @@
     <Content Include="Public\images\Apoyo.jpg" />
     <Content Include="Public\images\bienvenida-login.png" />
     <Content Include="Public\images\imagen-ataque.jpg" />
+    <Content Include="Public\images\logo.png" />
     <Content Include="Public\images\QhatuPucp.png" />
     <Content Include="Public\images\user-avatar.png" />
     <Content Include="Public\js\bootstrap.bundle.js" />
