@@ -5,23 +5,35 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <div class="container mt-2 mb-2">
+    <div class="container mt-5 mb-5">
         <!-- card para los datos del perfil -->
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card shadow" style="background-color: #f8f9fa;">
                     <div class="card-body p-5">
-                        <h2 class="text-center mb-4">Mi Perfil</h2>
-                        <hr />
-                        <asp:Label ID="lblNombre" runat="server" CssClass="perfil-info d-block mb-2" Text="Nombre: -"></asp:Label>
-                        <asp:Label ID="lblCodigoPUCP" runat="server" CssClass="perfil-info d-block mb-2" Text="Código PUCP: -"></asp:Label>
-                        <asp:Label ID="lblCorreo" runat="server" CssClass="perfil-info d-block mb-2" Text="Correo: -"></asp:Label>
-                        <asp:Label ID="lblNombreUsuario" runat="server" CssClass="perfil-info d-block mb-2" Text="Nombre de Usuario: -"></asp:Label>
-                        <asp:Label ID="lblEstado" runat="server" CssClass="perfil-estado badge mt-2" Text="Estado: -"></asp:Label>
-                        <asp:Button ID="btnEditarPerfil" runat="server" CssClass="btn btn-outline-primary position-absolute top-0 end-0 m-3" Text='Modificar perfil'
-                        UseSubmitBehavior="false" OnClientClick="abrirModalEditar(); return false;" />
 
-                    </div>
+    <!-- Encabezado con título y botones alineados -->
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+        <h2 class="mb-0">Mi Perfil</h2>
+        <div class="mt-2 mt-md-0">
+            <asp:Button ID="btnEditarPerfil" runat="server" CssClass="btn btn-outline-primary me-2 mb-2 mb-md-0" Text='Modificar perfil'
+                UseSubmitBehavior="false" OnClientClick="abrirModalEditar(); return false;" />
+            <asp:Button ID="btnCambiarContrasena" runat="server" CssClass="btn btn-warning mb-2 mb-md-0" Text="Cambiar contraseña"
+                UseSubmitBehavior="false" OnClientClick="abrirModalCambiarContrasena(); return false;" />
+        </div>
+    </div>
+
+    <hr />
+
+    <!-- Datos del perfil -->
+    <asp:Label ID="lblNombre" runat="server" CssClass="perfil-info d-block mb-2" Text="Nombre: -"></asp:Label>
+    <asp:Label ID="lblCodigoPUCP" runat="server" CssClass="perfil-info d-block mb-2" Text="Código PUCP: -"></asp:Label>
+    <asp:Label ID="lblCorreo" runat="server" CssClass="perfil-info d-block mb-2" Text="Correo: -"></asp:Label>
+    <asp:Label ID="lblNombreUsuario" runat="server" CssClass="perfil-info d-block mb-2" Text="Nombre de Usuario: -"></asp:Label>
+    <asp:Label ID="lblEstado" runat="server" CssClass="perfil-estado badge mt-2" Text="Estado: -"></asp:Label>
+
+</div>
+
                 </div>
             </div>
         </div>
@@ -59,33 +71,59 @@
 
     <!-- modal para editar el perfil del usuario -->
     <div class="modal fade" id="modalEditarPerfil" tabindex="-1" role="dialog" aria-labelledby="modalEditarPerfilLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Editar Perfil</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-          </div>
-          <div class="modal-body">
-            <div class="mb-3">
-              <label for="txtNombre" class="form-label">Nombre</label>
-              <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" />
-            </div>
-            <div class="mb-3">
-              <label for="txtCorreo" class="form-label">Correo</label>
-              <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" />
-            </div>
-            <div class="mb-3">
-              <label for="txtNombreUsuario" class="form-label">Nombre de Usuario</label>
-              <asp:TextBox ID="txtNombreUsuario" runat="server" CssClass="form-control" />
-            </div>
-          </div>
-          <div class="modal-footer">
-            <asp:Button ID="btnGuardarCambios" runat="server" CssClass="btn btn-success" Text="Guardar cambios" OnClick="btnGuardarCambios_Click" />
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          </div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: #f8f9fa; color: #000;">
+      <div class="modal-header" style="border-bottom: 1px solid #dee2e6;">
+        <h5 class="modal-title" style="color: #000;">Editar Perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="txtNombre" class="form-label" style="color: #000;">Nombre</label>
+          <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" style="background-color: #fff; color: #000; border: 1px solid #ced4da;"/>
+        </div>
+        <div class="mb-3">
+          <label for="txtCorreo" class="form-label" style="color: #000;">Correo</label>
+          <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" style="background-color: #fff; color: #000; border: 1px solid #ced4da;"/>
+        </div>
+        <div class="mb-3">
+          <label for="txtNombreUsuario" class="form-label" style="color: #000;">Nombre de Usuario</label>
+          <asp:TextBox ID="txtNombreUsuario" runat="server" CssClass="form-control" style="background-color: #fff; color: #000; border: 1px solid #ced4da;"/>
         </div>
       </div>
+      <div class="modal-footer" style="border-top: 1px solid #dee2e6;">
+        <asp:Button ID="btnGuardarCambios" runat="server" CssClass="btn btn-success" Text="Guardar cambios" OnClick="btnGuardarCambios_Click" style="color: #fff;"/>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #fff;">Cancelar</button>
+      </div>
     </div>
+  </div>
+</div>
+    <!-- modal para cambiar la contraseña -->
+<div class="modal fade" id="modalCambiarContrasena" tabindex="-1" role="dialog" aria-labelledby="modalCambiarContrasenaLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color: #f8f9fa; color: #000;">
+      <div class="modal-header" style="border-bottom: 1px solid #dee2e6;">
+        <h5 class="modal-title" style="color: #000;">Cambiar Contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="txtNuevaContrasena" class="form-label" style="color: #000;">Nueva Contraseña</label>
+          <asp:TextBox ID="txtNuevaContrasena" runat="server" CssClass="form-control" TextMode="Password" style="background-color: #fff; color: #000; border: 1px solid #ced4da;"/>
+        </div>
+        <div class="mb-3">
+          <label for="txtConfirmarContrasena" class="form-label" style="color: #000;">Confirmar Nueva Contraseña</label>
+          <asp:TextBox ID="txtConfirmarContrasena" runat="server" CssClass="form-control" TextMode="Password" style="background-color: #fff; color: #000; border: 1px solid #ced4da;"/>
+        </div>
+        <asp:Label ID="lblMensajeCambioContrasena" runat="server" style="color: #dc3545;"></asp:Label>
+      </div>
+      <div class="modal-footer" style="border-top: 1px solid #dee2e6;">
+        <asp:Button ID="btnGuardarContrasena" runat="server" CssClass="btn btn-success" Text="Guardar cambios" OnClick="btnGuardarContrasena_Click" style="color: #fff;"/>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #fff;">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </asp:Content>
@@ -97,4 +135,11 @@
         modal.show();
     }
     </script>
+    <script>
+        function abrirModalCambiarContrasena() {
+            var modal = new bootstrap.Modal(document.getElementById('modalCambiarContrasena'));
+            modal.show();
+        }
+    </script>
+
 </asp:Content>
