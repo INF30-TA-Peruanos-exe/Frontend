@@ -100,3 +100,21 @@
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
+
+.btn-celeste {
+    background-color: #66d9ef; 
+    color: #003049 !important; 
+    border: 1px solid #66d9ef;
+    font-weight: bold;
+    opacity: 1; 
+    padding: 6px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-celeste:hover {
+    background-color: #40c4de; 
+    border-color: #40c4de;
+    color: white !important;
+}

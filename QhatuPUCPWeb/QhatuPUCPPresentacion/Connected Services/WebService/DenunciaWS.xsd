@@ -143,7 +143,9 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="actualizarDenunciaResponse">
-    <xs:sequence />
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="eliminarDenuncia">
     <xs:sequence>

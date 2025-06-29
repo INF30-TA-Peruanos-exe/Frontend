@@ -5,11 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/NotificacionWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="registrarNotificacion">
-    <part name="parameters" element="tns:registrarNotificacion" />
+  <message name="listarNotificacion">
+    <part name="parameters" element="tns:listarNotificacion" />
   </message>
-  <message name="registrarNotificacionResponse">
-    <part name="parameters" element="tns:registrarNotificacionResponse" />
+  <message name="listarNotificacionResponse">
+    <part name="parameters" element="tns:listarNotificacionResponse" />
   </message>
   <message name="listarNotificacionUsuario">
     <part name="parameters" element="tns:listarNotificacionUsuario" />
@@ -17,11 +17,11 @@
   <message name="listarNotificacionUsuarioResponse">
     <part name="parameters" element="tns:listarNotificacionUsuarioResponse" />
   </message>
-  <message name="obtenerNotificacion">
-    <part name="parameters" element="tns:obtenerNotificacion" />
+  <message name="registrarNotificacion">
+    <part name="parameters" element="tns:registrarNotificacion" />
   </message>
-  <message name="obtenerNotificacionResponse">
-    <part name="parameters" element="tns:obtenerNotificacionResponse" />
+  <message name="registrarNotificacionResponse">
+    <part name="parameters" element="tns:registrarNotificacionResponse" />
   </message>
   <message name="actualizarNotificacion">
     <part name="parameters" element="tns:actualizarNotificacion" />
@@ -35,24 +35,24 @@
   <message name="eliminarNotificacionResponse">
     <part name="parameters" element="tns:eliminarNotificacionResponse" />
   </message>
-  <message name="listarNotificacion">
-    <part name="parameters" element="tns:listarNotificacion" />
+  <message name="obtenerNotificacion">
+    <part name="parameters" element="tns:obtenerNotificacion" />
   </message>
-  <message name="listarNotificacionResponse">
-    <part name="parameters" element="tns:listarNotificacionResponse" />
+  <message name="obtenerNotificacionResponse">
+    <part name="parameters" element="tns:obtenerNotificacionResponse" />
   </message>
   <portType name="NotificacionWS">
-    <operation name="registrarNotificacion">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionRequest" message="tns:registrarNotificacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionResponse" message="tns:registrarNotificacionResponse" />
+    <operation name="listarNotificacion">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionRequest" message="tns:listarNotificacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionResponse" message="tns:listarNotificacionResponse" />
     </operation>
     <operation name="listarNotificacionUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionUsuarioRequest" message="tns:listarNotificacionUsuario" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionUsuarioResponse" message="tns:listarNotificacionUsuarioResponse" />
     </operation>
-    <operation name="obtenerNotificacion">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionRequest" message="tns:obtenerNotificacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionResponse" message="tns:obtenerNotificacionResponse" />
+    <operation name="registrarNotificacion">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionRequest" message="tns:registrarNotificacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/registrarNotificacionResponse" message="tns:registrarNotificacionResponse" />
     </operation>
     <operation name="actualizarNotificacion">
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/actualizarNotificacionRequest" message="tns:actualizarNotificacion" />
@@ -62,14 +62,14 @@
       <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarNotificacionRequest" message="tns:eliminarNotificacion" />
       <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/eliminarNotificacionResponse" message="tns:eliminarNotificacionResponse" />
     </operation>
-    <operation name="listarNotificacion">
-      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionRequest" message="tns:listarNotificacion" />
-      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/listarNotificacionResponse" message="tns:listarNotificacionResponse" />
+    <operation name="obtenerNotificacion">
+      <input wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionRequest" message="tns:obtenerNotificacion" />
+      <output wsam:Action="com.pucp.pucpqhatu/NotificacionWS/obtenerNotificacionResponse" message="tns:obtenerNotificacionResponse" />
     </operation>
   </portType>
   <binding name="NotificacionWSPortBinding" type="tns:NotificacionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="registrarNotificacion">
+    <operation name="listarNotificacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -87,7 +87,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="obtenerNotificacion">
+    <operation name="registrarNotificacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -114,7 +114,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarNotificacion">
+    <operation name="obtenerNotificacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

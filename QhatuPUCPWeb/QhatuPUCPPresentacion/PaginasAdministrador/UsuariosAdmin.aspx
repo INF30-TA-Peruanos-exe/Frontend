@@ -2,14 +2,26 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
-    <div class="container mb-4">
-        <h2 class="fw-bold">Usuarios</h2>
-    </div>
-    <!-- Barra de búsqueda -->
-    <div class="container mb-3">
-        <div class="input-group">
-            <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" placeholder="Buscar por nombre..."  AutoPostBack="true" OnTextChanged="txtBuscar_TextChanged" />
-            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-secondary" OnClick="btnBuscar_Click" />
+    <div class="container mt-4">
+        <!-- Título -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Usuarios</h2>
+        </div>
+
+        <!-- Barra de búsqueda y botón de descarga -->
+        <div class="row justify-content-center mb-4">
+            <!-- Búsqueda -->
+            <div class="col-md-6 col-sm-12 mb-2">
+                <div class="input-group">
+                    <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control" placeholder="Buscar por nombre..." AutoPostBack="true" OnTextChanged="txtBuscar_TextChanged" />
+                    <button type="submit" runat="server" id="btnBuscar" class="btn btn-celeste">Buscar</button>
+                </div>
+            </div>
+
+            <!-- Botón descargar -->
+            <div class="col-md-3 col-sm-12">
+                <asp:Button ID="btnDescargarReporte" runat="server" Text="Top Usuarios" CssClass="btn btn-success w-100 h-100" OnClick="btnDescargarReporte_Click" />
+            </div>
         </div>
     </div>
     <!-- Tabla con datos -->
@@ -36,15 +48,19 @@
                             <td><%# Eval("estado") %></td>
                             <td>
                                 <ItemTemplate>
-                                    <asp:LinkButton ID="BtnEditar" runat="server" 
+                                    <asp:LinkButton ID="BtnEditar" runat="server"
                                         CommandName="Editar" CommandArgument='<%# Eval("idUsuario") %>'
                                         OnClick="BtnEditar_Click"
-                                        Text="Cambiar Estado" />
+                                        CssClass="btn btn-sm btn-success">
+                                        <i class="fa-solid fa-user-check me-1"></i> Cambiar Estado
+                                    </asp:LinkButton>
                                     <asp:LinkButton ID="BtnEliminar" runat="server"
                                         CommandName="Eliminar" CommandArgument='<%# Eval("idUsuario") %>'
                                         OnClick="BtnEliminar_Click"
-                                        OnClientClick="return confirm('¿Está seguro de eliminar el usuario?');"
-                                        Text="<i class='fa-solid fa-trash'></i>" />
+                                        OnClientClick="return confirm('¿Está seguro de eliminar la publicacion?');"
+                                        CssClass="btn btn-sm btn-danger">
+                                        <i class="fa-solid fa-trash"></i> Eliminar
+                                    </asp:LinkButton>
                                 </ItemTemplate>
                             </td>
                         </tr>
