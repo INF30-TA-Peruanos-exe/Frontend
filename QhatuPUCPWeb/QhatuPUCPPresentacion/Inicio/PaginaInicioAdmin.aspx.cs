@@ -27,38 +27,7 @@ namespace QhatuPUCPPresentacion.Inicio
         {
             if (!IsPostBack)
             {
-                CargarFiltros();
                 CargarPublicaciones();
-            }
-        }
-
-        private void CargarFiltros()
-        {
-            // cargar cursos
-            curso[] cursos = cursoClient.listarCurso();
-            ddlCurso.Items.Clear();
-            ddlCurso.Items.Add(new ListItem("Curso", "0"));
-            foreach (curso c in cursos)
-            {
-                ddlCurso.Items.Add(new ListItem(c.nombre, c.idCurso.ToString()));
-            }
-
-            // cargar facultades
-            facultad[] facultades = facultadClient.listarFacultad();
-            ddlFacultad.Items.Clear();
-            ddlFacultad.Items.Add(new ListItem("Facultad", "0"));
-            foreach (facultad f in facultades)
-            {
-                ddlFacultad.Items.Add(new ListItem(f.nombre, f.idFacultad.ToString()));
-            }
-
-            // cargar especialidades
-            especialidad[] especialidades = especialidadClient.listarEspecialidad();
-            ddlEspecialidad.Items.Clear();
-            ddlEspecialidad.Items.Add(new ListItem("Especialidad", "0"));
-            foreach (especialidad e in especialidades)
-            {
-                ddlEspecialidad.Items.Add(new ListItem(e.nombre, e.idEspecialidad.ToString()));
             }
         }
 
@@ -68,27 +37,8 @@ namespace QhatuPUCPPresentacion.Inicio
             {
                 List<publicacion> publicaciones = new List<publicacion>();
 
-                // Lógica de filtros: prioridad Facultad > Especialidad > Curso
-                if (ddlFacultad.SelectedIndex > 0)
-                {
-                    int idFacultad = int.Parse(ddlFacultad.SelectedValue);
-                    publicaciones = client.listarPorFacultad(idFacultad).ToList();
-                }
-                else if (ddlEspecialidad.SelectedIndex > 0)
-                {
-                    int idEspecialidad = int.Parse(ddlEspecialidad.SelectedValue);
-                    publicaciones = client.listarPorEspecialidad(idEspecialidad).ToList();
-                }
-                else if (ddlCurso.SelectedIndex > 0)
-                {
-                    int idCurso = int.Parse(ddlCurso.SelectedValue);
-                    publicaciones = client.listarPorCurso(idCurso).ToList();
-                }
-                else
-                {
-                    // Si no hay filtro, cargar todas
-                    publicaciones = client.listarPublicacion().ToList();
-                }
+                publicaciones = client.listarPublicacion().ToList();
+
 
                 ViewState["Publicaciones"] = publicaciones; // guardar para filtrado posterior
                 rptPublicaciones.DataSource = publicaciones;
@@ -138,6 +88,37 @@ namespace QhatuPUCPPresentacion.Inicio
         protected void ddlCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
             CargarPublicaciones();
+        }
+
+        protected void btnDescargarReporte_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Llamada al método reporteIncidencias
+                byte[] reportePDF = client.reportePublicaciones();
+
+                // Validación del contenido
+                if (reportePDF != null && reportePDF.Length > 0)
+                {
+                    // Preparar respuesta para descargar el PDF
+                    Response.Clear();
+                    Response.ContentType = "application/pdf";
+                    Response.AddHeader("Content-Disposition", "attachment; filename=Top_Publicaciones.pdf");
+                    Response.OutputStream.Write(reportePDF, 0, reportePDF.Length);
+                    Response.Flush();
+                    Response.End();
+                }
+                else
+                {
+                    // Mensaje de error si viene vacío
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('El reporte está vacío o no se pudo generar.');", true);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Mensaje de error
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Error al descargar el reporte: " + ex.Message.Replace("'", "") + "');", true);
+            }
         }
     }
     }
