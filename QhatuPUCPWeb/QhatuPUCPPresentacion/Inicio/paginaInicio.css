@@ -1,13 +1,19 @@
-﻿/*Para el boton de guardar*/
+﻿.card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
-/* Para cuando NO es favorito */
+/*Para el boton de guardar*/
+
+/* Para cuando no es favorito */
 .btn-guardar[data-favorito="false"]:hover svg {
     transform: scale(1.1);
     transition: transform 0.2s ease, fill 0.2s ease;
     fill: #2f5e93;
 }
 
-/* Para cuando SÍ es favorito */
+/* Para cuando es favorito */
 .btn-guardar[data-favorito="true"]:hover svg {
     transform: scale(1.1);
     transition: transform 0.2s ease, fill 0.2s ease;
@@ -26,11 +32,6 @@
     color: #2f5e93;
     border: 1px solid #2f5e93;
     transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.btn-group .btn {
-    border-radius: 0 !important; /*elimina bordes redondeados*/
-    margin-right: -1px; /*los une*/
 }
 
 .pagination-wrapper .btn {

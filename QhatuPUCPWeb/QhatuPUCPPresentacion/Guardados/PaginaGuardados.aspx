@@ -19,7 +19,7 @@
                                         <img src='<%# Eval("rutaImagen") %>' class="card-img-top"
                                             style="height: 180px; object-fit: cover;" />
                                         <div class="card-body pb-4">
-                                            <p class="card-text mb-0 fw-medium" style="font-size: 0.95rem;">
+                                            <p class="card-title mb-0 fw-medium pe-5" style="font-size: 0.95rem;">
                                                 <%# Eval("titulo") %>
                                             </p>
                                         </div>
@@ -61,10 +61,8 @@
         </ContentTemplate>
     </asp:UpdatePanel>
 
-    <!--Botón oculto para actualizar el contenedor-->
     <asp:Button ID="btnActualizarFavoritos" runat="server" OnClick="btnActualizarFavoritos_Click" Style="display: none;" />
 
-    <!--Contenedor para toast-->
     <div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;"></div>
 
 </asp:Content>

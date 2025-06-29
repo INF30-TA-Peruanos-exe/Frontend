@@ -1,10 +1,30 @@
-﻿.perfil-info {
-    font-size: 1.2rem;
-    color: #212529;
-}
-
-.perfil-estado {
-    font-size: 1rem;
+﻿.perfil-estado {
+    font-size: 0.9rem;
     padding: 0.4rem 0.8rem;
     border-radius: 0.25rem;
+}
+
+.card-title-linea {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-text-linea {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.paddpers {
+    padding: 1.8rem;
+}
+
+.modal-content {
+    padding: 0.5rem;
+}
+
+.modal-body .form-label {
+    font-weight: 500;
+    color: #2f2f2f;
 }

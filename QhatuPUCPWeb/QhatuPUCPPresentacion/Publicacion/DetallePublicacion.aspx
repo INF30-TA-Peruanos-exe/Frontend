@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="DetallePublicacion.aspx.cs" Inherits="QhatuPUCPPresentacion.Publicacion.DetallePublicacion" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="/Publicacion/detallePublicacion.css" rel="stylesheet" />
 </asp:Content>
@@ -7,8 +8,8 @@
     <asp:HiddenField ID="hfValoracion" runat="server" />
     <asp:HiddenField ID="hfIdPublicacion" runat="server" />
 
-    <!-- Contenedor de publicación + comentarios -->
-    <div class="d-flex flex-column flex-lg-row gap-4 mt-offset">
+    <!-- Contenedor de publicación y comentarios -->
+    <div class="d-flex flex-column flex-lg-row gap-4">
 
         <!-- Columna izquierda: publicación -->
         <div class="w-100 w-lg-25">
@@ -16,7 +17,7 @@
                 <!-- Botón denunciar -->
                 <asp:Panel ID="pnlDenunciar" runat="server" CssClass="position-absolute top-0 end-0 m-3" Visible="false">
                     <button type="button"
-                        class="btn btn-outline-danger btn-sm rounded-pill px-3 py-1"
+                        class="btn btn-outline-danger btn-sm px-3 py-1"
                         data-bs-toggle="modal"
                         data-bs-target="#modalDenuncia">
                         Denunciar
@@ -25,13 +26,17 @@
                 <div class="d-flex align-items-center mb-3">
                     <asp:Image ID="imgAvatar" runat="server" CssClass="autor-avatar me-3" />
                     <div>
-                        <strong><asp:Label ID="lblAutor" runat="server" /></strong><br />
-                        <small class="text-muted"><asp:Label ID="lblTiempo" runat="server" /></small>
+                        <strong>
+                            <asp:Label ID="lblAutor" runat="server" /></strong><br />
+                        <small class="text-muted">
+                            <asp:Label ID="lblTiempo" runat="server" /></small>
                     </div>
                 </div>
 
-                <h6 class="fw-bold"><asp:Label ID="lblTitulo" runat="server" /></h6>
-                <p><asp:Label ID="lblDescripcion" runat="server" /></p>
+                <h6 class="fw-bold">
+                    <asp:Label ID="lblTitulo" runat="server" /></h6>
+                <p>
+                    <asp:Label ID="lblDescripcion" runat="server" /></p>
 
                 <asp:Image ID="imgPublicacion" runat="server" CssClass="img-fluid rounded mt-2" />
             </div>
@@ -61,7 +66,7 @@
                         </div>
 
                         <asp:Button ID="btnComentar" runat="server" Text="Comentar"
-                            CssClass="btn btn-outline-primary btn-sm rounded-pill px-3 py-1"
+                            CssClass="btn btn-outline-primary btn-sm px-3 py-1"
                             OnClick="btnComentar_Click" />
                     </div>
                 </div>
@@ -80,7 +85,7 @@
                     <%# new string('★', Convert.ToInt32(Eval("Valoracion"))) + new string('☆', 5 - Convert.ToInt32(Eval("Valoracion"))) %>
                                 </div>
 
-                                <%-- Botón de tres puntos para opciones (visible solo si el comentario es del usuario) --%>
+                                <%-- Botón de tres puntos para opciones que es visible solo si el comentario es del usuario --%>
                                 <asp:Panel runat="server" CssClass="dropdown comment-options position-absolute top-0 end-0"
                                     Visible='<%# Convert.ToBoolean(Eval("EsPropio")) %>'>
                                     <button class="btn btn-sm bg-transparent border-0 px-2" type="button"
@@ -122,7 +127,7 @@
             </div>
         </div>
     </div>
-    <!-- Toast de Éxito -->
+    <!-- Toast de éxito -->
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
         <div id="toastDenuncia" class="toast toast-exito" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="d-flex">
