@@ -139,6 +139,49 @@ namespace QhatuPUCPPresentacion.Perfil
             }
         }
 
+        protected void btnGuardarContrasena_Click(object sender, EventArgs e)
+        {
+
+            usuario usuarioActual = Session["usuario"] as usuario;
+
+            if (usuarioActual != null)
+            {
+                string nuevaContrasena = txtNuevaContrasena.Text.Trim();
+                string confirmaContrasena = txtConfirmarContrasena.Text.Trim();
+
+                if (nuevaContrasena != confirmaContrasena)
+                {
+                    lblMensajeCambioContrasena.Text = "Las contraseñas no coinciden.";
+
+                    ScriptManager.RegisterStartupScript(this, GetType(), "abrirModal", "$('#modalCambiarContrasena').modal('show');", true);
+                    return;
+                }
+
+                usuarioActual.contrasena = nuevaContrasena;
+
+                try
+                {
+                    UsuarioWSClient usuarioService = new UsuarioWSClient();
+                    usuarioService.actualizarUsuario(usuarioActual);
+
+                    Session["usuario"] = usuarioActual;
+
+                    lblMensajeCambioContrasena.CssClass = "text-success";
+                    lblMensajeCambioContrasena.Text = "Contraseña actualizada correctamente.";
+
+
+                    ScriptManager.RegisterStartupScript(this, GetType(), "modalClose", "$('#modalCambiarContrasena').modal('hide');", true);
+                }
+                catch (Exception ex)
+                {
+                    lblMensajeCambioContrasena.Text = "Error al actualizar: " + ex.Message;
+
+                    ScriptManager.RegisterStartupScript(this, GetType(), "abrirModal", "$('#modalCambiarContrasena').modal('show');", true);
+                }
+            }
+
+        }
+
         //con esto vamos a cambiar de color la etiqueta del estado de la publicacion segun su estado
         public String cambiarSegunEstado(String estado)
         {
