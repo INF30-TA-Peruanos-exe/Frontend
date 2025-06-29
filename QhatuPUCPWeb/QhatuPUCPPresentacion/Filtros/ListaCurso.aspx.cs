@@ -11,15 +11,17 @@ namespace QhatuPUCPPresentacion.Filtros
     public partial class ListaCurso : System.Web.UI.Page
     {
         protected CursoWSClient client;
+        private static int paginaActual = 1;
+        private static int tamanoPagina = 10; // Número de cursos por página
         protected void Page_Init(object sender, EventArgs e)
         {
             client = new CursoWSClient();
-            CargarCursos();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                paginaActual = 1; // Reiniciar la página actual al cargar la página por primera vez
                 CargarCursos();
             }
         }
@@ -28,14 +30,25 @@ namespace QhatuPUCPPresentacion.Filtros
         {
             try
             {
-                List<curso> cursos = new List<curso>();
+                List<curso> cursos_todas = new List<curso>();
 
-                // Si no hay filtro, cargar todas
-                cursos = client.listarCurso().ToList();
+                cursos_todas = client.listarCurso().ToList();
 
-                ViewState["Cursos"] = cursos; // guardar para filtrado posterior
+                int totalCursos = cursos_todas.Count;
+
+                var cursos = cursos_todas
+                    .Skip((paginaActual - 1) * tamanoPagina) // Saltar los cursos de las páginas anteriores
+                    .Take(tamanoPagina) // Tomar el número de cursos para la página actual
+                    .ToList();  
+
+                ViewState["Cursos"] = cursos_todas; // guardar para filtrado posterior
                 rptCursos.DataSource = cursos;
                 rptCursos.DataBind();
+
+                lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)totalCursos / tamanoPagina)}";
+
+                btnAnterior.Enabled = paginaActual > 1; // Deshabilitar si es la primera página
+                btnSiguiente.Enabled = (paginaActual * tamanoPagina) < totalCursos; // Deshabilitar si es la última página
             }
             catch (Exception ex)
             {
@@ -45,6 +58,7 @@ namespace QhatuPUCPPresentacion.Filtros
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             string criterio = txtBuscar.Text.Trim().ToLower();
+            ViewState["CriterioBusqueda"] = criterio; // Guardar el criterio de búsqueda
 
             if (ViewState["Cursos"] != null)
             {
@@ -53,9 +67,44 @@ namespace QhatuPUCPPresentacion.Filtros
                     .Where(u => u.nombre.ToLower().Contains(criterio))
                     .ToList();
 
-                rptCursos.DataSource = filtradas;
-                rptCursos.DataBind();
+                ViewState["CursosFiltradas"] = filtradas; // Guardar las facultades filtradas para paginación
+                paginaActual = 1; // Reiniciar la página actual al buscar
+
+                CargarFiltradas();
             }
+        }
+        protected void CargarFiltradas()
+        {
+            var cursos = ViewState["CursosFiltradas"] as List<curso> ??
+                ViewState["Cursos"] as List<curso>;
+
+            int total = cursos.Count;
+
+            var pagina = cursos
+                .Skip((paginaActual - 1) * tamanoPagina)
+                .Take(tamanoPagina)
+                .ToList();
+
+            rptCursos.DataSource = pagina;
+            rptCursos.DataBind();
+
+            lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)total / tamanoPagina)}";
+            btnAnterior.Enabled = paginaActual > 1;
+            btnSiguiente.Enabled = (paginaActual * tamanoPagina) < total;
+        }
+        protected void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (paginaActual > 1)
+            {
+                paginaActual--;
+                CargarFiltradas();
+            }
+        }
+
+        protected void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            paginaActual++;
+            CargarFiltradas();
         }
         protected void txtBuscar_TextChanged(object sender, EventArgs e)
         {

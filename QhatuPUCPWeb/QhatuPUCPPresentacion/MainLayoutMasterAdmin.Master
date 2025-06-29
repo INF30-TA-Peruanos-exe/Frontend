@@ -10,7 +10,6 @@
     <link href="/Public/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <link href="/Public/css/site.css" rel="stylesheet" />
-
     <title>QhatuPUCP</title>
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
