@@ -344,6 +344,7 @@
     <Content Include="PaginasAdministrador\DetallePublicacionAdmin.aspx" />
     <Content Include="PaginasAdministrador\GestionFiltros.aspx" />
     <Content Include="PaginasAdministrador\UsuariosAdmin.aspx" />
+    <Content Include="PaginasAdministrador\NuevoAdmin.aspx" />
     <Content Include="Perfil\EditarPublicacion.aspx" />
     <Content Include="Perfil\estilos_perfil.css" />
     <Content Include="Perfil\Perfil.aspx" />
@@ -546,6 +547,13 @@
     </Compile>
     <Compile Include="PaginasAdministrador\UsuariosAdmin.aspx.designer.cs">
       <DependentUpon>UsuariosAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginasAdministrador\NuevoAdmin.aspx.cs">
+      <DependentUpon>NuevoAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginasAdministrador\NuevoAdmin.aspx.designer.cs">
+      <DependentUpon>NuevoAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Perfil\EditarPublicacion.aspx.cs">
       <DependentUpon>EditarPublicacion.aspx</DependentUpon>

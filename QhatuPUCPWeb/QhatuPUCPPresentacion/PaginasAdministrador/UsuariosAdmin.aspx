@@ -71,6 +71,12 @@
                                     CssClass="btn btn-outline-danger btn-sm">
                                     <i class="fa-solid fa-trash"></i> Eliminar
                                 </asp:LinkButton>
+                                <asp:LinkButton ID="BtnAsignarAdmin" runat="server"
+                                    CommandName="AsignarAdmin" CommandArgument='<%# Eval("idUsuario") %>'
+                                    CssClass="btn btn-outline-warning btn-sm"
+                                    OnClientClick='<%# "mostrarModalAdmin(" + Eval("idUsuario") + "); return false;" %>'>
+                                    <i class="fa-solid fa-user-shield me-1"></i>Asignar Admin
+                                </asp:LinkButton>
                             </td>
                         </tr>
                     </ItemTemplate>
@@ -90,8 +96,65 @@
             CssClass="btn btn-outline-light btn-sm" />
     </div>
 
+    <!-- Modal para asignar administrador -->
+    <div class="modal fade" id="modalAsignarAdmin" tabindex="-1" aria-labelledby="modalAdminLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="modalAdminLabel">Asignar Administrador</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <asp:HiddenField ID="hfIdUsuarioAdmin" runat="server" />
+        
+            <div class="mb-3">
+              <label for="txtClaveMaestra" class="form-label fw-bold">
+                Clave Maestra del Administrador:
+              </label>
+              <div class="input-group">
+                <asp:TextBox ID="txtClaveMaestra" runat="server" CssClass="form-control" TextMode="Password" />
+                <button type="button" class="btn btn-outline-secondary" onclick="toggleClaveMaestra()">
+                  <i class="fa-solid fa-eye" id="iconoClave"></i>
+                </button>
+              </div>
+              <small class="text-muted">Esta clave maestra será necesaria para realizar funciones administrativas.</small>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <asp:Button ID="btnAsignarAdminModal" runat="server" Text="Asignar"
+              CssClass="btn btn-success" OnClick="btnAsignarAdminModal_Click" />
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="Scripts" runat="server">
+    <script>
+        function mostrarModalAdmin(idUsuario) {
+            document.getElementById('<%= hfIdUsuarioAdmin.ClientID %>').value = idUsuario;
+          document.getElementById('<%= txtClaveMaestra.ClientID %>').value = '';
+
+          var modal = new bootstrap.Modal(document.getElementById('modalAsignarAdmin'));
+          modal.show();
+      }
+
+      function toggleClaveMaestra() {
+          const txt = document.getElementById('<%= txtClaveMaestra.ClientID %>');
+            const icono = document.getElementById('iconoClave');
+
+            if (txt.type === "password") {
+                txt.type = "text";
+                icono.classList.remove("fa-eye");
+                icono.classList.add("fa-eye-slash");
+            } else {
+                txt.type = "password";
+                icono.classList.remove("fa-eye-slash");
+                icono.classList.add("fa-eye");
+            }
+        }
+    </script>
 </asp:Content>
 

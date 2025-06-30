@@ -5,11 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/UsuarioWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="obtenerUsuario">
-    <part name="parameters" element="tns:obtenerUsuario" />
+  <message name="obtenerUsuarioPorCorreoYContra">
+    <part name="parameters" element="tns:obtenerUsuarioPorCorreoYContra" />
   </message>
-  <message name="obtenerUsuarioResponse">
-    <part name="parameters" element="tns:obtenerUsuarioResponse" />
+  <message name="obtenerUsuarioPorCorreoYContraResponse">
+    <part name="parameters" element="tns:obtenerUsuarioPorCorreoYContraResponse" />
+  </message>
+  <message name="actualizarUsuario">
+    <part name="parameters" element="tns:actualizarUsuario" />
+  </message>
+  <message name="actualizarUsuarioResponse">
+    <part name="parameters" element="tns:actualizarUsuarioResponse" />
   </message>
   <message name="registrarUsuario">
     <part name="parameters" element="tns:registrarUsuario" />
@@ -17,11 +23,11 @@
   <message name="registrarUsuarioResponse">
     <part name="parameters" element="tns:registrarUsuarioResponse" />
   </message>
-  <message name="actualizarUsuario">
-    <part name="parameters" element="tns:actualizarUsuario" />
+  <message name="obtenerUsuario">
+    <part name="parameters" element="tns:obtenerUsuario" />
   </message>
-  <message name="actualizarUsuarioResponse">
-    <part name="parameters" element="tns:actualizarUsuarioResponse" />
+  <message name="obtenerUsuarioResponse">
+    <part name="parameters" element="tns:obtenerUsuarioResponse" />
   </message>
   <message name="eliminarUsuario">
     <part name="parameters" element="tns:eliminarUsuario" />
@@ -41,24 +47,22 @@
   <message name="reporteUsuariosResponse">
     <part name="parameters" element="tns:reporteUsuariosResponse" />
   </message>
-  <message name="obtenerUsuarioPorCorreoYContra">
-    <part name="parameters" element="tns:obtenerUsuarioPorCorreoYContra" />
-  </message>
-  <message name="obtenerUsuarioPorCorreoYContraResponse">
-    <part name="parameters" element="tns:obtenerUsuarioPorCorreoYContraResponse" />
-  </message>
   <portType name="UsuarioWS">
-    <operation name="obtenerUsuario">
-      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioRequest" message="tns:obtenerUsuario" />
-      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioResponse" message="tns:obtenerUsuarioResponse" />
+    <operation name="obtenerUsuarioPorCorreoYContra">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraRequest" message="tns:obtenerUsuarioPorCorreoYContra" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraResponse" message="tns:obtenerUsuarioPorCorreoYContraResponse" />
+    </operation>
+    <operation name="actualizarUsuario">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest" message="tns:actualizarUsuario" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse" message="tns:actualizarUsuarioResponse" />
     </operation>
     <operation name="registrarUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioRequest" message="tns:registrarUsuario" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/registrarUsuarioResponse" message="tns:registrarUsuarioResponse" />
     </operation>
-    <operation name="actualizarUsuario">
-      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioRequest" message="tns:actualizarUsuario" />
-      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/actualizarUsuarioResponse" message="tns:actualizarUsuarioResponse" />
+    <operation name="obtenerUsuario">
+      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioRequest" message="tns:obtenerUsuario" />
+      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioResponse" message="tns:obtenerUsuarioResponse" />
     </operation>
     <operation name="eliminarUsuario">
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/eliminarUsuarioRequest" message="tns:eliminarUsuario" />
@@ -72,14 +76,19 @@
       <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/reporteUsuariosRequest" message="tns:reporteUsuarios" />
       <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/reporteUsuariosResponse" message="tns:reporteUsuariosResponse" />
     </operation>
-    <operation name="obtenerUsuarioPorCorreoYContra">
-      <input wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraRequest" message="tns:obtenerUsuarioPorCorreoYContra" />
-      <output wsam:Action="com.pucp.pucpqhatu/UsuarioWS/obtenerUsuarioPorCorreoYContraResponse" message="tns:obtenerUsuarioPorCorreoYContraResponse" />
-    </operation>
   </portType>
   <binding name="UsuarioWSPortBinding" type="tns:UsuarioWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="obtenerUsuario">
+    <operation name="obtenerUsuarioPorCorreoYContra">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -97,7 +106,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="actualizarUsuario">
+    <operation name="obtenerUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -125,15 +134,6 @@
       </output>
     </operation>
     <operation name="reporteUsuarios">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerUsuarioPorCorreoYContra">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

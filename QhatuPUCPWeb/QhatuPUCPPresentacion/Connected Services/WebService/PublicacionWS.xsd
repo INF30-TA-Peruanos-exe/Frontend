@@ -36,12 +36,12 @@
   <xs:element name="publicacion" type="tns:publicacion" />
   <xs:element name="reportePublicaciones" type="tns:reportePublicaciones" />
   <xs:element name="reportePublicacionesResponse" type="tns:reportePublicacionesResponse" />
-  <xs:complexType name="listarFavoritos">
+  <xs:complexType name="listarPublicacionConFavoritos">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarFavoritosResponse">
+  <xs:complexType name="listarPublicacionConFavoritosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
@@ -113,12 +113,12 @@
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarPublicacionConFavoritos">
+  <xs:complexType name="listarFavoritos">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarPublicacionConFavoritosResponse">
+  <xs:complexType name="listarFavoritosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
@@ -198,15 +198,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:publicacion" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarFavoritos">
-    <xs:sequence>
-      <xs:element name="idUsuario" type="xs:int" />
-      <xs:element name="idPublicacion" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarFavoritosResponse">
-    <xs:sequence />
-  </xs:complexType>
   <xs:complexType name="obtenerPublicacion">
     <xs:sequence>
       <xs:element name="idPublicacion" type="xs:int" />
@@ -216,6 +207,15 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="tns:publicacion" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFavoritos">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element name="idPublicacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFavoritosResponse">
+    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="actualizarPublicacion">
     <xs:sequence>

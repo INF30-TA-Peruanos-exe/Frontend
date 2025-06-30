@@ -26,7 +26,7 @@
             <!-- Botón Agregar -->
             <div class="col-md-3 col-sm-12">
                 <asp:LinkButton  ID="BtnAgregar" runat="server"
-                    Text='<i class="fa-solid fa-plus me-1"></i>Agregar Facultad'
+                    Text='<i class="fa-solid fa-plus me-1"></i>Agregar Curso'
                     OnClick="BtnAgregar_Click"
                     CssClass="btn btn-success fw-semibold shadow-sm w-100"
                     UseSubmitBehavior="false" />

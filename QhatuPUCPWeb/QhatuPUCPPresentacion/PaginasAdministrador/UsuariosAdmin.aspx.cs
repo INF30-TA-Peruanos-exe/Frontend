@@ -12,12 +12,14 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
     public partial class UsuariosAdmin : System.Web.UI.Page
     {
         protected UsuarioWSClient client;
+        protected AdministradorWSClient admin_client;
         private static int paginaActual = 1;
         private static int tamanoPagina = 10; // Número de publicaciones por página
 
         protected void Page_Init(object sender, EventArgs e)
         {
             client = new UsuarioWSClient();
+            admin_client = new AdministradorWSClient();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -173,6 +175,45 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
             {
                 // Mensaje de error
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Error al descargar el reporte: " + ex.Message.Replace("'", "") + "');", true);
+            }
+        }
+
+        protected void btnAsignarAdminModal_Click(object sender, EventArgs e)
+        {
+            int idUsuario = int.Parse(hfIdUsuarioAdmin.Value);
+            string claveMaestra = txtClaveMaestra.Text;
+
+            usuario usuario = client.obtenerUsuario(idUsuario);
+            if (usuario == null)
+            {
+                LblError.Text = "Error: No se encontró al usuario.";
+                return;
+            }
+
+            administrador nuevoAdmin = new administrador
+            {
+                idUsuario = usuario.idUsuario,
+                codigoPUCP = usuario.codigoPUCP,
+                contrasena = usuario.contrasena,
+                nombre = usuario.nombre,
+                nombreUsuario = usuario.nombreUsuario,
+                correo = usuario.correo,
+                estado = usuario.estado,
+                estadoSpecified = true,
+                activo = true,
+                claveMaestra = claveMaestra
+            };
+
+
+            try
+            {
+                admin_client.registrarAdministrador(nuevoAdmin);
+                // Podrías mostrar un mensaje de éxito o refrescar la tabla
+                Response.Redirect(Request.RawUrl); // Recargar la página
+            }
+            catch (Exception ex)
+            {
+                LblError.Text = "Error al asignar administrador: " + ex.Message;
             }
         }
     }
