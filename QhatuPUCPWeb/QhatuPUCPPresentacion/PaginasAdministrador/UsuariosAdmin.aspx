@@ -8,32 +8,32 @@
             <h2 class="fw-bold text-white">
                 <i class="fa-solid fa-users-gear me-2 text-info"></i>Gestión de Usuarios
             </h2>
-            <p class="text-light">Consulta, filtra y administra los usuarios registrados en la plataforma.</p>
         </div>
 
         <!-- Barra de búsqueda y botón de descarga -->
-        <div class="row justify-content-center align-items-center mb-4 g-2">
+        <div class="row g-3 mb-4">
+                <!-- Campo de búsqueda (ocupa más espacio en pantallas grandes, todo en móviles) -->
+                <div class="col-lg-8 col-md-7 col-12">
+                    <div class="input-group shadow-sm">
+                        <span class="input-group-text bg-secondary border-0 text-white">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control bg-dark text-white border-0" placeholder="Buscar por nombre..." />
+                        <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-light" OnClick="btnBuscar_Click" />
+                    </div>
+                </div>
 
-            <!-- Campo de búsqueda -->
-            <div class="col-md-6 col-sm-12">
-                <div class="input-group shadow-sm">
-                    <span class="input-group-text bg-secondary border-0 text-white">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </span>
-                    <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control bg-dark text-white border-0" placeholder="Buscar por nombre..." />
-                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-light" OnClick="btnBuscar_Click" />
+                <!-- Botón descargar (queda al lado en escritorio, abajo en móvil) -->
+                <div class="col-lg-4 col-md-5 col-12">
+                    <asp:Button ID="btnDescargarReporte" runat="server" Text="⬇ Top Usuarios"
+                        CssClass="btn btn-success w-100 shadow-sm h-100" OnClick="btnDescargarReporte_Click" />
                 </div>
             </div>
-
-            <!-- Botón descargar -->
-            <div class="col-md-3 col-sm-12">
-                <asp:Button ID="btnDescargarReporte" runat="server" Text="⬇ Top Usuarios" CssClass="btn btn-success w-100 shadow-sm" OnClick="btnDescargarReporte_Click" />
-            </div>
-        </div>
     </div>
         <!-- Tabla con datos -->
     <div class="container p-4 bg-light rounded shadow-sm">
-        <table class="table table-hover table-bordered align-middle">
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered align-middle">
             <thead class="table-dark text-center align-middle">
                 <tr>
                     <th scope="col"><i class="fa-solid fa-hashtag me-1"></i>ID</th>
@@ -77,9 +77,10 @@
                 </asp:Repeater>
             </tbody>
         </table>
+    </div>
         <asp:Label ID="LblError" runat="server" CssClass="text-danger fw-semibold"></asp:Label>
     </div>
-    <div class="d-flex justify-content-center align-items-center gap-3 mt-3">
+    <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mt-3">
         <asp:Button ID="btnAnterior" runat="server" Text="<" OnClick="btnAnterior_Click"
             CssClass="btn btn-outline-light btn-sm" />
 

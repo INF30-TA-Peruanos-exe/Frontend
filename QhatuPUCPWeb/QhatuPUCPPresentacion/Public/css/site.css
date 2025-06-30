@@ -31,13 +31,15 @@
     }
 }
 
+.main-content {
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: margin-left 0.3s ease;
+}
+
 .sidebar svg {
     width: 24px;
     height: 24px;
-}
-
-.main-content {
-    margin-left: 200px;
 }
 
 /* Navegación lateral */
