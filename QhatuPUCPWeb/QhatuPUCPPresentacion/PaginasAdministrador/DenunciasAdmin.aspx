@@ -61,7 +61,7 @@
     </div>
 </div>
 <!-- Tabla con datos -->
-    <div class="container p-4 bg-light rounded shadow-sm">
+    <div class="container p-4 bg-light rounded shadow-sm" style="width: auto; max-width: 90%; margin: 0 auto;">
         <table class="table table-hover table-bordered align-middle">
         <thead class="table-dark text-center align-middle">
             <tr>
