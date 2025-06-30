@@ -5,13 +5,16 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="/Public/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link runat="server" href="~/Public/css/bootstrap.min.css" rel="stylesheet" />
+    <link runat="server" href="~/Public/css/site.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-    <link href="/Public/css/site.css" rel="stylesheet" />
+
     <title>QhatuPUCP</title>
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
+
 <body>
     <form runat="server" enctype="multipart/form-data">
         <div class="container-fluid p-0">
@@ -23,7 +26,7 @@
 
                 <div class="offcanvas-body d-flex flex-column flex-grow-1">
                     <div class="d-flex justify-content-center mb-3">
-                        <img src="/Public/images/QhatuPucp.png" width="168" class="img-fluid" />
+                        <img src='<%= ResolveUrl("~/Public/images/QhatuPucp.png") %>' width="168" class="img-fluid" />
                     </div>
 
                     <ul class="nav flex-column mb-auto mynav">
@@ -98,7 +101,7 @@
                             type="button" id="dropdownUser"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <asp:Label ID="lblUsuario" runat="server" CssClass="me-1" />
-                            <img src="/Public/images/user-avatar.png" class="rounded-circle" width="30" height="30" />
+                            <img src='<%= ResolveUrl("~/Public/images/user-avatar.png") %>' class="rounded-circle" width="30" height="30" />
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
                             <li><a class="dropdown-item" href="<%= ResolveUrl("~/Perfil/Perfil.aspx") %>">Perfil</a></li>

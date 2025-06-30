@@ -329,6 +329,8 @@
     <Content Include="HacerPubli\estilos_postear.css" />
     <Content Include="HacerPubli\Postear.aspx" />
     <Content Include="Imagenes\71To5CylmgL.png" />
+    <Content Include="Imagenes\l1.png" />
+    <Content Include="Imagenes\maxresdefault.jpg" />
     <Content Include="Inicio\Apoyo.aspx" />
     <Content Include="Inicio\DetallePublicacion.aspx" />
     <Content Include="Inicio\paginaInicio.css" />
@@ -622,7 +624,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Public\images\images\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

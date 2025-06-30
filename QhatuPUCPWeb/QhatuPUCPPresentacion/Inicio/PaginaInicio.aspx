@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="PaginaInicio.aspx.cs" Inherits="QhatuPUCPPresentacion.Inicio.PaginaInicio" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="/Inicio/paginaInicio.css" rel="stylesheet" />
+    <link href='<%= ResolveUrl("~/Inicio/paginaInicio.css") %>' rel="stylesheet" />
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
@@ -30,8 +31,8 @@
                             <div class="card h-100 shadow-sm border-0">
                                 <a href='<%# ResolveUrl("~/Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")) %>'
                                     style="text-decoration: none; color: inherit;">
-                                    <img src='<%# Eval("rutaImagen") %>' class="card-img-top"
-                                        style="height: 180px; object-fit: cover;" />
+                                    <img src='<%# ResolveUrl("~" + Eval("rutaImagen")) %>' class="card-img-top"  style="height:180px; object-fit:cover;"/>
+
 
                                     <div class="card-body pb-4">
                                         <p class="card-title mb-0 fw-medium pe-5" style="font-size: 0.95rem;">

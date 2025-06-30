@@ -46,7 +46,7 @@
                         <div class="card mb-3 border-0">
                             <div class="row g-0 h-100">
                                 <div class="col-md-4 p-0-m-0">
-                                    <img src='<%# Eval("rutaImagen") %>' class="card-img-top img-fluid w-100 rounded-start" style="height: 180px; object-fit: cover;" />
+                                <img src='<%# ResolveUrl("~" + Eval("rutaImagen").ToString().Replace("~", "")) %>' class="card-img-top img-fluid w-100 rounded-start" style="height: 180px; object-fit: cover;" />
                                 </div>
 
                                 <div class="col-md-8">

@@ -15,6 +15,7 @@ namespace QhatuPUCPPresentacion.Perfil
                 if (Session["usuario"] == null)
                 {
                     Response.Redirect("~/Inicio/Login.aspx");
+                    return;
                 }
 
                 usuario usuario = Session["usuario"] as usuario;

@@ -46,8 +46,8 @@ namespace QhatuPUCPPresentacion.Publicacion
             lblDescripcion.Text = pub.descripcion;
             lblAutor.Text = pub.usuario.nombreUsuario;
             lblTiempo.Text = FormatearFecha(pub.fechaPublicacion);
-            imgPublicacion.ImageUrl = pub.rutaImagen;
-            imgAvatar.ImageUrl = "/Public/images/user-avatar.png";
+            imgPublicacion.ImageUrl = ResolveUrl(pub.rutaImagen);
+            imgAvatar.ImageUrl = ResolveUrl("~/Public/images/user-avatar.png");
 
             if (usuario != null && pub.usuario != null)
             {

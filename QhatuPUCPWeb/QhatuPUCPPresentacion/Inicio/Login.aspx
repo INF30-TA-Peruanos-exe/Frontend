@@ -20,7 +20,7 @@
                 
                 <div class="login-imagen col-12 col-md-6 p-4 d-flex justify-content-center align-items-center bg-pucp text-white text-center">
                     <div class="d-flex flex-column flex-portrait-row align-items-center text-center text-portrait-start gap-4">
-                        <img src="/Public/images/bienvenida-login.png" class="login-logo" />
+                        <img src='<%= ResolveUrl("~/Public/images/bienvenida-login.png") %>' class="login-logo" />
                         <div>
                             <h3 class="fw-bold">PUCP Qhatu</h3>
                             <h2>¡Bienvenido a Qhatu!</h2>

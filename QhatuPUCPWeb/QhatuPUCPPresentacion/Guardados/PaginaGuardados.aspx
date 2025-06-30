@@ -16,8 +16,7 @@
                                 <div class="col-12 col-sm-6 col-md-4 position-relative">
                                     <div class='card h-100 shadow-sm border-0 <%# Eval("estado").ToString() == "OCULTO" ? "filtro-oculto" : "" %>'>
                                         <%# Eval("estado").ToString() != "OCULTO" ? "<a href='" + ResolveUrl("~/Publicacion/DetallePublicacion.aspx?id=" + Eval("idPublicacion")) + "' style=\"text-decoration: none; color: inherit;\">" : "<div>" %>
-                                        <img src='<%# Eval("rutaImagen") %>' class="card-img-top"
-                                            style="height: 180px; object-fit: cover;" />
+                                        <img src='<%# ResolveUrl("~" + Eval("rutaImagen").ToString().Replace("~", "")) %>' class="card-img-top" style="height: 180px; object-fit: cover;" />
                                         <div class="card-body pb-4">
                                             <p class="card-title mb-0 fw-medium pe-5" style="font-size: 0.95rem;">
                                                 <%# Eval("titulo") %>
