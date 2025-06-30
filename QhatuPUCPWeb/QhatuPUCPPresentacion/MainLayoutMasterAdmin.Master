@@ -7,19 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="/Public/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="/Public/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Public/css/admin-layout.css" rel="stylesheet" />
     <link href="/Public/css/site.css" rel="stylesheet" />
-
     <title>QhatuPUCP</title>
     <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
-<body>
+<body class="min-vh-100 position-relative">
       <form runat="server">
-    <div class="d-flex">
+    <div class="d-flex min-vh-100">
         <!-- Sidebar -->
-        <div id="bdSidebar" class="sidebar sidebar-custom p-3 border-end d-flex flex-column">
-            <div class="d-flex justify-content-center mb-3">
+        <div class="sidebar-custom offcanvas-lg offcanvas-start d-flex flex-column flex-shrink-0 p-3 border-end"
+             tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarLabel"
+             data-bs-backdrop="true" data-bs-scroll="false">
+            <!-- Botón de menú para móviles -->
+            <div class="p-2 px-3 d-flex align-items-center justify-content-between d-lg-none text-white bg-primary">
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="d-none d-lg-flex justify-content-between align-items-center mb-3">
                 <img src="/Public/images/QhatuPucp.png" width="168" />
             </div>
             <ul class="nav nav-pills flex-column mb-auto mynav">
@@ -74,13 +83,13 @@
         </div>
 
         <!-- Contenido principal -->
-        <div class="main-content flex-fill bg-principal position-relative">
+        <div class="main-content flex-fill bg-principal position-relative p-0">
             <!-- Botón de menú para móviles -->
-            <div class="p-2 d-flex d-md-none text-white bg-primary">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+            <div class="p-2 px-3 d-flex align-items-center justify-content-between d-md-none text-white bg-primary">
+                <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
                     <i class="fas fa-bars"></i>
                 </button>
-                <span class="ms-3 mt-1">PUCP Qhatu</span>
+                <span class="fw-bold fs-5">PUCP Qhatu</span>
             </div>
 
             <!-- Contenido de la página -->

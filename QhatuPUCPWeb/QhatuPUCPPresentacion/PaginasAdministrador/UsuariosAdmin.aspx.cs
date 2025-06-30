@@ -12,6 +12,9 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
     public partial class UsuariosAdmin : System.Web.UI.Page
     {
         protected UsuarioWSClient client;
+        private static int paginaActual = 1;
+        private static int tamanoPagina = 10; // Número de publicaciones por página
+
         protected void Page_Init(object sender, EventArgs e)
         {
             client = new UsuarioWSClient();
@@ -20,6 +23,7 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         {
             if (!IsPostBack)
             {
+                paginaActual = 1;
                 CargarUsuarios();
             }
         }
@@ -28,23 +32,51 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         {
             try
             {
-                List<usuario> usuarios = new List<usuario>();
+                List<usuario> usuarios_total = new List<usuario>();
 
                 // Si no hay filtro, cargar todas
-                usuarios = client.listarUsuarios().ToList();
+                usuarios_total = client.listarUsuarios().ToList();
 
-                ViewState["Usuarios"] = usuarios; // guardar para filtrado posterior
-                rptUsuarios.DataSource = usuarios;
+                int totalUsuarios = usuarios_total.Count;
+
+                var usuariosPagina = usuarios_total
+                    .Skip((paginaActual - 1) * tamanoPagina) // Saltar las publicaciones de las páginas anteriores
+                    .Take(tamanoPagina) // Tomar el número de publicaciones para la página actual
+                    .ToList();
+
+                ViewState["Usuarios"] = usuarios_total; // guardar para filtrado posterior
+                rptUsuarios.DataSource = usuariosPagina;
                 rptUsuarios.DataBind();
+
+                lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)usuarios_total.Count / tamanoPagina)}";
+
+                btnAnterior.Enabled = paginaActual > 1; // Deshabilitar si es la primera página
+                btnSiguiente.Enabled = (paginaActual * tamanoPagina) < usuarios_total.Count; // Deshabilitar si es la última página
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error al cargar usuarios: " + ex.Message);
             }
         }
+        protected void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (paginaActual > 1)
+            {
+                paginaActual--;
+                CargarUsuariosFiltradas();
+            }
+        }
+
+        protected void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            paginaActual++;
+            CargarUsuariosFiltradas();
+        }
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             string criterio = txtBuscar.Text.Trim().ToLower();
+            ViewState["FiltroNombre"] = criterio;
 
             if (ViewState["Usuarios"] != null)
             {
@@ -53,9 +85,29 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
                     .Where(u => u.nombre.ToLower().Contains(criterio))
                     .ToList();
 
-                rptUsuarios.DataSource = filtradas;
-                rptUsuarios.DataBind();
+                ViewState["UsuariosFiltrados"] = filtradas;
+                paginaActual = 1;
+                CargarUsuariosFiltradas();
             }
+        }
+        protected void CargarUsuariosFiltradas()
+        {
+            var usuarios = ViewState["UsuariosFiltrados"] as List<usuario> ??
+                ViewState["Usuarios"] as List<usuario>;
+
+            int total = usuarios.Count;
+
+            var pagina = usuarios
+                .Skip((paginaActual - 1) * tamanoPagina)
+                .Take(tamanoPagina)
+                .ToList();
+
+            rptUsuarios.DataSource = pagina;
+            rptUsuarios.DataBind();
+
+            lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)total / tamanoPagina)}";
+            btnAnterior.Enabled = paginaActual > 1;
+            btnSiguiente.Enabled = (paginaActual * tamanoPagina) < total;
         }
         protected void txtBuscar_TextChanged(object sender, EventArgs e)
         {
