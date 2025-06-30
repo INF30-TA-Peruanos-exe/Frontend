@@ -27,46 +27,11 @@ namespace QhatuPUCPPresentacion.Inicio
         {
             string correo = txtCorreo.Text.Trim();
             string contrasena = txtContrasena.Text.Trim();
-
-            // Aquí deberías consumir tu WebService de Usuario
-            // y validar si el login es correcto
-
-            //if (correo == "admin@pucp.edu.pe" && contrasena == "123") // Ejemplo fijo
-            //{
-            //    Session["usuario"] = correo;
-            //    Response.Redirect("PaginaInicio.aspx");
-            //}
-            //else
-            //{
-            // Mostrar un mensaje de error si quieres
-            //    ScriptManager.RegisterStartupScript(this, GetType(), "alerta", "alert('Credenciales incorrectas');", true);
-            //}
             try
             {
-                //usuario[] usuarios=usuarioService.listarUsuarios();
                 usuario usuarioValido = usuarioService.obtenerUsuarioPorCorreoYContra(correo,contrasena);
-                //administrador[] administradores = administradorService.listarAdministrador();
                 administrador administradorValido = administradorService.obtenerAdministradorPorCorreoYContra(contrasena);
 
-                //Busca en todos los usuarios
-                /*for (int i = 0; i < usuarios.Length; i++)
-                {
-                    if (usuarios[i].correo == correo && usuarios[i].contrasena == contrasena)
-                    {
-                        usuarioValido = usuarios[i];
-                        break;
-                    }
-                    for(int j = 0; j < administradores.Length; j++)
-                    {
-                        if (usuarios[i].idUsuario == administradores[j].idUsuario && administradores[j].claveMaestra == contrasena)
-                        {
-                            usuarioValido = usuarios[i];
-                            administradorValido = administradores[j];
-                            break;
-                        }
-                    }
-
-                }*/
 
                 if (usuarioValido != null && administradorValido == null)
                 {
@@ -83,8 +48,6 @@ namespace QhatuPUCPPresentacion.Inicio
                 {
                     lblError.Text = "Correo o contrasena incorrectos";
                 }
-
-
 
             }catch (Exception ex)
             {

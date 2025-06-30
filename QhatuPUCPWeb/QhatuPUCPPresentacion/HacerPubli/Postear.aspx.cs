@@ -24,7 +24,6 @@ namespace QhatuPUCPPresentacion.HacerPubli
                 }
 
                 cargarDatosCheckbox();
-                ProbarLecturaPublicacion(93); // ⚠️ solo para test temporal
 
             }
         }
@@ -101,12 +100,12 @@ namespace QhatuPUCPPresentacion.HacerPubli
                         string rutaFisica = Server.MapPath(rutaRelativa);
 
                         fuImagen.SaveAs(rutaFisica);
-                        nueva.rutaImagen = rutaRelativa; // Se actualiza con la imagen subida
+                        nueva.rutaImagen = rutaRelativa;
                     }
                     catch (Exception exImg)
                     {
                         System.Diagnostics.Debug.WriteLine("Error al guardar imagen: " + exImg.Message);
-                        // Se mantiene imagen por defecto si ocurre error
+                        // Se mantiene imagen por defecto si hay error
                     }
                 }
 
@@ -165,7 +164,6 @@ namespace QhatuPUCPPresentacion.HacerPubli
                 }
                 nueva.publicacionesEspecialidades = especialidades.ToArray();
 
-                //debug
                 System.Diagnostics.Debug.WriteLine($"→ Cursos enviados: {nueva.publicacionesCursos?.Length ?? 0}");
                 foreach (var c in nueva.publicacionesCursos)
                     System.Diagnostics.Debug.WriteLine($"  - {c.idCurso}: {c.nombre}");
@@ -178,75 +176,12 @@ namespace QhatuPUCPPresentacion.HacerPubli
                 foreach (var es in nueva.publicacionesEspecialidades)
                     System.Diagnostics.Debug.WriteLine($"  - {es.idEspecialidad}: {es.nombre}");
 
-
-
-                // crear
                 client.crearPublicacion(nueva);
                 Response.Redirect("~/Inicio/PaginaInicio.aspx");
             }
             catch (Exception ex)
             {
                 lblMensaje.Text = "Error al publicar: " + ex.Message;
-            }
-        }
-
-        private SoapDate CrearFechaSoap(DateTime fecha)
-        {
-            string fechaIso = System.Xml.XmlConvert.ToString(fecha, System.Xml.XmlDateTimeSerializationMode.Utc);
-            string xml = $"<date xmlns=\"http://www.w3.org/2001/XMLSchema\">{fechaIso}</date>";
-
-            System.Xml.XmlDocument doc = new System.Xml.XmlDocument();
-            doc.LoadXml(xml);
-
-            var serializer = new System.Xml.Serialization.XmlSerializer(typeof(SoapDate));
-            var soapDate = (SoapDate)serializer.Deserialize(new System.Xml.XmlNodeReader(doc.DocumentElement));
-
-            return soapDate;
-        }
-
-        [System.Xml.Serialization.XmlRoot("date", Namespace = "http://www.w3.org/2001/XMLSchema")]
-        public class SoapDate
-        {
-            [System.Xml.Serialization.XmlText]
-            public DateTime Value { get; set; }
-        }
-
-
-        //FUNCION PARA PROBAR SI TRAE LAS LISTAS LLENAS EN ESTE CASO DE FACULTAD
-        private void ProbarLecturaPublicacion(int id)
-        {
-            try
-            {
-                PublicacionWSClient client = new PublicacionWSClient();
-                publicacion publi = client.obtenerPublicacion(id);
-
-                if (publi == null)
-                {
-                    System.Diagnostics.Debug.WriteLine($"❌ No se encontró publicación con ID {id}");
-                    return;
-                }
-
-                System.Diagnostics.Debug.WriteLine($"✔ Publicación ID {id}: {publi.titulo}");
-
-                // Facultades
-                if (publi.publicacionesFacultades != null)
-                {
-                    System.Diagnostics.Debug.WriteLine("Facultades asociadas:");
-                    foreach (var f in publi.publicacionesFacultades)
-                    {
-                        System.Diagnostics.Debug.WriteLine($"- ID: {f.idFacultad}, Nombre: {f.nombre}");
-                    }
-                }
-                else
-                {
-                    System.Diagnostics.Debug.WriteLine("❌ La lista publicacionesFacultades está NULL");
-                }
-
-                // Puedes hacer lo mismo para cursos y especialidades si deseas
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine("❌ Error al probar obtenerPublicacion: " + ex.Message);
             }
         }
 

@@ -30,7 +30,7 @@ namespace QhatuPUCPPresentacion.Perfil
                 txtNombre.Text = usuario.nombre;
                 txtCorreo.Text = usuario.correo;
                 txtNombreUsuario.Text = usuario.nombreUsuario;
-                //---
+                
 
                 PublicacionWSClient publicacionService = new PublicacionWSClient();
                 publicacion[] todas = publicacionService.listarPublicacion();
@@ -91,15 +91,13 @@ namespace QhatuPUCPPresentacion.Perfil
                 try
                 {
                     PublicacionWSClient ws = new PublicacionWSClient();
-                    ws.eliminarPublicacion(idPublicacion); // Solo se llama, sin esperar retorno
+                    ws.eliminarPublicacion(idPublicacion);
 
-                    // Recarga la página para actualizar la lista
                     Response.Redirect(Request.RawUrl);
                 }
                 catch (Exception ex)
                 {
                     System.Diagnostics.Debug.WriteLine("Error al eliminar publicación: " + ex.Message);
-                    // Aquí puedes mostrar una alerta en pantalla si deseas
                 }
             }
             else if (e.CommandName == "Editar")
@@ -181,8 +179,6 @@ namespace QhatuPUCPPresentacion.Perfil
             }
 
         }
-
-        //con esto vamos a cambiar de color la etiqueta del estado de la publicacion segun su estado
         public String cambiarSegunEstado(String estado)
         {
             switch (estado)

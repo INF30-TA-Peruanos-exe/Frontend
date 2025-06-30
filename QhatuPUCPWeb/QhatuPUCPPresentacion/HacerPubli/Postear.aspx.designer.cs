@@ -51,15 +51,6 @@ namespace QhatuPUCPPresentacion.HacerPubli
         protected global::System.Web.UI.WebControls.TextBox txtDescripcion;
 
         /// <summary>
-        /// Control chkCursos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList chkCursos;
-
-        /// <summary>
         /// Control chkFacultades.
         /// </summary>
         /// <remarks>
@@ -76,6 +67,15 @@ namespace QhatuPUCPPresentacion.HacerPubli
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList chkEspecialidades;
+
+        /// <summary>
+        /// Control chkCursos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList chkCursos;
 
         /// <summary>
         /// Control fuImagen.
