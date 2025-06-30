@@ -27,7 +27,7 @@
                     <span class="input-group-text bg-secondary border-0 text-white">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
-                    <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control bg-dark text-white border-0" placeholder="Buscar por nombre..." />
+                    <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control bg-dark text-white border-0" placeholder="Buscar por título..." />
                     <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-light" OnClick="btnBuscar_Click" />
                 </div>
             </div>
