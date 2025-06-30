@@ -111,20 +111,20 @@
   <xs:complexType name="registrarDenunciaResponse">
     <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="listarDenuncia">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarDenunciaResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:denuncia" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="reporteIncidencias">
     <xs:sequence />
   </xs:complexType>
   <xs:complexType name="reporteIncidenciasResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarDenuncia">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarDenunciaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:denuncia" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="obtenerDenuncia">
