@@ -1,0 +1,56 @@
+﻿/* Sidebar visible siempre en escritorio */
+.sidebar-custom {
+    background-color: #ffffff;
+}
+
+/* Backdrop para móviles */
+.offcanvas-backdrop.show {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1040;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Evita que el sidebar se superponga sobre contenido */
+.main-content {
+    z-index: 1;
+    position: relative;
+    background-color: #f8f9fa;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.main-content > .p-4 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+/* Ancho del sidebar en móviles */
+@media (max-width: 991.98px) {
+    .sidebar-custom {
+        width: 75%;
+        max-width: 280px;
+    }
+}
+
+@media (min-width: 768px) {
+    .w-md-auto {
+        width: auto !important;
+    }
+}
+
+.input-group .btn {
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.table-responsive {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+

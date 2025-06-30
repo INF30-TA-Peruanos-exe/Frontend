@@ -349,6 +349,7 @@
     <Content Include="Perfil\Perfil.aspx" />
     <Content Include="Publicacion\DetallePublicacion.aspx" />
     <Content Include="Publicacion\detallePublicacion.css" />
+    <Content Include="Public\css\admin.css" />
     <Content Include="Public\css\bootstrap-reboot.css" />
     <Content Include="Public\css\bootstrap-reboot.min.css" />
     <Content Include="Public\css\bootstrap.css" />

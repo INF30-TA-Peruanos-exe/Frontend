@@ -16,6 +16,9 @@ namespace QhatuPUCPPresentacion.Inicio
         EspecialidadWSClient especialidadClient;
         PublicacionWSClient client;
 
+        private static int paginaActual = 1;
+        private static int tamanoPagina = 10; // Número de publicaciones por página
+
         protected void Page_Init(object sender, EventArgs e)
         {
             cursoClient = new CursoWSClient();
@@ -27,6 +30,7 @@ namespace QhatuPUCPPresentacion.Inicio
         {
             if (!IsPostBack)
             {
+                paginaActual = 1; // Reiniciar la página actual al cargar la página por primera vez
                 CargarPublicaciones();
             }
         }
@@ -35,23 +39,51 @@ namespace QhatuPUCPPresentacion.Inicio
         {
             try
             {
-                List<publicacion> publicaciones = new List<publicacion>();
+                List<publicacion> todas_publicaciones = new List<publicacion>();
 
-                publicaciones = client.listarPublicacion().ToList();
+                todas_publicaciones = client.listarPublicacion().ToList();
 
+                int totalPublicaciones = todas_publicaciones.Count;
 
-                ViewState["Publicaciones"] = publicaciones; // guardar para filtrado posterior
-                rptPublicaciones.DataSource = publicaciones;
+                var publicacionesPagina = todas_publicaciones
+                    .Skip((paginaActual - 1) * tamanoPagina) // Saltar las publicaciones de las páginas anteriores
+                    .Take(tamanoPagina) // Tomar el número de publicaciones para la página actual
+                    .ToList();
+
+                ViewState["Publicaciones"] = todas_publicaciones; // guardar para filtrado posterior
+                rptPublicaciones.DataSource = publicacionesPagina;
                 rptPublicaciones.DataBind();
+
+                lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)todas_publicaciones.Count / tamanoPagina)}";
+
+                btnAnterior.Enabled = paginaActual > 1; // Deshabilitar si es la primera página
+                btnSiguiente.Enabled = (paginaActual * tamanoPagina) < todas_publicaciones.Count; // Deshabilitar si es la última página
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error al cargar publicaciones: " + ex.Message);
             }
         }
+        protected void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (paginaActual > 1)
+            {
+                paginaActual--;
+                CargarPublicacionesFiltradas();
+            }
+        }
+
+        protected void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            paginaActual++;
+            CargarPublicacionesFiltradas();
+        }
+
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             string criterio = txtBuscar.Text.Trim().ToLower();
+            ViewState["FiltroTitulo"] = criterio;
 
             if (ViewState["Publicaciones"] != null)
             {
@@ -60,9 +92,29 @@ namespace QhatuPUCPPresentacion.Inicio
                     .Where(p => p.titulo.ToLower().Contains(criterio))
                     .ToList();
 
-                rptPublicaciones.DataSource = filtradas;
-                rptPublicaciones.DataBind();
+                ViewState["PublicacionesFiltradas"] = filtradas;
+                paginaActual = 1;
+                CargarPublicacionesFiltradas();
             }
+        }
+        protected void CargarPublicacionesFiltradas()
+        {
+            var publicaciones = ViewState["PublicacionesFiltradas"] as List<publicacion> ??
+                ViewState["Publicaciones"] as List<publicacion>;
+
+            int total = publicaciones.Count;
+
+            var pagina = publicaciones
+                .Skip((paginaActual - 1) * tamanoPagina)
+                .Take(tamanoPagina)
+                .ToList();
+
+            rptPublicaciones.DataSource = pagina;
+            rptPublicaciones.DataBind();
+
+            lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)total / tamanoPagina)}";
+            btnAnterior.Enabled = paginaActual > 1;
+            btnSiguiente.Enabled = (paginaActual * tamanoPagina) < total;
         }
         protected void txtBuscar_TextChanged(object sender, EventArgs e)
         {

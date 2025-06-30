@@ -14,6 +14,10 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
     public partial class DenunciasAdmin : System.Web.UI.Page
     {
         protected DenunciaWSClient client;
+
+        private static int paginaActual = 1;
+        private static int tamanoPagina = 10; // Número de publicaciones por página
+
         protected void Page_Init(object sender, EventArgs e)
         {
             client = new DenunciaWSClient();
@@ -23,6 +27,7 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         {
             if (!IsPostBack)
             {
+                paginaActual = 1; // Reiniciar la página actual al cargar la página por primera vez
                 CargarDenuncias();
             }
         }
@@ -30,21 +35,45 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         {
             try
             {
-                List<denuncia> denuncias = new List<denuncia>();
+                List<denuncia> denuncias_total = new List<denuncia>();
 
-                denuncias = client.listarDenuncia().ToList();
+                denuncias_total = client.listarDenuncia().ToList();
 
-                Console.WriteLine(denuncias.Count);
+                int totalDenuncias = denuncias_total.Count;
 
-                ViewState["Denuncias"] = denuncias; // guardar para filtrado posterior
+                var denunciasPagina = denuncias_total
+                    .Skip((paginaActual - 1) * tamanoPagina) // Saltar las denuncias de las páginas anteriores
+                    .Take(tamanoPagina) // Tomar el número de denuncias para la página actual
+                    .ToList();  
 
-                rptDenuncias.DataSource = denuncias;
+                ViewState["Denuncias"] = denuncias_total; // guardar para filtrado posterior
+
+                rptDenuncias.DataSource = denunciasPagina;
                 rptDenuncias.DataBind();
+
+                lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)denuncias_total.Count / tamanoPagina)}";
+
+                btnAnterior.Enabled = paginaActual > 1; // Deshabilitar si es la primera página
+                btnSiguiente.Enabled = (paginaActual * tamanoPagina) < denuncias_total.Count; // Deshabilitar si es la última página
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error al cargar denuncias: " + ex.Message);
             }
+        }
+        protected void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (paginaActual > 1)
+            {
+                paginaActual--;
+                CargarDenunciasFiltradas();
+            }
+        }
+
+        protected void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            paginaActual++;
+            CargarDenunciasFiltradas();
         }
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -73,9 +102,24 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
             // Obtener criterio de búsqueda
             string criterio = txtBuscar.Text.Trim().ToLower();
 
+            ViewState["Criterio"] = criterio; // Guardar criterio para uso posterior
+            ViewState["FiltroFechaInicio"] = tieneInicio ? fechaInicio : (DateTime?)null;
+            ViewState["FiltroFechaFin"] = tieneFin ? fechaFin : (DateTime?)null;
+
+            paginaActual = 1; // Reiniciar la página actual al buscar
+
+            CargarDenunciasFiltradas();
+        }
+
+        protected void CargarDenunciasFiltradas()
+        {
             if (ViewState["Denuncias"] != null)
             {
-                var denuncias = (List<denuncia>)ViewState["Denuncias"];
+                var denuncias = ViewState["Denuncias"] as List<denuncia> ?? new List<denuncia>();
+
+                string criterio = ViewState["Criterio"] as string ?? "";
+                DateTime? fechaInicio = ViewState["FiltroFechaInicio"] as DateTime?;
+                DateTime? fechaFin = ViewState["FiltroFechaFin"] as DateTime?;
 
                 // Aplicar filtros
                 var query = denuncias.AsEnumerable();
@@ -85,21 +129,32 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
                     query = query.Where(d => d.motivo.ToLower().Contains(criterio));
                 }
 
-                if (tieneInicio)
+                if (fechaInicio.HasValue)
                 {
-                    query = query.Where(d => d.fechaDenuncia.Date >= fechaInicio.Date);
+                    query = query.Where(d => d.fechaDenuncia.Date >= fechaInicio.Value.Date);
                 }
 
-                if (tieneFin)
+                if (fechaFin.HasValue)
                 {
-                    query = query.Where(d => d.fechaDenuncia.Date <= fechaFin.Date);
+                    query = query.Where(d => d.fechaDenuncia.Date <= fechaFin.Value.Date);
                 }
 
                 var filtradas = query.ToList();
+                int total = filtradas.Count;
+                int tamanoPagina = 10; // Número de denuncias por página
+
+                var denunciasPagina = filtradas
+                    .Skip((paginaActual - 1) * tamanoPagina) // Saltar las denuncias de las páginas anteriores
+                    .Take(tamanoPagina) // Tomar el número de denuncias para la página actual
+                    .ToList();
 
                 // Mostrar resultados
-                rptDenuncias.DataSource = filtradas;
+                rptDenuncias.DataSource = denunciasPagina;
                 rptDenuncias.DataBind();
+
+                lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)total / tamanoPagina)}";
+                btnAnterior.Enabled = paginaActual > 1;
+                btnSiguiente.Enabled = (paginaActual * tamanoPagina) < total;
 
                 if (filtradas.Count == 0)
                 {

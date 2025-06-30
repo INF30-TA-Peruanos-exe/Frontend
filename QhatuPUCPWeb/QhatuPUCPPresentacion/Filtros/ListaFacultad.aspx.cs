@@ -11,15 +11,17 @@ namespace QhatuPUCPPresentacion.Filtros
     public partial class ListaFacultad : System.Web.UI.Page
     {
         protected FacultadWSClient client;
+        private static int paginaActual = 1;
+        private static int tamanoPagina = 10; // Número de facultades por página
         protected void Page_Init(object sender, EventArgs e)
         {
             client = new FacultadWSClient();
-            CargarFacultades();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                paginaActual = 1; // Reiniciar la página actual al cargar la página por primera vez
                 CargarFacultades();
             }
         }
@@ -28,14 +30,25 @@ namespace QhatuPUCPPresentacion.Filtros
         {
             try
             {
-                List<facultad> facultades = new List<facultad>();
+                List<facultad> facultades_todas = new List<facultad>();
 
-                // Si no hay filtro, cargar todas
-                facultades = client.listarFacultad().ToList();
+                facultades_todas = client.listarFacultad().ToList();
 
-                ViewState["Facultades"] = facultades; // guardar para filtrado posterior
+                int totalFacultades = facultades_todas.Count;
+
+                var facultades = facultades_todas
+                    .Skip((paginaActual - 1) * tamanoPagina) // Saltar las facultades de las páginas anteriores
+                    .Take(tamanoPagina) // Tomar el número de facultades para la página actual
+                    .ToList();
+
+                ViewState["Facultades"] = facultades_todas; // guardar para filtrado posterior
                 rptFacultades.DataSource = facultades;
                 rptFacultades.DataBind();
+
+                lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)totalFacultades / tamanoPagina)}";
+
+                btnAnterior.Enabled = paginaActual > 1; // Deshabilitar si es la primera página
+                btnSiguiente.Enabled = (paginaActual * tamanoPagina) < totalFacultades; // Deshabilitar si es la última página
             }
             catch (Exception ex)
             {
@@ -45,6 +58,7 @@ namespace QhatuPUCPPresentacion.Filtros
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             string criterio = txtBuscar.Text.Trim().ToLower();
+            ViewState["CriterioBusqueda"] = criterio; // Guardar el criterio de búsqueda
 
             if (ViewState["Facultades"] != null)
             {
@@ -53,9 +67,44 @@ namespace QhatuPUCPPresentacion.Filtros
                     .Where(u => u.nombre.ToLower().Contains(criterio))
                     .ToList();
 
-                rptFacultades.DataSource = filtradas;
-                rptFacultades.DataBind();
+                ViewState["FacultadesFiltradas"] = filtradas; // Guardar las facultades filtradas para paginación
+                paginaActual = 1; // Reiniciar la página actual al buscar
+
+                CargarFiltradas();
             }
+        }
+        protected void CargarFiltradas()
+        {
+            var facultades = ViewState["FacultadesFiltradas"] as List<facultad> ??
+                ViewState["Facultades"] as List<facultad>;
+
+            int total = facultades.Count;
+
+            var pagina = facultades
+                .Skip((paginaActual - 1) * tamanoPagina)
+                .Take(tamanoPagina)
+                .ToList();
+
+            rptFacultades.DataSource = pagina;
+            rptFacultades.DataBind();
+
+            lblPagina.Text = $"Página {paginaActual} de {Math.Ceiling((double)total / tamanoPagina)}";
+            btnAnterior.Enabled = paginaActual > 1;
+            btnSiguiente.Enabled = (paginaActual * tamanoPagina) < total;
+        }
+        protected void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (paginaActual > 1)
+            {
+                paginaActual--;
+                CargarFiltradas();
+            }
+        }
+
+        protected void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            paginaActual++;
+            CargarFiltradas();
         }
         protected void txtBuscar_TextChanged(object sender, EventArgs e)
         {
