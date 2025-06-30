@@ -1,5 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayoutMasterAdmin.Master" AutoEventWireup="true" CodeBehind="ListaCurso.aspx.cs" Inherits="QhatuPUCPPresentacion.Filtros.ListaCurso" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+         <style>
+        /* Solo afecta placeholders en esta página */
+        input::placeholder,
+        textarea::placeholder {
+            color: #ffffff !important;
+            opacity: 1;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container mt-4">
@@ -19,7 +27,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
                     <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control bg-dark text-white border-0" placeholder="Buscar por nombre..." />
-                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-light" OnClick="btnBuscar_Click" />
+                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-light" OnClick="btnBuscar_Click" autocomplete="off"/>
                 </div>
             </div>
 

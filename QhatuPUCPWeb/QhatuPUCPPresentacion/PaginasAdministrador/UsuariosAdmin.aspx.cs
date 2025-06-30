@@ -177,44 +177,5 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Error al descargar el reporte: " + ex.Message.Replace("'", "") + "');", true);
             }
         }
-
-        protected void btnAsignarAdminModal_Click(object sender, EventArgs e)
-        {
-            int idUsuario = int.Parse(hfIdUsuarioAdmin.Value);
-            string claveMaestra = txtClaveMaestra.Text;
-
-            usuario usuario = client.obtenerUsuario(idUsuario);
-            if (usuario == null)
-            {
-                LblError.Text = "Error: No se encontró al usuario.";
-                return;
-            }
-
-            administrador nuevoAdmin = new administrador
-            {
-                idUsuario = usuario.idUsuario,
-                codigoPUCP = usuario.codigoPUCP,
-                contrasena = usuario.contrasena,
-                nombre = usuario.nombre,
-                nombreUsuario = usuario.nombreUsuario,
-                correo = usuario.correo,
-                estado = usuario.estado,
-                estadoSpecified = true,
-                activo = true,
-                claveMaestra = claveMaestra
-            };
-
-
-            try
-            {
-                admin_client.registrarAdministrador(nuevoAdmin);
-                // Podrías mostrar un mensaje de éxito o refrescar la tabla
-                Response.Redirect(Request.RawUrl); // Recargar la página
-            }
-            catch (Exception ex)
-            {
-                LblError.Text = "Error al asignar administrador: " + ex.Message;
-            }
-        }
     }
 }

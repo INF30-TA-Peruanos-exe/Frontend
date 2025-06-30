@@ -1,5 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayoutMasterAdmin.Master" AutoEventWireup="true" CodeBehind="UsuariosAdmin.aspx.cs" Inherits="QhatuPUCPPresentacion.PaginasAdministrador.UsuariosAdmin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+         <style>
+        /* Solo afecta placeholders en esta página */
+        input::placeholder,
+        textarea::placeholder {
+            color: #ffffff !important;
+            opacity: 1;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container mt-4">
@@ -18,7 +26,11 @@
                         <span class="input-group-text bg-secondary border-0 text-white">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
-                        <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control bg-dark text-white border-0" placeholder="Buscar por nombre..." />
+                        <asp:TextBox ID="txtBuscar" runat="server"
+                            CssClass="form-control bg-dark text-white border-0"
+                            placeholder="Buscar por nombre..."
+                            autocomplete="off"
+                            AutoCompleteType="Disabled" />
                         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="btn btn-outline-light" OnClick="btnBuscar_Click" />
                     </div>
                 </div>
@@ -53,9 +65,9 @@
                             <td><%# Eval("nombreUsuario") %></td>
                             <td><%# Eval("correo") %></td>
                             <td class="text-center">
-                                <%# (Eval("estado").ToString() == "Activo") 
-                                      ? "<span class='badge bg-success'>Activo</span>" 
-                                      : "<span class='badge bg-secondary'>Inactivo</span>" %>
+                                <%# (Eval("estado").ToString() == "HABILITADO") 
+                                      ? "<span class='badge bg-success'>Habilitado</span>" 
+                                      : "<span class='badge bg-secondary'>Restringido</span>" %>
                             </td>
                             <td class="text-center">
                                 <asp:LinkButton ID="BtnEditar" runat="server"
@@ -70,12 +82,6 @@
                                     OnClientClick="return confirm('¿Está seguro de eliminar al usuario?');"
                                     CssClass="btn btn-outline-danger btn-sm">
                                     <i class="fa-solid fa-trash"></i> Eliminar
-                                </asp:LinkButton>
-                                <asp:LinkButton ID="BtnAsignarAdmin" runat="server"
-                                    CommandName="AsignarAdmin" CommandArgument='<%# Eval("idUsuario") %>'
-                                    CssClass="btn btn-outline-warning btn-sm"
-                                    OnClientClick='<%# "mostrarModalAdmin(" + Eval("idUsuario") + "); return false;" %>'>
-                                    <i class="fa-solid fa-user-shield me-1"></i>Asignar Admin
                                 </asp:LinkButton>
                             </td>
                         </tr>
@@ -95,66 +101,9 @@
         <asp:Button ID="btnSiguiente" runat="server" Text=">" OnClick="btnSiguiente_Click"
             CssClass="btn btn-outline-light btn-sm" />
     </div>
-
-    <!-- Modal para asignar administrador -->
-    <div class="modal fade" id="modalAsignarAdmin" tabindex="-1" aria-labelledby="modalAdminLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header bg-primary text-white">
-            <h5 class="modal-title" id="modalAdminLabel">Asignar Administrador</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-          </div>
-          <div class="modal-body">
-            <asp:HiddenField ID="hfIdUsuarioAdmin" runat="server" />
-        
-            <div class="mb-3">
-              <label for="txtClaveMaestra" class="form-label fw-bold">
-                Clave Maestra del Administrador:
-              </label>
-              <div class="input-group">
-                <asp:TextBox ID="txtClaveMaestra" runat="server" CssClass="form-control" TextMode="Password" />
-                <button type="button" class="btn btn-outline-secondary" onclick="toggleClaveMaestra()">
-                  <i class="fa-solid fa-eye" id="iconoClave"></i>
-                </button>
-              </div>
-              <small class="text-muted">Esta clave maestra será necesaria para realizar funciones administrativas.</small>
-            </div>
-          </div>
-
-          <div class="modal-footer">
-            <asp:Button ID="btnAsignarAdminModal" runat="server" Text="Asignar"
-              CssClass="btn btn-success" OnClick="btnAsignarAdminModal_Click" />
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          </div>
-        </div>
-      </div>
-    </div>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="Scripts" runat="server">
-    <script>
-        function mostrarModalAdmin(idUsuario) {
-            document.getElementById('<%= hfIdUsuarioAdmin.ClientID %>').value = idUsuario;
-          document.getElementById('<%= txtClaveMaestra.ClientID %>').value = '';
 
-          var modal = new bootstrap.Modal(document.getElementById('modalAsignarAdmin'));
-          modal.show();
-      }
-
-      function toggleClaveMaestra() {
-          const txt = document.getElementById('<%= txtClaveMaestra.ClientID %>');
-            const icono = document.getElementById('iconoClave');
-
-            if (txt.type === "password") {
-                txt.type = "text";
-                icono.classList.remove("fa-eye");
-                icono.classList.add("fa-eye-slash");
-            } else {
-                txt.type = "password";
-                icono.classList.remove("fa-eye-slash");
-                icono.classList.add("fa-eye");
-            }
-        }
-    </script>
 </asp:Content>
 
