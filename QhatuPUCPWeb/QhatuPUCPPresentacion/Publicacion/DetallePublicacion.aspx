@@ -78,12 +78,11 @@
                             <img src='<%# Eval("AvatarUrl") %>' class="comentario-avatar me-3 mt-1" />
                             <div class="comentario-content position-relative w-100">
                                 <strong><%# Eval("Autor") %></strong>
-                                <div class="comentario-meta"><%# Eval("Fecha") %></div>
+                                <div class="comentario-meta"><%# FormatearFecha(Eval("Fecha")) %></div>
                                 <div class="mt-1"><%# Eval("Contenido") %></div>
-                                <div class="mt-1 small">
-                                    Valoración:
-                    <%# new string('★', Convert.ToInt32(Eval("Valoracion"))) + new string('☆', 5 - Convert.ToInt32(Eval("Valoracion"))) %>
-                                </div>
+                                <asp:Panel runat="server" Visible='<%# Eval("TieneValoracion") %>' CssClass="mt-1 small">
+                                    Valoración:<%# new string('★', Convert.ToInt32(Eval("Valoracion"))) + new string('☆', 5 - Convert.ToInt32(Eval("Valoracion"))) %>
+                                </asp:Panel>
 
                                 <%-- Botón de tres puntos para opciones que es visible solo si el comentario es del usuario --%>
                                 <asp:Panel runat="server" CssClass="dropdown comment-options position-absolute top-0 end-0"

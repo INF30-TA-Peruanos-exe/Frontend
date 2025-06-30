@@ -45,7 +45,7 @@ namespace QhatuPUCPPresentacion.Publicacion
             lblTitulo.Text = pub.titulo;
             lblDescripcion.Text = pub.descripcion;
             lblAutor.Text = pub.usuario.nombreUsuario;
-            lblTiempo.Text = publicacionService.obtenerFechaPublicacionFormateada(id);
+            lblTiempo.Text = FormatearFecha(pub.fechaPublicacion);
             imgPublicacion.ImageUrl = pub.rutaImagen;
             imgAvatar.ImageUrl = "/Public/images/user-avatar.png";
 
@@ -114,9 +114,10 @@ namespace QhatuPUCPPresentacion.Publicacion
                     IdComentario = c.idComentario,
                     Autor = c.comentador?.nombreUsuario ?? "Usuario",
                     AvatarUrl = "/Public/images/user-avatar.png",
-                    Fecha = c.fecha.ToString("dd/MM/yyyy"),
+                    Fecha = c.fecha.ToString("dd/MM/yyyy HH:mm"),
                     Contenido = c.contenido,
                     Valoracion = c.valoracion,
+                    TieneValoracion = c.valoracion > 0,
                     EsPropio = usuario != null && c.comentador != null && c.comentador.idUsuario == usuario.idUsuario
                 })
                 .ToList();
@@ -145,7 +146,7 @@ namespace QhatuPUCPPresentacion.Publicacion
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txtComentario.Text) || string.IsNullOrWhiteSpace(hfValoracion.Value))
+            if (string.IsNullOrWhiteSpace(txtComentario.Text))
             {
                 return;
             }
@@ -155,7 +156,7 @@ namespace QhatuPUCPPresentacion.Publicacion
             var comentario = new comentario
             {
                 contenido = txtComentario.Text.Trim(),
-                valoracion = int.Parse(hfValoracion.Value),
+                valoracion = string.IsNullOrWhiteSpace(hfValoracion.Value) ? 0 : int.Parse(hfValoracion.Value),
                 comentador = usuario,
                 activo = true,
                 publicacion = publicacionCompleta
@@ -166,5 +167,32 @@ namespace QhatuPUCPPresentacion.Publicacion
             hfValoracion.Value = "";
             CargarComentarios(comentario.publicacion.idPublicacion);
         }
+
+        public string FormatearFecha(object fechaObj)
+        {
+            DateTime fecha;
+            if (!DateTime.TryParse(fechaObj.ToString(), out fecha))
+                return "";
+
+            DateTime ahora = DateTime.Now.Date;
+            DateTime fechaSoloDia = fecha.Date;
+            string hora = fecha.ToString("HH:mm");
+
+            int diferenciaDias = (ahora - fechaSoloDia).Days;
+
+            switch (diferenciaDias)
+            {
+                case 0:
+                    return "Hoy " + hora;
+                case 1:
+                    return "Ayer " + hora;
+                case 2:
+                    return "Hace 2 días " + hora;
+                default:
+                    return fecha.ToString("dd/MM/yyyy HH:mm");
+            }
+        }
+
+
     }
 }
