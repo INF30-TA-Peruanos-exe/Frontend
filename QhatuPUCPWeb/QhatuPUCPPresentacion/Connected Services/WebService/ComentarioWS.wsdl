@@ -29,17 +29,17 @@
   <message name="eliminarComentarioResponse">
     <part name="parameters" element="tns:eliminarComentarioResponse" />
   </message>
-  <message name="listarComentario">
-    <part name="parameters" element="tns:listarComentario" />
-  </message>
-  <message name="listarComentarioResponse">
-    <part name="parameters" element="tns:listarComentarioResponse" />
-  </message>
   <message name="obtenerComentario">
     <part name="parameters" element="tns:obtenerComentario" />
   </message>
   <message name="obtenerComentarioResponse">
     <part name="parameters" element="tns:obtenerComentarioResponse" />
+  </message>
+  <message name="listarComentario">
+    <part name="parameters" element="tns:listarComentario" />
+  </message>
+  <message name="listarComentarioResponse">
+    <part name="parameters" element="tns:listarComentarioResponse" />
   </message>
   <portType name="ComentarioWS">
     <operation name="registrarComentario">
@@ -58,13 +58,13 @@
       <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioRequest" message="tns:eliminarComentario" />
       <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/eliminarComentarioResponse" message="tns:eliminarComentarioResponse" />
     </operation>
-    <operation name="listarComentario">
-      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest" message="tns:listarComentario" />
-      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse" message="tns:listarComentarioResponse" />
-    </operation>
     <operation name="obtenerComentario">
       <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioRequest" message="tns:obtenerComentario" />
       <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/obtenerComentarioResponse" message="tns:obtenerComentarioResponse" />
+    </operation>
+    <operation name="listarComentario">
+      <input wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioRequest" message="tns:listarComentario" />
+      <output wsam:Action="com.pucp.pucpqhatu/ComentarioWS/listarComentarioResponse" message="tns:listarComentarioResponse" />
     </operation>
   </portType>
   <binding name="ComentarioWSPortBinding" type="tns:ComentarioWS">
@@ -105,7 +105,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarComentario">
+    <operation name="obtenerComentario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -114,7 +114,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="obtenerComentario">
+    <operation name="listarComentario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
