@@ -96,11 +96,13 @@ namespace QhatuPUCPPresentacion.HacerPubli
                         }
 
                         string nombreArchivo = Path.GetFileName(fuImagen.FileName);
-                        string rutaRelativa = "/Imagenes/" + nombreArchivo;
+                        string rutaRelativa = "~/Imagenes/" + nombreArchivo;
                         string rutaFisica = Server.MapPath(rutaRelativa);
-
                         fuImagen.SaveAs(rutaFisica);
-                        nueva.rutaImagen = rutaRelativa;
+
+                        // Guardar ruta web para mostrar en <img src="...">
+                        nueva.rutaImagen = "/Imagenes/" + nombreArchivo;
+
                     }
                     catch (Exception exImg)
                     {
@@ -108,6 +110,8 @@ namespace QhatuPUCPPresentacion.HacerPubli
                         // Se mantiene imagen por defecto si hay error
                     }
                 }
+
+
 
                 // Cursos
                 List<curso> cursos = new List<curso>();
