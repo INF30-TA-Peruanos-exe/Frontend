@@ -47,7 +47,7 @@ namespace QhatuPUCPPresentacion.Publicacion
             lblDescripcion.Text = pub.descripcion;
             lblAutor.Text = pub.usuario.nombreUsuario;
             lblTiempo.Text = FormatearFecha(pub.fechaPublicacion);
-            imgPublicacion.ImageUrl = ResolveUrl("~/Imagenes/" + nombreArchivo);
+            imgPublicacion.ImageUrl = ResolveUrl("~" + pub.rutaImagen);
             imgAvatar.ImageUrl = ResolveUrl("~/Public/images/user-avatar.png");
 
             if (usuario != null && pub.usuario != null)
@@ -114,7 +114,7 @@ namespace QhatuPUCPPresentacion.Publicacion
                 {
                     IdComentario = c.idComentario,
                     Autor = c.comentador?.nombreUsuario ?? "Usuario",
-                    AvatarUrl = "/Public/images/user-avatar.png",
+                    AvatarUrl = ResolveUrl("~/Public/images/user-avatar.png"),
                     Fecha = c.fecha.ToString("dd/MM/yyyy HH:mm"),
                     Contenido = c.contenido,
                     Valoracion = c.valoracion,

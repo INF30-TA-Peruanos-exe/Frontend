@@ -27,12 +27,34 @@
     font-size: 0.85rem;
 }
 
+/*
+
 .autor-avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
+
+.comentario-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+*/
+
+.autor-avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.comentario-avatar {
+    width: 30px;
+    height: 30px;
+}
+
 
 .icono-favorito {
     position: absolute;
@@ -51,13 +73,7 @@
     font-size: 0.85rem;
 }
 
-/* Avatar de usuario */
-.comentario-avatar {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+
 
 /* Comentario individual */
 .comentario-item {

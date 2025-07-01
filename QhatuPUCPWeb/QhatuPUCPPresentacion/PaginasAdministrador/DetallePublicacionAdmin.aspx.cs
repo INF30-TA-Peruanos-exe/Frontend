@@ -47,7 +47,7 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
             lblDescripcion.Text = pub.descripcion;
             lblAutor.Text = pub.usuario.nombre;
             lblTiempo.Text = publicacionService.obtenerFechaPublicacionFormateada(id);
-            imgPublicacion.ImageUrl = ResolveUrl("~/Imagenes/" + nombreArchivo);
+            imgPublicacion.ImageUrl = ResolveUrl("~" + pub.rutaImagen);
 
         }
 
