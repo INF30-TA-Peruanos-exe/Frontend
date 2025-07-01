@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayoutMasterAdmin.Master" AutoEventWireup="true" CodeBehind="DetallePublicacionAdmin.aspx.cs" Inherits="QhatuPUCPPresentacion.PaginasAdministrador.DetallePublicacionAdmin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="/PaginasAdministrador/DetallePubliAdmin.css" rel="stylesheet" />
+    <link runat="server" href="~/PaginasAdministrador/DetallePubliAdmin.css" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
