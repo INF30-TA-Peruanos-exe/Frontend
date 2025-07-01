@@ -41,12 +41,13 @@ namespace QhatuPUCPPresentacion.PaginasAdministrador
         {
             var pub = publicacionService.obtenerPublicacion(id);
             var usuario = Session["usuario"] as usuario;
+            string nombreArchivo = pub.rutaImagen;
 
             lblTitulo.Text = pub.titulo;
             lblDescripcion.Text = pub.descripcion;
             lblAutor.Text = pub.usuario.nombre;
             lblTiempo.Text = publicacionService.obtenerFechaPublicacionFormateada(id);
-            imgPublicacion.ImageUrl = pub.rutaImagen;
+            imgPublicacion.ImageUrl = ResolveUrl("~/Imagenes/" + nombreArchivo);
 
         }
 

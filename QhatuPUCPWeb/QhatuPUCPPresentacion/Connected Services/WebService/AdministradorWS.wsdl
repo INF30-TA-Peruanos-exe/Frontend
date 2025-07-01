@@ -11,11 +11,23 @@
   <message name="obtenerAdministradorPorCorreoYContraResponse">
     <part name="parameters" element="tns:obtenerAdministradorPorCorreoYContraResponse" />
   </message>
+  <message name="obtenerAdministrador">
+    <part name="parameters" element="tns:obtenerAdministrador" />
+  </message>
+  <message name="obtenerAdministradorResponse">
+    <part name="parameters" element="tns:obtenerAdministradorResponse" />
+  </message>
   <message name="registrarAdministrador">
     <part name="parameters" element="tns:registrarAdministrador" />
   </message>
   <message name="registrarAdministradorResponse">
     <part name="parameters" element="tns:registrarAdministradorResponse" />
+  </message>
+  <message name="actualizarAdministrador">
+    <part name="parameters" element="tns:actualizarAdministrador" />
+  </message>
+  <message name="actualizarAdministradorResponse">
+    <part name="parameters" element="tns:actualizarAdministradorResponse" />
   </message>
   <message name="eliminarAdministrador">
     <part name="parameters" element="tns:eliminarAdministrador" />
@@ -29,26 +41,22 @@
   <message name="listarAdministradorResponse">
     <part name="parameters" element="tns:listarAdministradorResponse" />
   </message>
-  <message name="actualizarAdministrador">
-    <part name="parameters" element="tns:actualizarAdministrador" />
-  </message>
-  <message name="actualizarAdministradorResponse">
-    <part name="parameters" element="tns:actualizarAdministradorResponse" />
-  </message>
-  <message name="obtenerAdministrador">
-    <part name="parameters" element="tns:obtenerAdministrador" />
-  </message>
-  <message name="obtenerAdministradorResponse">
-    <part name="parameters" element="tns:obtenerAdministradorResponse" />
-  </message>
   <portType name="AdministradorWS">
     <operation name="obtenerAdministradorPorCorreoYContra">
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraRequest" message="tns:obtenerAdministradorPorCorreoYContra" />
       <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorPorCorreoYContraResponse" message="tns:obtenerAdministradorPorCorreoYContraResponse" />
     </operation>
+    <operation name="obtenerAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorRequest" message="tns:obtenerAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorResponse" message="tns:obtenerAdministradorResponse" />
+    </operation>
     <operation name="registrarAdministrador">
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorRequest" message="tns:registrarAdministrador" />
       <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/registrarAdministradorResponse" message="tns:registrarAdministradorResponse" />
+    </operation>
+    <operation name="actualizarAdministrador">
+      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorRequest" message="tns:actualizarAdministrador" />
+      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorResponse" message="tns:actualizarAdministradorResponse" />
     </operation>
     <operation name="eliminarAdministrador">
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/eliminarAdministradorRequest" message="tns:eliminarAdministrador" />
@@ -57,14 +65,6 @@
     <operation name="listarAdministrador">
       <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorRequest" message="tns:listarAdministrador" />
       <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/listarAdministradorResponse" message="tns:listarAdministradorResponse" />
-    </operation>
-    <operation name="actualizarAdministrador">
-      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorRequest" message="tns:actualizarAdministrador" />
-      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/actualizarAdministradorResponse" message="tns:actualizarAdministradorResponse" />
-    </operation>
-    <operation name="obtenerAdministrador">
-      <input wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorRequest" message="tns:obtenerAdministrador" />
-      <output wsam:Action="com.pucp.pucpqhatu/AdministradorWS/obtenerAdministradorResponse" message="tns:obtenerAdministradorResponse" />
     </operation>
   </portType>
   <binding name="AdministradorWSPortBinding" type="tns:AdministradorWS">
@@ -78,7 +78,25 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="obtenerAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="registrarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarAdministrador">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -97,24 +115,6 @@
       </output>
     </operation>
     <operation name="listarAdministrador">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="actualizarAdministrador">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerAdministrador">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

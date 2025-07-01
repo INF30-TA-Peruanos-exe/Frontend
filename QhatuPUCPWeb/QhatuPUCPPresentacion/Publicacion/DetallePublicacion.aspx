@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="DetallePublicacion.aspx.cs" Inherits="QhatuPUCPPresentacion.Publicacion.DetallePublicacion" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="/Publicacion/detallePublicacion.css" rel="stylesheet" />
+    <link runat="server" href="~/Publicacion/detallePublicacion.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server" />
@@ -37,7 +37,6 @@
                     <asp:Label ID="lblTitulo" runat="server" /></h6>
                 <p>
                     <asp:Label ID="lblDescripcion" runat="server" /></p>
-
                 <asp:Image ID="imgPublicacion" runat="server" CssClass="img-fluid rounded mt-2" />
             </div>
         </div>
@@ -50,7 +49,7 @@
 
                 <!-- Caja de comentario -->
                 <div class="d-flex align-items-start mb-4">
-                    <img src="/Public/images/user-avatar.png" class="comentario-avatar me-3 mt-1" />
+                    <img src='<%= ResolveUrl("~/Public/images/user-avatar.png") %>' class="comentario-avatar me-3 mt-1" />
                     <div class="flex-grow-1">
                         <asp:TextBox ID="txtComentario" runat="server"
                             CssClass="form-control border-0 shadow-sm mb-3"

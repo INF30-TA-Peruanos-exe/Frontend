@@ -5,18 +5,6 @@
       <xsd:import schemaLocation="http://localhost:8080/WebService/CursoWS?xsd=1" namespace="com.pucp.pucpqhatu" />
     </xsd:schema>
   </types>
-  <message name="registrarCurso">
-    <part name="parameters" element="tns:registrarCurso" />
-  </message>
-  <message name="registrarCursoResponse">
-    <part name="parameters" element="tns:registrarCursoResponse" />
-  </message>
-  <message name="actualizarCurso">
-    <part name="parameters" element="tns:actualizarCurso" />
-  </message>
-  <message name="actualizarCursoResponse">
-    <part name="parameters" element="tns:actualizarCursoResponse" />
-  </message>
   <message name="listarCurso">
     <part name="parameters" element="tns:listarCurso" />
   </message>
@@ -29,6 +17,18 @@
   <message name="eliminarCursoResponse">
     <part name="parameters" element="tns:eliminarCursoResponse" />
   </message>
+  <message name="actualizarCurso">
+    <part name="parameters" element="tns:actualizarCurso" />
+  </message>
+  <message name="actualizarCursoResponse">
+    <part name="parameters" element="tns:actualizarCursoResponse" />
+  </message>
+  <message name="registrarCurso">
+    <part name="parameters" element="tns:registrarCurso" />
+  </message>
+  <message name="registrarCursoResponse">
+    <part name="parameters" element="tns:registrarCursoResponse" />
+  </message>
   <message name="obtenerCurso">
     <part name="parameters" element="tns:obtenerCurso" />
   </message>
@@ -36,14 +36,6 @@
     <part name="parameters" element="tns:obtenerCursoResponse" />
   </message>
   <portType name="CursoWS">
-    <operation name="registrarCurso">
-      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest" message="tns:registrarCurso" />
-      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse" message="tns:registrarCursoResponse" />
-    </operation>
-    <operation name="actualizarCurso">
-      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest" message="tns:actualizarCurso" />
-      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse" message="tns:actualizarCursoResponse" />
-    </operation>
     <operation name="listarCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoRequest" message="tns:listarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/listarCursoResponse" message="tns:listarCursoResponse" />
@@ -52,6 +44,14 @@
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
     </operation>
+    <operation name="actualizarCurso">
+      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoRequest" message="tns:actualizarCurso" />
+      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/actualizarCursoResponse" message="tns:actualizarCursoResponse" />
+    </operation>
+    <operation name="registrarCurso">
+      <input wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoRequest" message="tns:registrarCurso" />
+      <output wsam:Action="com.pucp.pucpqhatu/CursoWS/registrarCursoResponse" message="tns:registrarCursoResponse" />
+    </operation>
     <operation name="obtenerCurso">
       <input wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
       <output wsam:Action="com.pucp.pucpqhatu/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
@@ -59,7 +59,16 @@
   </portType>
   <binding name="CursoWSPortBinding" type="tns:CursoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="registrarCurso">
+    <operation name="listarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -77,16 +86,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarCurso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarCurso">
+    <operation name="registrarCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

@@ -11,14 +11,6 @@
   <xs:element name="obtenerFacultadResponse" type="tns:obtenerFacultadResponse" />
   <xs:element name="registrarFacultad" type="tns:registrarFacultad" />
   <xs:element name="registrarFacultadResponse" type="tns:registrarFacultadResponse" />
-  <xs:complexType name="eliminarFacultad">
-    <xs:sequence>
-      <xs:element name="idFacultad" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarFacultadResponse">
-    <xs:sequence />
-  </xs:complexType>
   <xs:complexType name="obtenerFacultad">
     <xs:sequence>
       <xs:element name="idFacultad" type="xs:int" />
@@ -35,6 +27,14 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFacultad">
+    <xs:sequence>
+      <xs:element name="idFacultad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFacultadResponse">
+    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="registrarFacultad">
     <xs:sequence>

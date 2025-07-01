@@ -103,6 +103,14 @@
       <xs:element name="activo" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="actualizarNotificacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="denuncia" type="tns:notificacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarNotificacionResponse">
+    <xs:sequence />
+  </xs:complexType>
   <xs:complexType name="listarNotificacionUsuario">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
@@ -112,14 +120,6 @@
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:notificacion" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="actualizarNotificacion">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="denuncia" type="tns:notificacion" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="actualizarNotificacionResponse">
-    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="eliminarNotificacion">
     <xs:sequence>
