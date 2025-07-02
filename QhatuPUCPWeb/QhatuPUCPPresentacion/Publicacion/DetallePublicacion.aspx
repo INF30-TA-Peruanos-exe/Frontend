@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="DetallePublicacion.aspx.cs" Inherits="QhatuPUCPPresentacion.Publicacion.DetallePublicacion" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link runat="server" href="~/Publicacion/detallePublicacion.css" rel="stylesheet" />
+    <link href='<%= ResolveUrl("~/Publicacion/detallePublicacion.css") %>' rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server" />
