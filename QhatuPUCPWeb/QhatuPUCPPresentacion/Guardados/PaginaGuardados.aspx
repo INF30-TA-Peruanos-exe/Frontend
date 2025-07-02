@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="PaginaGuardados.aspx.cs" Inherits="QhatuPUCPPresentacion.Favoritos.PaginaFavoritosNew" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="/Guardados/paginaGuardados.css" rel="stylesheet" />
+<link href="<%= ResolveUrl("~/Guardados/paginaGuardados.css") %>" rel="stylesheet" />
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">

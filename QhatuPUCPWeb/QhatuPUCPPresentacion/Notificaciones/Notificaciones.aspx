@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="Notificaciones.aspx.cs" Inherits="QhatuPUCPPresentacion.Notificaciones.Notificaciones" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="/Notificaciones/notificaciones.css" rel="stylesheet" />
+<link href="<%= ResolveUrl("~/Notificaciones/notificaciones.css") %>" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="container">
