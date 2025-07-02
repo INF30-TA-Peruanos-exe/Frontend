@@ -112,13 +112,13 @@ namespace QhatuPUCPPresentacion.Filtros
         }
         protected void BtnAgregar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Filtros/NuevaFacultad.aspx");
+            Response.Redirect(ResolveUrl("~/Filtros/NuevaFacultad.aspx"));
         }
         protected void BtnEditar_Click(object sender, EventArgs e)
         {
             string id_facultad_str = ((LinkButton)sender).CommandArgument.ToString();
-            
-            Response.Redirect("/Filtros/NuevaFacultad.aspx?id_facultad=" + id_facultad_str);
+
+            Response.Redirect(ResolveUrl("~/Filtros/NuevaFacultad.aspx?id_facultad=" + id_facultad_str));
         }
 
         protected void BtnEliminar_Click(object sender, EventArgs e)

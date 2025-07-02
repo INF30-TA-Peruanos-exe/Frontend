@@ -50,7 +50,7 @@ namespace QhatuPUCPPresentacion.Filtros
                     especialidad.idEspecialidad = int.Parse(TxtIdEspecialidad.Text.Trim());
                     client.actualizarEspecialidad(especialidad);
                 }
-                Response.Redirect("/Filtros/ListaEspecialidad.aspx");
+                Response.Redirect(ResolveUrl("~/Filtros/ListaEspecialidad.aspx"));
             }
             catch (Exception ex)
             {
@@ -61,7 +61,7 @@ namespace QhatuPUCPPresentacion.Filtros
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Filtros/ListaEspecialidad.aspx");
+            Response.Redirect(ResolveUrl("~/Filtros/ListaEspecialidad.aspx"));
         }
     }
 }

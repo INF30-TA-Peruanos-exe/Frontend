@@ -114,13 +114,13 @@ namespace QhatuPUCPPresentacion.Filtros
         }
         protected void BtnAgregar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Filtros/NuevaEspecialidad.aspx");
+            Response.Redirect(ResolveUrl("~/Filtros/NuevaEspecialidad.aspx"));
         }
         protected void BtnEditar_Click(object sender, EventArgs e)
         {
             string id_especialidad_str = ((LinkButton)sender).CommandArgument.ToString();
 
-            Response.Redirect("/Filtros/NuevaEspecialidad.aspx?id_especialidad=" + id_especialidad_str);
+            Response.Redirect(ResolveUrl("~/Filtros/NuevaEspecialidad.aspx?id_especialidad=" + id_especialidad_str));
         }
 
         protected void BtnEliminar_Click(object sender, EventArgs e)

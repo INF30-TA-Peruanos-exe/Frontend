@@ -50,7 +50,7 @@ namespace QhatuPUCPPresentacion.Filtros
                     curso.idCurso = int.Parse(TxtIdCurso.Text.Trim());
                     client.actualizarCurso(curso);
                 }
-                Response.Redirect("/Filtros/ListaCurso.aspx");
+                Response.Redirect(ResolveUrl("~/Filtros/ListaCurso.aspx"));
             }
             catch (Exception ex)
             {
@@ -61,7 +61,7 @@ namespace QhatuPUCPPresentacion.Filtros
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Filtros/ListaCurso.aspx");
+            Response.Redirect(ResolveUrl("~/Filtros/ListaCurso.aspx"));
         }
     }
 }

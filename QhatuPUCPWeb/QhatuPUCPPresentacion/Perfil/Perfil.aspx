@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Perfil" Language="C#" MasterPageFile="~/MainLayout.Master" AutoEventWireup="true" CodeBehind="Perfil.aspx.cs" Inherits="QhatuPUCPPresentacion.Perfil.Perfil" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="/Perfil/estilos_perfil.css" rel="stylesheet" />
+<link href="<%= ResolveUrl("~/Perfil/estilos_perfil.css") %>" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">

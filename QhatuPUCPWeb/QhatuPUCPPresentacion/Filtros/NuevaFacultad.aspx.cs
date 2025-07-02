@@ -50,7 +50,7 @@ namespace QhatuPUCPPresentacion.Filtros
                     facultad.idFacultad = int.Parse(TxtIdFacultad.Text.Trim());
                     client.actualizarFacultad(facultad);
                 }
-                Response.Redirect("/Filtros/ListaFacultad.aspx");
+                Response.Redirect(ResolveUrl("~/Filtros/ListaFacultad.aspx"));
             }
             catch (Exception ex)
             {
@@ -61,7 +61,7 @@ namespace QhatuPUCPPresentacion.Filtros
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Filtros/ListaFacultad.aspx");
+            Response.Redirect(ResolveUrl("~/Filtros/ListaFacultad.aspx"));
         }
     }
 }
