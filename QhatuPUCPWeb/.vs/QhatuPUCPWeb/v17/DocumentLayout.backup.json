@@ -1,41 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\",
+  "WorkspaceRootPath": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\publicacion\\detallepublicacion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\yu an lee\\desktop\\taprogra\\frontend\\qhatupucpweb\\qhatupucppresentacion\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\publicacion\\detallepublicacion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|c:\\users\\jhona\\onedrive\\escritorio\\ta_p3\\frontend\\qhatupucpweb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\publicacion\\detallepublicacion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\paginasadministrador\\detallepublicacionadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\paginasadministrador\\detallepublicacionadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\paginasadministrador\\detallepublicacionadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\paginasadministrador\\detallepublicacionadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\paginasadministrador\\detallepublicacionadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\paginasadministrador\\detallepublicacionadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayoutmasteradmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayout.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayout.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayoutmasteradmin.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\qhatupucppresentacion\\mainlayoutmasteradmin.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABC30C0B-2FD1-4F70-83A2-4893BFEDD702}|QhatuPUCPPresentacion\\QhatuPUCPPresentacion.csproj|solutionrelative:qhatupucppresentacion\\mainlayoutmasteradmin.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,15 +50,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Web.config",
+              "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Web.config",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Web.config",
+              "RelativeToolTip": "QhatuPUCPPresentacion\\Web.config",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-02T16:07:11.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DetallePublicacionAdmin.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx.cs",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx.cs",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -62,24 +87,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "detallePublicacion.css",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\detallePublicacion.css",
               "ViewState": "AgIAABgAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-01T02:57:28.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:57:28.24Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DetallePublicacion.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -87,24 +111,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DetallePublicacion.aspx",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
               "RelativeToolTip": "QhatuPUCPPresentacion\\Publicacion\\DetallePublicacion.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-07-01T02:35:40.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T02:35:40.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DetallePublicacionAdmin.aspx",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx",
               "RelativeToolTip": "QhatuPUCPPresentacion\\PaginasAdministrador\\DetallePublicacionAdmin.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -112,11 +135,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainLayoutMasterAdmin.Master",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -124,11 +147,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainLayoutMasterAdmin.Master.cs",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayoutMasterAdmin.Master.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -136,11 +159,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainLayout.Master.cs",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.cs",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.cs",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master.cs",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.cs",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master.cs",
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayout.Master.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -148,16 +171,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainLayout.Master",
-              "DocumentMoniker": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
+              "DocumentMoniker": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
               "RelativeDocumentMoniker": "QhatuPUCPPresentacion\\MainLayout.Master",
-              "ToolTip": "C:\\Users\\jhona\\OneDrive\\Escritorio\\TA_P3\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
+              "ToolTip": "C:\\Users\\Yu An Lee\\Desktop\\TAPROGRA\\Frontend\\QhatuPUCPWeb\\QhatuPUCPPresentacion\\MainLayout.Master",
               "RelativeToolTip": "QhatuPUCPPresentacion\\MainLayout.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-07-01T01:53:12.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T01:53:12.367Z"
             }
           ]
         }
